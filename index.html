@@ -56,25 +56,57 @@
         <div class="col-lg-7 col-md-12 gx-hero-left position-relative">
           <!-- Decorative Arrows -->
           <div class="gx-arrows position-absolute">
-            <svg width="120" height="80" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <polyline points="10,40 50,10 50,70 10,40" stroke="white" stroke-width="4" fill="none"/>
-              <polyline points="60,40 100,10 100,70 60,40" stroke="white" stroke-width="4" fill="none"/>
-            </svg>
+            <img src="./assets/hero-arrow.png" alt="Decorative Arrows" width="180" height="120" />
           </div>
-          <!-- Main Heading -->
-          <h1 class="gx-hero-title fw-bold text-white mb-3">Your Supply Chain Specialist</h1>
-          <!-- Subtext -->
-          <p class="gx-hero-subtext mb-4">GlobX will get you the missing components to keep your production running no matter how difficult the situation. As supply chain experts, we master even the biggest crises with ease and bring them to a smooth production flow.</p>
+          <!-- Hero Slide Content Wrapper -->
+          <div class="gx-hero-slide-content position-relative">
+            <div class="gx-hero-slide">
+              <h1 class="gx-hero-title fw-bold mb-3">Your Supply Chain Specialist</h1>
+              <p class="gx-hero-subtext mb-4">GlobX will get you the missing components to keep your production running no matter how difficult the situation. As supply chain experts, we master even the biggest crises with ease and bring them to a smooth production flow.</p>
+            </div>
+          </div>
           <!-- Learn More Button -->
           <a href="#" class="btn gx-btn-primary px-4 py-2">Learn More</a>
+          <!-- Pagination Dots (same as sidebar) -->
+          <div class="gx-sidebar-pagination d-flex justify-content-start align-items-center mt-4 opacity-75">
+            <span class="gx-dot"></span>
+            <span class="gx-dot active"></span>
+            <span class="gx-dot"></span>
+          </div>
         </div>
-        <!-- Right: (Sidebar will go here later) -->
-        <div class="col-lg-5 col-md-12 gx-hero-right"></div>
+        <!-- Right: Sidebar Card -->
+        <div class="col-lg-5 col-md-12 gx-hero-right d-flex align-items-center justify-content-center">
+          <div class="gx-sidebar-card shadow">
+            <div class="gx-sidebar-title text-center mb-4">Search by Categories</div>
+            <div class="gx-sidebar-slide-content position-relative">
+              <div class="gx-sidebar-slide">
+                <div class="gx-sidebar-grid mb-4">
+                  <!-- grid rows/cells will be rendered by JS -->
+                </div>
+              </div>
+            </div>
+            <!-- Pagination Dots -->
+            <div class="gx-sidebar-pagination d-flex justify-content-center align-items-center">
+              <span class="gx-dot"></span>
+              <span class="gx-dot active"></span>
+              <span class="gx-dot"></span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Hero Footer: Partners Row -->
+  <div class="gx-hero-footer bg-white d-flex justify-content-around align-items-center">
+    <div class="gx-partner-logo mx-4"><img src="./assets/brand-1.png" alt="Brand 1" height="52" /></div>
+    <div class="gx-partner-logo mx-4"><img src="./assets/brand-2.png" alt="Brand 2" height="52" /></div>
+    <div class="gx-partner-logo mx-4"><img src="./assets/brand-3.png" alt="Brand 3" height="52" /></div>
+    <div class="gx-partner-logo mx-4"><img src="./assets/brand-4.png" alt="Brand 4" height="52" /></div>
+  </div>
+
   <!-- Bootstrap JS Bundle (with Popper) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./hero-slider.js"></script>
 </body>
 </html> 
