@@ -179,13 +179,15 @@ function setSidebarSlide(idx) {
 }
 
 // Initial state for sidebar
-const initialSidebarSlide = sidebarSlideContent.querySelector('.gx-sidebar-slide');
-if (!initialSidebarSlide) {
-  const firstSidebarSlide = createSidebarSlide(0, 'slide-current');
-  sidebarSlideContent.appendChild(firstSidebarSlide);
-} else {
-  initialSidebarSlide.classList.add('slide-current');
+while (sidebarSlideContent.firstChild) {
+  sidebarSlideContent.removeChild(sidebarSlideContent.firstChild);
 }
+const firstSidebarSlide = createSidebarSlide(0, 'slide-current');
+sidebarSlideContent.appendChild(firstSidebarSlide);
+currentSidebarIdx = 0;
+sidebarDots.forEach((dot, i) => {
+  dot.classList.toggle('active', i === 0);
+});
 
 sidebarDots.forEach((dot, idx) => {
   dot.addEventListener('click', () => setSidebarSlide(idx));

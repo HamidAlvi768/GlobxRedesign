@@ -122,6 +122,14 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   width: 100%;
 }
+.navbar  .container{
+  /* padding-right: 10rem; */
+  max-width: 1450px;
+}
+
+#navbarNav{
+  padding-right: 20rem;
+}
 .gx-logo img {
   height: 48px;
   width: auto;
@@ -233,7 +241,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .gx-btn-primary:hover,
 .gx-btn-primary:focus {
-  background: var(--secondary);
+  background: var(--primary-dark);
   color: var(--text-light);
 }
 
@@ -402,6 +410,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .gx-sidebar-slide.slide-out.slide-animate {
   transform: translateX(-100%);
+}
+
+.gx-chevron svg {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 2px;
+  /* Adjust margin-bottom as needed for perfect alignment */
 }
 
 @media (max-width: 991.98px) {
