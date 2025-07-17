@@ -1,0 +1,5 @@
+---
+description: use the css variables as much as possible
+globs:
+alwaysApply: false
+---
