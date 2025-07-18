@@ -9,7 +9,11 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="shared-utilities.css">
+  <link rel="stylesheet" href="hero.css">
+  <link rel="stylesheet" href="problem-solution.css">
+  <link rel="stylesheet" href="services.css">
 </head>
 <body>
   <!-- Top Bar -->
@@ -60,7 +64,7 @@
         <div class="col-lg-7 col-md-12 gx-hero-left position-relative">
           <!-- Decorative Arrows -->
           <div class="gx-arrows position-absolute">
-            <img src="./assets/hero-arrow.png" alt="Decorative Arrows" width="180" height="120" />
+            <img src="./assets/hero-arrow.png" alt="Decorative Arrows" width="180" height="150" />
           </div>
           <!-- Hero Slide Content Wrapper -->
           <div class="gx-hero-slide-content position-relative">
@@ -110,16 +114,16 @@
   </div>
 
   <!-- Problem & Solution Section -->
-  <section class="gx-problem-solution-section py-5">
+  <section class="gx-problem-solution-section gx-section-common gx-section-common--white py-10">
     <div class="container">
       <!-- Section Header -->
-      <div class="gx-section-header mb-4">
-        <h2 class="gx-section-title">Solution</h2>
-        <h1 class="gx-section-headline">You are right with us</h1>
+      <div class="gx-section-header-common mb-4">
+        <h2 class="gx-section-label-common gx-section-label-common--medium">Solution</h2>
+        <h1 class="gx-section-headline-common gx-section-headline-common--medium">You are right with us</h1>
       </div>
       
       <!-- Main Content Container -->
-      <div class="gx-content-container">
+      <div class="gx-content-container gx-content-container-common gx-content-container-common--bordered">
         <!-- Tab Navigation -->
         <div class="gx-tab-navigation">
           <button class="gx-tab-btn gx-tab-btn-active" data-tab="problem">
@@ -137,21 +141,21 @@
             <div class="row align-items-center">
               <!-- Left: Text Content -->
               <div class="col-lg-6">
-                <div class="gx-problem-content">
-                  <h3 class="gx-problem-subtitle">We feel your pain.</h3>
-                  <h2 class="gx-problem-title">Bottleneck? A business reality.</h2>
+                <div class="gx-problem-content gx-content-area-common">
+                  <h3 class="gx-problem-subtitle gx-content-subtitle-common gx-content-subtitle-common--medium">We feel your pain.</h3>
+                  <h2 class="gx-problem-title gx-content-title-common gx-content-title-common--medium">Bottleneck? A business reality.</h2>
                   <div class="gx-problem-text">
-                    <p>Whether due to changing markets or force majeure supply bottlenecks are unfortunately part of everyday life in many industries. Even the best purchasing strategies are often unable to cushion the impact.</p>
-                    <p>When important components and goods can no longer be delivered, production can come to a standstill, even a few minutes of production downtime often costs millions. In such situations, companies need to have a partner at their side who does not take advantage of their desperate situation but procures the components they need quickly, at a fair price and with reliability.</p>
+                    <p class="gx-content-text-common gx-content-text-common--with-margin">Whether due to changing markets or force majeure supply bottlenecks are unfortunately part of everyday life in many industries. Even the best purchasing strategies are often unable to cushion the impact.</p>
+                    <p class="gx-content-text-common gx-content-text-common--no-margin">When important components and goods can no longer be delivered, production can come to a standstill, even a few minutes of production downtime often costs millions. In such situations, companies need to have a partner at their side who does not take advantage of their desperate situation but procures the components they need quickly, at a fair price and with reliability.</p>
                   </div>
                 </div>
               </div>
               <!-- Right: Illustration -->
               <div class="col-lg-6">
-                <div class="gx-problem-illustration">
-                  <div class="gx-illustration-container">
-                    <img src="./assets/problem-back.png" alt="Background Shape" class="gx-illustration-background" />
-                    <img src="./assets/problem.png" alt="Supply Chain Bottleneck Illustration" class="gx-illustration-foreground" />
+                <div class="gx-problem-illustration gx-illustration-wrapper-common gx-illustration-wrapper-common--with-padding">
+                  <div class="gx-illustration-container gx-illustration-container-common">
+                    <img src="./assets/problem-back.png" alt="Background Shape" class="gx-illustration-background gx-illustration-background-common" />
+                    <img src="./assets/problem.png" alt="Supply Chain Bottleneck Illustration" class="gx-illustration-foreground gx-illustration-foreground-common gx-illustration-foreground-common--full" />
                   </div>
                 </div>
               </div>
@@ -163,12 +167,12 @@
             <div class="row align-items-center">
               <!-- Left: Text Content -->
               <div class="col-lg-6">
-                <div class="gx-solution-content">
-                  <h3 class="gx-solution-subtitle">We have the solution.</h3>
-                  <h2 class="gx-solution-title">Fast, reliable, and fair.</h2>
+                <div class="gx-solution-content gx-content-area-common">
+                  <h3 class="gx-solution-subtitle gx-content-subtitle-common gx-content-subtitle-common--medium">We have the solution.</h3>
+                  <h2 class="gx-solution-title gx-content-title-common gx-content-title-common--medium">Fast, reliable, and fair.</h2>
                   <div class="gx-solution-text">
-                    <p>Our comprehensive supply chain solutions ensure your production never stops. With our global network and expertise, we can source even the most challenging components quickly and efficiently.</p>
-                    <p>We understand that time is money, and we're committed to providing transparent pricing and reliable delivery times. Your success is our priority.</p>
+                    <p class="gx-content-text-common gx-content-text-common--with-margin">Our comprehensive supply chain solutions ensure your production never stops. With our global network and expertise, we can source even the most challenging components quickly and efficiently.</p>
+                    <p class="gx-content-text-common gx-content-text-common--no-margin">We understand that time is money, and we're committed to providing transparent pricing and reliable delivery times. Your success is our priority.</p>
                   </div>
                 </div>
               </div>
@@ -185,9 +189,135 @@
     </div>
   </section>
 
+  <!-- Services Section -->
+  <section class="gx-services-section gx-section-common gx-section-common--light py-10">
+    <div class="container">
+      <div class="row">
+        <!-- Left Column: Navigation -->
+        <div class="col-lg-6">
+          <div class="gx-services-navigation">
+            <!-- Header Section -->
+            <div class="gx-services-header gx-section-header-common mb-4">
+              <h2 class="gx-services-label gx-section-label-common gx-section-label-common--medium">Services</h2>
+              <h1 class="gx-services-headline gx-section-headline-common gx-section-headline-common--large">Redefining the future of supply chains.</h1>
+              <p class="gx-services-description gx-section-description-common gx-section-description-common--with-margin">Redefining supply chains through resilience – global networks and distributed storage keep your critical components secure.</p>
+            </div>
+            
+            <!-- Vertical Menu -->
+            <div class="gx-services-menu">
+              <div class="gx-service-item gx-service-active" data-service="procurement">
+                <img src="./assets/service-arrow.png" alt="Service Arrow" class="gx-service-icon" />
+                <span class="gx-service-name">Procurement Service</span>
+              </div>
+              <div class="gx-service-item" data-service="fulfillment">
+                <span class="gx-service-name">Fulfillment Solutions</span>
+              </div>
+              <div class="gx-service-item" data-service="bom">
+                <span class="gx-service-name">BOM Evaluation</span>
+              </div>
+              <div class="gx-service-item" data-service="excess">
+                <span class="gx-service-name">Excess Solutions</span>
+              </div>
+              <div class="gx-service-item" data-service="obsolescence">
+                <span class="gx-service-name">Obsolescence Management</span>
+              </div>
+              <div class="gx-service-item" data-service="bottleneck">
+                <span class="gx-service-name">Bottleneck Management</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Column: Content Display -->
+        <div class="col-lg-6">
+          <div class="gx-services-content gx-content-display-common">
+            <!-- Service Content Container -->
+            <div class="gx-service-content-container gx-content-container-common">
+              <!-- Procurement Service (Active) -->
+              <div class="gx-service-pane gx-service-pane-active" id="procurement-service">
+                <div class="gx-service-illustration gx-illustration-wrapper-common mb-4">
+                  <div class="gx-service-illustration-container gx-illustration-container-common">
+                    <img src="./assets/service-back.png" alt="Background Shape" class="gx-service-illustration-background gx-illustration-background-common" />
+                    <img src="./assets/service-1.png" alt="Procurement Service Illustration" class="gx-service-illustration-foreground gx-illustration-foreground-common gx-illustration-foreground-common--reduced" />
+                  </div>
+                </div>
+                <div class="gx-service-content-text gx-content-area-common gx-content-area-common--centered text-center">
+                  <h2 class="gx-service-title gx-content-title-common gx-content-title-common--large text-primary">Procurement Service</h2>
+                  <p class="gx-service-description gx-content-text-common gx-content-text-common--centered">Our strong network makes us the preferred procurement partner for medium sized companies and corporations. As an independent distributor, we secure the best prices through trusted suppliers worldwide.</p>
+                  <a href="#" class="btn gx-btn-primary mt-4">Inquire Now</a>
+                </div>
+              </div>
+              
+              <!-- Fulfillment Solutions -->
+              <div class="gx-service-pane" id="fulfillment-service">
+                <div class="gx-service-illustration mb-4">
+                  <img src="./assets/fulfillment-illustration.png" alt="Fulfillment Solutions Illustration" class="img-fluid" />
+                </div>
+                <div class="gx-service-content-text text-center">
+                  <h2 class="gx-service-title">Fulfillment Solutions</h2>
+                  <p class="gx-service-description">Streamlined fulfillment processes that ensure your components reach you on time, every time. Our global logistics network guarantees efficient delivery worldwide.</p>
+                  <a href="#" class="btn gx-btn-primary mt-4">Inquire Now</a>
+                </div>
+              </div>
+              
+              <!-- BOM Evaluation -->
+              <div class="gx-service-pane" id="bom-service">
+                <div class="gx-service-illustration mb-4">
+                  <img src="./assets/bom-illustration.png" alt="BOM Evaluation Illustration" class="img-fluid" />
+                </div>
+                <div class="gx-service-content-text text-center">
+                  <h2 class="gx-service-title">BOM Evaluation</h2>
+                  <p class="gx-service-description">Comprehensive Bill of Materials analysis to optimize your supply chain. We identify cost-saving opportunities and alternative sourcing options.</p>
+                  <a href="#" class="btn gx-btn-primary mt-4">Inquire Now</a>
+                </div>
+              </div>
+              
+              <!-- Excess Solutions -->
+              <div class="gx-service-pane" id="excess-service">
+                <div class="gx-service-illustration mb-4">
+                  <img src="./assets/excess-illustration.png" alt="Excess Solutions Illustration" class="img-fluid" />
+                </div>
+                <div class="gx-service-content-text text-center">
+                  <h2 class="gx-service-title">Excess Solutions</h2>
+                  <p class="gx-service-description">Turn your excess inventory into value. Our excess management solutions help you recover costs and optimize your inventory levels.</p>
+                  <a href="#" class="btn gx-btn-primary mt-4">Inquire Now</a>
+                </div>
+              </div>
+              
+              <!-- Obsolescence Management -->
+              <div class="gx-service-pane" id="obsolescence-service">
+                <div class="gx-service-illustration mb-4">
+                  <img src="./assets/obsolescence-illustration.png" alt="Obsolescence Management Illustration" class="img-fluid" />
+                </div>
+                <div class="gx-service-content-text text-center">
+                  <h2 class="gx-service-title">Obsolescence Management</h2>
+                  <p class="gx-service-description">Proactive obsolescence management to protect your production continuity. We help you plan for component end-of-life and secure alternatives.</p>
+                  <a href="#" class="btn gx-btn-primary mt-4">Inquire Now</a>
+                </div>
+              </div>
+              
+              <!-- Bottleneck Management -->
+              <div class="gx-service-pane" id="bottleneck-service">
+                <div class="gx-service-illustration mb-4">
+                  <img src="./assets/bottleneck-illustration.png" alt="Bottleneck Management Illustration" class="img-fluid" />
+                </div>
+                <div class="gx-service-content-text text-center">
+                  <h2 class="gx-service-title">Bottleneck Management</h2>
+                  <p class="gx-service-description">Rapid response solutions for supply chain bottlenecks. Our emergency procurement services keep your production running without interruption.</p>
+                  <a href="#" class="btn gx-btn-primary mt-4">Inquire Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Bootstrap JS Bundle (with Popper) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./hero-slider.js"></script>
+  <script src="./services.js"></script>
   
   <!-- Problem & Solution Tab Functionality -->
   <script>

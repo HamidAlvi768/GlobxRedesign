@@ -46,7 +46,7 @@ function startHeroAutoSlide() {
       let nextIdx = (currentHeroIdx + 1) % heroSlides.length;
       setHeroSlide(nextIdx);
     }
-  }, 5000);
+  }, 7000);
 }
 
 function setHeroSlide(idx) {
