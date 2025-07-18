@@ -267,7 +267,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: flex-start;
 }
 .gx-sidebar-title {
-  color: var(--text-light);
+  color: var(--text-light-2);
   font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: 0.01em;
@@ -358,7 +358,12 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   min-height: 180px;
   overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
+
 .gx-hero-slide {
   position: absolute;
   top: 0; left: 0; width: 100%;
@@ -392,7 +397,12 @@ h1, h2, h3, h4, h5, h6 {
   /* min-height: 320px; */
   overflow: hidden;
   width: 100%;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
+
 .gx-sidebar-slide {
   position: absolute;
   top: 0; left: 0; width: 100%;
@@ -425,6 +435,38 @@ h1, h2, h3, h4, h5, h6 {
   vertical-align: middle;
   margin-bottom: 2px;
   /* Adjust margin-bottom as needed for perfect alignment */
+}
+
+/* Sidebar Icon Colors */
+.gx-sidebar-icon svg {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.gx-sidebar-icon svg rect,
+.gx-sidebar-icon svg path {
+  stroke: var(--text-light-2);
+  stroke-width: 2;
+  fill: none;
+}
+
+.gx-sidebar-icon svg rect[fill="white"] {
+  fill: var(--text-light-2);
+}
+
+.gx-sidebar-icon svg path[stroke="white"] {
+  stroke: var(--text-light-2);
+}
+
+/* Hover effect for icons */
+.gx-sidebar-cell:hover .gx-sidebar-icon svg rect,
+.gx-sidebar-cell:hover .gx-sidebar-icon svg path {
+  stroke: var(--primary);
+  transition: stroke 0.2s ease;
+}
+
+.gx-sidebar-cell:hover .gx-sidebar-icon svg rect[fill] {
+  fill: var(--primary);
+  transition: fill 0.2s ease;
 }
 
 /* Responsive Header & Hero Section Enhancements */
@@ -633,5 +675,290 @@ h1, h2, h3, h4, h5, h6 {
   }
   .gx-arrows{
     display: none !important;
+  }
+}
+
+/* ======================================== */
+/* PROBLEM & SOLUTION SECTION              */
+/* ======================================== */
+
+.gx-problem-solution-section {
+  background: var(--primary-lightest);
+  padding: 5rem 0;
+}
+
+/* Section Header */
+.gx-section-header {
+  margin-bottom: 3rem;
+}
+
+.gx-section-title {
+  color: var(--primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.gx-section-headline {
+  color: var(--text-dark);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+/* Main Content Container */
+.gx-content-container {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-bottom: 3px solid var(--primary-light);
+  overflow: hidden;
+}
+
+/* Tab Navigation */
+.gx-tab-navigation {
+  display: flex;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.gx-tab-btn {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 1.25rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #6c757d;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.gx-tab-btn:hover {
+  background: rgba(0, 0, 0, 0.02);
+  color: var(--primary);
+}
+
+.gx-tab-btn-active {
+  background: white;
+  color: var(--text-dark);
+  border-bottom: 3px solid var(--primary);
+}
+
+.gx-tab-btn-active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: white;
+}
+
+/* Tab Content */
+.gx-tab-content {
+  padding: 3rem;
+  min-height: 500px;
+}
+
+.gx-tab-pane {
+  display: none;
+}
+
+.gx-tab-pane-active {
+  display: block;
+}
+
+/* Problem Content */
+.gx-problem-content {
+  padding-right: 2rem;
+}
+
+.gx-problem-subtitle {
+  color: var(--primary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.01em;
+}
+
+.gx-problem-title {
+  color: var(--text-dark);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.gx-problem-text p {
+  color: var(--text-dark);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+}
+
+.gx-problem-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* Problem Illustration */
+.gx-problem-illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.gx-illustration-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.gx-illustration-background {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  max-width: 75%;
+  height: auto;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.gx-illustration-foreground {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  z-index: 2;
+  border-radius: 0.5rem;
+}
+
+/* Solution Content */
+.gx-solution-content {
+  padding-right: 2rem;
+}
+
+.gx-solution-subtitle {
+  color: var(--primary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.01em;
+}
+
+.gx-solution-title {
+  color: var(--text-dark);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.gx-solution-text p {
+  color: var(--text-dark);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+}
+
+.gx-solution-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* Solution Illustration */
+.gx-solution-illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  min-height: 300px;
+  background: #f8f9fa;
+  border-radius: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 991.98px) {
+  .gx-problem-solution-section {
+    padding: 3rem 0;
+  }
+  
+  .gx-section-headline {
+    font-size: 2rem;
+  }
+  
+  .gx-tab-content {
+    padding: 2rem;
+  }
+  
+  .gx-problem-content,
+  .gx-solution-content {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .gx-problem-title,
+  .gx-solution-title {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .gx-problem-solution-section {
+    padding: 2rem 0;
+  }
+  
+  .gx-section-headline {
+    font-size: 1.75rem;
+  }
+  
+  .gx-tab-content {
+    padding: 1.5rem;
+  }
+  
+  .gx-tab-btn {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .gx-problem-title,
+  .gx-solution-title {
+    font-size: 1.5rem;
+  }
+  
+  .gx-problem-subtitle,
+  .gx-solution-subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .gx-tab-content {
+    padding: 1rem;
+  }
+  
+  .gx-tab-btn {
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .gx-section-headline {
+    font-size: 1.5rem;
+  }
+  
+  .gx-problem-title,
+  .gx-solution-title {
+    font-size: 1.25rem;
   }
 }

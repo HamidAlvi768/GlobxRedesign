@@ -18,6 +18,16 @@ const heroSlideContent = document.querySelector('.gx-hero-slide-content');
 const heroDots = document.querySelectorAll('.gx-hero-left .gx-sidebar-pagination .gx-dot');
 let currentHeroIdx = 0;
 let heroAutoSlideTimer = null;
+let heroIsTransitioning = false; // Lock to prevent multiple transitions
+let heroTransitionTimeout = null; // Track transition timeout
+
+// Swipe variables for hero slider
+let heroStartX = 0;
+let heroStartY = 0;
+let heroCurrentX = 0;
+let heroCurrentY = 0;
+let heroIsDragging = false;
+let heroDragThreshold = 50;
 
 function createHeroSlide(idx, className) {
   const slide = document.createElement('div');
@@ -32,33 +42,129 @@ function createHeroSlide(idx, className) {
 function startHeroAutoSlide() {
   if (heroAutoSlideTimer) clearInterval(heroAutoSlideTimer);
   heroAutoSlideTimer = setInterval(() => {
-    let nextIdx = (currentHeroIdx + 1) % heroSlides.length;
-    setHeroSlide(nextIdx);
+    if (!heroIsTransitioning) { // Only auto-slide if not manually transitioning
+      let nextIdx = (currentHeroIdx + 1) % heroSlides.length;
+      setHeroSlide(nextIdx);
+    }
   }, 5000);
 }
 
 function setHeroSlide(idx) {
-  if (idx === currentHeroIdx) return;
+  // Prevent multiple simultaneous transitions
+  if (idx === currentHeroIdx || heroIsTransitioning) return;
+  
+  heroIsTransitioning = true;
+  
+  // Clear any existing transition timeout
+  if (heroTransitionTimeout) {
+    clearTimeout(heroTransitionTimeout);
+  }
+  
   const oldSlide = heroSlideContent.querySelector('.gx-hero-slide');
   const newSlide = createHeroSlide(idx, 'slide-in');
+  
+  // Add new slide to DOM first (it will be positioned off-screen)
   heroSlideContent.appendChild(newSlide);
+  
   // Force reflow for transition
   void newSlide.offsetWidth;
+  
+  // Start animations - both slides should be visible during transition
   oldSlide.classList.add('slide-out', 'slide-animate');
   newSlide.classList.add('slide-animate');
   newSlide.classList.remove('slide-in');
-  // After animation, remove old slide and set new as current
-  setTimeout(() => {
-    if (oldSlide && oldSlide.parentNode) oldSlide.parentNode.removeChild(oldSlide);
+  
+  // Cleanup after animation completes
+  heroTransitionTimeout = setTimeout(() => {
+    if (oldSlide && oldSlide.parentNode) {
+      oldSlide.parentNode.removeChild(oldSlide);
+    }
     newSlide.classList.remove('slide-animate');
     newSlide.classList.add('slide-current');
+    
+    // Reset transition lock
+    heroIsTransitioning = false;
+    heroTransitionTimeout = null;
   }, 500);
+  
   currentHeroIdx = idx;
+  
+  // Update dots
   heroDots.forEach((dot, i) => {
     dot.classList.toggle('active', i === idx);
   });
+  
   // Reset auto-slide timer on manual change
   startHeroAutoSlide();
+}
+
+// Hero Swipe Functions
+function handleHeroTouchStart(e) {
+  if (heroIsTransitioning) return; // Prevent swipe during transition
+  
+  heroStartX = e.type === 'mousedown' ? e.clientX : e.touches[0].clientX;
+  heroStartY = e.type === 'mousedown' ? e.clientY : e.touches[0].clientY;
+  heroIsDragging = true;
+  e.preventDefault();
+}
+
+function handleHeroTouchMove(e) {
+  if (!heroIsDragging || heroIsTransitioning) return;
+  
+  heroCurrentX = e.type === 'mousemove' ? e.clientX : e.touches[0].clientX;
+  heroCurrentY = e.type === 'mousemove' ? e.clientY : e.touches[0].clientY;
+  
+  const deltaX = heroCurrentX - heroStartX;
+  const deltaY = heroCurrentY - heroStartY;
+  
+  // Only handle horizontal swipes
+  if (Math.abs(deltaX) > Math.abs(deltaY)) {
+    e.preventDefault();
+  }
+}
+
+function handleHeroTouchEnd(e) {
+  if (!heroIsDragging || heroIsTransitioning) {
+    heroIsDragging = false;
+    return;
+  }
+  
+  const deltaX = heroCurrentX - heroStartX;
+  const deltaY = heroCurrentY - heroStartY;
+  
+  // Check if it's a horizontal swipe with enough distance
+  if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > heroDragThreshold) {
+    if (deltaX > 0) {
+      // Swipe right - go to previous slide
+      const prevIdx = currentHeroIdx === 0 ? heroSlides.length - 1 : currentHeroIdx - 1;
+      setHeroSlide(prevIdx);
+    } else {
+      // Swipe left - go to next slide
+      const nextIdx = (currentHeroIdx + 1) % heroSlides.length;
+      setHeroSlide(nextIdx);
+    }
+  }
+  
+  heroIsDragging = false;
+}
+
+// Add event listeners for hero slider
+if (heroSlideContent) {
+  // Touch events
+  heroSlideContent.addEventListener('touchstart', handleHeroTouchStart, { passive: false });
+  heroSlideContent.addEventListener('touchmove', handleHeroTouchMove, { passive: false });
+  heroSlideContent.addEventListener('touchend', handleHeroTouchEnd);
+  
+  // Mouse events
+  heroSlideContent.addEventListener('mousedown', handleHeroTouchStart);
+  heroSlideContent.addEventListener('mousemove', handleHeroTouchMove);
+  heroSlideContent.addEventListener('mouseup', handleHeroTouchEnd);
+  heroSlideContent.addEventListener('mouseleave', handleHeroTouchEnd);
+  
+  // Prevent text selection during drag
+  heroSlideContent.addEventListener('selectstart', (e) => {
+    if (heroIsDragging) e.preventDefault();
+  });
 }
 
 // Initial state
@@ -66,7 +172,11 @@ const initialSlide = heroSlideContent.querySelector('.gx-hero-slide');
 if (initialSlide) initialSlide.classList.add('slide-current');
 
 heroDots.forEach((dot, idx) => {
-  dot.addEventListener('click', () => setHeroSlide(idx));
+  dot.addEventListener('click', () => {
+    if (!heroIsTransitioning) { // Prevent dot clicks during transition
+      setHeroSlide(idx);
+    }
+  });
 });
 
 // Start auto-slide
@@ -116,6 +226,16 @@ const sidebarSlideContent = document.querySelector('.gx-sidebar-slide-content');
 const sidebarDots = document.querySelectorAll('.gx-sidebar-card .gx-sidebar-pagination .gx-dot');
 let currentSidebarIdx = 0;
 let sidebarAutoSlideTimer = null;
+let sidebarIsTransitioning = false; // Lock to prevent multiple transitions
+let sidebarTransitionTimeout = null; // Track transition timeout
+
+// Swipe variables for sidebar slider
+let sidebarStartX = 0;
+let sidebarStartY = 0;
+let sidebarCurrentX = 0;
+let sidebarCurrentY = 0;
+let sidebarIsDragging = false;
+let sidebarDragThreshold = 50;
 
 function createSidebarSlide(idx, className) {
   const slide = document.createElement('div');
@@ -150,32 +270,129 @@ function createSidebarSlide(idx, className) {
 function startSidebarAutoSlide() {
   if (sidebarAutoSlideTimer) clearInterval(sidebarAutoSlideTimer);
   sidebarAutoSlideTimer = setInterval(() => {
-    let nextIdx = (currentSidebarIdx + 1) % sidebarSlides.length;
-    setSidebarSlide(nextIdx);
+    if (!sidebarIsTransitioning) { // Only auto-slide if not manually transitioning
+      let nextIdx = (currentSidebarIdx + 1) % sidebarSlides.length;
+      setSidebarSlide(nextIdx);
+    }
   }, 5000);
 }
 
 function setSidebarSlide(idx) {
-  if (idx === currentSidebarIdx) return;
+  // Prevent multiple simultaneous transitions
+  if (idx === currentSidebarIdx || sidebarIsTransitioning) return;
+  
+  sidebarIsTransitioning = true;
+  
+  // Clear any existing transition timeout
+  if (sidebarTransitionTimeout) {
+    clearTimeout(sidebarTransitionTimeout);
+  }
+  
   const oldSlide = sidebarSlideContent.querySelector('.gx-sidebar-slide');
   const newSlide = createSidebarSlide(idx, 'slide-in');
+  
+  // Add new slide to DOM first (it will be positioned off-screen)
   sidebarSlideContent.appendChild(newSlide);
+  
   // Force reflow for transition
   void newSlide.offsetWidth;
+  
+  // Start animations - both slides should be visible during transition
   oldSlide.classList.add('slide-out', 'slide-animate');
   newSlide.classList.add('slide-animate');
   newSlide.classList.remove('slide-in');
-  setTimeout(() => {
-    if (oldSlide && oldSlide.parentNode) oldSlide.parentNode.removeChild(oldSlide);
+  
+  // Cleanup after animation completes
+  sidebarTransitionTimeout = setTimeout(() => {
+    if (oldSlide && oldSlide.parentNode) {
+      oldSlide.parentNode.removeChild(oldSlide);
+    }
     newSlide.classList.remove('slide-animate');
     newSlide.classList.add('slide-current');
+    
+    // Reset transition lock
+    sidebarIsTransitioning = false;
+    sidebarTransitionTimeout = null;
   }, 500);
+  
   currentSidebarIdx = idx;
+  
+  // Update dots
   sidebarDots.forEach((dot, i) => {
     dot.classList.toggle('active', i === idx);
   });
+  
   // Reset auto-slide timer on manual change
   startSidebarAutoSlide();
+}
+
+// Sidebar Swipe Functions
+function handleSidebarTouchStart(e) {
+  if (sidebarIsTransitioning) return; // Prevent swipe during transition
+  
+  sidebarStartX = e.type === 'mousedown' ? e.clientX : e.touches[0].clientX;
+  sidebarStartY = e.type === 'mousedown' ? e.clientY : e.touches[0].clientY;
+  sidebarIsDragging = true;
+  e.preventDefault();
+}
+
+function handleSidebarTouchMove(e) {
+  if (!sidebarIsDragging || sidebarIsTransitioning) return;
+  
+  sidebarCurrentX = e.type === 'mousemove' ? e.clientX : e.touches[0].clientX;
+  sidebarCurrentY = e.type === 'mousemove' ? e.clientY : e.touches[0].clientY;
+  
+  const deltaX = sidebarCurrentX - sidebarStartX;
+  const deltaY = sidebarCurrentY - sidebarStartY;
+  
+  // Only handle horizontal swipes
+  if (Math.abs(deltaX) > Math.abs(deltaY)) {
+    e.preventDefault();
+  }
+}
+
+function handleSidebarTouchEnd(e) {
+  if (!sidebarIsDragging || sidebarIsTransitioning) {
+    sidebarIsDragging = false;
+    return;
+  }
+  
+  const deltaX = sidebarCurrentX - sidebarStartX;
+  const deltaY = sidebarCurrentY - sidebarStartY;
+  
+  // Check if it's a horizontal swipe with enough distance
+  if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > sidebarDragThreshold) {
+    if (deltaX > 0) {
+      // Swipe right - go to previous slide
+      const prevIdx = currentSidebarIdx === 0 ? sidebarSlides.length - 1 : currentSidebarIdx - 1;
+      setSidebarSlide(prevIdx);
+    } else {
+      // Swipe left - go to next slide
+      const nextIdx = (currentSidebarIdx + 1) % sidebarSlides.length;
+      setSidebarSlide(nextIdx);
+    }
+  }
+  
+  sidebarIsDragging = false;
+}
+
+// Add event listeners for sidebar slider
+if (sidebarSlideContent) {
+  // Touch events
+  sidebarSlideContent.addEventListener('touchstart', handleSidebarTouchStart, { passive: false });
+  sidebarSlideContent.addEventListener('touchmove', handleSidebarTouchMove, { passive: false });
+  sidebarSlideContent.addEventListener('touchend', handleSidebarTouchEnd);
+  
+  // Mouse events
+  sidebarSlideContent.addEventListener('mousedown', handleSidebarTouchStart);
+  sidebarSlideContent.addEventListener('mousemove', handleSidebarTouchMove);
+  sidebarSlideContent.addEventListener('mouseup', handleSidebarTouchEnd);
+  sidebarSlideContent.addEventListener('mouseleave', handleSidebarTouchEnd);
+  
+  // Prevent text selection during drag
+  sidebarSlideContent.addEventListener('selectstart', (e) => {
+    if (sidebarIsDragging) e.preventDefault();
+  });
 }
 
 // Initial state for sidebar
@@ -190,7 +407,11 @@ sidebarDots.forEach((dot, i) => {
 });
 
 sidebarDots.forEach((dot, idx) => {
-  dot.addEventListener('click', () => setSidebarSlide(idx));
+  dot.addEventListener('click', () => {
+    if (!sidebarIsTransitioning) { // Prevent dot clicks during transition
+      setSidebarSlide(idx);
+    }
+  });
 });
 
 // Start auto-slide for sidebar
