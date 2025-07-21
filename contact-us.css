@@ -1,0 +1,219 @@
+/* ======================================== */
+/* GLOBX - CONTACT SECTION                  */
+/* ======================================== */
+.gx-contact-section {
+  background: #fff;
+  padding: 5rem 0 5rem 0;
+}
+.gx-contact-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 3rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+.gx-contact-form-col {
+  flex: 1 1 420px;
+  max-width: 480px;
+}
+.gx-contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.gx-form-type-selector {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+.gx-radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: #1a3e5c;
+  position: relative;
+}
+.gx-radio-label input[type="radio"] {
+  display: none;
+}
+.gx-custom-radio {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2.5px solid #1a7ebc;
+  display: inline-block;
+  position: relative;
+  background: #fff;
+  transition: border-color 0.2s;
+}
+.gx-radio-label input[type="radio"]:checked + .gx-custom-radio {
+  border-color: #1a7ebc;
+}
+.gx-radio-label input[type="radio"]:checked + .gx-custom-radio::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #1a7ebc;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gx-contact-heading {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #1a3e5c;
+  margin-bottom: 0.2rem;
+}
+.gx-contact-subheading {
+  font-size: 1.15rem;
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+.gx-form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.7rem;
+}
+.gx-form-group label {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+.gx-form-group input,
+.gx-form-group textarea {
+  border: none;
+  border-bottom: 2px solid #e0e6ed;
+  font-size: 1.08rem;
+  padding: 0.5rem 0 0.4rem 0;
+  background: transparent;
+  color: #1a3e5c;
+  outline: none;
+  transition: border-color 0.2s;
+  resize: none;
+  height: 50px;
+}
+.gx-form-group input:focus,
+.gx-form-group textarea:focus {
+  border-bottom: 2px solid #1a7ebc;
+}
+.gx-form-group input::placeholder,
+.gx-form-group textarea::placeholder {
+  color: #b0b8c1;
+  opacity: 1;
+}
+.gx-form-row {
+  display: flex;
+  gap: 1.5rem;
+}
+.gx-form-half {
+  flex: 1 1 0;
+}
+.gx-contact-submit {
+  background: #1a7ebc;
+  color: var(--text-light-3);
+  font-size: 1.15rem;
+  font-weight: var(--fw-regular);
+  border: none;
+  border-radius: 0.5rem;
+  /* padding: 0.85rem 2.5rem; */
+  margin-top: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(26, 126, 188, 0.08);
+  transition: background 0.2s;
+  align-self: flex-start;
+}
+.gx-contact-submit:hover {
+  background: #176ba0;
+}
+
+.gx-contact-image-col {
+  max-width: 460px;
+  position: relative;
+  display: flex;
+  height: 770px;
+}
+.gx-contact-chevron-bg {
+  position: absolute;
+  top: -150px;
+  right: -130px;
+  z-index: 1;
+  width: 210px;
+  height: 320px;
+  pointer-events: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.gx-contact-chevron {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: none;
+}
+.gx-contact-image {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 32px rgba(30, 30, 30, 0.13);
+  background: #fff;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+@media (max-width: 991.98px) {
+  .gx-contact-container {
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: stretch;
+  }
+  .gx-contact-image-col {
+    max-width: 100%;
+    min-width: 0;
+    justify-content: flex-start;
+  }
+  .gx-contact-chevron-bg {
+    top: -20px;
+    right: -20px;
+    width: 180px;
+    height: 200px;
+  }
+  .gx-contact-image {
+    max-width: 260px;
+  }
+}
+@media (max-width: 575.98px) {
+  .gx-contact-section {
+    padding: 2.5rem 0 2.5rem 0;
+  }
+  .gx-contact-heading {
+    font-size: 1.5rem;
+  }
+  .gx-contact-container {
+    gap: 1.5rem;
+  }
+  .gx-contact-image {
+    max-width: 100%;
+    border-radius: 0.7rem;
+  }
+  .gx-contact-chevron-bg {
+    width: 90px;
+    height: 100px;
+    top: -10px;
+    right: -10px;
+  }
+  .gx-form-row {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+} 

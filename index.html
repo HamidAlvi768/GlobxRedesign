@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="testimonials.css">
   <link rel="stylesheet" href="why-work-with-us.css">
   <link rel="stylesheet" href="save-the-globe.css">
+  <link rel="stylesheet" href="contact-us.css">
 </head>
 <body>
   <!-- Top Bar -->
@@ -119,7 +120,7 @@
 
   <!-- Problem & Solution Section -->
   <section class="gx-problem-solution-section gx-section-common gx-section-common--white py-10">
-    <div class="container" style="max-width: 1220px;">
+    <div class="container section-width">
       <!-- Section Header -->
       <div class="gx-section-header-common mb-4">
         <h2 class="gx-section-label-common gx-section-label-common--medium">Solution</h2>
@@ -200,7 +201,7 @@
   </div>
   <!-- Services Section -->
   <section class="gx-services-section gx-section-common gx-section-common--light py-10">
-    <div class="container">
+    <div class="container section-width">
       <div class="row">
         <!-- Left Column: Navigation -->
         <div class="col-lg-6">
@@ -253,7 +254,7 @@
                 <div class="gx-service-content-text gx-content-area-common gx-content-area-common--centered text-center">
                   <h2 class="gx-service-title gx-content-title-common gx-content-title-common--large text-primary">Procurement Service</h2>
                   <p class="gx-service-description gx-content-text-common gx-content-text-common--centered">Our strong network makes us the preferred procurement partner for medium sized companies and corporations. As an independent distributor, we secure the best prices through trusted suppliers worldwide.</p>
-                  <a href="#" class="btn gx-btn-primary mt-4">Inquire Now</a>
+                  <a href="#" class="btn gx-btn-primary mt-4 px-4 py-2">Inquire Now</a>
                 </div>
               </div>
               
@@ -329,7 +330,7 @@
     <div class="gx-sector-arrow">
       <img src="./assets/sector-arrow.png" alt="Decorative Arrow" />
     </div>
-    <div class="container">
+    <div class="container section-width">
       <div class="row align-items-center justify-content-end">
         <!-- Left Column: Content -->
         <div class="col-lg-5">
@@ -408,7 +409,7 @@
 
   <!-- Testimonials Section -->
   <section class="gx-testimonials-section gx-section-common py-10">
-    <div class="container">
+    <div class="container section-width">
       <div class="row align-items-center">
         <!-- Left Column: Testimonial Content -->
         <div class="col-lg-6 order-2 order-lg-1">
@@ -461,7 +462,7 @@
 
   <!-- Why Work With Us Section -->
   <section class="gx-why-work-section gx-section-common py-10">
-    <div class="container">
+    <div class="container section-width">
       <!-- Header Section -->
       <div class="row gx-why-work-header">
         <div class="col-lg-6">
@@ -510,7 +511,7 @@
 
   <!-- Save the Globe Section -->
   <section class="gx-save-globe-section">
-    <div class="container">
+    <div class="container section-width">
       <div class="gx-save-globe-row">
         <!-- Left Column: Content -->
         <div class="gx-save-globe-content">
@@ -532,6 +533,65 @@
         <div class="gx-save-globe-image-col">
           <img src="./assets/earth.jpg" alt="Earth - Save the Globe" class="gx-save-globe-image" />
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="gx-contact-section">
+    <div class="gx-contact-container">
+      <!-- Left: Form -->
+      <div class="gx-contact-form-col">
+        <form class="gx-contact-form">
+          <div class="gx-form-type-selector">
+            <label class="gx-radio-label">
+              <input type="radio" name="formType" value="contact" checked>
+              <span class="gx-custom-radio"></span>
+              Contact Us
+            </label>
+            <label class="gx-radio-label">
+              <input type="radio" name="formType" value="offer">
+              <span class="gx-custom-radio"></span>
+              Offer
+            </label>
+          </div>
+          <h1 class="gx-contact-heading">Contact Us</h1>
+          <div class="gx-contact-subheading">How can we help you?</div>
+          <div class="gx-form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="Company" autocomplete="organization">
+          </div>
+          <div class="gx-form-row">
+            <div class="gx-form-group gx-form-half">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="First Name" autocomplete="given-name">
+            </div>
+            <div class="gx-form-group gx-form-half">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Last Name" autocomplete="family-name">
+            </div>
+          </div>
+          <div class="gx-form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" autocomplete="email">
+          </div>
+          <div class="gx-form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone" autocomplete="tel">
+          </div>
+          <div class="gx-form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="gx-contact-submit px-4 py-2">Send</button>
+        </form>
+      </div>
+      <!-- Right: Image & Chevron -->
+      <div class="gx-contact-image-col">
+        <div class="gx-contact-chevron-bg">
+          <img src="./assets/contact-us-arrow.png" alt="Decorative Chevron" class="gx-contact-chevron" />
+        </div>
+        <img src="./assets/contact-us.jpg" alt="Contact Us" class="gx-contact-image" />
       </div>
     </div>
   </section>

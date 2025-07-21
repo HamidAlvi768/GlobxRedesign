@@ -3,7 +3,7 @@
 /* ======================================== */
 
 .gx-save-globe-section {
-  background: #fff;
+  background: var(--primary-light-3);
   padding: 5rem 0;
 }
 

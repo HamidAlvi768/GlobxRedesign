@@ -3,6 +3,11 @@
 /* ======================================== */
 
 /* Services Navigation (Left Column) */
+.gx-services-section {
+  padding: 0rem 0;
+  padding-bottom: 5rem;
+}
+
 .gx-services-navigation {
   padding-right: 2rem;
 }

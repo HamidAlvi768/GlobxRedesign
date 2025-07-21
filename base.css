@@ -20,6 +20,7 @@
   --primary-lightest: hsla(210, 20%, 98%, 1);
   --primary-light: hsla(206, 100%, 95%, 1);
   --primary-light-2: hsla(196, 100%, 81%, 1);
+  --primary-light-3: hsla(24, 100%, 99%, 1);
   --primary: hsla(199, 74%, 39%, 1);
   --primary-dark: hsla(199, 100%, 15%, 1);
   --primary-dark-2: hsla(195, 100%, 24%, 1);
@@ -33,6 +34,12 @@
   /* Fonts */
   --font-primary: 'Poppins Medium', 'Poppins', 'Helvetica', 'Arial', sans-serif;
   --font-headings: 'Poppins SemiBold', 'Poppins', 'Helvetica', 'Arial', sans-serif;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+  --fw-black: 900;
 
   /* Spacing (based on 1rem = 16px) */
   --spacing-1: 0.25rem; /* 4px */
@@ -40,6 +47,7 @@
   --spacing-3: 1rem;    /* 16px */
   --spacing-4: 2rem;    /* 32px */
   --spacing-5: 4rem;    /* 64px */
+  --section-width: 1220px;
 }
 
 /* 3. Utility Classes */
@@ -70,6 +78,10 @@
 
 .text-primary {
   color: hsla(199, 74%, 39%, 1) !important;
+}
+
+.section-width {
+  max-width: var(--section-width);
 }
 
 /* 4. Set Base Body & Typography Styles */
