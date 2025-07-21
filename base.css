@@ -2,6 +2,9 @@
 /* GLOBX - BASE STYLES                     */
 /* ======================================== */
 
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* 1. A Modern CSS Reset & Box-Sizing */
 /* ---------------------------------------- */
 *, *::before, *::after {
@@ -16,8 +19,10 @@
   /* Project Colors */
   --primary-lightest: hsla(210, 20%, 98%, 1);
   --primary-light: hsla(206, 100%, 95%, 1);
+  --primary-light-2: hsla(196, 100%, 81%, 1);
   --primary: hsla(199, 74%, 39%, 1);
   --primary-dark: hsla(199, 100%, 15%, 1);
+  --primary-dark-2: hsla(195, 100%, 24%, 1);
   --secondary: hsla(25, 100%, 68%, 1);
   --text-dark: hsla(0, 0%, 7%, 1);
   --text-light: hsla(0, 0%, 100%, 1);
@@ -130,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #navbarNav{
-  padding-right: 20rem;
+  padding-left: 3rem;
 }
 
 .gx-logo img {
@@ -139,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gx-nav-links .nav-link {
-  color: var(--text-light) !important;
+  color: var(--text-light-2) !important;
   font-weight: 500;
   font-size: 1.08rem;
   margin: 0 0.7rem;
@@ -279,6 +284,10 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 992px) {
   /* Desktop styles */
+  .gx-why-work-separator {
+    width: clamp(200px, 50%, 600px);
+    justify-self: end;
+  }
 }
 
 @media (min-width: 1200px) {

@@ -130,6 +130,24 @@
   border-radius: 0.5rem;
 }
 
+/* Transition Chevron Between Sections */
+.gx-transition-chevron {
+  width: 200px;
+  max-width: 90vw;
+  margin: -5.5rem 0 2rem auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.gx-transition-chevron img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 2px 8px rgba(0, 80, 130, 0.08));
+}
+
 /* ======================================== */
 /* PROBLEM & SOLUTION RESPONSIVE DESIGN    */
 /* ======================================== */
@@ -169,6 +187,10 @@
   .gx-tab-pane .col-lg-6:last-child {
     order: 1;
     margin-bottom: 2rem;
+  }
+  .gx-transition-chevron {
+    width: 140px;
+    margin: -1rem 0 1.5rem auto;
   }
 }
 
@@ -218,5 +240,9 @@
   .gx-problem-title,
   .gx-solution-title {
     font-size: 1.25rem;
+  }
+  .gx-transition-chevron {
+    width: 90px;
+    margin: -0.5rem 0 1rem auto;
   }
 } 

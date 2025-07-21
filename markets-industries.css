@@ -1,0 +1,165 @@
+/* ======================================== */
+/* GLOBX - MARKETS & INDUSTRIES SECTION     */
+/* ======================================== */
+
+/* Markets & Industries Section Background */
+.gx-markets-industries-section {
+  background: transparent linear-gradient(115deg, var(--primary) 0%, hsla(199, 85%, 15%, 1) 100%) 0% 0% no-repeat padding-box;
+  position: relative;
+}
+
+/* Decorative Arrow */
+.gx-sector-arrow {
+  position: absolute;
+  left: -6.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.gx-sector-arrow img {
+  width: 230px;
+  height: 356px;
+  opacity: 0.8;
+}
+
+/* Override text colors for dark background */
+.gx-markets-industries-section .gx-section-label-common {
+  color: var(--text-light-2);
+}
+
+.gx-markets-industries-section .gx-section-headline-common {
+  color: var(--text-light);
+}
+
+.gx-markets-industries-section .gx-section-description-common {
+  color: var(--text-light-2);
+}
+
+.gx-markets-industries-section .gx-markets-list-item {
+  color: var(--text-light-2);
+}
+
+/* Markets & Industries Navigation (Left Column) */
+.gx-markets-navigation {
+  padding-right: 2rem;
+}
+
+/* Custom List Styling */
+.gx-markets-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0 0;
+}
+
+.gx-markets-list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  font-weight: 400;
+}
+
+.gx-markets-list-icon {
+  width: 10px;
+  height: auto;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+/* Markets & Industries Content (Right Column) */
+.gx-markets-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gx-markets-illustration-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gx-markets-illustration {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ======================================== */
+/* MARKETS & INDUSTRIES RESPONSIVE DESIGN   */
+/* ======================================== */
+@media (max-width: 991.98px) {
+  .gx-sector-arrow {
+    /* left: 1rem; */
+    display: none;
+  }
+  
+  .gx-sector-arrow img {
+    width: 100px;
+  }
+  
+  .gx-markets-navigation {
+    padding-right: 0;
+  }
+  
+  .gx-markets-mobile-illustration .gx-markets-illustration-container {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  
+  .gx-markets-list-item {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .gx-sector-arrow {
+    left: 0.5rem;
+  }
+  
+  .gx-sector-arrow img {
+    width: 80px;
+  }
+  
+  .gx-markets-mobile-illustration .gx-markets-illustration-container {
+    max-width: 300px;
+  }
+  
+  .gx-markets-list-item {
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .gx-markets-list-icon {
+    width: 18px;
+    height: 14px;
+    margin-right: 0.75rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .gx-sector-arrow {
+    display: none;
+  }
+  
+  .gx-markets-illustration-container {
+    max-width: 300px;
+  }
+  
+  .gx-markets-list-item {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .gx-markets-list-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 0.5rem;
+  }
+} 
