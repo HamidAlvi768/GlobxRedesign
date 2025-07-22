@@ -15,7 +15,7 @@
 
 .gx-why-work-title {
   font-size: 3.5rem;
-  font-weight: 700;
+  font-weight: var(--fw-regular);
   line-height: 1.1;
   margin-bottom: 1rem;
   color: var(--primary-light-2);
