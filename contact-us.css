@@ -11,11 +11,11 @@
   margin: 0 auto;
   gap: 3rem;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-between;
 }
 .gx-contact-form-col {
   flex: 1 1 420px;
-  max-width: 480px;
+  max-width: 680px;
 }
 .gx-contact-form {
   width: 100%;
@@ -215,5 +215,15 @@
   .gx-form-row {
     flex-direction: column;
     gap: 0.7rem;
+  }
+}
+
+/* Hide contact image on smaller screens */
+@media (max-width: 767.98px) {
+  .gx-contact-image-col {
+    display: none;
+  }
+  .gx-contact-submit {
+    align-self: end;
   }
 } 

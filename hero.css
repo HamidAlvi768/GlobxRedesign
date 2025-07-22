@@ -205,7 +205,7 @@
 /* Hero Slide Animation (true sliding) */
 .gx-hero-slide-content {
   position: relative;
-  min-height: 180px;
+  height: 270px;
   overflow: hidden;
   user-select: none;
   -webkit-user-select: none;
@@ -334,6 +334,7 @@
   
   .gx-hero-slide-content {
     margin-top: 1rem;
+    height: 200px;
   }
   
   .gx-hero {

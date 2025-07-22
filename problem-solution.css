@@ -6,6 +6,7 @@
 .gx-content-container {
   overflow: hidden;
   margin-top: 1rem;
+  height: 38rem;
 }
 
 /* Tab Navigation */
@@ -224,6 +225,10 @@
 }
 
 @media (max-width: 575.98px) {
+  .gx-content-container {
+    height: 70rem;
+  }
+  
   .gx-tab-content {
     padding: 1rem;
   }
@@ -244,5 +249,6 @@
   .gx-transition-chevron {
     width: 90px;
     margin: -0.5rem 0 1rem auto;
+    display: none;
   }
 } 
