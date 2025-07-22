@@ -43,9 +43,37 @@
   margin-top: 2rem;
 }
 
+/* Split bottom row separator for why-work grid */
+.gx-why-work-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 0 2rem;
+  align-items: end;
+}
+.gx-why-work-separator.left,
+.gx-why-work-separator.right {
+  height: 1px;
+  background: rgba(255,255,255,0.3);
+  margin: 0 0 0 0;
+  width: 100%;
+  margin: 2rem 0 1rem 0;
+}
+.gx-why-work-separator.left {
+  grid-column: 1;
+  grid-row: 2;
+}
+.gx-why-work-separator.right {
+  grid-column: 2;
+  grid-row: 2;
+}
+
 /* Individual Stat Cells */
 .gx-why-work-stat {
   padding: 2rem;
+  padding-left: 0;
+  padding-top: 1rem;
+  /* margin-left: -0.75rem; */
 }
 
 /* Special Gradient Cell (Who are we?) */
@@ -54,8 +82,6 @@
   border-radius: 1rem;
   padding: 2.5rem 2rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
   min-height: 200px;
 }
 
@@ -74,6 +100,7 @@
   color: var(--primary-light-2);
   line-height: 1;
   margin-bottom: 0.5rem;
+  letter-spacing: -3px;
 }
 
 .gx-why-work-stat-label {
@@ -85,7 +112,7 @@
 }
 
 .gx-why-work-stat-description {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   color: var(--primary-light-2);
   line-height: 1.4;
   font-weight: 400;

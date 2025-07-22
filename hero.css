@@ -59,6 +59,7 @@
   letter-spacing: -0.5px;
   line-height: 1.1;
   color: var(--text-light);
+  font-weight: 300;
   max-width: 20ch;
   font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
   font: Poppins, SemiBold;
@@ -169,11 +170,33 @@
   background: hsla(0, 0%, 70%, 1);
   margin: 0 0.15rem;
   transition: background 0.2s, border 0.2s;
+  cursor: pointer;
+  border: 2px solid transparent;
 }
 
 .gx-dot.active {
   background: var(--text-light-3);
   border: 2px solid var(--text-light-3);
+}
+
+.gx-dot:hover {
+  background: hsla(0, 0%, 80%, 1);
+}
+
+/* Ensure dots are visible */
+.gx-hero-pagination,
+.gx-sidebar-pagination {
+  z-index: 10;
+  position: relative;
+}
+
+/* Make dots more visible for debugging */
+.gx-dot {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+.gx-dot.active {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
 }
 
 /* Hero Footer (Partners Row) */
@@ -202,9 +225,8 @@
   margin: 0 auto;
 }
 
-/* Hero Slide Animation (true sliding) */
-.gx-hero-slide-content {
-  position: relative;
+/* Owl Carousel Custom Styles */
+.gx-hero-carousel {
   height: 270px;
   overflow: hidden;
   user-select: none;
@@ -213,41 +235,26 @@
   -ms-user-select: none;
 }
 
+.gx-hero-carousel .owl-stage-outer {
+  height: 100%;
+}
+
+.gx-hero-carousel .owl-stage {
+  height: 100%;
+}
+
+.gx-hero-carousel .owl-item {
+  height: 100%;
+}
+
 .gx-hero-slide {
-  position: absolute;
-  top: 0; left: 0; width: 100%;
-  transition: transform 0.5s cubic-bezier(0.4,0,0.2,1);
-  will-change: transform;
-  opacity: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.gx-hero-slide.slide-current {
-  position: relative;
-  transform: translateX(0);
-  z-index: 2;
-}
-
-.gx-hero-slide.slide-in {
-  z-index: 3;
-  transform: translateX(100%);
-}
-
-.gx-hero-slide.slide-in.slide-animate {
-  transform: translateX(0);
-}
-
-.gx-hero-slide.slide-out {
-  z-index: 1;
-  transform: translateX(0);
-}
-
-.gx-hero-slide.slide-out.slide-animate {
-  transform: translateX(-100%);
-}
-
-/* Sidebar Slide Animation (same as hero) */
-.gx-sidebar-slide-content {
-  position: relative;
+.gx-sidebar-carousel {
   overflow: hidden;
   width: 100%;
   user-select: none;
@@ -256,36 +263,126 @@
   -ms-user-select: none;
 }
 
+.gx-sidebar-carousel .owl-stage-outer {
+  width: 100%;
+}
+
+.gx-sidebar-carousel .owl-stage {
+  width: 100%;
+}
+
+.gx-sidebar-carousel .owl-item {
+  width: 100%;
+}
+
 .gx-sidebar-slide {
-  position: absolute;
-  top: 0; left: 0; width: 100%;
-  transition: transform 0.5s cubic-bezier(0.4,0,0.2,1);
-  will-change: transform;
+  width: 100%;
+}
+
+/* Hide default Owl Carousel navigation arrows */
+.gx-hero-carousel .owl-nav,
+.gx-sidebar-carousel .owl-nav {
+  display: none !important;
+}
+
+/* Hide default Owl Carousel dots */
+.gx-hero-carousel .owl-dots,
+.gx-sidebar-carousel .owl-dots {
+  display: none !important;
+}
+
+/* Ensure proper touch behavior */
+.gx-hero-carousel,
+.gx-sidebar-carousel {
+  touch-action: pan-y pinch-zoom;
+}
+
+/* Smooth transitions for Owl Carousel */
+.gx-hero-carousel .owl-item,
+.gx-sidebar-carousel .owl-item {
+  transition: all 0.3s ease;
+}
+
+/* Fade animation for carousel transitions */
+.gx-hero-carousel .owl-item.active,
+.gx-sidebar-carousel .owl-item.active {
   opacity: 1;
 }
 
-.gx-sidebar-slide.slide-current {
-  position: relative;
-  transform: translateX(0);
-  z-index: 2;
+.gx-hero-carousel .owl-item:not(.active),
+.gx-sidebar-carousel .owl-item:not(.active) {
+  opacity: 0;
 }
 
-.gx-sidebar-slide.slide-in {
-  z-index: 3;
-  transform: translateX(100%);
+/* Ensure proper carousel behavior */
+.gx-hero-carousel .owl-stage,
+.gx-sidebar-carousel .owl-stage {
+  display: flex;
+  align-items: center;
 }
 
-.gx-sidebar-slide.slide-in.slide-animate {
-  transform: translateX(0);
+/* Prevent text selection during carousel interaction */
+.gx-hero-carousel,
+.gx-sidebar-carousel {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.gx-sidebar-slide.slide-out {
-  z-index: 1;
-  transform: translateX(0);
+/* Slide Animation Keyframes */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-.gx-sidebar-slide.slide-out.slide-animate {
-  transform: translateX(-100%);
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+/* Apply slide animations */
+.gx-hero-carousel .owl-item.animated,
+.gx-sidebar-carousel .owl-item.animated {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+.gx-hero-carousel .owl-item.slideInRight,
+.gx-sidebar-carousel .owl-item.slideInRight {
+  animation-name: slideInRight;
+}
+
+.gx-hero-carousel .owl-item.slideOutLeft,
+.gx-sidebar-carousel .owl-item.slideOutLeft {
+  animation-name: slideOutLeft;
+}
+
+/* Ensure smooth slide transitions */
+.gx-hero-carousel .owl-stage,
+.gx-sidebar-carousel .owl-stage {
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Prevent content overflow during slide animations */
+.gx-hero-carousel,
+.gx-sidebar-carousel {
+  overflow: hidden;
 }
 
 /* Sidebar Icon Colors */
@@ -332,7 +429,7 @@
     display: none !important;
   }
   
-  .gx-hero-slide-content {
+  .gx-hero-carousel {
     margin-top: 1rem;
     height: 200px;
   }

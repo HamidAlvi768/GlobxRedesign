@@ -5,7 +5,8 @@
 /* Services Navigation (Left Column) */
 .gx-services-section {
   padding: 0rem 0;
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
+  margin-top: -3rem;
 }
 
 .gx-services-navigation {
@@ -28,6 +29,7 @@
   transition: all 0.3s ease;
   background: transparent;
   border: 2px solid transparent;
+  padding-left: 0;
 }
 
 .gx-service-item:hover .gx-service-name {
@@ -59,7 +61,7 @@
 
 .gx-service-item.gx-service-active .gx-service-name {
   color: var(--primary);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* Services Content (Right Column) */
@@ -68,16 +70,27 @@
 }
 
 .gx-service-content-container {
-  /* Additional specific styles if needed */
+  position: relative;
+  min-height: 420px;
 }
 
 /* Service Panes */
 .gx-service-pane {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s cubic-bezier(0.4,0,0.2,1), visibility 0s linear 0.4s, z-index 0s linear 0.4s;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
 }
 
 .gx-service-pane-active {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.4s cubic-bezier(0.4,0,0.2,1), visibility 0s linear 0s, z-index 0s linear 0s;
+  z-index: 2;
 }
 
 /* Service Illustration - Specific styles only */
