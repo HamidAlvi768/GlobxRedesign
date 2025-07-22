@@ -1,0 +1,133 @@
+/* Footer Styles */
+.gx-footer {
+  background-color: var(--primary); /* Medium-dark blue background */
+  color: #ffffff;
+  padding: 3rem 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; */
+}
+
+.gx-footer-col {
+  margin-bottom: 1.5rem;
+}
+
+/* Company Information Styles */
+.gx-footer-company {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.gx-footer-company-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.gx-footer-address,
+.gx-footer-city,
+.gx-footer-email {
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* Telephone Styles */
+.gx-footer-telephone {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.gx-footer-telephone-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.gx-footer-phone {
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* Legal Links and Social Media Styles */
+.gx-footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.gx-footer-legal-links {
+  display: flex;
+  gap: 1.5rem;
+  white-space: nowrap;
+  justify-content: center;
+}
+
+.gx-footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 400;
+  transition: opacity 0.2s ease;
+}
+
+.gx-footer-link:hover {
+  color: #ffffff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.gx-footer-social {
+  text-align: end;
+}
+
+.gx-footer-linkedin {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.gx-footer-linkedin:hover {
+  transform: scale(1.05);
+}
+
+.gx-footer-linkedin img {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .gx-footer {
+    padding: 2rem 0;
+  }
+  
+  .gx-footer-legal-links {
+    gap: 1rem;
+  }
+  
+  .gx-footer-col {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .gx-footer-legal-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .gx-footer-company-name {
+    font-size: 1.1rem;
+  }
+  
+  .gx-footer-address,
+  .gx-footer-city,
+  .gx-footer-email,
+  .gx-footer-telephone-title,
+  .gx-footer-phone,
+  .gx-footer-link {
+    font-size: 0.9rem;
+  }
+} 
