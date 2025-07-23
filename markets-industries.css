@@ -120,30 +120,30 @@
 /* The second rotate() is a counter-rotation to keep the icon upright. */
 
 @keyframes orbit-outer-1 {
-  from { transform: translate(-50%, -50%) rotate(0deg) translateY(30vmin) rotate(0deg); }
-  to   { transform: translate(-50%, -50%) rotate(360deg) translateY(30vmin) rotate(-360deg); }
+  from { transform: translate(-50%, -50%) rotate(0deg) translateY(32vmin) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg) translateY(32vmin) rotate(-360deg); }
 }
 @keyframes orbit-outer-2 {
-  from { transform: translate(-50%, -50%) rotate(0deg) translateY(30vmin) rotate(0deg); }
-  to   { transform: translate(-50%, -50%) rotate(-360deg) translateY(30vmin) rotate(360deg); }
+  from { transform: translate(-50%, -50%) rotate(0deg) translateY(32vmin) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(-360deg) translateY(32vmin) rotate(360deg); }
 }
 
 @keyframes orbit-middle-1 {
-  from { transform: translate(-50%, -50%) rotate(0deg) translateY(24vmin) rotate(0deg); }
-  to   { transform: translate(-50%, -50%) rotate(360deg) translateY(24vmin) rotate(-360deg); }
+  from { transform: translate(-50%, -50%) rotate(0deg) translateY(25vmin) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg) translateY(25vmin) rotate(-360deg); }
 }
 @keyframes orbit-middle-2 {
-    from { transform: translate(-50%, -50%) rotate(0deg) translateY(24vmin) rotate(0deg); }
-    to   { transform: translate(-50%, -50%) rotate(-360deg) translateY(24vmin) rotate(360deg); }
+    from { transform: translate(-50%, -50%) rotate(0deg) translateY(25vmin) rotate(0deg); }
+    to   { transform: translate(-50%, -50%) rotate(-360deg) translateY(25vmin) rotate(360deg); }
 }
 
 @keyframes orbit-inner-1 {
-  from { transform: translate(-50%, -50%) rotate(0deg) translateY(19vmin) rotate(0deg); }
-  to   { transform: translate(-50%, -50%) rotate(360deg) translateY(19vmin) rotate(-360deg); }
+  from { transform: translate(-50%, -50%) rotate(0deg) translateY(18vmin) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg) translateY(18vmin) rotate(-360deg); }
 }
 @keyframes orbit-inner-2 {
-    from { transform: translate(-50%, -50%) rotate(0deg) translateY(19vmin) rotate(0deg); }
-    to   { transform: translate(-50%, -50%) rotate(-360deg) translateY(19vmin) rotate(360deg); }
+    from { transform: translate(-50%, -50%) rotate(0deg) translateY(18vmin) rotate(0deg); }
+    to   { transform: translate(-50%, -50%) rotate(-360deg) translateY(18vmin) rotate(360deg); }
 }
 
 
@@ -163,7 +163,7 @@
   overflow: visible;
 }
 
-.gx-orbit-center {
+.gx-orbit-center-container {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -171,9 +171,18 @@
   height: 10vmin;
   transform: translate(-50%, -50%);
   z-index: 2;
-  border-radius: 2vmin;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #fff;
+  border-radius: 50%;
+  padding: 2vmin;
+}
+
+.gx-orbit-center {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
 }
 
 .gx-orbit-ring {
@@ -184,9 +193,9 @@
   pointer-events: none;
   box-sizing: border-box;
 }
-.gx-orbit-ring-1 { width: 38vmin; height: 38vmin; animation: spin-clockwise 25s linear infinite; }
-.gx-orbit-ring-2 { width: 48vmin; height: 48vmin; animation: spin-counter-clockwise 35s linear infinite; }
-.gx-orbit-ring-3 { width: 58vmin; height: 58vmin; animation: spin-clockwise 45s linear infinite; }
+.gx-orbit-ring-1 { width: 36vmin; height: 36vmin; animation: spin-clockwise 40s linear infinite; }
+.gx-orbit-ring-2 { width: 50vmin; height: 50vmin; animation: spin-counter-clockwise 55s linear infinite; }
+.gx-orbit-ring-3 { width: 64vmin; height: 64vmin; animation: spin-clockwise 70s linear infinite; }
 
 .gx-orbit-icon {
   position: absolute;
@@ -206,27 +215,27 @@
 }
 
 /* --- Assigning individual animations to each icon (all same direction per ring) --- */
-/* Icons on the INNER orbit (radius: 19vmin) */
-.gx-orbit-icon-1 { animation: orbit-inner-1 22s linear infinite; animation-delay: -15s; } /* Car */
-.gx-orbit-icon-6 { animation: orbit-inner-1 22s linear infinite; animation-delay: -5s; } /* Microchip */
-.gx-orbit-icon-7 { animation: orbit-inner-1 22s linear infinite; } /* Airplane */
+/* Icons on the INNER orbit (radius: 18vmin) */
+.gx-orbit-icon-1 { animation: orbit-inner-1 35s linear infinite; animation-delay: -15s; } /* Car */
+.gx-orbit-icon-6 { animation: orbit-inner-1 35s linear infinite; animation-delay: -5s; } /* Microchip */
+.gx-orbit-icon-7 { animation: orbit-inner-1 35s linear infinite; } /* Airplane */
 
-/* Icons on the MIDDLE orbit (radius: 24vmin) */
-.gx-orbit-icon-2 { animation: orbit-middle-1 30s linear infinite; animation-delay: -10s; } /* Robotic Arm */
-.gx-orbit-icon-3 { animation: orbit-middle-1 30s linear infinite; } /* Battery */
-.gx-orbit-icon-4 { animation: orbit-middle-1 30s linear infinite; animation-delay: -20s; } /* Sprout */
+/* Icons on the MIDDLE orbit (radius: 25vmin) */
+.gx-orbit-icon-2 { animation: orbit-middle-1 48s linear infinite; animation-delay: -10s; } /* Robotic Arm */
+.gx-orbit-icon-3 { animation: orbit-middle-1 48s linear infinite; } /* Battery */
+.gx-orbit-icon-4 { animation: orbit-middle-1 48s linear infinite; animation-delay: -20s; } /* Sprout */
 
-/* Icons on the OUTER orbit (radius: 30vmin) */
-.gx-orbit-icon-5 { animation: orbit-outer-1 40s linear infinite; animation-delay: -25s; } /* Target */
-.gx-orbit-icon-8 { animation: orbit-outer-1 40s linear infinite; animation-delay: -5s; } /* Medical */
-.gx-orbit-icon-9 { animation: orbit-outer-1 40s linear infinite; } /* Box */
+/* Icons on the OUTER orbit (radius: 32vmin) */
+.gx-orbit-icon-5 { animation: orbit-outer-1 62s linear infinite; animation-delay: -25s; } /* Target */
+.gx-orbit-icon-8 { animation: orbit-outer-1 62s linear infinite; animation-delay: -5s; } /* Medical */
+.gx-orbit-icon-9 { animation: orbit-outer-1 62s linear infinite; } /* Box */
 
 
 @media (max-width: 600px) {
   .gx-markets-illustration-container {
     max-width: 300px;
   }
-  .gx-orbit-center { width: 6vmin; height: 6vmin; }
+  .gx-orbit-center-container { width: 6vmin; height: 6vmin; }
   .gx-orbit-ring-1 { width: 22vmin; height: 22vmin; }
   .gx-orbit-ring-2 { width: 30vmin; height: 30vmin; }
   .gx-orbit-ring-3 { width: 34vmin; height: 34vmin; }

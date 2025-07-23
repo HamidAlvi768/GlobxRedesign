@@ -307,24 +307,38 @@
   </section>
 
   <!-- Hero Footer: Partners Row -->
-  <div class="gx-hero-footer d-flex justify-content-around align-items-center">
-    <div class="gx-partner-logo mx-4"><img src="./assets/brand-1.png" alt="Brand 1" height="52" /></div>
-    <div class="gx-partner-logo mx-4"><img src="./assets/brand-2.png" alt="Brand 2" height="52" /></div>
-    <div class="gx-partner-logo mx-4"><img src="./assets/brand-3.png" alt="Brand 3" height="52" /></div>
-    <div class="gx-partner-logo mx-4"><img src="./assets/brand-4.png" alt="Brand 4" height="52" /></div>
+  <div class="gx-hero-footer">
+    <div class="gx-partners-scroll-container">
+      <div class="gx-partners-scroll-track">
+        <!-- First set of logos -->
+        <div class="gx-partner-logo mx-4"><img src="./assets/brand-1.png" alt="Brand 1" height="52" /></div>
+        <div class="gx-partner-logo mx-4"><img src="./assets/brand-2.png" alt="Brand 2" height="52" /></div>
+        <div class="gx-partner-logo mx-4"><img src="./assets/brand-3.png" alt="Brand 3" height="52" /></div>
+        <div class="gx-partner-logo mx-4"><img src="./assets/brand-4.png" alt="Brand 4" height="52" /></div>
+        <div class="gx-partner-logo mx-4"><img src="./assets/brand-5.png" alt="Brand 5" height="52" /></div>
+        <div class="gx-partner-logo mx-4"><img src="./assets/brand-6.png" alt="Brand 6" height="52" /></div>
+        <!-- Duplicate set for seamless loop -->
+        <div class="gx-partner-logo mx-4"><img src="./assets/brand-1.png" alt="Brand 1" height="52" /></div>
+        <div class="gx-partner-logo mx-4"><img src="./assets/brand-2.png" alt="Brand 2" height="52" /></div>
+        <div class="gx-partner-logo mx-4"><img src="./assets/brand-3.png" alt="Brand 3" height="52" /></div>
+        <div class="gx-partner-logo mx-4"><img src="./assets/brand-4.png" alt="Brand 4" height="52" /></div>
+        <div class="gx-partner-logo mx-4"><img src="./assets/brand-5.png" alt="Brand 5" height="52" /></div>
+        <div class="gx-partner-logo mx-4"><img src="./assets/brand-6.png" alt="Brand 6" height="52" /></div>
+      </div>
+    </div>
   </div>
 
   <!-- Problem & Solution Section -->
-  <section class="gx-problem-solution-section gx-section-common gx-section-common--white py-10">
+  <section class="gx-problem-solution-section gx-section-common gx-section-common--white py-10 gx-reveal-section">
     <div class="container section-width">
       <!-- Section Header -->
-      <div class="gx-section-header-common mb-4">
+      <div class="gx-section-header-common mb-4 gx-reveal-content">
         <h2 class="gx-section-label-common gx-section-label-common--medium">Solution</h2>
         <h1 class="gx-section-headline-common gx-section-headline-common--medium">You are right with us</h1>
       </div>
       
       <!-- Main Content Container -->
-      <div class="gx-content-container gx-content-container-common gx-content-container-common--bordered">
+      <div class="gx-content-container gx-content-container-common gx-content-container-common--bordered gx-reveal-content gx-reveal-delay-1">
         <!-- Tab Navigation -->
         <div class="gx-tab-navigation">
           <button class="gx-tab-btn gx-tab-btn-active" data-tab="problem">
@@ -392,16 +406,16 @@
 
   <!-- End of Problem & Solution Section -->
   <!-- Transition Chevron: Double Right Arrow -->
-  <div class="gx-transition-chevron">
+  <div class="gx-transition-chevron gx-reveal-content gx-reveal-delay-2">
     <img src="./assets/problem-arrow.png" alt="Scroll to next section" />
   </div>
   <!-- Services Section -->
-  <section class="gx-services-section gx-section-common gx-section-common--light py-10">
+  <section class="gx-services-section gx-section-common gx-section-common--light py-10 gx-reveal-section">
     <div class="container section-width">
       <div class="row">
         <!-- Left Column: Navigation -->
         <div class="col-lg-6">
-          <div class="gx-services-navigation">
+          <div class="gx-services-navigation gx-reveal-slide-left">
             <!-- Header Section -->
             <div class="gx-services-header gx-section-header-common mb-4">
               <h2 class="gx-services-label gx-section-label-common gx-section-label-common--medium">Services</h2>
@@ -436,7 +450,7 @@
         
         <!-- Right Column: Content Display -->
         <div class="col-lg-6">
-          <div class="gx-services-content gx-content-display-common">
+          <div class="gx-services-content gx-content-display-common gx-reveal-slide-right">
             <!-- Service Content Container -->
             <div class="gx-service-content-container gx-content-container-common">
               <!-- Procurement Service (Active) -->
@@ -536,16 +550,16 @@
   </section>
 
   <!-- Markets & Industries Section -->
-  <section class="gx-markets-industries-section gx-section-common py-10">
+  <section class="gx-markets-industries-section gx-section-common py-10 gx-reveal-section">
     <!-- Decorative Arrow -->
-    <div class="gx-sector-arrow">
+    <div class="gx-sector-arrow gx-reveal-content gx-reveal-delay-1">
       <img src="./assets/sector-arrow.png" alt="Decorative Arrow" />
     </div>
     <div class="container section-width">
       <div class="row align-items-center justify-content-end">
         <!-- Left Column: Content -->
         <div class="col-lg-5">
-          <div class="gx-markets-navigation">
+          <div class="gx-markets-navigation gx-reveal-slide-left">
             <!-- Header Section -->
             <div class="gx-section-header-common mb-4">
               <h2 class="gx-section-label-common gx-section-label-common--small">Sectors and domains</h2>
@@ -608,11 +622,13 @@
         
         <!-- Right Column: Illustration (desktop only) -->
         <div class="col-lg-6 d-none d-lg-block">
-          <div class="gx-markets-content">
+          <div class="gx-markets-content gx-reveal-slide-right">
             <div class="gx-markets-illustration-container">
               <!-- Begin dynamic orbit -->
               <div class="gx-orbit">
-                <img src="./assets/orbit-center.png" alt="Center" class="gx-orbit-center" />
+                <div class="gx-orbit-center-container">
+                  <img src="./assets/orbit-center.png" alt="Center" class="gx-orbit-center" />
+                </div>
                 <div class="gx-orbit-ring gx-orbit-ring-1"></div>
                 <div class="gx-orbit-ring gx-orbit-ring-2"></div>
                 <div class="gx-orbit-ring gx-orbit-ring-3"></div>
@@ -636,12 +652,12 @@
   </section>
 
   <!-- Testimonials Section -->
-  <section class="gx-testimonials-section gx-section-common py-10">
+  <section class="gx-testimonials-section gx-section-common py-10 gx-reveal-section">
     <div class="container section-width">
       <div class="row align-items-center">
         <!-- Left Column: Testimonial Content -->
         <div class="col-lg-6 order-2 order-lg-1">
-          <div class="gx-testimonials-navigation">
+          <div class="gx-testimonials-navigation gx-reveal-slide-left">
             <!-- Testimonial Quote -->
             <div class="gx-testimonial-pane gx-testimonial-pane-active" id="testimonial-1">
               <p class="gx-testimonial-quote">
@@ -672,7 +688,7 @@
         
         <!-- Right Column: Testimonial Image -->
         <div class="col-lg-6 order-1 order-lg-2">
-          <div class="gx-testimonials-content">
+          <div class="gx-testimonials-content gx-reveal-slide-right">
             <div class="gx-testimonial-image-container">
               <img src="./assets/testimonial-man.jpg" alt="Dr. Bayram Cucu - CEO, Bio-Gram Diagnostics GmbH" class="gx-testimonial-image" />
             </div>
@@ -681,7 +697,7 @@
       </div>
       
       <!-- Pagination Controls -->
-      <div class="gx-testimonial-pagination">
+      <div class="gx-testimonial-pagination gx-reveal-content gx-reveal-delay-2">
         <div class="gx-testimonial-pagination-dot active" data-testimonial="1"></div>
         <div class="gx-testimonial-pagination-dot" data-testimonial="2"></div>
       </div>
@@ -689,12 +705,12 @@
   </section>
 
   <!-- Why Work With Us Section -->
-  <section class="gx-why-work-section gx-section-common py-10">
+  <section class="gx-why-work-section gx-section-common py-10 gx-reveal-section">
     <div class="container section-width">
       <!-- Header Section -->
-      <div class="row gx-why-work-header">
+      <div class="row gx-why-work-header gx-reveal-content">
         <div class="col-lg-6">
-          <h2 class="gx-why-work-title">Why work with us?</h2>
+          <h2 class="gx-why-work-title">Why work <br> with us?</h2>
         </div>
         <div class="col-lg-6">
           <p class="gx-why-work-description">
@@ -704,46 +720,46 @@
       </div>
       
       <!-- Separator Line -->
-      <div class="gx-why-work-separator" style="max-width: 100%; min-width: 50%;"></div>
+      <div class="gx-why-work-separator gx-reveal-content gx-reveal-delay-1" style="max-width: 100%; min-width: 50%;"></div>
       
       <!-- Statistics Grid -->
       <div class="gx-why-work-grid">
         <!-- Top Row -->
-        <div class="gx-why-work-who-are-we">
+        <div class="gx-why-work-who-are-we gx-reveal-grid-item">
           <div class="gx-who-are-we-text">Who are we?</div>
         </div>
         
-        <div class="gx-why-work-stat">
+        <div class="gx-why-work-stat gx-reveal-grid-item">
           <div class="gx-why-work-stat-number" data-count="500">500+</div>
           <div class="gx-why-work-stat-label">customers</div>
-          <div class="gx-why-work-stat-description">partners in success, trusted worldwide.</div>
+          <div class="gx-why-work-stat-description">partners in success, <br> trusted worldwide.</div>
         </div>
         
         <!-- Bottom Row Separator (split) -->
-        <div class="gx-why-work-separator left"></div>
-        <div class="gx-why-work-separator right"></div>
+        <div class="gx-why-work-separator left gx-reveal-content gx-reveal-delay-2"></div>
+        <div class="gx-why-work-separator right gx-reveal-content gx-reveal-delay-2"></div>
         
-        <div class="gx-why-work-stat">
+        <div class="gx-why-work-stat gx-reveal-grid-item">
           <div class="gx-why-work-stat-number" data-count="98">98%</div>
           <div class="gx-why-work-stat-label">satisfaction</div>
-          <div class="gx-why-work-stat-description">trusted by clients. proven by results.</div>
+          <div class="gx-why-work-stat-description">trusted by clients. <br> proven by results.</div>
         </div>
         
-        <div class="gx-why-work-stat">
+        <div class="gx-why-work-stat gx-reveal-grid-item">
           <div class="gx-why-work-stat-number" data-count="12">12+</div>
           <div class="gx-why-work-stat-label">years in industry</div>
-          <div class="gx-why-work-stat-description">delivering confidence, every time.</div>
+          <div class="gx-why-work-stat-description">delivering confidence, <br> every time.</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Save the Globe Section -->
-  <section class="gx-save-globe-section">
+  <section class="gx-save-globe-section gx-reveal-section">
     <div class="container section-width">
       <div class="gx-save-globe-row">
         <!-- Left Column: Content -->
-        <div class="gx-save-globe-content">
+        <div class="gx-save-globe-content gx-reveal-slide-left">
           <div class="gx-save-globe-logomark">
             <span class="gx-save-globe-globx">Glob<span class="x">X</span></span>
             <img src="./assets/X.png" alt="GlobX Save the Globe Logomark" class="gx-save-globe-x-graphic" />
@@ -759,7 +775,7 @@
           <button class="gx-save-globe-btn">Learn More</button>
         </div>
         <!-- Right Column: Image -->
-        <div class="gx-save-globe-image-col">
+        <div class="gx-save-globe-image-col gx-reveal-slide-right">
           <img src="./assets/earth.jpg" alt="Earth - Save the Globe" class="gx-save-globe-image" />
         </div>
       </div>
@@ -767,10 +783,10 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="gx-contact-section">
+  <section class="gx-contact-section gx-reveal-section">
     <div class="gx-contact-container container section-width">
       <!-- Left: Form -->
-      <div class="gx-contact-form-col">
+      <div class="gx-contact-form-col gx-reveal-slide-left">
         <form class="gx-contact-form">
           <div class="gx-form-type-selector">
             <label class="gx-radio-label">
@@ -816,7 +832,7 @@
         </form>
       </div>
       <!-- Right: Image & Chevron -->
-      <div class="gx-contact-image-col">
+      <div class="gx-contact-image-col gx-reveal-slide-right">
         <div class="gx-contact-chevron-bg">
           <img src="./assets/contact-us-arrow.png" alt="Decorative Chevron" class="gx-contact-chevron" />
         </div>
@@ -828,7 +844,7 @@
   <!-- Footer -->
   <footer class="gx-footer">
     <div class="container">
-      <div class="row justify-content-center">
+      <div class="row justify-content-around">
         <!-- Left Column: Company Contact Information -->
         <div class="col-lg-3 col-md-4 col-sm-6 gx-footer-col">
           <div class="gx-footer-company">
@@ -879,6 +895,8 @@
   <script src="./hero-owl-carousel.js"></script>
   <script src="./services.js"></script>
   <script src="./testimonials.js"></script>
+  <script src="./scroll-reveal.js"></script>
+  <script src="./infinite-scroll.js"></script>
   
   <!-- Problem & Solution Tab Functionality -->
   <script>

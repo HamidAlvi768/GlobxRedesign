@@ -51,6 +51,11 @@
   left: -140px;
   bottom: -77px;
   z-index: 3;
+  transition: transform 0.4s ease-out;
+}
+
+.gx-arrows.rotated {
+  transform: rotate(90deg);
 }
 
 .gx-hero-title {
@@ -202,13 +207,39 @@
 /* Hero Footer (Partners Row) */
 .gx-hero-footer {
   width: 100%;
-  min-height: 8rem;
+  min-height: 6rem;
   padding: 0.5rem 0;
   background: var(--primary-lightest);
   border-top: none;
   box-shadow: none;
   position: relative;
   z-index: 10;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.gx-partners-scroll-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.gx-partners-scroll-track {
+  display: flex;
+  align-items: center;
+  animation: scroll-partners 30s linear infinite;
+  width: max-content;
+}
+
+@keyframes scroll-partners {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .gx-partner-logo {
@@ -421,6 +452,10 @@
 /* HERO SECTION RESPONSIVE DESIGN          */
 /* ======================================== */
 @media (max-width: 991.98px) {
+  .gx-partners-scroll-track {
+    animation-duration: 25s;
+  }
+  
   .gx-arrows {
     display: none !important;
   }
@@ -497,6 +532,10 @@
 }
 
 @media (max-width: 600px) {
+  .gx-partners-scroll-track {
+    animation-duration: 20s;
+  }
+  
   .gx-hero {
     min-height: 340px;
     padding-top: 1rem;

@@ -158,6 +158,11 @@
   height: auto;
   object-fit: contain;
   filter: none;
+  transition: transform 0.4s ease-out;
+}
+
+.gx-contact-chevron.rotated {
+  transform: rotate(-90deg);
 }
 .gx-contact-image {
   position: relative;

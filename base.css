@@ -317,3 +317,109 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   background-size: 100% 100%;
 } 
+
+/* Scroll-triggered reveal animations */
+.gx-reveal-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.gx-reveal-section.gx-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gx-reveal-content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out 0.2s, transform 0.6s ease-out 0.2s;
+}
+
+.gx-reveal-section.gx-revealed .gx-reveal-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gx-reveal-delay-1 {
+  transition-delay: 0.1s;
+}
+
+.gx-reveal-delay-2 {
+  transition-delay: 0.2s;
+}
+
+.gx-reveal-delay-3 {
+  transition-delay: 0.3s;
+}
+
+.gx-reveal-delay-4 {
+  transition-delay: 0.4s;
+}
+
+/* Staggered animations for grid items */
+.gx-reveal-grid-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.gx-reveal-section.gx-revealed .gx-reveal-grid-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gx-reveal-grid-item:nth-child(1) { transition-delay: 0.1s; }
+.gx-reveal-grid-item:nth-child(2) { transition-delay: 0.2s; }
+.gx-reveal-grid-item:nth-child(3) { transition-delay: 0.3s; }
+.gx-reveal-grid-item:nth-child(4) { transition-delay: 0.4s; }
+.gx-reveal-grid-item:nth-child(5) { transition-delay: 0.5s; }
+.gx-reveal-grid-item:nth-child(6) { transition-delay: 0.6s; }
+
+/* Special animations for specific elements */
+.gx-reveal-slide-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.gx-reveal-section.gx-revealed .gx-reveal-slide-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.gx-reveal-slide-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.gx-reveal-section.gx-revealed .gx-reveal-slide-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.gx-reveal-scale {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.gx-reveal-section.gx-revealed .gx-reveal-scale {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Disable animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .gx-reveal-section,
+  .gx-reveal-content,
+  .gx-reveal-grid-item,
+  .gx-reveal-slide-left,
+  .gx-reveal-slide-right,
+  .gx-reveal-scale {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+} 
