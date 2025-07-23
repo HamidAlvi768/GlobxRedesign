@@ -5,8 +5,8 @@
 /* Services Navigation (Left Column) */
 .gx-services-section {
   padding: 0rem 0;
-  padding-bottom: 10rem;
-  margin-top: -3rem;
+  padding-bottom: 6rem;
+  /* margin-top: -3rem; */
 }
 
 .gx-services-navigation {
@@ -55,7 +55,7 @@
 .gx-service-name {
   font-size: 1.4rem;
   font-weight: 500;
-  color: #6c757d;
+  color: hsla(0, 0%, 84%, 1);
   transition: color 0.3s ease;
 }
 
@@ -96,6 +96,25 @@
 /* Service Illustration - Specific styles only */
 .gx-service-illustration {
   /* Additional specific styles if needed */
+}
+
+.gx-service-illustration-foreground {
+  position: relative;
+  height: auto;
+  z-index: 2;
+  border-radius: 0.5rem;
+  transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+  will-change: transform;
+}
+
+.gx-service-illustration-container:hover .gx-service-illustration-foreground {
+  transform: translateY(-12px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gx-service-illustration-foreground {
+    transition: none !important;
+  }
 }
 
 /* Service Content Text - Specific styles only */

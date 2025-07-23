@@ -9,34 +9,44 @@ document.addEventListener('DOMContentLoaded', function() {
   const AUTO_ADVANCE_INTERVAL = 5000; // 5 seconds
   let currentTestimonial = 1;
   const totalTestimonials = testimonialPanes.length;
+  const FADE_DURATION = 400; // ms, matches CSS
 
   // Function to switch testimonials with fade
   function switchTestimonial(testimonialId) {
-    // Remove active classes from all panes and dots
-    testimonialPanes.forEach(pane => pane.classList.remove('gx-testimonial-pane-active'));
+    const currentPane = document.querySelector('.gx-testimonial-pane-active');
+    const targetPane = document.getElementById('testimonial-' + testimonialId);
+    // Remove active classes from all dots
     paginationDots.forEach(dot => dot.classList.remove('active'));
-    // After a short delay, fade in the target pane
-    setTimeout(() => {
-      const targetPane = document.getElementById('testimonial-' + testimonialId);
-      const targetDot = document.querySelector(`[data-testimonial="${testimonialId}"]`);
-      if (targetPane) {
-        targetPane.classList.add('gx-testimonial-pane-active');
-      }
-      if (targetDot) {
-        targetDot.classList.add('active');
-      }
-      // Update the testimonial image based on the active testimonial
-      const testimonialImage = document.querySelector('.gx-testimonial-image');
-      if (testimonialImage) {
-        if (testimonialId === '1' || testimonialId === 1) {
-          testimonialImage.src = './assets/testimonial-man.jpg';
-          testimonialImage.alt = 'Dr. Bayram Cucu - CEO, Bio-Gram Diagnostics GmbH';
-        } else if (testimonialId === '2' || testimonialId === 2) {
-          testimonialImage.src = './assets/testimonial-man-2.jpg';
-          testimonialImage.alt = 'Sarah Johnson - Operations Director, TechFlow Solutions';
+    // Fade out current pane
+    if (currentPane && currentPane !== targetPane) {
+      currentPane.classList.remove('gx-testimonial-pane-active');
+      setTimeout(() => {
+        // Fade in target pane
+        if (targetPane) {
+          targetPane.classList.add('gx-testimonial-pane-active');
         }
+      }, FADE_DURATION);
+    } else if (targetPane) {
+      // If no current or same, just show
+      testimonialPanes.forEach(pane => pane.classList.remove('gx-testimonial-pane-active'));
+      targetPane.classList.add('gx-testimonial-pane-active');
+    }
+    // Activate the correct dot
+    const targetDot = document.querySelector(`[data-testimonial="${testimonialId}"]`);
+    if (targetDot) {
+      targetDot.classList.add('active');
+    }
+    // Update the testimonial image based on the active testimonial
+    const testimonialImage = document.querySelector('.gx-testimonial-image');
+    if (testimonialImage) {
+      if (testimonialId === '1' || testimonialId === 1) {
+        testimonialImage.src = './assets/testimonial-man.jpg';
+        testimonialImage.alt = 'Dr. Bayram Cucu - CEO, Bio-Gram Diagnostics GmbH';
+      } else if (testimonialId === '2' || testimonialId === 2) {
+        testimonialImage.src = './assets/testimonial-man-2.jpg';
+        testimonialImage.alt = 'Sarah Johnson - Operations Director, TechFlow Solutions';
       }
-    }, 20);
+    }
     currentTestimonial = parseInt(testimonialId, 10);
   }
 

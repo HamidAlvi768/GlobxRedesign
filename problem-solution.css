@@ -172,6 +172,25 @@
   filter: drop-shadow(0 2px 8px rgba(0, 80, 130, 0.08));
 }
 
+.gx-illustration-foreground-common {
+  position: relative;
+  height: auto;
+  z-index: 2;
+  border-radius: 0.5rem;
+  transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+  will-change: transform;
+}
+
+.gx-illustration-container:hover .gx-illustration-foreground-common {
+  transform: translateY(-12px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gx-illustration-foreground-common {
+    transition: none !important;
+  }
+}
+
 /* ======================================== */
 /* PROBLEM & SOLUTION RESPONSIVE DESIGN    */
 /* ======================================== */
