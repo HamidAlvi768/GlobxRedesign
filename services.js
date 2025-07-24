@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const servicePanes = document.querySelectorAll('.gx-service-pane');
   let autoAdvanceTimer = null;
   const AUTO_ADVANCE_INTERVAL = 5000; // 5 seconds
+  let isTransitioning = false;
 
   // Function to update service icons
   function updateServiceIcons() {
@@ -32,16 +33,54 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function activateServiceByIndex(idx) {
-    serviceItems.forEach(serviceItem => serviceItem.classList.remove('gx-service-active'));
-    // Fade out all panes
-    servicePanes.forEach(pane => pane.classList.remove('gx-service-pane-active'));
-    // After a short delay, fade in the target pane
-    setTimeout(() => {
+    if (isTransitioning) return;
+    isTransitioning = true;
+    const currentActivePane = document.querySelector('.gx-service-pane.gx-service-pane-active');
+    let outgoingFg = null;
+    if (currentActivePane) {
+      outgoingFg = currentActivePane.querySelector('.gx-service-illustration-foreground');
+    }
+    let didFinish = false;
+    let fallbackTimeout;
+    function finishTransition() {
+      if (didFinish) return;
+      didFinish = true;
+      if (outgoingFg) {
+        outgoingFg.classList.remove('gx-service-illustration-foreground--slide-out');
+      }
+      if (currentActivePane) {
+        currentActivePane.classList.remove('gx-service-pane-active');
+      }
+      switchPane();
+      clearTimeout(fallbackTimeout);
+      isTransitioning = false;
+    }
+    if (outgoingFg) {
+      // Animate out
+      outgoingFg.classList.add('gx-service-illustration-foreground--slide-out');
+      // Wait for animation to finish
+      const handleOut = function(e) {
+        if (e.propertyName === 'transform') {
+          outgoingFg.removeEventListener('transitionend', handleOut);
+          finishTransition();
+        }
+      };
+      outgoingFg.addEventListener('transitionend', handleOut);
+      // Fallback in case transitionend doesn't fire
+      fallbackTimeout = setTimeout(finishTransition, 700);
+    } else {
+      finishTransition();
+    }
+
+    function switchPane() {
+      serviceItems.forEach(serviceItem => serviceItem.classList.remove('gx-service-active'));
+      servicePanes.forEach(pane => pane.classList.remove('gx-service-pane-active'));
       serviceItems[idx].classList.add('gx-service-active');
       const targetService = serviceItems[idx].getAttribute('data-service');
-      document.getElementById(targetService + '-service').classList.add('gx-service-pane-active');
+      const targetPane = document.getElementById(targetService + '-service');
+      targetPane.classList.add('gx-service-pane-active');
       updateServiceIcons();
-    }, 20);
+    }
   }
 
   function getActiveServiceIndex() {

@@ -89,23 +89,40 @@ document.addEventListener('DOMContentLoaded', function() {
     rootMargin: '0px 0px -100px 0px'
   });
 
+  // Special handling for hero chevron - requires scroll interaction
+  let hasScrolled = false;
+  let heroArrows = document.querySelector('.gx-arrows');
+  
+  // Function to handle hero chevron rotation with scroll requirement
+  function handleHeroChevronRotation() {
+    if (heroArrows && !heroArrows.classList.contains('rotated')) {
+      const rect = heroArrows.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+      
+      if (isVisible && hasScrolled) {
+        heroArrows.classList.add('rotated');
+      }
+    }
+  }
+
+  // Track scroll events to enable hero chevron rotation
+  window.addEventListener('scroll', function() {
+    if (!hasScrolled) {
+      hasScrolled = true;
+      // Small delay to ensure smooth animation
+      setTimeout(handleHeroChevronRotation, 100);
+    } else {
+      handleHeroChevronRotation();
+    }
+  }, { passive: true });
+
   // Observe transition chevron for rotation
   const transitionChevron = document.querySelector('.gx-transition-chevron');
   if (transitionChevron) {
     chevronObserver.observe(transitionChevron);
   }
 
-  // Observe contact chevron for rotation
-  const contactChevron = document.querySelector('.gx-contact-chevron');
-  if (contactChevron) {
-    chevronObserver.observe(contactChevron);
-  }
-
-  // Observe hero arrows for rotation
-  const heroArrows = document.querySelector('.gx-arrows');
-  if (heroArrows) {
-    chevronObserver.observe(heroArrows);
-  }
+  // Note: Hero arrows are now handled separately above, not through the general observer
 
   // Performance optimization: Clean up observers when page is hidden
   document.addEventListener('visibilitychange', function() {

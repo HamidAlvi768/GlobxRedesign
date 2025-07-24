@@ -52,6 +52,8 @@
   bottom: -77px;
   z-index: 3;
   transition: transform 0.4s ease-out;
+  /* Ensure hero chevron starts in unrotated state */
+  transform: rotate(0deg);
 }
 
 .gx-arrows.rotated {
@@ -544,6 +546,7 @@
   
   .gx-hero-title {
     font-size: 1.3rem;
+    margin-top: 1rem;
   }
   
   .gx-hero-subtext {
@@ -554,5 +557,15 @@
     min-width: 85vw;
     max-width: 100vw;
     padding: 1rem 0.2rem 1rem 0.2rem;
+  }
+} 
+
+@media (prefers-reduced-motion: reduce) {
+  .gx-arrows {
+    transition: none !important;
+  }
+  
+  .gx-arrows.rotated {
+    transform: rotate(90deg) !important;
   }
 } 

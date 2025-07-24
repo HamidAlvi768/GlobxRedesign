@@ -174,8 +174,8 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 15vmin;
-  height: 15vmin;
+  width: 17vmin;
+  height: 17vmin;
   transform: translate(-50%, -50%);
   z-index: 2;
   display: flex;
@@ -189,10 +189,10 @@
 }
 
 .gx-orbit-center {
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
   box-shadow: 0 2px 12px rgba(0,0,0,0.10);
-  animation: orbit-center-flip 10.2s linear infinite;
+  animation: orbit-center-flip 3.2s linear infinite;
   backface-visibility: hidden;
   /* --- ADDED FOR 3D EFFECT --- */
   transform-style: preserve-3d;
@@ -216,49 +216,116 @@
 .gx-orbit-ring-2 { width: 54vmin; height: 54vmin; animation: spin-counter-clockwise 55s linear infinite; }
 .gx-orbit-ring-3 { width: 72vmin; height: 72vmin; animation: spin-clockwise 70s linear infinite; }
 
-.gx-orbit-icon {
+/* Orbit Icon Container: now handles revolution and positioning */
+.gx-orbit-icon-container {
   position: absolute;
-  width: 6.5vmin;
-  height: 6.5vmin;
-  background: #fff;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-  padding: 0.8vmin;
+  width: 7.5vmin;
+  height: 7.5vmin;
+  left: 50%;
+  top: 50%;
   z-index: 3;
   display: flex;
   align-items: center;
   justify-content: center;
-  left: 50%;
-  top: 50%;
   box-sizing: border-box;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
 
-/* --- Assigning individual animations to each icon (all same direction per ring) --- */
-/* Icons on the INNER orbit (radius: 18vmin) */
-.gx-orbit-icon-1 { animation: orbit-inner-1 35s linear infinite; animation-delay: -15s; } /* Car */
-.gx-orbit-icon-6 { animation: orbit-inner-1 35s linear infinite; animation-delay: -5s; } /* Microchip */
-.gx-orbit-icon-7 { animation: orbit-inner-1 35s linear infinite; } /* Airplane */
+/* Remove revolution/positioning from the icon image itself */
+.gx-orbit-icon {
+  width: 50%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+  display: block;
+  box-shadow: none;
+  position: static;
+  left: auto;
+  top: auto;
+  padding: 0;
+  background: none;
+}
 
-/* Icons on the MIDDLE orbit (radius: 27vmin) */
-.gx-orbit-icon-2 { animation: orbit-middle-1 48s linear infinite; animation-delay: -10s; } /* Robotic Arm */
-.gx-orbit-icon-3 { animation: orbit-middle-1 48s linear infinite; } /* Battery */
-.gx-orbit-icon-4 { animation: orbit-middle-1 48s linear infinite; animation-delay: -20s; } /* Sprout */
-
-/* Icons on the OUTER orbit (radius: 36vmin) */
-.gx-orbit-icon-5 { animation: orbit-outer-1 62s linear infinite; animation-delay: -25s; } /* Target */
-.gx-orbit-icon-8 { animation: orbit-outer-1 62s linear infinite; animation-delay: -5s; } /* Medical */
-.gx-orbit-icon-9 { animation: orbit-outer-1 62s linear infinite; } /* Box */
-
+/* Assign revolution animation to the container, not the image */
+.gx-orbit-icon-container.gx-orbit-icon-1 { animation: orbit-inner-1 35s linear infinite; animation-delay: -15s; }
+.gx-orbit-icon-container.gx-orbit-icon-6 { animation: orbit-inner-1 35s linear infinite; animation-delay: -5s; }
+.gx-orbit-icon-container.gx-orbit-icon-7 { animation: orbit-inner-1 35s linear infinite; }
+.gx-orbit-icon-container.gx-orbit-icon-2 { animation: orbit-middle-1 48s linear infinite; animation-delay: -10s; }
+.gx-orbit-icon-container.gx-orbit-icon-3 { animation: orbit-middle-1 48s linear infinite; }
+.gx-orbit-icon-container.gx-orbit-icon-4 { animation: orbit-middle-1 48s linear infinite; animation-delay: -20s; }
+.gx-orbit-icon-container.gx-orbit-icon-5 { animation: orbit-outer-1 62s linear infinite; animation-delay: -25s; }
+.gx-orbit-icon-container.gx-orbit-icon-8 { animation: orbit-outer-1 62s linear infinite; animation-delay: -5s; }
+.gx-orbit-icon-container.gx-orbit-icon-9 { animation: orbit-outer-1 62s linear infinite; }
 
 @media (max-width: 600px) {
-  .gx-markets-illustration-container {
-    max-width: 300px;
+  .gx-orbit-icon-container {
+    width: 3.5vmin;
+    height: 3.5vmin;
+    padding: 0.3vmin;
   }
-  .gx-orbit-center-container { width: 6vmin; height: 6vmin; }
-  .gx-orbit-ring-1 { width: 22vmin; height: 22vmin; }
-  .gx-orbit-ring-2 { width: 30vmin; height: 30vmin; }
-  .gx-orbit-ring-3 { width: 38vmin; height: 38vmin; }
-  .gx-orbit-icon { width: 3.5vmin; height: 3.5vmin; padding: 0.3vmin; }
+}
+
+/* Tooltip for orbit icon containers */
+.gx-orbit-icon-container {
+  position: absolute;
+  /* ...existing styles... */
+}
+.gx-orbit-icon-container[data-tooltip]:hover::after,
+.gx-orbit-icon-container[data-tooltip]:focus::after {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -10px) scale(1);
+}
+.gx-orbit-icon-container[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  bottom: 110%;
+  transform: translate(-50%, 0) scale(0.95);
+  opacity: 0;
+  pointer-events: none;
+  background: rgba(20, 30, 40, 0.97);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.45em 1em;
+  border-radius: 0.5em;
+  white-space: nowrap;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  z-index: 10;
+  transition: opacity 0.18s cubic-bezier(0.4,0,0.2,1), transform 0.18s cubic-bezier(0.4,0,0.2,1);
+}
+.gx-orbit-icon-container[data-tooltip]:hover::before,
+.gx-orbit-icon-container[data-tooltip]:focus::before {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, 0) scale(1);
+}
+.gx-orbit-icon-container[data-tooltip]::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 102%;
+  transform: translate(-50%, 0) scale(0.95);
+  opacity: 0;
+  pointer-events: none;
+  border-width: 7px 7px 0 7px;
+  border-style: solid;
+  border-color: rgba(20, 30, 40, 0.97) transparent transparent transparent;
+  z-index: 11;
+  transition: opacity 0.18s cubic-bezier(0.4,0,0.2,1), transform 0.18s cubic-bezier(0.4,0,0.2,1);
+}
+
+@media (max-width: 600px) {
+  .gx-orbit-icon-container[data-tooltip]::after {
+    font-size: 0.8rem;
+    padding: 0.3em 0.7em;
+  }
+  .gx-orbit-icon-container[data-tooltip]::before {
+    border-width: 5px 5px 0 5px;
+  }
 }
 
 /* ======================================== */
@@ -332,3 +399,4 @@
     margin-right: 0.5rem;
   }
 }
+

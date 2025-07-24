@@ -12,7 +12,8 @@
   <link rel="stylesheet" href="../base.css">
   <link rel="stylesheet" href="../shared-utilities.css">
   <link rel="stylesheet" href="../hero.css">
-  <link rel="stylesheet" href="./hero-landing.css">
+  <link rel="stylesheet" href="../footer.css">
+  <link rel="stylesheet" href="./about-us.css">
 </head>
 <body class="hero-landing-page">
   <!-- Top Bar (Announcement) -->
@@ -69,22 +70,22 @@
   </section>
 
   <!-- Values Section: Mission, Vision, Goal -->
-  <section class="gx-values-section py-6">
-    <div class="container gx-values-row">
+  <section class="gx-values-section py-6 gx-reveal-section">
+    <div class="container gx-values-row gx-reveal-content">
       <!-- Mission -->
-      <div class="gx-value-col d-flex flex-column align-items-center text-center">
+      <div class="gx-value-col d-flex flex-column align-items-center text-center gx-reveal-grid-item">
         <img src="../assets/about-us/value-2.png" alt="Mission Icon" class="gx-value-icon mb-4" width="140" height="140" loading="lazy" />
         <h3 class="gx-value-title">Our Mission</h3>
         <p class="gx-value-desc">Ensure production for our customers<br>at all times.</p>
       </div>
       <!-- Vision -->
-      <div class="gx-value-col d-flex flex-column align-items-center text-center">
+      <div class="gx-value-col d-flex flex-column align-items-center text-center gx-reveal-grid-item">
         <img src="../assets/about-us/value-1.png" alt="Vision Icon" class="gx-value-icon mb-4" width="140" height="140" loading="lazy" />
         <h3 class="gx-value-title">Our Vision</h3>
         <p class="gx-value-desc">We build and secure a long-term<br>resilient supply chain.</p>
       </div>
       <!-- Goal -->
-      <div class="gx-value-col d-flex flex-column align-items-center text-center">
+      <div class="gx-value-col d-flex flex-column align-items-center text-center gx-reveal-grid-item">
         <img src="../assets/about-us/value-3.png" alt="Goal Icon" class="gx-value-icon mb-4" width="140" height="140" loading="lazy" />
         <h3 class="gx-value-title">Our Goal</h3>
         <p class="gx-value-desc">A resilient economy that runs safely<br>regardless of crises.</p>
@@ -93,15 +94,15 @@
   </section>
 
   <!-- What We Do Section -->
-  <section class="gx-what-we-do-section">
+  <section class="gx-what-we-do-section gx-reveal-section">
     <div class="container gx-wwd-row">
       <!-- Left: Chevron Visual -->
-      <div class="gx-wwd-visual">
+      <div class="gx-wwd-visual gx-reveal-slide-left">
         <img src="../assets/about-us/chevron.png" alt="Chevron Outline" class="gx-wwd-chevron-outline" loading="lazy" />
         <img src="../assets/about-us/chevron-masked.png" alt="Chevron Masked Photo" class="gx-wwd-chevron-masked" loading="lazy" />
       </div>
       <!-- Right: Text Content -->
-      <div class="gx-wwd-content">
+      <div class="gx-wwd-content gx-reveal-slide-right">
         <h2 class="gx-wwd-title">What we do</h2>
         <p class="gx-wwd-body">GlobX is your trusted global sourcing partner, delivering innovative supply chain and procurement solutions for the electronics industry.</p>
         <p class="gx-wwd-body">We seamlessly integrate component sourcing, franchise distribution, and aftermarket services with deep open-market expertise. With GlobX, you gain the advantage of our extensive international network of reliable suppliers and strategic partners — ensuring quality, flexibility, and competitive pricing at every stage of your supply chain.</p>
@@ -111,15 +112,15 @@
   </section>
 
   <!-- Certifications Section -->
-  <section class="gx-certifications-section gx-section-common gx-section-common--white">
+  <section class="gx-certifications-section gx-section-common gx-section-common--white gx-reveal-section">
     <div class="container">
       <!-- Section Header -->
-      <div class="gx-section-header-common mb-4">
-        <div class="gx-section-label-common gx-section-label-common--small">Certifications</div>
-        <h2 class="gx-section-headline-common gx-section-headline-common--large">Certifications and Membership</h2>
+      <div class="gx-section-header-common mb-4 gx-reveal-content">
+        <div class="gx-section-label-common gx-section-label-common--medium">Certifications</div>
+        <h2 class="gx-section-headline-common gx-section-headline-common--medium">Certifications and Membership</h2>
       </div>
       <!-- Scrollable Card Row -->
-      <div class="gx-certifications-scroll owl-carousel">
+      <div class="gx-certifications-scroll owl-carousel gx-reveal-content gx-reveal-delay-1">
         <a href="#" class="gx-cert-card" aria-label="View Certificate">
           <div class="gx-cert-card-logo">
             <img src="../assets/about-us/certification.jpg" alt="Certification Logo" loading="lazy" />
@@ -172,12 +173,153 @@
     </div>
   </section>
 
+  <!-- Track Record Section -->
+  <section class="gx-track-record-section gx-section-common gx-section-common--white gx-reveal-section">
+    <div class="container">
+      <!-- Header Section -->
+      <div class="row gx-track-record-header gx-reveal-content">
+        <div class="col-lg-6">
+          <div class="gx-section-label-common gx-section-label-common--medium">Track Record</div>
+          <h2 class="gx-section-headline-common gx-section-headline-common--medium">Our Domain Experience and Track Record</h2>
+        </div>
+      </div>
+      <div class="row gx-reveal-content gx-reveal-delay-1">
+        <div class="col-lg-6">
+          <p class="gx-track-record-description">
+            GlobX connects businesses to the right suppliers across cultures and languages—driven by passion and backed by years of industry expertise, ensuring every partnership is built on trust and performance.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Statistics Grid -->
+      <div class="gx-track-record-grid">
+        <!-- Satisfaction Stat -->
+        <div class="gx-track-record-stat gx-reveal-grid-item">
+          <div class="gx-track-record-stat-number" data-count="98">98%</div>
+          <div class="gx-track-record-stat-label">satisfaction</div>
+        </div>
+        
+        <!-- Customers Stat -->
+        <div class="gx-track-record-stat gx-reveal-grid-item">
+          <div class="gx-track-record-stat-number" data-count="500">500+</div>
+          <div class="gx-track-record-stat-label">customers</div>
+        </div>
+        
+        <!-- Years Stat -->
+        <div class="gx-track-record-stat gx-reveal-grid-item">
+          <div class="gx-track-record-stat-number" data-count="12">12+</div>
+          <div class="gx-track-record-stat-label">years in industry</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section (matches reference image) -->
+  <section class="gx-team-section gx-section-common gx-section-common--gradient">
+    <div class="container gx-team-container">
+      <!-- Top Tagline -->
+      <div class="gx-team-tagline">A team of experts, dedicated to delivering excellence.</div>
+      <!-- Central Content Area -->
+      <div class="gx-team-content-row">
+        <!-- Team Content Container -->
+        <div class="gx-team-content-container">
+          <!-- Team Pane 1 (Active) -->
+          <div class="gx-team-pane gx-team-pane-active" id="team-1">
+            <!-- Left: 3x2 Image Grid -->
+            <div class="gx-team-image-grid">
+              <img src="../assets/about-us/member-1.jpg" alt="Team Member 1" class="gx-team-member-img" />
+              <img src="../assets/about-us/member-2.jpg" alt="Team Member 2" class="gx-team-member-img" />
+              <img src="../assets/about-us/member-3.jpg" alt="Team Member 3" class="gx-team-member-img" />
+              <img src="../assets/about-us/member-3.jpg" alt="Team Member 6" class="gx-team-member-img" />
+              <img src="../assets/about-us/member-1.jpg" alt="Team Member 4" class="gx-team-member-img" />
+              <img src="../assets/about-us/member-2.jpg" alt="Team Member 5" class="gx-team-member-img" />
+            </div>
+            <!-- Right: Text Block -->
+            <div class="gx-team-text-block">
+              <h2 class="gx-team-heading">Our Team</h2>
+              <p class="gx-team-description">
+                At the heart of GlobX is our diverse and dedicated team. We are proud to bring together specialists from purchasing, sales, IT, and other vital areas. Each team member plays a key role in building and sustaining a resilient, future-ready supply chain. Our experts contribute their unique skills and share a common goal: to continuously enhance our processes and services, helping our customers navigate the challenges of a fast-moving industry.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Team Pane 2 (Inactive) -->
+          <div class="gx-team-pane" id="team-2">
+            <!-- Left: 3x2 Image Grid (Different arrangement) -->
+            <div class="gx-team-image-grid">
+              <img src="../assets/about-us/member-2.jpg" alt="Team Member 2" class="gx-team-member-img" />
+              <img src="../assets/about-us/member-3.jpg" alt="Team Member 3" class="gx-team-member-img" />
+              <img src="../assets/about-us/member-1.jpg" alt="Team Member 1" class="gx-team-member-img" />
+              <img src="../assets/about-us/member-1.jpg" alt="Team Member 4" class="gx-team-member-img" />
+              <img src="../assets/about-us/member-2.jpg" alt="Team Member 5" class="gx-team-member-img" />
+              <img src="../assets/about-us/member-3.jpg" alt="Team Member 6" class="gx-team-member-img" />
+            </div>
+            <!-- Right: Text Block -->
+            <div class="gx-team-text-block">
+              <h2 class="gx-team-heading">Our Leadership</h2>
+              <p class="gx-team-description">
+                Our leadership team brings decades of combined experience in supply chain management and global sourcing. With backgrounds spanning multiple industries and continents, we understand the unique challenges that businesses face in today's interconnected world. Our collaborative approach ensures that every decision is made with our clients' success in mind, driving innovation and delivering exceptional results.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Pagination Control -->
+      <div class="gx-team-pagination">
+        <span class="gx-team-pagination-pill" data-team="1"></span>
+        <span class="gx-team-pagination-dot" data-team="2"></span>
+      </div>
+    </div>
+  </section>
+    <!-- Footer -->
+    <footer class="gx-footer">
+      <div class="container">
+        <div class="row justify-content-around">
+          <!-- Left Column: Company Contact Information -->
+          <div class="col-lg-3 col-md-4 col-sm-6 gx-footer-col">
+            <div class="gx-footer-company">
+              <div class="gx-footer-company-name">GlobX GmbH</div>
+              <div class="gx-footer-address">Odenwaldstr. 1</div>
+              <div class="gx-footer-city">63263 Neu-Isenburg</div>
+              <div class="gx-footer-email">Email: Info@globx.eu</div>
+            </div>
+          </div>
+          
+          <!-- Middle Column: Telephone Numbers -->
+          <div class="col-lg-3 col-md-4 col-sm-6 gx-footer-col">
+            <div class="gx-footer-telephone">
+              <div class="gx-footer-telephone-title">Telephone</div>
+              <div class="gx-footer-phone">UK: +49 69209757810</div>
+              <div class="gx-footer-phone">Germany: +49 69209757811</div>
+            </div>
+          </div>
+          
+          <!-- Right Column: Legal Links and Social Media -->
+          <div class="col-lg-3 col-md-4 col-sm-6 gx-footer-col">
+            <div class="gx-footer-links">
+              <div class="gx-footer-legal-links">
+                <a href="#" class="gx-footer-link">Privacy Policy</a>
+                <a href="#" class="gx-footer-link">Imprint</a>
+                <a href="#" class="gx-footer-link">TOS</a>
+                <a href="#" class="gx-footer-link">Cookies</a>
+              </div>
+              <div class="gx-footer-social">
+                <a href="#" class="gx-footer-linkedin" aria-label="LinkedIn">
+                  <img src="../assets/linkedin-icon.png" alt="LinkedIn" width="32" height="32" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+
   <!-- Bootstrap JS Bundle (with Popper) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./testimonials.js"></script>
-  <script src="./scroll-reveal.js"></script>
-  <script src="./infinite-scroll.js"></script>
-  <script src="./hero-landing.js"></script>
-  <script src="./services-illustration-scroll.js"></script>
+  <script src="../testimonials.js"></script>
+  <script src="../scroll-reveal.js"></script>
+  <script src="../infinite-scroll.js"></script>
+  <script src="./about-us.js"></script>
+  <script src="../services-illustration-scroll.js"></script>
 </body>
 </html> 

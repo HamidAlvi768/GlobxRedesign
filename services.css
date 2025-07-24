@@ -71,31 +71,48 @@
 
 .gx-service-content-container {
   position: relative;
-  min-height: 420px;
+  min-height: 550px;
 }
 
 /* Service Panes */
 .gx-service-pane {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.4s cubic-bezier(0.4,0,0.2,1), visibility 0s linear 0.4s, z-index 0s linear 0.4s;
   position: absolute;
   width: 100%;
   left: 0;
   top: 0;
   z-index: 1;
+  /* Remove fade transitions - individual elements handle their own animations */
+  transition: none;
 }
 
 .gx-service-pane-active {
   opacity: 1;
   visibility: visible;
-  transition: opacity 0.4s cubic-bezier(0.4,0,0.2,1), visibility 0s linear 0s, z-index 0s linear 0s;
   z-index: 2;
+  /* Remove fade transitions - individual elements handle their own animations */
+  transition: none;
 }
 
 /* Service Illustration - Specific styles only */
 .gx-service-illustration {
   /* Additional specific styles if needed */
+}
+
+/* Background illustration - should remain static */
+.gx-service-illustration-background {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  max-width: 75%;
+  height: auto;
+  z-index: 1;
+  opacity: 0.8;
+  /* Ensure no animations on background */
+  transition: none !important;
+  animation: none !important;
 }
 
 .gx-service-illustration-foreground {
@@ -105,21 +122,68 @@
   border-radius: 0.5rem;
   transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
   will-change: transform;
+  /* Add slide animation for service switching - override base.css */
+  transform: translateX(60px) !important;
+  opacity: 0 !important;
+  transition: transform 0.6s cubic-bezier(0.4,0,0.2,1), opacity 0.6s cubic-bezier(0.4,0,0.2,1) !important;
+}
+
+/* Slide in animation for active service foreground - override base.css */
+.gx-service-pane-active .gx-service-illustration-foreground {
+  transform: translateX(0) !important;
+  opacity: 1 !important;
 }
 
 .gx-service-illustration-container:hover .gx-service-illustration-foreground {
-  transform: translateY(-12px);
+  transform: translateY(-12px) !important;
+}
+
+/* Slide out to right animation for outgoing foreground illustration */
+.gx-service-illustration-foreground--slide-out {
+  transition: transform 0.6s cubic-bezier(0.4,0,0.2,1), opacity 0.6s cubic-bezier(0.4,0,0.2,1) !important;
+  transform: translateX(60px) !important;
+  opacity: 0 !important;
+  z-index: 3;
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .gx-service-illustration-background {
+    transition: none !important;
+    animation: none !important;
+  }
+  
   .gx-service-illustration-foreground {
     transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  
+  .gx-service-content-text {
+    transition: none !important;
+    opacity: 1 !important;
+  }
+  
+  .gx-service-pane-active .gx-service-illustration-foreground,
+  .gx-service-pane-active .gx-service-content-text {
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  
+  .gx-service-illustration-container:hover .gx-service-illustration-foreground {
+    transform: none !important;
   }
 }
 
-/* Service Content Text - Specific styles only */
+/* Service content text fade animation */
 .gx-service-content-text {
   /* Additional specific styles if needed */
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(0.4,0,0.2,1) 0.1s;
+}
+
+/* Fade in animation for active service content text */
+.gx-service-pane-active .gx-service-content-text {
+  opacity: 1;
 }
 
 /* ======================================== */

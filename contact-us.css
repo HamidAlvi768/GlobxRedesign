@@ -7,7 +7,6 @@
 }
 .gx-contact-container {
   display: flex;
-  max-width: 1200px;
   margin: 0 auto;
   gap: 3rem;
   align-items: flex-start;
@@ -230,3 +229,9 @@
     align-self: end;
   }
 } 
+
+@media (min-width: 992px) {
+  .container {
+    max-width: var(--section-width);
+}
+}
