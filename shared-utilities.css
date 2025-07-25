@@ -2,6 +2,45 @@
 /* GLOBX - SHARED UTILITIES                 */
 /* ======================================== */
 
+/* Ghost Button Styles - Common across hero landing pages */
+.gx-btn-ghost {
+  background: transparent !important;
+  color: var(--text-light-3) !important;
+  border: 2px solid var(--text-light-3) !important;
+  box-shadow: none !important;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  font-weight: 300;
+}
+
+.gx-btn-ghost:hover,
+.gx-btn-ghost:focus {
+  background: var(--primary-light) !important;
+  color: var(--text-dark) !important;
+  border-color: var(--text-dark) !important;
+}
+
+/* Save the Globe Button Styles - Common across pages */
+.gx-save-globe-btn {
+  display: inline-block;
+  padding: 0.7rem 2.2rem;
+  font-size: 1rem;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 300;
+  color: var(--text-light-3) !important;
+  background: linear-gradient(90deg, #ff914d 0%, var(--secondary) 100%);
+  border: none;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: none;
+  outline: none;
+  letter-spacing: 0.01em;
+}
+
+.gx-save-globe-btn:hover {
+  background: linear-gradient(90deg, var(--secondary) 0%, #ff914d 100%);
+}
+
 /* ======================================== */
 /* SECTION STRUCTURE & LAYOUT              */
 /* ======================================== */
@@ -226,9 +265,6 @@
 
 /* Tablet Breakpoint (max-width: 991.98px) */
 @media (max-width: 991.98px) {
-  .gx-section-common {
-    padding: 3rem 0;
-  }
   
   .gx-section-headline-common--large,
   .gx-section-headline-common--medium {

@@ -8,20 +8,7 @@
   max-width: 70ch;
 }
 
-.hero-landing-page .gx-btn-ghost {
-  background: transparent !important;
-  color: #fff !important;
-  border: 2px solid #fff !important;
-  box-shadow: none !important;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
-}
 
-.hero-landing-page .gx-btn-ghost:hover,
-.hero-landing-page .gx-btn-ghost:focus {
-  background: var(--primary-light) !important;
-  color: var(--text-dark) !important;
-  border-color: var(--text-dark) !important;
-}
 
 /* Mission, Vision, Goal Section */
 .gx-values-section {

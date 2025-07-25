@@ -338,6 +338,7 @@
       </div>
       
       <!-- Main Content Container -->
+       <div class="gx-content-container-wrapper">
       <div class="gx-content-container gx-content-container-common gx-content-container-common--bordered gx-reveal-content gx-reveal-delay-1">
         <!-- Tab Navigation -->
         <div class="gx-tab-navigation">
@@ -401,6 +402,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
   </section>
 
@@ -913,6 +915,41 @@ Plus, real-time tracking keeps you informed at every step.
     document.addEventListener('DOMContentLoaded', function() {
       const tabButtons = document.querySelectorAll('.gx-tab-btn');
       const tabPanes = document.querySelectorAll('.gx-tab-pane');
+      const contentContainer = document.querySelector('.gx-content-container');
+      const tabContent = document.querySelector('.gx-tab-content');
+      
+      // Function to adjust container height based on active tab content
+      function adjustContainerHeight() {
+        const activePane = document.querySelector('.gx-tab-pane-active');
+        if (activePane && contentContainer) {
+          // Get the actual height of the active tab content
+          const activePaneHeight = activePane.scrollHeight;
+          const tabNavigationHeight = document.querySelector('.gx-tab-navigation').offsetHeight;
+          const padding = 60; // Account for padding and margins
+          
+          // Responsive minimum heights
+          let minHeight = 38 * 16; // 38rem default
+          if (window.innerWidth <= 575.98) {
+            minHeight = 62 * 16; // 62rem for mobile
+          } else if (window.innerWidth <= 991.98) {
+            minHeight = 62 * 16; // 62rem for tablet
+          }
+          
+          // Set minimum height while allowing expansion
+          const newHeight = Math.max(activePaneHeight + tabNavigationHeight + padding, minHeight);
+          contentContainer.style.height = newHeight + 'px';
+        }
+      }
+      
+      // Initial height adjustment
+      setTimeout(adjustContainerHeight, 100);
+      
+      // Debounced resize handler for better performance
+      let resizeTimeout;
+      window.addEventListener('resize', function() {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(adjustContainerHeight, 250);
+      });
       
       tabButtons.forEach(button => {
         button.addEventListener('click', function() {
@@ -926,7 +963,9 @@ Plus, real-time tracking keeps you informed at every step.
           tabPanes.forEach(pane => pane.classList.remove('gx-tab-pane-active'));
           // After a short delay, fade in the target pane
           setTimeout(() => {
-          document.getElementById(targetTab + '-tab').classList.add('gx-tab-pane-active');
+            document.getElementById(targetTab + '-tab').classList.add('gx-tab-pane-active');
+            // Adjust height after tab content is visible
+            setTimeout(adjustContainerHeight, 50);
           }, 20); // 20ms to allow CSS transition to trigger
         });
       });

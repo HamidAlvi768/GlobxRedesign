@@ -6,7 +6,9 @@
 .gx-content-container {
   overflow: hidden;
   margin-top: 1rem;
-  height: 38rem;
+  min-height: 38rem;
+  background: white;
+  width: 100%;
 }
 
 /* Tab Navigation */
@@ -24,9 +26,8 @@
   background: transparent;
   border: none;
   padding: 1rem 2rem;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  color: #6c757d;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
@@ -65,6 +66,12 @@
   border-radius: 30px 0px 0px 30px;
 }
 
+
+.gx-content-container-wrapper{
+  background: var(--primary-light);
+  border-radius: 25px;
+}
+
 .gx-tab-btn-active:hover {
   background: var(--primary-lightest);
   transform: translateY(-1px);
@@ -87,6 +94,8 @@
 .gx-tab-content {
   padding: 3rem;
   min-height: 500px;
+  position: relative;
+  height: auto;
 }
 
 .gx-tab-pane {
@@ -105,12 +114,41 @@
   visibility: visible;
   transition: opacity 0.4s cubic-bezier(0.4,0,0.2,1), visibility 0s linear 0s, z-index 0s linear 0s;
   z-index: 2;
+  position: relative;
 }
 
 /* Ensure the tab content container is relative for absolute positioning */
 .gx-tab-content {
   position: relative;
   min-height: 340px;
+  height: auto;
+}
+
+/* Flexible height adjustment for content */
+.gx-content-container {
+  transition: height 0.4s ease-out;
+}
+
+/* Ensure content doesn't overflow */
+.gx-problem-content,
+.gx-solution-content {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Ensure text content flows properly */
+.gx-problem-text,
+.gx-solution-text {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Ensure illustrations don't cause overflow */
+.gx-problem-illustration,
+.gx-solution-illustration {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Problem Content - Specific styles only */
@@ -159,6 +197,7 @@
   z-index: 2;
   opacity: 1;
   transition: transform 0.4s ease-out;
+  box-sizing: border-box;
 }
 
 .gx-transition-chevron.rotated {
@@ -196,7 +235,8 @@
 /* ======================================== */
 @media (max-width: 991.98px) {
   .gx-content-container {
-    height: 62rem;
+    min-height: 62rem;
+    height: auto;
   }
   .gx-problem-solution-section {
     padding: 5rem 0;
@@ -245,7 +285,8 @@
 
 @media (max-width: 767.98px) {
   .gx-content-container {
-    height: 62rem;
+    min-height: 62rem;
+    height: auto;
   }
   .gx-problem-solution-section {
     padding: 2rem 0;
@@ -277,7 +318,8 @@
 
 @media (max-width: 575.98px) {
   .gx-content-container {
-    height: 62rem;
+    min-height: 62rem;
+    height: auto;
   }
   
   .gx-tab-content {
@@ -307,5 +349,18 @@
 @media (min-width: 992px) {
   .container {
     max-width: var(--section-width);
-}
+  }
+  
+  /* Desktop-only clip-path effects */
+  .gx-tab-btn-active:first-child {
+    clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+  }
+  
+  .gx-tab-btn-active:last-child {
+    clip-path: polygon(0% 50%, 5% 0%, 100% 0%, 100% 100%, 5% 100%);
+  }
+  
+  .gx-content-container-wrapper {
+    clip-path: polygon(0% 0%, 95.3% 0%, 100% 9.8%, 100% 100%, 0% 100%);
+  }
 }

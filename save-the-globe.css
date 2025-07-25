@@ -115,27 +115,7 @@
   color: #222831;
 }
 
-/* CTA Button */
-.gx-save-globe-btn {
-  display: inline-block;
-  padding: 0.7rem 2.2rem;
-  font-size: 1rem;
-  font-family: 'Poppins', Arial, sans-serif;
-  font-weight: 500;
-  color: #fff;
-  background: linear-gradient(90deg, #ff914d 0%, var(--secondary) 100%);
-  border: none;
-  border-radius: 0.7rem;
-  cursor: pointer;
-  transition: background 0.2s;
-  box-shadow: none;
-  outline: none;
-  margin-top: 0.5rem;
-  letter-spacing: 0.01em;
-}
-.gx-save-globe-btn:hover {
-  background: linear-gradient(90deg, var(--secondary)  0%, #ff914d 100%);
-}
+
 
 /* Right Column (Image) */
 .gx-save-globe-image-col {

@@ -14,6 +14,7 @@
   align-items: center;
   padding-top: 0;
   padding-bottom: 0;
+  width: 100%;
 }
 
 .gx-hero-bg {
@@ -501,6 +502,7 @@
     margin: 0 auto 1rem auto;
     display: flex;
     justify-content: center;
+    bottom: auto;
   }
   
   .gx-hero-title {
@@ -530,6 +532,7 @@
     min-width: 90vw;
     max-width: 98vw;
     padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+    box-sizing: border-box;
   }
 }
 
@@ -557,6 +560,7 @@
     min-width: 85vw;
     max-width: 100vw;
     padding: 1rem 0.2rem 1rem 0.2rem;
+    box-sizing: border-box;
   }
 } 
 
