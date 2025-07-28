@@ -27,9 +27,9 @@
   font-family: 'Poppins', Arial, sans-serif;
   font-weight: 300;
   color: var(--text-light-3) !important;
-  background: linear-gradient(90deg, #ff914d 0%, var(--secondary) 100%);
+  background: linear-gradient(90deg, #ff914d 0%, var(--secondary) 100%) !important;
   border: none;
-  border-radius: 0.7rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   transition: background 0.2s;
   box-shadow: none;
@@ -39,6 +39,199 @@
 
 .gx-save-globe-btn:hover {
   background: linear-gradient(90deg, var(--secondary) 0%, #ff914d 100%);
+}
+
+/* Primary Button Styles - Common across pages */
+.gx-btn-primary {
+  background: var(--primary);
+  color: var(--text-light-2);
+  border-radius: 0.4rem;
+  border: none;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+
+.gx-btn-primary:hover,
+.gx-btn-primary:focus {
+  background: var(--primary-dark-2);
+  color: var(--text-light);
+}
+
+.btn:focus-visible, .btn:active{
+  background-color: inherit !important;
+}
+
+/* Arrow Rotation Styles - Common across pages */
+.gx-arrows {
+  transition: transform 0.4s ease-out;
+  transform: rotate(0deg);
+}
+
+.gx-arrows.rotated {
+  transform: rotate(90deg);
+}
+
+/* Hide arrows on mobile screens */
+@media (max-width: 767.98px) {
+  .gx-arrows {
+    display: none;
+  }
+}
+
+/* ======================================== */
+/* NAVBAR VARIANTS - Common across pages   */
+/* ======================================== */
+
+.gx-navbar--application {
+  background: #fff !important;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08), 0 1.5px 4px rgba(0,0,0,0.04) !important;
+  top: 2rem;
+}
+
+/* ======================================== */
+/* VISUAL ELEMENTS - Common across pages   */
+/* ======================================== */
+
+.gx-wwd-visual {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2.2rem;
+  min-width: 340px;
+  min-height: 320px;
+}
+
+.gx-wwd-chevron-outline,
+.gx-wwd-chevron-masked {
+  height: 320px;
+  width: auto;
+  display: block;
+  position: static;
+  object-fit: contain;
+  max-width: 100%;
+  margin-right: -7rem;
+}
+
+.gx-navbar--application .nav-link {
+  color: #333 !important;
+  font-weight: 500;
+}
+
+.gx-navbar--application .nav-link:hover {
+  color: var(--primary) !important;
+}
+
+.gx-navbar--application .gx-chevron svg {
+  stroke: #333;
+}
+
+.gx-navbar--application .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(51, 51, 51, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='m4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ======================================== */
+/* FORM SUBMIT BUTTONS - Common across pages */
+/* ======================================== */
+
+.gx-form-submit {
+  margin-top: 3rem;
+}
+
+.gx-submit-btn {
+  padding: 0.7rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  border-radius: 0.5rem;
+}
+
+/* ======================================== */
+/* DUAL CTA SECTION - Common across pages  */
+/* ======================================== */
+
+.gx-cta-section {
+  background: #fff;
+  padding: 4rem 0;
+}
+
+.gx-cta-card {
+  height: 280px;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gx-cta-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.gx-cta-card--blue {
+  background: var(--primary);
+}
+
+.gx-cta-card--orange {
+  background: var(--secondary);
+}
+
+.gx-cta-content {
+  text-align: center;
+}
+
+.gx-cta-heading {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.gx-cta-description {
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  font-weight: 300;
+}
+
+.gx-cta-btn {
+  background: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+}
+
+.gx-cta-btn--blue {
+  color: var(--primary);
+}
+
+.gx-cta-btn--blue:hover {
+  background: #f8f9fa;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.gx-cta-btn--orange {
+  color: var(--secondary);
+}
+
+.gx-cta-btn--orange:hover {
+  background: #f8f9fa;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* ======================================== */
@@ -292,6 +485,21 @@
     padding-right: 0;
     margin-bottom: 2rem;
   }
+  
+  /* Visual Elements Tablet */
+  .gx-wwd-visual {
+    display: none;
+    min-width: 220px;
+    min-height: 160px;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    gap: 1.2rem;
+  }
+  
+  .gx-wwd-chevron-outline,
+  .gx-wwd-chevron-masked {
+    height: 160px;
+  }
 }
 
 /* Mobile Breakpoint (max-width: 767.98px) */
@@ -324,6 +532,34 @@
   .gx-content-text-common--centered {
     font-size: 0.95rem;
   }
+  
+  /* CTA Section Responsive */
+  .gx-cta-card {
+    height: auto;
+    min-height: 250px;
+    margin-bottom: 1rem;
+  }
+  
+  .gx-cta-heading {
+    font-size: 1.75rem;
+  }
+  
+  .gx-cta-description {
+    font-size: 0.95rem;
+  }
+  
+  /* Application Navbar Mobile */
+  .gx-navbar--application {
+    top: 0rem;
+    padding: 0.5rem 0;
+    min-height: auto;
+  }
+  
+  .gx-navbar--application .container {
+    min-height: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 }
 
 /* Small Mobile Breakpoint (max-width: 575.98px) */
@@ -343,5 +579,24 @@
   
   .gx-content-title-common--medium {
     font-size: 1.25rem;
+  }
+  
+  /* Form Submit Button Mobile */
+  .gx-submit-btn {
+    width: 100%;
+    padding: 0.875rem 2rem;
+  }
+  
+  /* Visual Elements Small Mobile */
+  .gx-wwd-visual {
+    min-width: 80px;
+    min-height: 70px;
+    gap: 0.6rem;
+    display: none;
+  }
+  
+  .gx-wwd-chevron-outline,
+  .gx-wwd-chevron-masked {
+    height: 70px;
   }
 } 

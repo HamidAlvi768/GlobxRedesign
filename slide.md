@@ -40,3 +40,13 @@ The `.gx-service-illustration-foreground--slide-out` class that the JavaScript a
     ```
 
 Because the CSS animation (`0.6s`) completes within the JavaScript delay (`1s`), you get the desired effect: the image slides out first, and then the rest of the content switches.
+
+https://globx.eu/newversion/index.html#
+
+https://globx.eu/newversion/about-us/index.html#
+
+https://globx.eu/newversion/society/index.html#
+
+https://globx.eu/newversion/careers/index.html#
+
+https://globx.eu/newversion/job-application/index.html#

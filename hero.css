@@ -62,7 +62,7 @@
 }
 
 .gx-hero-title {
-  font-size: 3rem;
+  font-size: 3.4rem;
   font-weight: 800;
   letter-spacing: -0.5px;
   line-height: 1.1;
@@ -78,27 +78,10 @@
   color: var(--text-light-2);
   max-width: 600px;
   line-height: 1.7;
+  font-weight: 300;
 }
 
-.gx-btn-primary {
-  background: var(--primary);
-  color: var(--text-light-3);
-  border-radius: 0.4rem;
-  border: none;
-  font-size: 1.1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  transition: background 0.2s;
-}
 
-.gx-btn-primary:hover,
-.gx-btn-primary:focus {
-  background: var(--primary-dark);
-  color: var(--text-light);
-}
-
-.btn:focus-visible, .btn:active{
-  background-color: inherit !important;
-}
 
 /* Sidebar Card */
 .gx-sidebar-card {
