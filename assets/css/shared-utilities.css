@@ -1,0 +1,748 @@
+/* ======================================== */
+/* GLOBX - SHARED UTILITIES                 */
+/* ======================================== */
+
+/* Ghost Button Styles - Common across hero landing pages */
+.gx-btn-ghost {
+  background: transparent !important;
+  color: var(--text-light-3) !important;
+  border: 2px solid var(--text-light-3) !important;
+  box-shadow: none !important;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  font-weight: 300;
+}
+
+.gx-btn-ghost:hover,
+.gx-btn-ghost:focus {
+  background: var(--primary-light) !important;
+  color: var(--text-dark) !important;
+  border-color: var(--text-dark) !important;
+}
+
+/* Save the Globe Button Styles - Common across pages */
+.gx-save-globe-btn {
+  display: inline-block;
+  padding: 0.7rem 2.2rem;
+  font-size: 1rem;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 300;
+  color: var(--text-light-3) !important;
+  background: linear-gradient(90deg, #ff914d 0%, var(--secondary) 100%) !important;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: none;
+  outline: none;
+  letter-spacing: 0.01em;
+}
+
+.gx-save-globe-btn:hover {
+  background: linear-gradient(90deg, var(--secondary) 0%, #ff914d 100%);
+}
+
+/* Primary Button Styles - Common across pages */
+.gx-btn-primary {
+  background: var(--primary);
+  color: var(--text-light-2);
+  border-radius: 0.4rem;
+  border: none;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+
+.gx-btn-primary:hover,
+.gx-btn-primary:focus {
+  background: var(--primary-dark-2);
+  color: var(--text-light);
+}
+
+.btn:focus-visible, .btn:active{
+  background-color: inherit !important;
+}
+
+/* Arrow Rotation Styles - Common across pages */
+.gx-arrows {
+  transition: transform 0.4s ease-out;
+  transform: rotate(0deg);
+}
+
+.gx-arrows.rotated {
+  transform: rotate(90deg);
+}
+
+/* Hide arrows on mobile screens */
+@media (max-width: 767.98px) {
+  .gx-arrows {
+    display: none;
+  }
+}
+
+/* ======================================== */
+/* NAVBAR VARIANTS - Common across pages   */
+/* ======================================== */
+
+.gx-navbar--application {
+  background: #fff !important;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08), 0 1.5px 4px rgba(0,0,0,0.04) !important;
+  /* top: 2rem; */
+}
+
+/* ======================================== */
+/* VISUAL ELEMENTS - Common across pages   */
+/* ======================================== */
+
+.gx-wwd-visual {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2.2rem;
+  min-width: 340px;
+  min-height: 320px;
+}
+
+.gx-wwd-chevron-outline,
+.gx-wwd-chevron-masked {
+  height: 320px;
+  width: auto;
+  display: block;
+  position: static;
+  object-fit: contain;
+  max-width: 100%;
+  margin-right: -7rem;
+}
+
+.gx-navbar--application .nav-link {
+  color: #333 !important;
+  font-weight: 500;
+}
+
+.gx-navbar--application .nav-link:hover {
+  color: var(--primary) !important;
+}
+
+.gx-navbar--application .gx-chevron svg {
+  stroke: #333;
+}
+
+.gx-navbar--application .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(51, 51, 51, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='m4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ======================================== */
+/* FORM SUBMIT BUTTONS - Common across pages */
+/* ======================================== */
+
+.gx-form-submit {
+  margin-top: 3rem;
+}
+
+.gx-submit-btn {
+  padding: 0.7rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  border-radius: 0.5rem;
+}
+
+/* ======================================== */
+/* DUAL CTA SECTION - Common across pages  */
+/* ======================================== */
+
+.gx-cta-section {
+  background: #fff;
+  padding: 4rem 0;
+}
+
+.gx-cta-card {
+  height: 280px;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gx-cta-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.gx-cta-card--blue {
+  background: var(--primary);
+}
+
+.gx-cta-card--orange {
+  background: var(--secondary);
+}
+
+.gx-cta-content {
+  text-align: center;
+}
+
+.gx-cta-heading {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.gx-cta-description {
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  font-weight: 300;
+}
+
+.gx-cta-btn {
+  background: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+}
+
+.gx-cta-btn--blue {
+  color: var(--primary);
+}
+
+.gx-cta-btn--blue:hover {
+  background: #f8f9fa;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.gx-cta-btn--orange {
+  color: var(--secondary);
+}
+
+.gx-cta-btn--orange:hover {
+  background: #f8f9fa;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ======================================== */
+/* SECTION STRUCTURE & LAYOUT              */
+/* ======================================== */
+
+/* Common Section Container */
+.gx-section-common {
+  padding: 7rem 0;
+}
+
+.gx-section-common--white {
+  background: #fff;
+}
+
+.gx-section-common--light {
+  background: var(--primary-light);
+}
+
+/* Common Content Container */
+.gx-content-container-common {
+  background: transparent;
+  border-radius: 1rem;
+  /* padding: 3rem; */
+  width: 100%;
+  min-height: 500px;
+  position: relative;
+}
+
+.gx-content-container-common--bordered {
+  border: 3px solid var(--primary-light);
+  box-shadow: none;
+}
+
+/* ======================================== */
+/* HEADER/TYPOGRAPHY HIERARCHY             */
+/* ======================================== */
+
+/* Section Header Container */
+.gx-section-header-common {
+  margin-bottom: 3rem;
+}
+
+/* Section Labels */
+.gx-section-label-common {
+  color: var(--primary);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.gx-section-label-common--small {
+  font-size: 1.1rem;
+}
+
+.gx-section-label-common--medium {
+  font-size: 1.5rem;
+}
+
+/* Section Headlines */
+.gx-section-headline-common {
+  color: var(--text-dark);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.gx-section-headline-common--large {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.gx-section-headline-common--medium {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* Section Descriptions */
+.gx-section-description-common {
+  color: var(--text-dark);
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: 400;
+  /* width: 55ch; */
+}
+
+.gx-section-description-common--with-margin {
+  margin-bottom: 0;
+}
+
+/* ======================================== */
+/* CONTENT TYPOGRAPHY                      */
+/* ======================================== */
+
+/* Content Subtitles */
+.gx-content-subtitle-common {
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.01em;
+}
+
+.gx-content-subtitle-common--medium {
+  font-size: 1.2rem;
+}
+
+/* Content Titles */
+.gx-content-title-common {
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.gx-content-title-common--large {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+.gx-content-title-common--medium {
+  font-size: 2rem;
+}
+
+/* Content Body Text */
+.gx-content-text-common {
+  color: var(--text-dark);
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.gx-content-text-common--with-margin {
+  margin-bottom: 1.25rem;
+}
+
+.gx-content-text-common--no-margin {
+  margin-bottom: 0;
+}
+
+.gx-content-text-common--centered {
+  text-align: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5rem;
+}
+
+/* ======================================== */
+/* ILLUSTRATION SYSTEM                     */
+/* ======================================== */
+
+/* Illustration Container */
+.gx-illustration-container-common {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 510px;
+}
+
+/* Illustration Wrapper */
+.gx-illustration-wrapper-common {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gx-illustration-wrapper-common--with-padding {
+  padding: 1rem;
+}
+
+/* Background Images */
+.gx-illustration-background-common {
+  position: absolute;
+  top: 56%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+/* Foreground Images */
+.gx-illustration-foreground-common {
+  position: relative;
+  height: auto;
+  z-index: 2;
+  border-radius: 0.5rem;
+}
+
+.gx-illustration-foreground-common--full {
+  max-width: 115%;
+}
+
+.gx-illustration-foreground-common--reduced {
+  max-width: 62%;
+}
+
+/* ======================================== */
+/* CONTENT LAYOUT                          */
+/* ======================================== */
+
+/* Content Areas */
+.gx-content-area-common {
+  padding-right: 2rem;
+}
+
+.gx-content-area-common--centered {
+  text-align: center;
+  padding-right: 0;
+}
+
+/* Content Display */
+.gx-content-display-common {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* ======================================== */
+/* SIDEBAR PAGINATION - Common across pages */
+/* ======================================== */
+
+.gx-sidebar-pagination {
+  margin-top: 1.2rem;
+  gap: 0.1rem;
+  padding: 7px;
+  background-color: hsla(0, 0%, 30%, 1);
+  border-radius: 10px;
+  max-width: 3.9rem;
+}
+
+.gx-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: hsla(0, 0%, 70%, 1);
+  margin: 0 0.15rem;
+  transition: background 0.2s, border 0.2s;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.gx-dot.active {
+  background: var(--text-light-3);
+  border: 2px solid var(--text-light-3);
+}
+
+.gx-dot:hover {
+  background: hsla(0, 0%, 80%, 1);
+}
+
+/* Ensure dots are visible */
+.gx-hero-pagination,
+.gx-sidebar-pagination {
+  z-index: 10;
+  position: relative;
+}
+
+/* Make dots more visible for debugging */
+.gx-dot {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+.gx-dot.active {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+/* ======================================== */
+/* RESPONSIVE DESIGN                       */
+/* ======================================== */
+
+/* Tablet Breakpoint (max-width: 991.98px) */
+@media (max-width: 991.98px) {
+  
+  .gx-section-headline-common--large,
+  .gx-section-headline-common--medium {
+    font-size: 2rem;
+  }
+  
+  .gx-content-container-common {
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .gx-content-title-common--large {
+    font-size: 1.75rem;
+  }
+  
+  .gx-content-title-common--medium {
+    font-size: 1.75rem;
+  }
+  
+  .gx-content-text-common--centered {
+    font-size: 1rem;
+  }
+  
+  .gx-content-area-common {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+  
+  /* Visual Elements Tablet */
+  .gx-wwd-visual {
+    display: none;
+    min-width: 220px;
+    min-height: 160px;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    gap: 1.2rem;
+  }
+  
+  .gx-wwd-chevron-outline,
+  .gx-wwd-chevron-masked {
+    height: 160px;
+  }
+}
+
+/* Mobile Breakpoint (max-width: 767.98px) */
+@media (max-width: 767.98px) {
+  .gx-section-common {
+    padding: 2rem 0;
+  }
+  
+  .gx-section-headline-common--large,
+  .gx-section-headline-common--medium {
+    font-size: 1.75rem;
+  }
+  
+  .gx-content-container-common {
+    padding: 1.5rem;
+  }
+  
+  .gx-content-title-common--large {
+    font-size: 1.5rem;
+  }
+  
+  .gx-content-title-common--medium {
+    font-size: 1.5rem;
+  }
+  
+  .gx-content-subtitle-common--medium {
+    font-size: 1.1rem;
+  }
+  
+  .gx-content-text-common--centered {
+    font-size: 0.95rem;
+  }
+  
+  /* CTA Section Responsive */
+  .gx-cta-card {
+    height: auto;
+    min-height: 250px;
+    margin-bottom: 1rem;
+  }
+  
+  .gx-cta-heading {
+    font-size: 1.75rem;
+  }
+  
+  .gx-cta-description {
+    font-size: 0.95rem;
+  }
+  
+  /* Application Navbar Mobile */
+  .gx-navbar--application {
+    top: 0rem;
+    padding: 0.5rem 0;
+    min-height: auto;
+  }
+  
+  .gx-navbar--application .container {
+    min-height: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+/* Small Mobile Breakpoint (max-width: 575.98px) */
+@media (max-width: 575.98px) {
+  .gx-content-container-common {
+    padding: 1rem;
+  }
+  
+  .gx-section-headline-common--large,
+  .gx-section-headline-common--medium {
+    font-size: 1.5rem;
+  }
+  
+  .gx-content-title-common--large {
+    font-size: 1.25rem;
+  }
+  
+  .gx-content-title-common--medium {
+    font-size: 1.25rem;
+  }
+  
+  /* Form Submit Button Mobile */
+  .gx-submit-btn {
+    width: 100%;
+    padding: 0.875rem 2rem;
+  }
+  
+  /* Visual Elements Small Mobile */
+  .gx-wwd-visual {
+    min-width: 80px;
+    min-height: 70px;
+    gap: 0.6rem;
+    display: none;
+  }
+  
+  .gx-wwd-chevron-outline,
+  .gx-wwd-chevron-masked {
+    height: 70px;
+  }
+} 
+
+@media (min-width: 992px) {
+  .gx-navbar--application {
+    top: 2rem;
+  }
+}
+
+/* ======================================== */
+/* SEARCH BAR STYLES - Common across pages */
+/* ======================================== */
+
+.gx-search-section {
+  margin-bottom: 2rem;
+}
+
+.gx-search-container {
+  margin: 0 auto;
+}
+
+.gx-search-input-group {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.gx-search-input-group:focus-within {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary);
+}
+
+.gx-search-input {
+  flex: 1;
+  border: none;
+  padding: 0.875rem 1rem;
+  font-size: 1rem;
+  color: #333;
+  background: transparent;
+  outline: none;
+}
+
+.gx-search-input::placeholder {
+  color: #999;
+}
+
+.gx-search-button {
+  background: var(--primary);
+  border: none;
+  padding: 0.875rem 1.25rem;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.gx-search-button:hover {
+  background: var(--primary-dark);
+}
+
+.gx-search-button i {
+  font-size: 1rem;
+}
+
+/* ======================================== */
+/* SEARCH BAR RESPONSIVE DESIGN            */
+/* ======================================== */
+
+/* Mobile */
+@media (max-width: 767.98px) {
+  .gx-search-container {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 575.98px) {
+  .gx-search-input-group {
+    flex-direction: column;
+    border-radius: 0.5rem;
+  }
+  
+  .gx-search-input {
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  
+  .gx-search-button {
+    width: 100%;
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+}

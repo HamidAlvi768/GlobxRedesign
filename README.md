@@ -4,13 +4,13 @@ A professional, scalable HTML5 + Bootstrap starter project.
 
 ## Structure
 
-- `index.html` – Main HTML file, includes Bootstrap via CDN
+- `index.php` – Main HTML file, includes Bootstrap via CDN
 - `styles.css` – Custom styles
 - `favicon.ico` – Project favicon (add your own)
 
 ## Getting Started
 
-1. Open `index.html` in your browser.
+1. Open `index.php` in your browser.
 2. Add your content inside the `<body>` tag.
 3. Add custom styles in `styles.css`.
 

@@ -1,0 +1,513 @@
+/* ======================================== */
+/* GLOBX - HERO SECTION                     */
+/* ======================================== */
+
+/************************************
+ * Hero Section
+ ************************************/
+.gx-hero {
+  min-height: 697px;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 100%;
+}
+
+.gx-hero-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('../../assets/hero-bg.jpg') center center/cover no-repeat;
+  z-index: 0;
+  filter: blur(0.5px) brightness(0.7);
+}
+
+.gx-hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 1;
+}
+
+.gx-hero-content {
+  position: relative;
+  z-index: 2;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  /* padding-inline: 4.5rem; */
+}
+
+.gx-hero-left {
+  position: relative;
+  padding-left: 2.5rem;
+  padding-top: 5.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.gx-arrows {
+  left: -140px;
+  bottom: -77px;
+  z-index: 3;
+  transition: transform 0.4s ease-out;
+  /* Ensure hero chevron starts in unrotated state */
+  transform: rotate(0deg);
+}
+
+.gx-arrows.rotated {
+  transform: rotate(90deg);
+}
+
+.gx-hero-title {
+  font-size: 3.4rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+  color: var(--text-light);
+  font-weight: 300;
+  max-width: 20ch;
+  font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
+  font: Poppins, SemiBold;
+}
+
+.gx-hero-subtext {
+  font-size: 1.15rem;
+  color: var(--text-light-2);
+  max-width: 600px;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+
+
+/* Sidebar Card */
+.gx-sidebar-card {
+  background: hsla(0, 0%, 21%, 1);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  padding: 2.5rem 0rem 2rem 0rem;
+  min-width: 340px;
+  max-width: 370px;
+  min-height: 410px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.gx-sidebar-title {
+  color: var(--text-light-2);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin-bottom: 2rem;
+}
+
+.gx-sidebar-grid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.gx-sidebar-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1.1rem;
+}
+
+.gx-sidebar-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.gx-sidebar-icon {
+  margin-bottom: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gx-sidebar-label {
+  color: var(--text-light-3);
+  font-size: 0.98rem;
+  font-weight: 400;
+  margin-top: 0.1rem;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+
+
+
+/* Hero Footer (Partners Row) */
+.gx-hero-footer {
+  width: 100%;
+  min-height: 6rem;
+  padding: 0.5rem 0;
+  background: var(--primary-lightest);
+  border-top: none;
+  box-shadow: none;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.gx-partners-scroll-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.gx-partners-scroll-track {
+  display: flex;
+  align-items: center;
+  animation: scroll-partners 30s linear infinite;
+  width: max-content;
+}
+
+@keyframes scroll-partners {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.gx-partner-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 200px;
+  opacity: 0.85;
+}
+
+.gx-partner-logo svg {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Owl Carousel Custom Styles */
+.gx-hero-carousel {
+  height: 270px;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.gx-hero-carousel .owl-stage-outer {
+  height: 100%;
+}
+
+.gx-hero-carousel .owl-stage {
+  height: 100%;
+}
+
+.gx-hero-carousel .owl-item {
+  height: 100%;
+}
+
+.gx-hero-slide {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gx-sidebar-carousel {
+  overflow: hidden;
+  width: 100%;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.gx-sidebar-carousel .owl-stage-outer {
+  width: 100%;
+}
+
+.gx-sidebar-carousel .owl-stage {
+  width: 100%;
+}
+
+.gx-sidebar-carousel .owl-item {
+  width: 100%;
+}
+
+.gx-sidebar-slide {
+  width: 100%;
+}
+
+/* Hide default Owl Carousel navigation arrows */
+.gx-hero-carousel .owl-nav,
+.gx-sidebar-carousel .owl-nav {
+  display: none !important;
+}
+
+/* Hide default Owl Carousel dots */
+.gx-hero-carousel .owl-dots,
+.gx-sidebar-carousel .owl-dots {
+  display: none !important;
+}
+
+/* Ensure proper touch behavior */
+.gx-hero-carousel,
+.gx-sidebar-carousel {
+  touch-action: pan-y pinch-zoom;
+}
+
+/* Smooth transitions for Owl Carousel */
+.gx-hero-carousel .owl-item,
+.gx-sidebar-carousel .owl-item {
+  transition: all 0.3s ease;
+}
+
+/* Fade animation for carousel transitions */
+.gx-hero-carousel .owl-item.active,
+.gx-sidebar-carousel .owl-item.active {
+  opacity: 1;
+}
+
+.gx-hero-carousel .owl-item:not(.active),
+.gx-sidebar-carousel .owl-item:not(.active) {
+  opacity: 0;
+}
+
+/* Ensure proper carousel behavior */
+.gx-hero-carousel .owl-stage,
+.gx-sidebar-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+}
+
+/* Prevent text selection during carousel interaction */
+.gx-hero-carousel,
+.gx-sidebar-carousel {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Slide Animation Keyframes */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+/* Apply slide animations */
+.gx-hero-carousel .owl-item.animated,
+.gx-sidebar-carousel .owl-item.animated {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+.gx-hero-carousel .owl-item.slideInRight,
+.gx-sidebar-carousel .owl-item.slideInRight {
+  animation-name: slideInRight;
+}
+
+.gx-hero-carousel .owl-item.slideOutLeft,
+.gx-sidebar-carousel .owl-item.slideOutLeft {
+  animation-name: slideOutLeft;
+}
+
+/* Ensure smooth slide transitions */
+.gx-hero-carousel .owl-stage,
+.gx-sidebar-carousel .owl-stage {
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Prevent content overflow during slide animations */
+.gx-hero-carousel,
+.gx-sidebar-carousel {
+  overflow: hidden;
+}
+
+/* Sidebar Icon Colors */
+.gx-sidebar-icon svg {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.gx-sidebar-icon svg rect,
+.gx-sidebar-icon svg path {
+  stroke: var(--text-light-2);
+  stroke-width: 2;
+  fill: none;
+}
+
+.gx-sidebar-icon svg rect[fill="white"] {
+  fill: var(--text-light-2);
+}
+
+.gx-sidebar-icon svg path[stroke="white"] {
+  stroke: var(--text-light-2);
+}
+
+/* Hover effect for icons */
+.gx-sidebar-cell:hover .gx-sidebar-icon svg rect,
+.gx-sidebar-cell:hover .gx-sidebar-icon svg path {
+  stroke: var(--primary);
+  transition: stroke 0.2s ease;
+}
+
+.gx-sidebar-cell:hover .gx-sidebar-icon svg rect[fill] {
+  fill: var(--primary);
+  transition: fill 0.2s ease;
+}
+
+/* ======================================== */
+/* HERO SECTION RESPONSIVE DESIGN          */
+/* ======================================== */
+@media (max-width: 991.98px) {
+  .gx-partners-scroll-track {
+    animation-duration: 25s;
+  }
+  
+  .gx-arrows {
+    display: none !important;
+  }
+  
+  .gx-sidebar-pagination {
+    display: none !important;
+  }
+  
+  .gx-hero-carousel {
+    margin-top: 1rem;
+    height: 200px;
+  }
+  
+  .gx-hero {
+    min-height: 480px;
+    height: auto;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .gx-hero-content {
+    padding-inline: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .gx-hero-left {
+    padding-left: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .gx-arrows {
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 50px;
+    position: static;
+    margin: 0 auto 1rem auto;
+    display: flex;
+    justify-content: center;
+    bottom: auto;
+  }
+  
+  .gx-hero-title {
+    font-size: 2rem;
+    line-height: 1.2;
+    max-width: 100%;
+  }
+  
+  .gx-hero-subtext {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+  
+  .gx-btn-primary {
+    width: clamp(150px, 20%, 220px);
+    font-size: 1rem;
+    padding: 0.75rem 0;
+  }
+  
+  .gx-hero-right {
+    margin-top: 2rem !important;
+    justify-content: center !important;
+    margin: 0 auto;
+  }
+  
+  .gx-sidebar-card {
+    min-width: 90vw;
+    max-width: 98vw;
+    padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 600px) {
+  .gx-partners-scroll-track {
+    animation-duration: 20s;
+  }
+  
+  .gx-hero {
+    min-height: 340px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .gx-hero-title {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  }
+  
+  .gx-hero-subtext {
+    font-size: 0.95rem;
+  }
+  
+  .gx-sidebar-card {
+    min-width: 85vw;
+    max-width: 100vw;
+    padding: 1rem 0.2rem 1rem 0.2rem;
+    box-sizing: border-box;
+  }
+} 
+
+@media (prefers-reduced-motion: reduce) {
+  .gx-arrows {
+    transition: none !important;
+  }
+  
+  .gx-arrows.rotated {
+    transform: rotate(90deg) !important;
+  }
+} 
