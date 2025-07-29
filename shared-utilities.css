@@ -87,7 +87,7 @@
   background: #fff !important;
   border-bottom: 1px solid #e0e0e0;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08), 0 1.5px 4px rgba(0,0,0,0.04) !important;
-  top: 2rem;
+  /* top: 2rem; */
 }
 
 /* ======================================== */
@@ -600,3 +600,9 @@
     height: 70px;
   }
 } 
+
+@media (min-width: 992px) {
+  .gx-navbar--application {
+    top: 2rem;
+  }
+}

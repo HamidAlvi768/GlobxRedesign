@@ -183,6 +183,7 @@
     max-width: 100%;
     min-width: 0;
     justify-content: flex-start;
+    display: none;
   }
   .gx-contact-chevron-bg {
     top: -20px;

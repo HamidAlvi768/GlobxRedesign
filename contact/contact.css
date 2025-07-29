@@ -3,6 +3,93 @@
 /* ======================================== */
 
 /* ======================================== */
+/* BANNER AREA                             */
+/* ======================================== */
+
+/* CSS Custom Properties for Responsive Navbar Heights */
+:root {
+  --navbar-height-desktop: 80px;
+  --navbar-height-tablet: 60px;
+  --navbar-height-mobile: 50px;
+  --navbar-height-small: 45px;
+}
+
+/* Ensure navbar has proper z-index (override if needed) */
+.gx-navbar--application {
+  z-index: 5 !important;
+}
+
+/* Banner Area */
+.gx-form-banner {
+  margin-bottom: 3rem;
+  background: white;
+  padding: 7rem 14rem;
+}
+
+/* Robust Banner Section Z-Index Management */
+.gx-section-common {
+  position: relative;
+  z-index: 10;
+  /* Ensure banner has proper top spacing for navbar */
+  padding-top: calc(7rem + var(--navbar-height-desktop));
+  /* Additional safety: ensure content is above navbar */
+  margin-top: 0;
+}
+
+/* Force banner content to be above navbar */
+.gx-section-common .container {
+  position: relative;
+  z-index: 15;
+}
+
+/* Additional safety margin for mobile navbar */
+@media (max-width: 991.98px) {
+  .gx-section-common {
+    padding-top: calc(4rem + var(--navbar-height-tablet));
+  }
+  
+  .gx-form-banner {
+    padding: 4rem 2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .gx-section-common {
+    padding-top: calc(2rem + var(--navbar-height-mobile));
+  }
+}
+
+@media (max-width: 575.98px) {
+  .gx-section-common {
+    padding-top: calc(2rem + var(--navbar-height-small));
+  }
+  
+  .gx-form-banner {
+    padding: 2rem 0.5rem;
+  }
+}
+
+.gx-form-title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0;
+  max-width: 45rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.gx-form-chevron {
+  text-align: -webkit-right;
+}
+
+.gx-form-chevron img {
+  filter: hue-rotate(185deg) saturate(1.5);
+  max-width: 145px;
+  height: auto;
+}
+
+/* ======================================== */
 /* CONTACT IMAGE SECTION                   */
 /* ======================================== */
 
@@ -65,6 +152,16 @@
 
 /* Tablet */
 @media (max-width: 991.98px) {
+  .gx-form-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .gx-form-chevron {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
   .gx-contact-image-container {
     min-height: 400px;
   }
@@ -83,6 +180,10 @@
 
 /* Mobile */
 @media (max-width: 767.98px) {
+  .gx-form-title {
+    font-size: 1.75rem;
+  }
+  
   .gx-contact-image-container {
     min-height: 300px;
   }
@@ -101,6 +202,10 @@
 
 /* Small Mobile */
 @media (max-width: 575.98px) {
+  .gx-form-title {
+    font-size: 1.5rem;
+  }
+  
   .gx-contact-image-container {
     min-height: 250px;
   }
@@ -171,9 +276,10 @@
 /* ======================================== */
 
 .gx-contact-visual {
+  display: flex !important;
   
 }
 
 .gx-contact-chevron-outline, .gx-contact-chevron-masked {
-  height: 280px;
+  height: clamp(12rem, 10vw + 10rem, 17.5rem);
 } 
