@@ -1,0 +1,10 @@
+https://globx.eu/newversion/index.php  
+https://globx.eu/newversion/about-us.php  
+https://globx.eu/newversion/society.php  
+https://globx.eu/newversion/careers.php  
+https://globx.eu/newversion/category.php  
+https://globx.eu/newversion/job-application.php  
+https://globx.eu/newversion/job-detail.php  
+https://globx.eu/newversion/contact.php  
+https://globx.eu/newversion/product-detail.php  
+https://globx.eu/newversion/products.php  
