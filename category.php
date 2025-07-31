@@ -15,7 +15,7 @@ $cssFiles = [
 $cssFiles[] = './assets/css/category.css';
 $cssFiles[] = './assets/css/products.css';
 include_once('./includes/header.php');
-include_once('./includes/nav.php');
+include_once('./includes/search_nav.php');
 ?>
 
 <!-- Category Page -->

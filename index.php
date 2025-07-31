@@ -54,299 +54,268 @@ include_once('./includes/transparent_nav.php');
       </div>
       <!-- Right: Sidebar Card -->
       <div class="col-lg-5 col-md-12 col-sm-4 gx-hero-right d-flex align-items-center justify-content-center">
-        <div class="gx-sidebar-card shadow">
-          <div class="gx-sidebar-title text-center mb-4">Search by Categories</div>
-          <div class="gx-sidebar-carousel owl-carousel owl-theme">
-            <div class="gx-sidebar-slide">
-              <div class="gx-sidebar-grid mb-4">
-                <div class="gx-sidebar-row">
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="8" y="16" width="20" height="4" rx="2" stroke="white" stroke-width="2" />
-                        <path d="M8 18H4M32 18h4" stroke="white" stroke-width="2" />
-                      </svg>
+      <div class="gx-sidebar-card shadow">
+            <div class="gx-sidebar-title text-center mb-4">Search by Categories</div>
+            <div class="gx-sidebar-carousel owl-carousel owl-theme">
+              <!-- Slide 1 -->
+              <div class="gx-sidebar-slide">
+                <div class="gx-sidebar-grid mb-4">
+                  <div class="gx-sidebar-row">
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/diodes.png" alt="Diodes" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">diodes</div>
                     </div>
-                    <div class="gx-sidebar-label">diodes</div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/mpu_mcu.png" alt="MPU/MCU" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">mpu/mcu</div>
+                    </div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/powerics.png" alt="Power" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">powerics</div>
+                    </div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/resistors.png" alt="Resistors" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">resistors</div>
+                    </div>
                   </div>
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="10" y="10" width="16" height="16" rx="3" stroke="white" stroke-width="2" />
-                        <rect x="16" y="16" width="4" height="4" rx="1" fill="white" />
-                      </svg>
+                  <div class="gx-sidebar-row">
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/capacitors.png" alt="Capacitors" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">capacitors</div>
                     </div>
-                    <div class="gx-sidebar-label">mpu/mcu</div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/connectors.png" alt="Connectors" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">connectors</div>
+                    </div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/inductors.png" alt="Inductors" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">inductors</div>
+                    </div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/switches.png" alt="Switches" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">switches</div>
+                    </div>
                   </div>
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="8" y="12" width="20" height="12" rx="3" stroke="white" stroke-width="2" />
-                        <rect x="12" y="16" width="4" height="4" rx="1" fill="white" />
-                        <rect x="20" y="16" width="4" height="4" rx="1" fill="white" />
-                      </svg>
+                  <div class="gx-sidebar-row">
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/fuses.png" alt="Fuses" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">fuses</div>
                     </div>
-                    <div class="gx-sidebar-label">powircs</div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/transistor.png" alt="Transistors" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">transistors</div>
+                    </div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/crys_reso.png" alt="Crystal Resonators" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">crystals</div>
+                    </div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/optoelectr.png" alt="Optoelectronics" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">optoelectronics</div>
+                    </div>
                   </div>
                 </div>
-                <div class="gx-sidebar-row">
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="8" y="16" width="20" height="4" rx="2" stroke="white" stroke-width="2" />
-                        <path d="M8 18H4M32 18h4" stroke="white" stroke-width="2" />
-                      </svg>
+              </div>
+              
+              <!-- Slide 2 -->
+              <div class="gx-sidebar-slide">
+                <div class="gx-sidebar-grid mb-4">
+                  <div class="gx-sidebar-row">
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/sens_trans.png" alt="Sensors & Transducers" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">sensors</div>
                     </div>
-                    <div class="gx-sidebar-label">diodes</div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/amplifiers.png" alt="Amplifiers" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">amplifiers</div>
+                    </div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/regulators.png" alt="Regulators" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">regulators</div>
+                    </div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/pmic.png" alt="PMIC" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">pmic</div>
+                    </div>
                   </div>
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="10" y="10" width="16" height="16" rx="3" stroke="white" stroke-width="2" />
-                        <rect x="16" y="16" width="4" height="4" rx="1" fill="white" />
-                      </svg>
+                  <div class="gx-sidebar-row">
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/logic_ics.png" alt="Logic ICs" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">logic ics</div>
                     </div>
-                    <div class="gx-sidebar-label">mpu/mcu</div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/memory_ics.png" alt="Memory ICs" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">memory ics</div>
+                    </div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/interface.png" alt="Interface" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">interface</div>
+                    </div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/converters.png" alt="Converters" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">converters</div>
+                    </div>
                   </div>
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="8" y="12" width="20" height="12" rx="3" stroke="white" stroke-width="2" />
-                        <rect x="12" y="16" width="4" height="4" rx="1" fill="white" />
-                        <rect x="20" y="16" width="4" height="4" rx="1" fill="white" />
-                      </svg>
+                  <div class="gx-sidebar-row">
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/psu.png" alt="Power Supply Units" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">psu</div>
                     </div>
-                    <div class="gx-sidebar-label">powircs</div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/lcc.png" alt="LCC" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">lcc</div>
+                    </div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/memory.png" alt="Memory" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">memory</div>
+                    </div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/other_semi.png" alt="Other Semiconductors" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">other semi</div>
+                    </div>
                   </div>
                 </div>
-                <div class="gx-sidebar-row">
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="8" y="16" width="20" height="4" rx="2" stroke="white" stroke-width="2" />
-                        <path d="M8 18H4M32 18h4" stroke="white" stroke-width="2" />
-                      </svg>
+              </div>
+              
+              <!-- Slide 3 -->
+              <div class="gx-sidebar-slide">
+                <div class="gx-sidebar-grid mb-4">
+                  <div class="gx-sidebar-row">
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/diodes.png" alt="Diodes" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">diodes</div>
                     </div>
-                    <div class="gx-sidebar-label">diodes</div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/mpu_mcu.png" alt="MPU/MCU" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">mpu/mcu</div>
+                    </div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/powerics.png" alt="Power" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">powerics</div>
+                    </div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/resistors.png" alt="Resistors" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">resistors</div>
+                    </div>
                   </div>
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="10" y="10" width="16" height="16" rx="3" stroke="white" stroke-width="2" />
-                        <rect x="16" y="16" width="4" height="4" rx="1" fill="white" />
-                      </svg>
+                  <div class="gx-sidebar-row">
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/capacitors.png" alt="Capacitors" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">capacitors</div>
                     </div>
-                    <div class="gx-sidebar-label">mpu/mcu</div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/connectors.png" alt="Connectors" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">connectors</div>
+                    </div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/inductors.png" alt="Inductors" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">inductors</div>
+                    </div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/switches.png" alt="Switches" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">switches</div>
+                    </div>
                   </div>
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="8" y="12" width="20" height="12" rx="3" stroke="white" stroke-width="2" />
-                        <rect x="12" y="16" width="4" height="4" rx="1" fill="white" />
-                        <rect x="20" y="16" width="4" height="4" rx="1" fill="white" />
-                      </svg>
+                  <div class="gx-sidebar-row">
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/fuses.png" alt="Fuses" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">fuses</div>
                     </div>
-                    <div class="gx-sidebar-label">powircs</div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/transistor.png" alt="Transistors" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">transistors</div>
+                    </div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/crys_reso.png" alt="Crystal Resonators" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">crystals</div>
+                    </div>
+                    <div class="gx-sidebar-cell">
+                      <div class="gx-sidebar-icon">
+                        <img src="./assets/main/optoelectr.png" alt="Optoelectronics" width="30" height="30" />
+                      </div>
+                      <div class="gx-sidebar-label">optoelectronics</div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="gx-sidebar-slide">
-              <div class="gx-sidebar-grid mb-4">
-                <div class="gx-sidebar-row">
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="8" y="16" width="20" height="4" rx="2" stroke="white" stroke-width="2" />
-                        <path d="M8 18H4M32 18h4" stroke="white" stroke-width="2" />
-                      </svg>
-                    </div>
-                    <div class="gx-sidebar-label">resistors</div>
-                  </div>
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="10" y="10" width="16" height="16" rx="3" stroke="white" stroke-width="2" />
-                        <rect x="16" y="16" width="4" height="4" rx="1" fill="white" />
-                      </svg>
-                    </div>
-                    <div class="gx-sidebar-label">capacitors</div>
-                  </div>
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="8" y="12" width="20" height="12" rx="3" stroke="white" stroke-width="2" />
-                        <rect x="12" y="16" width="4" height="4" rx="1" fill="white" />
-                        <rect x="20" y="16" width="4" height="4" rx="1" fill="white" />
-                      </svg>
-                    </div>
-                    <div class="gx-sidebar-label">connectors</div>
-                  </div>
-                </div>
-                <div class="gx-sidebar-row">
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="8" y="16" width="20" height="4" rx="2" stroke="white" stroke-width="2" />
-                        <path d="M8 18H4M32 18h4" stroke="white" stroke-width="2" />
-                      </svg>
-                    </div>
-                    <div class="gx-sidebar-label">resistors</div>
-                  </div>
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="10" y="10" width="16" height="16" rx="3" stroke="white" stroke-width="2" />
-                        <rect x="16" y="16" width="4" height="4" rx="1" fill="white" />
-                      </svg>
-                    </div>
-                    <div class="gx-sidebar-label">capacitors</div>
-                  </div>
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="8" y="12" width="20" height="12" rx="3" stroke="white" stroke-width="2" />
-                        <rect x="12" y="16" width="4" height="4" rx="1" fill="white" />
-                        <rect x="20" y="16" width="4" height="4" rx="1" fill="white" />
-                      </svg>
-                    </div>
-                    <div class="gx-sidebar-label">connectors</div>
-                  </div>
-                </div>
-                <div class="gx-sidebar-row">
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="8" y="16" width="20" height="4" rx="2" stroke="white" stroke-width="2" />
-                        <path d="M8 18H4M32 18h4" stroke="white" stroke-width="2" />
-                      </svg>
-                    </div>
-                    <div class="gx-sidebar-label">resistors</div>
-                  </div>
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="10" y="10" width="16" height="16" rx="3" stroke="white" stroke-width="2" />
-                        <rect x="16" y="16" width="4" height="4" rx="1" fill="white" />
-                      </svg>
-                    </div>
-                    <div class="gx-sidebar-label">capacitors</div>
-                  </div>
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="8" y="12" width="20" height="12" rx="3" stroke="white" stroke-width="2" />
-                        <rect x="12" y="16" width="4" height="4" rx="1" fill="white" />
-                        <rect x="20" y="16" width="4" height="4" rx="1" fill="white" />
-                      </svg>
-                    </div>
-                    <div class="gx-sidebar-label">connectors</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="gx-sidebar-slide">
-              <div class="gx-sidebar-grid mb-4">
-                <div class="gx-sidebar-row">
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="8" y="16" width="20" height="4" rx="2" stroke="white" stroke-width="2" />
-                        <path d="M8 18H4M32 18h4" stroke="white" stroke-width="2" />
-                      </svg>
-                    </div>
-                    <div class="gx-sidebar-label">sensors</div>
-                  </div>
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="10" y="10" width="16" height="16" rx="3" stroke="white" stroke-width="2" />
-                        <rect x="16" y="16" width="4" height="4" rx="1" fill="white" />
-                      </svg>
-                    </div>
-                    <div class="gx-sidebar-label">switches</div>
-                  </div>
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="8" y="12" width="20" height="12" rx="3" stroke="white" stroke-width="2" />
-                        <rect x="12" y="16" width="4" height="4" rx="1" fill="white" />
-                        <rect x="20" y="16" width="4" height="4" rx="1" fill="white" />
-                      </svg>
-                    </div>
-                    <div class="gx-sidebar-label">relays</div>
-                  </div>
-                </div>
-                <div class="gx-sidebar-row">
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="8" y="16" width="20" height="4" rx="2" stroke="white" stroke-width="2" />
-                        <path d="M8 18H4M32 18h4" stroke="white" stroke-width="2" />
-                      </svg>
-                    </div>
-                    <div class="gx-sidebar-label">sensors</div>
-                  </div>
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="10" y="10" width="16" height="16" rx="3" stroke="white" stroke-width="2" />
-                        <rect x="16" y="16" width="4" height="4" rx="1" fill="white" />
-                      </svg>
-                    </div>
-                    <div class="gx-sidebar-label">switches</div>
-                  </div>
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="8" y="12" width="20" height="12" rx="3" stroke="white" stroke-width="2" />
-                        <rect x="12" y="16" width="4" height="4" rx="1" fill="white" />
-                        <rect x="20" y="16" width="4" height="4" rx="1" fill="white" />
-                      </svg>
-                    </div>
-                    <div class="gx-sidebar-label">relays</div>
-                  </div>
-                </div>
-                <div class="gx-sidebar-row">
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="8" y="16" width="20" height="4" rx="2" stroke="white" stroke-width="2" />
-                        <path d="M8 18H4M32 18h4" stroke="white" stroke-width="2" />
-                      </svg>
-                    </div>
-                    <div class="gx-sidebar-label">sensors</div>
-                  </div>
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="10" y="10" width="16" height="16" rx="3" stroke="white" stroke-width="2" />
-                        <rect x="16" y="16" width="4" height="4" rx="1" fill="white" />
-                      </svg>
-                    </div>
-                    <div class="gx-sidebar-label">switches</div>
-                  </div>
-                  <div class="gx-sidebar-cell">
-                    <div class="gx-sidebar-icon">
-                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <rect x="8" y="12" width="20" height="12" rx="3" stroke="white" stroke-width="2" />
-                        <rect x="12" y="16" width="4" height="4" rx="1" fill="white" />
-                        <rect x="20" y="16" width="4" height="4" rx="1" fill="white" />
-                      </svg>
-                    </div>
-                    <div class="gx-sidebar-label">relays</div>
-                  </div>
-                </div>
-              </div>
+            <!-- Sidebar Pagination Dots -->
+            <div class="gx-sidebar-pagination d-flex justify-content-center align-items-center">
+              <span class="gx-dot" data-slide="0"></span>
+              <span class="gx-dot" data-slide="1"></span>
+              <span class="gx-dot" data-slide="2"></span>
             </div>
           </div>
-          <!-- Sidebar Pagination Dots -->
-          <div class="gx-sidebar-pagination d-flex justify-content-center align-items-center">
-            <span class="gx-dot" data-slide="0"></span>
-            <span class="gx-dot" data-slide="1"></span>
-            <span class="gx-dot" data-slide="2"></span>
-          </div>
-        </div>
       </div>
     </div>
   </div>

@@ -14,12 +14,12 @@ $cssFiles = [
 ];
 $cssFiles[] = './assets/css/job-detail.css';
 include_once('./includes/header.php');
-include_once('./includes/nav.php');
+include_once('./includes/search_nav.php');
 ?>
 
 
     <!-- Hero Section (Same as Careers Page) -->
-    <section class="gx-careers-hero position-relative d-flex align-items-center">
+    <section class="gx-careers-hero gx-job-detail-hero position-relative d-flex align-items-center">
         <!-- Background Image -->
         <div class="gx-careers-bg"></div>
         

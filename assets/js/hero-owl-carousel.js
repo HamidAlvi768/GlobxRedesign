@@ -92,6 +92,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const sidebarCarousel = $('.gx-sidebar-carousel');
   const sidebarDots = $('.gx-sidebar-pagination .gx-dot');
   
+  console.log('Sidebar carousel found:', sidebarCarousel.length);
+  console.log('Sidebar dots found:', sidebarDots.length);
+  
   if (sidebarCarousel.length) {
     sidebarCarousel.owlCarousel({
       items: 1,
@@ -114,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
       mergeFit: true,
       autoWidth: false,
       autoHeight: false,
-      startPosition: 1, // Start from second slide (index 1)
+      startPosition: 0, // Start from first slide (index 0) to match dot indices
       rtl: false,
       slideBy: 1,
       lazyLoad: false,
@@ -141,19 +144,33 @@ document.addEventListener('DOMContentLoaded', function() {
         // Get the current position and update dots
         const currentPosition = event.item.index;
         updateSidebarDots(currentPosition);
+        
+        // Set initial active dot
+        sidebarDots.removeClass('active');
+        sidebarDots.eq(0).addClass('active');
+        
+        console.log('Sidebar carousel initialized at position:', currentPosition);
       },
       onTranslated: function(event) {
         // Get the current position and update dots
         const currentPosition = event.item.index;
         updateSidebarDots(currentPosition);
+        
+        console.log('Sidebar carousel translated to position:', currentPosition);
       }
     });
     
-    // Sidebar dot navigation
-    sidebarDots.on('click', function() {
+    // Sidebar dot navigation - use event delegation for better reliability
+    $(document).on('click', '.gx-sidebar-pagination .gx-dot', function() {
       const slideIndex = parseInt($(this).data('slide'));
+      console.log('Sidebar dot clicked, slide index:', slideIndex);
+      
       if (!isNaN(slideIndex)) {
         sidebarCarousel.trigger('to.owl.carousel', [slideIndex, 500]);
+        
+        // Update dots immediately for better UX
+        sidebarDots.removeClass('active');
+        $(this).addClass('active');
       }
     });
     
@@ -213,5 +230,31 @@ document.addEventListener('DOMContentLoaded', function() {
   sidebarDots.each(function(index) {
     console.log('Sidebar dot', index, 'data-slide:', $(this).data('slide'));
   });
+  
+  // Ensure sidebar dots are properly initialized
+  if (sidebarDots.length > 0) {
+    // Set initial active state
+    sidebarDots.removeClass('active');
+    sidebarDots.eq(0).addClass('active');
+    
+    // Add click event listeners directly to dots as backup
+    sidebarDots.each(function(index) {
+      $(this).on('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const slideIndex = parseInt($(this).data('slide'));
+        console.log('Direct dot click - slide index:', slideIndex);
+        
+        if (!isNaN(slideIndex) && sidebarCarousel.length) {
+          sidebarCarousel.trigger('to.owl.carousel', [slideIndex, 500]);
+          
+          // Update active state
+          sidebarDots.removeClass('active');
+          $(this).addClass('active');
+        }
+      });
+    });
+  }
   
 }); 

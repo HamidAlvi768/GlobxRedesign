@@ -105,50 +105,21 @@
 }
 
 /* Search Section */
-.gx-search-section {
-  margin-bottom: 3rem;
-}
+.gx-search-section {}
 
-.gx-search-heading {
-  font-size: 2.5rem;
-  font-weight: 500;
-  color: #333;
-  margin-bottom: 2rem;
-  letter-spacing: -0.02em;
-}
+.gx-search-heading {}
 
-.gx-search-highlight {
-  color: var(--primary);
-}
+.gx-search-highlight {}
 
-.gx-search-form-container {
-  margin: 0 auto;
-}
+.gx-search-form-container {}
 
-.gx-search-input-group {
-  display: flex;
-  align-items: center;
-  padding: 0.5rem;
-}
+.gx-search-input-group {}
 
-.gx-search-input {
-  flex: 2;
-  border: 1px solid #e0e0e0;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  color: #333;
-  background: #fff;
-  transition: border-color 0.2s;
-}
+.gx-search-input {}
 
-.gx-search-input:focus {
-  outline: none;
-  border-color: var(--primary);
-}
+.gx-search-input:focus {}
 
-.gx-search-input::placeholder {
-  color: #999;
-}
+.gx-search-input::placeholder {}
 
 .gx-search-dropdown {
   flex: 1;
@@ -432,8 +403,6 @@
   }
   
   .gx-search-input-group {
-    flex-direction: column;
-    gap: 0.5rem;
   }
   
   .gx-search-input,

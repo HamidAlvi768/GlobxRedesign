@@ -14,7 +14,7 @@ $cssFiles = [
 ];
 $cssFiles[] = './assets/css/product-detail.css';
 include_once('./includes/header.php');
-include_once('./includes/nav.php');
+include_once('./includes/search_nav.php');
 ?>
 
 <!-- Product Detail Page -->

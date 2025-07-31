@@ -1,0 +1,1422 @@
+/* ======================================== */
+/* SELL EXCESS STOCK HERO SECTION          */
+/* ======================================== */
+
+.gx-sell-excess-hero {
+  min-height: 100vh;
+  background: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background Image */
+.gx-sell-excess-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../excess-stock/stock-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+/* Overlay for text readability */
+.gx-sell-excess-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+
+/* Content positioning */
+.gx-sell-excess-content {
+  z-index: 3;
+  position: relative;
+}
+
+/* Main Title */
+.gx-sell-excess-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Subtitle/Description */
+.gx-sell-excess-subtext {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: var(--text-light-3);
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  opacity: 0.95;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gx-sell-excess-subtext p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  .gx-sell-excess-subtext p {
+    width: max-content;
+    font-size: 1.1rem;
+  }
+  .gx-sell-excess-cta {
+    gap: 1rem;
+  }
+}
+
+/* Individual paragraphs within the subtext container */
+.gx-sell-excess-subtext p:nth-child(1) {
+  /* Styles for first paragraph */
+}
+
+.gx-sell-excess-subtext p:nth-child(2) {
+  /* Styles for second paragraph */
+}
+
+.gx-sell-excess-subtext p:nth-child(3) {
+  /* Styles for third paragraph */
+}
+
+/* Call-to-Action Buttons */
+.gx-sell-excess-cta {
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.gx-sell-excess-btn {
+  background: var(--secondary);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
+
+.gx-sell-excess-btn:hover {
+  background: linear-gradient(135deg, #e55a2b, #e0851a);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+}
+
+/* Ghost button styling (reusing existing) */
+.gx-btn-ghost {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.gx-btn-ghost:hover {
+  background: #fff;
+  color: #000;
+  transform: translateY(-2px);
+}
+
+
+/* ======================================== */
+/* HOW IT WORKS SECTION STYLING            */
+/* ======================================== */
+
+.gx-how-it-works-section {
+  background: var(--primary-lightest);
+  padding: 4rem 0;
+}
+
+.gx-how-it-works-title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.gx-text-primary {
+  color: var(--primary) !important;
+}
+
+.gx-text-warning {
+  color: var(--secondary) !important;
+  font-weight: 600;
+}
+
+.gx-text-warning:hover {
+  color: #e0a800 !important;
+  text-decoration: underline;
+}
+
+.gx-step-card {
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.gx-step-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.gx-step-icon-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.gx-step-card:hover .gx-step-icon-img {
+  transform: scale(1.1);
+}
+
+.gx-step-heading {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.gx-step-description {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* ======================================== */
+/* FORM SECTION STYLING                    */
+/* ======================================== */
+
+.gx-form-section {
+  background: #fff;
+  min-height: 60vh;
+  padding: 4rem 0;
+}
+
+/* Form Container */
+.gx-upload-form {
+  background: #fff;
+  padding: 0;
+}
+
+/* Introductory Paragraph */
+.gx-form-intro {
+  margin-bottom: 2.5rem;
+}
+
+.gx-form-intro-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  text-align: left;
+}
+
+/* Custom Form Classes - Empty for future customization */
+.gx-form-group-custom {
+  /* Custom styles for form groups can be added here */
+}
+
+.gx-form-label-custom {
+  /* Custom styles for form labels can be added here */
+}
+
+.gx-form-input-custom {
+  /* Custom styles for form inputs can be added here */
+}
+
+.gx-form-textarea-custom {
+  /* Custom styles for form textareas can be added here */
+}
+
+.gx-submit-btn-custom {
+  /* Custom styles for submit button can be added here */
+}
+
+/* Form Groups */
+.gx-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.gx-form-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.gx-form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #333;
+  background: #fff;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.gx-form-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.gx-form-input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* Textarea */
+.gx-form-textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #333;
+  background: #fff;
+  transition: all 0.3s ease;
+  outline: none;
+  resize: vertical;
+  min-height: 100px;
+  font-family: inherit;
+  position: relative;
+}
+
+.gx-form-textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.gx-form-textarea::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* File Upload Area */
+.gx-file-upload-area {
+  margin: 2rem 0;
+}
+
+.gx-file-upload-zone {
+  border: 1px solid var(--secondary);
+  border-radius: 8px;
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gx-file-upload-zone:hover {
+  border-color: #e55a2b;
+  background: #fff9f6;
+}
+
+.gx-file-upload-zone.dragover {
+  border-color: #007bff;
+  background: #f8f9ff;
+}
+
+.gx-file-upload-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gx-file-upload-icon {
+  font-size: 2.5rem;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.gx-file-upload-text {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.gx-file-upload-link {
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.gx-file-upload-link:hover {
+  color: #e55a2b;
+  text-decoration: underline;
+}
+
+.gx-file-input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* Consent Notice */
+.gx-consent-notice {
+  margin: 2rem 0;
+}
+
+.gx-consent-text {
+  font-size: 0.8rem;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
+}
+
+/* Submit Button */
+.gx-form-submit {
+  margin-top: 2rem;
+}
+
+.gx-submit-btn {
+  padding: 0.875rem 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 200px;
+  display: block;
+}
+
+.gx-submit-btn:hover {
+  background: #0056b3;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.gx-submit-btn:active {
+  transform: translateY(0);
+}
+
+.gx-submit-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+}
+
+/* ======================================== */
+/* DOWNLOAD BANNER SECTION STYLING         */
+/* ======================================== */
+
+.gx-download-banner-section {
+  background: #fff;
+  padding: 3rem 0;
+}
+
+.gx-download-banner {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+}
+
+.gx-download-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gx-excel-icon-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(255, 107, 53, 0.2));
+}
+
+.gx-download-content {
+  padding: 0 1rem;
+}
+
+.gx-download-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.gx-download-description {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.gx-download-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gx-download-btn {
+  background: var(--secondary);
+  color: #fff;
+  border: none;
+  padding: 0.875rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 140px;
+}
+
+.gx-download-btn:hover {
+  background: #e55a2b;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+.gx-download-btn:active {
+  transform: translateY(0);
+}
+
+.gx-download-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.3);
+}
+
+/* ======================================== */
+/* JOIN PLATFORM SECTION STYLING           */
+/* ======================================== */
+
+.gx-join-platform-section {
+  background: #fff;
+  padding: 4rem 0;
+}
+
+.gx-join-platform-title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 500;
+  color: #333;
+  line-height: 1.3;
+  margin-bottom: 3rem;
+}
+
+/* Image Container */
+.gx-join-platform-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.gx-join-platform-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+/* Content Container */
+.gx-join-platform-content {
+  padding-left: 2rem;
+}
+
+/* Feature Accordion */
+.gx-feature-accordion {
+}
+
+.gx-feature-item {
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 0;
+}
+
+.gx-feature-item:last-child {
+  border-bottom: none;
+}
+
+.gx-feature-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gx-feature-header:hover {
+  background: rgba(0, 123, 255, 0.05);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 -1rem;
+  border-radius: 8px;
+}
+
+.gx-feature-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.gx-feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.gx-feature-icon i {
+  font-size: 0.9rem;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.gx-feature-item.active .gx-feature-icon {
+  transform: rotate(180deg);
+}
+
+.gx-feature-item.active .gx-feature-icon i {
+  color: var(--primary);
+}
+
+.gx-feature-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  padding: 0 1rem;
+}
+
+.gx-feature-item.active .gx-feature-content {
+  max-height: 200px;
+  padding: 1rem;
+  margin: 0 -1rem 1rem -1rem;
+  background: rgba(0, 123, 255, 0.05);
+  border-radius: 0 0 8px 8px;
+}
+
+.gx-feature-content p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+
+/* ======================================== */
+/* BENEFITS SECTION STYLING                */
+/* ======================================== */
+
+.gx-benefits-section {
+  background: #fff;
+  padding: 4rem 0;
+}
+
+/* Benefit Cards */
+.gx-benefit-card {
+  display: flex;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+  border: 1px solid #f0f0f0;
+}
+
+.gx-benefit-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  border-color: var(--primary);
+}
+
+/* Benefit Icon */
+.gx-benefit-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gx-benefit-icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Benefit Content */
+.gx-benefit-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.gx-benefit-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.gx-benefit-description {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ======================================== */
+/* PROCESS SECTION STYLING                 */
+/* ======================================== */
+
+.gx-process-section {
+  background: #fff;
+  padding: 4rem 0;
+}
+
+/* Visual Stepper */
+.gx-process-stepper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.gx-stepper-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #e0e0e0;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.gx-stepper-progress-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 2px;
+  background: var(--primary);
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 0%;
+  /* Removed transition since we're using requestAnimationFrame for smooth animation */
+}
+
+.gx-stepper-nodes {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  z-index: 2;
+}
+
+.gx-stepper-node {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.gx-stepper-node:hover {
+  border-color: var(--primary);
+  transform: scale(1.1);
+}
+
+.gx-stepper-node--active {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.gx-stepper-node:hover {
+  border-color: var(--primary);
+  transform: scale(1.1);
+}
+
+.gx-stepper-number {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.gx-stepper-node--active .gx-stepper-number {
+  color: #fff;
+}
+
+/* Slider Wrapper */
+.gx-process-slider-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Make the row a flex track */
+#processSliderTrack {
+  display: flex;
+  width: 400%; /* 100% * 4 slides */
+  transition: transform 0.5s ease-in-out;
+  margin-left: 0; /* Override row's negative margin */
+  margin-right: 0; /* Override row's negative margin */
+}
+
+/* Individual Slide Styling */
+.gx-process-slide {
+  width: 25%; /* 100% / 4 slides */
+  flex-shrink: 0;
+  padding: 0 0.75rem; /* Replicates Bootstrap's g-4 gutter */
+  box-sizing: border-box;
+}
+
+/* Process Cards - UPDATED with transition and default opacity */
+.gx-process-card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  border: 1px solid #f0f0f0;
+  /* ADDED for new animation */
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease, opacity 0.4s ease;
+  opacity: 0.6; 
+}
+
+/* REMOVED the hover effect from the card itself to avoid conflict with the active state */
+
+/* ADDED: Active state for the highlighted card */
+.gx-process-card.gx-process-card--active {
+  opacity: 1;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.15);
+  border-color: var(--primary);
+}
+
+/* Process Icon */
+.gx-process-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gx-process-icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Process Content */
+.gx-process-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.gx-process-description {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+
+/* ======================================== */
+/* FAQ SECTION STYLING                     */
+/* ======================================== */
+
+.gx-faq-section {
+  background: #fff;
+  padding: 4rem 0;
+}
+
+/* FAQ Accordion */
+.gx-faq-accordion {
+  margin: 0 auto;
+}
+
+.gx-faq-item {
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 0;
+}
+
+.gx-faq-item:last-child {
+  border-bottom: none;
+}
+
+.gx-faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gx-faq-header:hover {
+  background: rgba(0, 123, 255, 0.05);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 -1rem;
+  border-radius: 8px;
+}
+
+.gx-faq-question {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+  line-height: 1.4;
+  flex: 1;
+  padding-right: 1rem;
+}
+
+.gx-faq-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.gx-faq-icon i {
+  font-size: 0.9rem;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.gx-faq-item.active .gx-faq-icon {
+  transform: rotate(180deg);
+}
+
+.gx-faq-item.active .gx-faq-icon i {
+  color: var(--primary);
+}
+
+.gx-faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  padding: 0 1rem;
+}
+
+.gx-faq-item.active .gx-faq-content {
+  max-height: 200px;
+  padding: 1rem;
+  margin: 0 -1rem 1rem -1rem;
+  background: rgba(0, 123, 255, 0.05);
+  border-radius: 0 0 8px 8px;
+}
+
+.gx-faq-content p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ======================================== */
+/* RESPONSIVE DESIGN                       */
+/* ======================================== */
+
+@media (max-width: 991.98px) {
+  .gx-sell-excess-hero {
+    min-height: 80vh;
+  }
+
+  .gx-sell-excess-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+
+  .gx-sell-excess-subtext {
+    font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+  }
+
+  .gx-sell-excess-cta {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .gx-sell-excess-cta .btn {
+    width: 100%;
+    max-width: max-content;
+    margin-bottom: 1rem;
+  }
+
+  .gx-how-it-works-title {
+    font-size: clamp(1.8rem, 3.5vw, 2.2rem);
+  }
+
+  .gx-step-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .gx-step-icon-img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .gx-sell-excess-hero {
+    min-height: 70vh;
+    padding: 2rem 0;
+  }
+
+  .gx-sell-excess-title {
+    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+    margin-bottom: 1rem;
+  }
+
+  .gx-sell-excess-subtext {
+    font-size: clamp(0.85rem, 1.6vw, 1rem);
+    margin-bottom: 1.5rem;
+  }
+
+  .gx-search-input-group {
+    border-radius: 25px;
+  }
+
+  .gx-search-input,
+  .gx-search-button {
+    padding: 0.8rem 1.2rem;
+  }
+
+  .gx-how-it-works-section {
+    padding: 3rem 0;
+  }
+
+  .gx-how-it-works-title {
+    font-size: clamp(1.6rem, 3vw, 2rem);
+    margin-bottom: 2rem;
+  }
+
+  .gx-step-card {
+    padding: 1.5rem 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .gx-step-icon-img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .gx-step-heading {
+    font-size: 1rem;
+  }
+
+  .gx-step-description {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .gx-sell-excess-hero {
+    min-height: 60vh;
+  }
+
+  .gx-sell-excess-title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+  }
+
+  .gx-sell-excess-subtext {
+    font-size: clamp(0.8rem, 1.4vw, 0.9rem);
+  }
+
+  .gx-search-container {
+    padding: 0 1rem;
+  }
+
+  .gx-search-input-group {
+    border-radius: 20px;
+  }
+
+  .gx-search-input,
+  .gx-search-button {
+    padding: 0.7rem 1rem;
+  }
+
+  .gx-how-it-works-section {
+    padding: 2rem 0;
+  }
+
+  .gx-how-it-works-title {
+    font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+    margin-bottom: 1.5rem;
+  }
+
+  .gx-step-card {
+    padding: 1rem 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .gx-step-icon-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .gx-step-heading {
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .gx-step-description {
+    font-size: 0.8rem;
+  }
+  
+  .gx-form-section {
+    padding: 2rem 0;
+  }
+  
+  .gx-form-intro-text {
+    font-size: 0.9rem;
+  }
+  
+  .gx-file-upload-zone {
+    padding: 2rem 1rem;
+    min-height: 120px;
+  }
+  
+  .gx-file-upload-icon {
+    font-size: 2rem;
+  }
+  
+  .gx-file-upload-text {
+    font-size: 0.85rem;
+  }
+  
+  .gx-submit-btn {
+    max-width: 100%;
+    padding: 0.75rem 1.5rem;
+  }
+  
+  .gx-download-banner {
+    padding: 1.5rem;
+  }
+  
+  .gx-excel-icon-img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .gx-download-title {
+    font-size: 1.2rem;
+  }
+  
+  .gx-download-description {
+    font-size: 0.9rem;
+  }
+  
+  .gx-download-btn {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
+    min-width: 120px;
+  }
+  
+  .gx-join-platform-title {
+    font-size: clamp(1.8rem, 3.5vw, 2.2rem);
+  }
+  
+  .gx-join-platform-content {
+    padding-left: 1rem;
+  }
+  
+  .gx-feature-title {
+    font-size: 1.1rem;
+  }
+  
+  .gx-benefit-card {
+    padding: 1.25rem;
+  }
+  
+  .gx-benefit-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.875rem;
+  }
+  
+  .gx-benefit-title {
+    font-size: 1rem;
+  }
+  
+  .gx-benefit-description {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .gx-benefit-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .gx-benefit-icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 0.75rem;
+  }
+  
+  .gx-benefit-title {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .gx-benefit-description {
+    font-size: 0.8rem;
+  }
+  
+  .gx-process-stepper {
+    margin: 2rem 0;
+  }
+  
+  .gx-stepper-nodes {
+    max-width: 500px;
+  }
+  
+  .gx-stepper-node {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .gx-stepper-number {
+    font-size: 0.9rem;
+  }
+  
+  .gx-process-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .gx-process-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 1rem;
+  }
+  
+  .gx-process-title {
+    font-size: 1.1rem;
+  }
+  
+  .gx-process-description {
+    font-size: 0.85rem;
+  }
+  
+  /* Slider responsive adjustments for mobile */
+  .gx-process-slider-wrapper {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  #processSliderTrack {
+    width: 400%;
+  }
+  
+  .gx-process-slide {
+    width: 25%;
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .gx-process-stepper {
+    margin: 1.5rem 0;
+  }
+  
+  .gx-stepper-nodes {
+    max-width: 300px;
+  }
+  
+  .gx-stepper-node {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .gx-stepper-number {
+    font-size: 0.75rem;
+  }
+  
+  .gx-process-card {
+    padding: 1rem 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .gx-process-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.75rem;
+  }
+  
+  .gx-process-title {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .gx-process-description {
+    font-size: 0.75rem;
+  }
+  
+  .gx-faq-accordion {
+    max-width: 100%;
+  }
+  
+  .gx-faq-question {
+    font-size: 1rem;
+  }
+  
+  .gx-faq-content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .gx-faq-header {
+    padding: 1rem 0;
+  }
+  
+  .gx-faq-question {
+    font-size: 0.95rem;
+  }
+  
+  .gx-faq-content p {
+    font-size: 0.85rem;
+  }
+}
+
+/* ======================================== */
+/* ANIMATIONS                               */
+/* ======================================== */
+
+.gx-sell-excess-hero {
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gx-sell-excess-title,
+.gx-sell-excess-subtext,
+.gx-sell-excess-cta {
+  animation: slideInUp 0.8s ease-out;
+}
+
+.gx-sell-excess-subtext {
+  animation-delay: 0.2s;
+}
+
+.gx-sell-excess-cta {
+  animation-delay: 0.4s;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ======================================== */
+/* ACCESSIBILITY                           */
+/* ======================================== */
+
+.gx-sell-excess-btn:focus,
+.gx-btn-ghost:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.gx-search-button:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* ======================================== */
+/* PRINT STYLES                            */
+/* ======================================== */
+
+@media print {
+  .gx-sell-excess-hero {
+    min-height: auto;
+    background: #fff !important;
+  }
+
+  .gx-sell-excess-bg,
+  .gx-sell-excess-overlay {
+    display: none;
+  }
+
+  .gx-sell-excess-title,
+  .gx-sell-excess-subtext {
+    color: #000 !important;
+  }
+
+  .gx-search-section {
+    display: none;
+  }
+}

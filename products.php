@@ -15,7 +15,7 @@ $cssFiles = [
 $cssFiles[] = './assets/css/products.css';
 
 include_once('./includes/header.php');
-include_once('./includes/nav.php');
+include_once('./includes/search_nav.php');
 ?>
 <!-- Main Content Section -->
 <section class="gx-products-section">

@@ -8,13 +8,12 @@ $cssFiles = [
   './assets/css/markets-industries.css',
   './assets/css/testimonials.css',
   './assets/css/why-work-with-us.css',
-  './assets/css/save-the-globe.css',
   './assets/css/contact-us.css',
   './assets/css/footer.css',
 ];
-$cssFiles[] = './assets/css/society.css';
+$cssFiles[] = './assets/css/social-corporate-society.css';
 include_once('./includes/header.php');
-include_once('./includes/transparent_nav.php');
+include_once('./includes/nav.php');
 ?>
 
 <!-- Save the Globe Hero Section -->

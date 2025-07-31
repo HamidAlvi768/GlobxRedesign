@@ -147,9 +147,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
-.navbar .container{
-  max-width: 1450px;
-}
+
 
 #navbarNav{
   padding-left: 3rem;
@@ -477,5 +475,8 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 992px) {
   .container {
     max-width: var(--section-width);
+}
+.navbar .container{
+  max-width: 1450px;
 }
 }

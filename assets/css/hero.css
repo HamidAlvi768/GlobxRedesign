@@ -115,14 +115,14 @@
 .gx-sidebar-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  gap: 1.1rem;
+  justify-content: space-around;
 }
 
 .gx-sidebar-cell {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   flex: 1 1 0;
   min-width: 0;
 }
@@ -135,8 +135,8 @@
 }
 
 .gx-sidebar-label {
-  color: var(--text-light-3);
-  font-size: 0.98rem;
+  color: var(--text-light-2);
+  font-size: 0.75rem;
   font-weight: 400;
   margin-top: 0.1rem;
   text-align: center;
@@ -236,7 +236,7 @@
 }
 
 .gx-sidebar-carousel .owl-stage-outer {
-  width: 100%;
+  width: 22rem;
 }
 
 .gx-sidebar-carousel .owl-stage {
@@ -249,6 +249,7 @@
 
 .gx-sidebar-slide {
   width: 100%;
+  padding-inline: 10px;
 }
 
 /* Hide default Owl Carousel navigation arrows */

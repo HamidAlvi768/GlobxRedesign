@@ -46,6 +46,7 @@
   background: var(--primary);
   color: var(--text-light-2);
   border-radius: 0.4rem;
+  padding: 0.75rem 1.5rem;
   border: none;
   font-size: 1.1rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -83,9 +84,84 @@
 /* NAVBAR VARIANTS - Common across pages   */
 /* ======================================== */
 
+.gx-products-section, .gx-job-detail-hero, .gx-products-section, .gx-category-section{
+  margin-top: 13rem !important;
+}
+.gx-product-detail-section, .gx-sell-excess-hero {
+  margin-top: 11rem !important;
+}
+
+@media (max-width: 991.98px) {
+  .gx-product-detail-section, .gx-sell-excess-hero {
+    margin-top: 8rem !important;
+  }
+}
+
+.gx-products-section .gx-search-section,
+.gx-careers-hero .gx-search-section,
+.gx-category-section .gx-search-section,
+.gx-product-detail-section .gx-search-section {
+  display: none;
+}
+
+.gx-navbar-container{
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08), 0 1.5px 4px rgba(0, 0, 0, 0.04) !important;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 991.98px) {
+  .gx-navbar-container {
+    top: 0 !important;
+  }
+}
+
+.gx-navbar-sub-container{
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  background: #fff !important;
+  height: 10rem;
+}
+
+@media (max-width: 991.98px) {
+  .gx-navbar-sub-container {
+    height: 8rem;
+  }
+}
+
+.search-navbar{
+  box-shadow: unset !important;
+  background: unset !important;
+    position: static;
+}
+
+.gx-top-bar-search{
+  position: relative;
+  z-index: 1111;
+}
+
+.gx-search-section-search-nav {
+  margin: 0 auto;
+  padding-left: 3rem;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .gx-search-section-search-nav {
+    width: 1220px !important;
+  }
+}
+
+
 .gx-navbar--application {
   background: #fff !important;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0 !important;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08), 0 1.5px 4px rgba(0,0,0,0.04) !important;
   /* top: 2rem; */
 }
@@ -157,7 +233,7 @@
 
 .gx-cta-card {
   height: 280px;
-  border-radius: 0.75rem;
+  border-radius: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -184,7 +260,7 @@
 }
 
 .gx-cta-heading {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   color: #fff;
   margin-bottom: 1rem;
@@ -207,7 +283,7 @@
   border-radius: 0.5rem;
   padding: 0.875rem 2rem;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   cursor: pointer;
   transition: all 0.2s;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -493,6 +569,8 @@
   position: relative;
 }
 
+
+
 /* Make dots more visible for debugging */
 .gx-dot {
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
@@ -508,6 +586,10 @@
 
 /* Tablet Breakpoint (max-width: 991.98px) */
 @media (max-width: 991.98px) {
+
+  .gx-hero-pagination{
+    justify-content: center !important;
+  }
   
   .gx-section-headline-common--large,
   .gx-section-headline-common--medium {
@@ -670,20 +752,20 @@
 }
 
 .gx-search-input-group {
+  transition: box-shadow 0.2s, border-color 0.2s;
   display: flex;
   align-items: center;
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 0.5rem;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition: box-shadow 0.2s, border-color 0.2s;
 }
 
-.gx-search-input-group:focus-within {
+/* .gx-search-input-group:focus-within {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-color: var(--primary);
-}
+} */
 
 .gx-search-input {
   flex: 1;
@@ -731,7 +813,7 @@
 /* Small Mobile */
 @media (max-width: 575.98px) {
   .gx-search-input-group {
-    flex-direction: column;
+    /* flex-direction: column; */
     border-radius: 0.5rem;
   }
   
@@ -742,7 +824,5 @@
   }
   
   .gx-search-button {
-    width: 100%;
-    border-radius: 0 0 0.5rem 0.5rem;
   }
 }

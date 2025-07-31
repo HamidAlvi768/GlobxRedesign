@@ -14,7 +14,7 @@ $cssFiles = [
 ];
 $cssFiles[] = './assets/css/careers.css';
 include_once('./includes/header.php');
-include_once('./includes/nav.php');
+include_once('./includes/transparent_nav.php');
 ?>
     <!-- Hero Section -->
     <section class="gx-careers-hero position-relative d-flex align-items-center">

@@ -18,7 +18,7 @@
         <div class="container align-items-center">
             <!-- Logo -->
             <a class="navbar-brand d-flex align-items-center gx-logo" href="#">
-                <img src="./assets/logo.png" alt="GX Logo" height="48"/>
+                <img src="./assets/navbar/colored-logo.png" alt="GX Logo" height="48"/>
             </a>
             <!-- Navbar Toggler for Mobile -->
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
