@@ -73,7 +73,7 @@
 }
 
 .gx-tab-btn-active:hover {
-  background: var(--primary-lightest);
+  background: white;
   transform: translateY(-1px);
 }
 
@@ -176,13 +176,6 @@
 
 /* Solution Illustration */
 .gx-solution-illustration {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  min-height: 300px;
-  background: #f8f9fa;
-  border-radius: 0.5rem;
 }
 
 /* Transition Chevron Between Sections */
@@ -358,4 +351,3 @@
   .gx-content-container-wrapper {
     clip-path: polygon(0% 0%, 95.3% 0%, 100% 9.8%, 100% 100%, 0% 100%);
   }
-}

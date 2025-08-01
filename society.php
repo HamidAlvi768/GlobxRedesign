@@ -27,7 +27,7 @@ include_once('./includes/nav.php');
     <div class="row justify-content-center">
       <div class="col-lg-8 col-md-10 text-center">
         <!-- Main Heading -->
-        <h1 class="gx-save-globe-title mb-4">Save the Globe.</h1>
+        <h1 class="gx-save-globe-title mb-4">Save the Globe</h1>
 
         <!-- Descriptive Text -->
         <p class="gx-save-globe-subtext mb-5">
@@ -66,7 +66,7 @@ include_once('./includes/nav.php');
   </div>
 
   <!-- Decorative Chevron -->
-  <div class="gx-save-globe-arrows position-absolute">
+  <div class="gx-save-globe-arrows gx-arrows position-absolute">
     <img src="./assets/hero-arrow.png" alt="Decorative Arrows" width="180" height="150" />
   </div>
 </section>

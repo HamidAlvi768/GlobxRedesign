@@ -409,8 +409,11 @@ include_once('./includes/transparent_nav.php');
               </div>
               <!-- Right: Illustration -->
               <div class="col-lg-6">
-                <div class="gx-solution-illustration">
-                  <!-- Solution illustration will be added here -->
+                <div class="gx-solution-illustration gx-illustration-wrapper-common gx-illustration-wrapper-common">
+                  <div class="gx-illustration-container gx-illustration-container-common">
+                    <img src="./assets/problem-back.png" alt="Background Shape" class="gx-illustration-background gx-illustration-background-common" />
+                    <img src="./assets/solution.png" alt="Supply Chain Solution Illustration" class="gx-illustration-foreground gx-illustration-foreground-common gx-illustration-foreground-common--full gx-reveal-slide-right-fg" />
+                  </div>
                 </div>
               </div>
             </div>

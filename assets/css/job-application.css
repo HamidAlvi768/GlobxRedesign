@@ -88,6 +88,28 @@
   font-size: 0.95rem;
 }
 
+/* Required field asterisks */
+.gx-form-label:has(+ input[required]),
+.gx-form-label:has(+ select[required]),
+.gx-form-label:has(+ textarea[required]) {
+  position: relative;
+}
+
+.gx-form-label:has(+ input[required])::after,
+.gx-form-label:has(+ select[required])::after,
+.gx-form-label:has(+ textarea[required])::after {
+  content: " *";
+  color: hsl(360, 85%, 64%);
+  font-weight: 600;
+}
+
+/* Alternative approach for browsers that don't support :has() */
+.gx-form-label.required::after {
+  content: " *";
+  color: hsl(360, 85%, 64%);
+  font-weight: 600;
+}
+
 /* Form Inputs */
 .gx-form-input,
 .gx-form-select,

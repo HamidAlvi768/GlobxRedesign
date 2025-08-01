@@ -46,6 +46,7 @@
 @media (max-width: 991.98px) {
   .gx-section-common {
     padding-top: calc(4rem + var(--navbar-height-tablet));
+    padding-bottom: 0;
   }
   
   .gx-form-banner {
@@ -56,13 +57,20 @@
 @media (max-width: 767.98px) {
   .gx-section-common {
     padding-top: calc(2rem + var(--navbar-height-mobile));
+    margin-top: 2rem;
+    padding-bottom: 0;
+  }
+  .gx-contact-section {
+    padding: 1rem 0 5rem 0;
   }
 }
 
 @media (max-width: 575.98px) {
   .gx-section-common {
     padding-top: calc(2rem + var(--navbar-height-small));
+
   }
+
   
   .gx-form-banner {
     padding: 2rem 0.5rem;
@@ -178,10 +186,28 @@
   }
 }
 
-/* Mobile */
+/* Mobile - Hide illustration section */
 @media (max-width: 767.98px) {
   .gx-form-title {
     font-size: 1.75rem;
+  }
+  
+  /* Hide the left column with illustration on mobile */
+  .gx-contact-visual,
+  .gx-wwd-visual,
+  .gx-illustration-container-common {
+    display: none !important;
+  }
+  
+  /* Adjust the right column to take full width */
+  .col-lg-4.col-md-4.col-sm-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  /* Center the content on mobile */
+  .gx-content-area-common {
+    text-align: center;
   }
   
   .gx-contact-image-container {

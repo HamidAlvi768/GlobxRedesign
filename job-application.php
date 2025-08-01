@@ -43,7 +43,7 @@ include_once('./includes/nav.php');
                         
                         <div class="row">
                             <div class="col-md-4 mb-3">
-                                <label for="gender" class="gx-form-label">Gender*</label>
+                                <label for="gender" class="gx-form-label required">Gender</label>
                                 <select class="gx-form-select" id="gender" required>
                                     <option value="">Select Gender</option>
                                     <option value="male">Male</option>
@@ -52,22 +52,22 @@ include_once('./includes/nav.php');
                                 </select>
                             </div>
                             <div class="col-md-4 mb-3">
-                                <label for="firstName" class="gx-form-label">First name*</label>
+                                <label for="firstName" class="gx-form-label required">First name</label>
                                 <input type="text" class="gx-form-input" id="firstName" required>
                             </div>
                             <div class="col-md-4 mb-3">
-                                <label for="lastName" class="gx-form-label">Last name*</label>
+                                <label for="lastName" class="gx-form-label required">Last name</label>
                                 <input type="text" class="gx-form-input" id="lastName" required>
                             </div>
                         </div>
                         
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <label for="email" class="gx-form-label">Email*</label>
+                                <label for="email" class="gx-form-label required">Email</label>
                                 <input type="email" class="gx-form-input" id="email" required>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label for="phone" class="gx-form-label">Telephone number*</label>
+                                <label for="phone" class="gx-form-label required">Telephone number</label>
                                 <input type="tel" class="gx-form-input" id="phone" required>
                             </div>
                         </div>
@@ -85,9 +85,10 @@ include_once('./includes/nav.php');
 
                     <!-- Section 2: CV -->
                     <div class="gx-form-section">
-                        <h3 class="gx-form-section-title">2. CV*</h3>
+                        <h3 class="gx-form-section-title">2. CV</h3>
                         
                         <div class="gx-file-upload-container mb-3">
+                            <label class="gx-form-label required">Upload application documents</label>
                             <div class="gx-file-upload">
                                 <i class="fas fa-arrow-up gx-upload-icon"></i>
                                 <p class="gx-upload-text">Upload application documents</p>
@@ -124,9 +125,10 @@ include_once('./includes/nav.php');
 
                     <!-- Section 4: How did you hear about us? -->
                     <div class="gx-form-section">
-                        <h3 class="gx-form-section-title">4. How did you hear about us?*</h3>
+                        <h3 class="gx-form-section-title">4. How did you hear about us?</h3>
                         
                         <div class="gx-radio-group">
+                            <label class="gx-form-label required">Select how you heard about us</label>
                             <div class="gx-radio-item">
                                 <input type="radio" id="linkedin-source" name="source" value="linkedin" required>
                                 <label for="linkedin-source">Linkedin</label>
@@ -161,7 +163,7 @@ include_once('./includes/nav.php');
                         
                         <div class="gx-checkbox-item">
                             <input type="checkbox" id="privacy-consent" required>
-                            <label for="privacy-consent">I accept the privacy policy of GlobX GmbH</label>
+                            <label for="privacy-consent" class="required">I accept the privacy policy of GlobX GmbH</label>
                         </div>
                     </div>
 

@@ -67,7 +67,7 @@
   line-height: 1.1;
   color: var(--text-light);
   font-weight: 300;
-  max-width: 20ch;
+  /* max-width: 20ch; */
   font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
   font: Poppins, SemiBold;
 }

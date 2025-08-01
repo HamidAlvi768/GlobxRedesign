@@ -54,6 +54,11 @@
   <script src="<?php echo $file; ?>"></script>
 <?php endforeach; ?>
 
+<!-- Smart Navigation Bar Functionality -->
+<script src="./assets/js/smart-navigation.js"></script>
+
+
+
 <!-- Problem & Solution Tab Functionality -->
 <script>
   document.addEventListener('DOMContentLoaded', function() {

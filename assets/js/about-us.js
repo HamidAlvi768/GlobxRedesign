@@ -103,4 +103,74 @@ document.addEventListener('DOMContentLoaded', function() {
     }, { threshold: 0.3 });
     observer.observe(trackRecordSection);
   }
+
+  // Certifications Carousel Initialization
+  const certificationsCarousel = $('.gx-certifications-scroll');
+  
+  if (certificationsCarousel.length && typeof $.fn.owlCarousel !== 'undefined') {
+    console.log('Initializing certifications carousel...');
+    
+    certificationsCarousel.owlCarousel({
+      items: 4,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      autoplayHoverPause: true,
+      smartSpeed: 600,
+      nav: false,
+      dots: false,
+      touchDrag: true,
+      mouseDrag: true,
+      pullDrag: true,
+      freeDrag: false,
+      margin: 16,
+      stagePadding: 0,
+      merge: false,
+      mergeFit: true,
+      autoWidth: false,
+      autoHeight: false,
+      startPosition: 0,
+      rtl: false,
+      slideBy: 1,
+      lazyLoad: false,
+      lazyLoadEager: 0,
+      rewind: false,
+      rewindNav: true,
+      scrollPerPage: false,
+      center: false,
+      video: false,
+      videoHeight: false,
+      videoWidth: false,
+      responsive: {
+        0: {
+          items: 1,
+          margin: 8
+        },
+        576: {
+          items: 2,
+          margin: 12
+        },
+        768: {
+          items: 3,
+          margin: 14
+        },
+        992: {
+          items: 4,
+          margin: 16
+        }
+      },
+      onInitialized: function(event) {
+        console.log('Certifications carousel initialized successfully');
+      },
+      onTranslated: function(event) {
+        // Optional: Add any translation callbacks here
+      }
+    });
+    
+    console.log('Certifications carousel configuration applied');
+  } else {
+    console.log('Certifications carousel not found or Owl Carousel not loaded');
+    console.log('Carousel element found:', certificationsCarousel.length);
+    console.log('Owl Carousel available:', typeof $.fn.owlCarousel !== 'undefined');
+  }
 }); 

@@ -14,7 +14,7 @@ $cssFiles = [
 ];
 $cssFiles[] = './assets/css/about-us.css';
 include_once('./includes/header.php');
-include_once('./includes/nav.php');
+include_once('./includes/transparent_nav.php');
 ?>
 
 <!-- Hero Section -->
@@ -243,6 +243,7 @@ $jsFiles = [
     './assets/js/testimonials.js',
     './assets/js/scroll-reveal.js',
     './assets/js/infinite-scroll.js',
+    './assets/js/about-us.js',
 ];
 $jsFiles[] = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js';
 
