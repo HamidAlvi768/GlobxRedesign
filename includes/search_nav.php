@@ -10,6 +10,9 @@
            border: none !important;
            box-shadow: unset !important;
        }
+       .filter-image{
+        width: 25px;
+       }
    </style>
    <!-- Top Bar -->
    <div class="gx-top-bar gx-top-bar-search">
@@ -74,7 +77,11 @@
                <div class="gx-search-container">
                    <div class="gx-search-input-group">
                        <input type="text" class="gx-search-input" placeholder="Search MPN here">
+                       <button class="btn filter-btn btn-small text-silver p-2 me-2">
+                    <img src="./Website Design/filter-icon.png" class="filter-image">      
+                    </button>
                        <button class="gx-search-button">
+                        
                            <i class="fas fa-search"></i>
                        </button>
                    </div>

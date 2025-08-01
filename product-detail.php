@@ -28,6 +28,7 @@ include_once('./includes/search_nav.php');
           <button class="gx-search-button">
             <i class="fas fa-search"></i>
           </button>
+
         </div>
       </div>
     </div>

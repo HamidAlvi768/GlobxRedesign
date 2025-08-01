@@ -54,6 +54,7 @@ include_once('./includes/search_nav.php');
                         <!-- Job Title and Metadata -->
                         <div class="gx-job-header mb-4">
                             <h1 class="gx-job-title">Senior Field Marketing Manager</h1>
+                            
                             <div class="gx-job-meta">
                                 <span class="gx-job-meta-item">Permanent</span>
                                 <span class="gx-job-meta-separator">|</span>
@@ -63,8 +64,16 @@ include_once('./includes/search_nav.php');
                                 <span class="gx-job-meta-separator">|</span>
                                 <span class="gx-job-meta-item">Marketing</span>
                             </div>
-                            <div class="gx-job-location mt-2">
-                                Location: <strong>Germany</strong>
+                            <div class="gx-job-location mt-2 d-flex justify-content-between">
+                                <p>
+
+                                    Location: <strong>Germany</strong>
+                                </p>
+                                <button class="btn btn-primary gx-btn-primary gx-submit-btn">Apply Now</button>
+                                <!-- Apply Now Button -->
+                                <!-- <div class="gx-job-apply-section">
+                            
+                        </div> -->
                             </div>
                         </div>
 
@@ -123,10 +132,7 @@ include_once('./includes/search_nav.php');
                             </p>
                         </div>
 
-                        <!-- Apply Now Button -->
-                        <div class="gx-job-apply-section">
-                            <button class="gx-btn-primary gx-submit-btn">Apply Now</button>
-                        </div>
+                        
                     </div>
                 </div>
 

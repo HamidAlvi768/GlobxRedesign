@@ -48,7 +48,7 @@ include_once('./includes/transparent_nav.php');
             <!-- Search Section -->
             <div class="gx-search-section text-center mb-5">
                 <h2 class="gx-search-heading mb-4">
-                    Search <span class="gx-search-highlight">Jobs</span> Here
+                    Search <span class="gx-search-highlight text-primary">Jobs</span> Here
                 </h2>
                 
                 <div class="gx-search-form">
@@ -56,7 +56,7 @@ include_once('./includes/transparent_nav.php');
                         <div class="col-lg-12">
                             <div class="gx-search-form-container">
                                 <div class="gx-search-input-group">
-                                    <input type="text" class="gx-search-input" placeholder="Keywords">
+                                    <input type="text" class="gx-search-input" placeholder="Keywords"/>
                                     <select class="gx-search-dropdown">
                                         <option value="">All Locations</option>
                                         <option value="usa">USA</option>
