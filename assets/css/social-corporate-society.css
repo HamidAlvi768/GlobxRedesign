@@ -1,0 +1,612 @@
+/* ======================================== */
+/* GLOBX - SOCIAL CORPORATE SOCIETY        */
+/* ======================================== */
+
+/* Save the Globe Hero Section */
+.gx-save-globe-hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-dark-2) 100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 100%;
+}
+
+/* Background with Earth Image */
+.gx-save-globe-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../../assets/society/earth.jpg') center center/cover no-repeat;
+  z-index: 0;
+  filter: brightness(0.8) contrast(1.2);
+  
+}
+
+/* Overlay for better text readability */
+.gx-save-globe-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* Central Content */
+.gx-save-globe-content {
+  position: relative;
+  z-index: 2;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  max-width: var(--section-width);
+}
+
+/* Main Title */
+.gx-save-globe-title {
+  font-size: 4.5rem;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+  color: var(--text-light);
+  font-family: var(--font-headings);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Descriptive Text */
+.gx-save-globe-subtext {
+  font-size: 1.25rem;
+  color: var(--text-light-2);
+  max-width: 800px;
+  line-height: 1.2;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+  font-weight: 300;
+}
+
+/* Call-to-Action Buttons Container */
+.gx-save-globe-cta {
+  margin-top: 2rem;
+}
+
+
+
+/* Become Partner Button */
+
+
+/* Bottom Overlay Cards Container */
+.gx-save-globe-cards {
+  bottom: -4rem;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.gx-save-globe-cards-container {
+  margin: 0 auto;
+}
+
+/* Stat Card (Left) */
+.gx-save-globe-stat-card {
+  background: var(--text-light-3);
+  border-radius: 0.2rem;
+  padding: 2rem 2.5rem;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  min-width: 200px;
+  flex: 1;
+}
+
+.gx-save-globe-stat-number {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--secondary);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-headings);
+}
+
+.gx-save-globe-stat-label {
+  font-size: 1rem;
+  color: var(--secondary);
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  background: hsla(58, 74%, 39%, 0.09);
+  width: 45%;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+@media (max-width: 1200px) {
+  .gx-save-globe-stat-label {
+    width: 80%;
+  }
+  
+  .gx-nature-explorers-section{
+    /* padding-left: 5rem; */
+    margin-right:6rem;
+    margin-left:-2rem ;
+  }  
+}
+
+
+/* Feature Card (Right) */
+.gx-save-globe-feature-card {
+  background: var(--text-light-3);
+  border-radius: 0.2rem;
+  padding: 2rem 2.5rem;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  min-width: 200px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gx-save-globe-feature-title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--secondary);
+  line-height: 1;
+  font-family: var(--font-headings);
+}
+
+/* Decorative Arrows */
+.gx-save-globe-arrows {
+  left: 2.5vw;
+  bottom: 2.5vw;
+  z-index: 3;
+  transition: transform 0.4s ease-out;
+  transform: rotate(0deg);
+}
+
+.gx-save-globe-arrows img {
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+}
+
+/* ======================================== */
+/* PLANTS FOR THE PLANET SECTION           */
+/* ======================================== */
+
+.gx-plants-section {
+  background: #fff;
+  position: relative;
+  margin-left: 4rem;
+}
+
+/* Content Layout */
+.gx-plants-content {
+  padding-right: 3rem;
+}
+
+/* Pre-heading Label */
+.gx-plants-label {
+  color: var(--secondary);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+/* Main Heading */
+.gx-plants-title {
+  color: var(--text-dark);
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+
+/* Header Wrapper with Stat Box */
+.gx-plants-header-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+/* Stat Box */
+.gx-plants-stat-box {
+  background: hsla(58, 74%, 39%, 0.09);
+  border-radius: 1rem;
+  padding: 0.7rem;
+  min-width: 140px;
+  flex-shrink: 0;
+}
+
+.gx-plants-stat-number {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--secondary);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-headings);
+}
+
+.gx-plants-stat-label {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  font-weight: 500;
+  line-height: 1.2;
+  opacity: 0.8;
+}
+
+/* Body Text */
+.gx-plants-body {
+  color: var(--text-dark);
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+
+.gx-plants-body p {
+  margin-bottom: 0;
+}
+
+/* Image Container */
+.gx-plants-image-wrapper {
+  padding-left: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gx-plants-image-container {
+  width: 100%;
+  max-width: 450px;
+  position: relative;
+}
+
+.gx-plants-image {
+  width: 75%;
+  height: auto;
+  border-radius: 0.2rem;
+  object-fit: cover;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* ======================================== */
+/* RESPONSIVE DESIGN                        */
+/* ======================================== */
+
+@media (max-width: 991.98px) {
+  .gx-save-globe-hero {
+    min-height: 80vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .gx-save-globe-content {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  .gx-save-globe-title {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .gx-save-globe-subtext {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  
+  .gx-save-globe-cards-container {
+    gap: 1.5rem;
+  }
+  
+  .gx-save-globe-stat-card,
+  .gx-save-globe-feature-card {
+    min-width: 250px;
+    max-width: 300px;
+    padding: 1.5rem 2rem;
+  }
+  
+  .gx-save-globe-stat-number {
+    font-size: 2.5rem;
+  }
+  
+  .gx-save-globe-feature-title {
+    font-size: 1.1rem;
+  }
+  
+  .gx-save-globe-arrows {
+    left: 1rem;
+    bottom: 1rem;
+  }
+  
+  .gx-save-globe-arrows img {
+    width: 120px;
+    height: auto;
+  }
+
+  .gx-plants-content {
+    padding-right: 0;
+  }
+  
+  .gx-plants-header-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  
+  .gx-plants-stat-box {
+    align-self: flex-start;
+    min-width: 120px;
+    padding: 1.25rem 1.5rem;
+  }
+  
+  .gx-plants-stat-number {
+    font-size: 2rem;
+  }
+  
+  .gx-plants-stat-label {
+    font-size: 0.85rem;
+  }
+  
+  .gx-plants-image-container {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .gx-save-globe-hero {
+    min-height: 70vh;
+  }
+  
+  .gx-save-globe-content {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  .gx-save-globe-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .gx-save-globe-subtext {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .gx-save-globe-cta {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .gx-btn-learn-more,
+  .gx-save-globe-btn {
+    width: 200px;
+    text-align: center;
+  }
+  
+  
+  .gx-save-globe-stat-card,
+  .gx-save-globe-feature-card {
+    min-width: 200px;
+    max-width: 250px;
+    padding: 1.25rem 1.5rem;
+  }
+  
+  .gx-save-globe-stat-number {
+    font-size: 2rem;
+  }
+  
+  .gx-save-globe-feature-title {
+    font-size: 1rem;
+  }
+  
+  .gx-save-globe-arrows {
+    display: none;
+  }
+
+  .gx-plants-section {
+    padding: 6rem 0;
+  }
+  
+  .gx-plants-content {
+    margin-top: 2rem;
+  }
+  
+  .gx-plants-title {
+    font-size: 2rem;
+  }
+  
+  .gx-plants-stat-box {
+    min-width: 100px;
+    padding: 1rem 1.25rem;
+  }
+  
+  .gx-plants-stat-number {
+    font-size: 1.75rem;
+  }
+  
+  .gx-plants-stat-label {
+    font-size: 0.8rem;
+  }
+  
+  .gx-plants-body {
+    font-size: 0.95rem;
+  }
+  
+  .gx-plants-image-container {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .gx-save-globe-hero {
+    min-height: 60vh;
+  }
+  
+  .gx-save-globe-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .gx-save-globe-title {
+    font-size: 2rem;
+  }
+  
+  .gx-save-globe-subtext {
+    font-size: 0.95rem;
+  }
+  
+  .gx-btn-learn-more,
+  .gx-save-globe-btn {
+    width: 180px;
+    font-size: clamp(0.8rem, 0.5rem + 1vw, 1rem);
+    padding: 0.75rem 1.5rem;
+  }
+
+  
+  .gx-save-globe-stat-card,
+  .gx-save-globe-feature-card {
+    min-width: 160px;
+    max-width: 200px;
+    padding: 1rem 1.25rem;
+  }
+  
+  .gx-save-globe-stat-number {
+    font-size: 1.75rem;
+  }
+  
+  .gx-save-globe-feature-title {
+    font-size: 0.9rem;
+  }
+  
+  .gx-plants-title {
+    font-size: 1.75rem;
+  }
+  
+  .gx-plants-stat-box {
+    min-width: 90px;
+    padding: 0.875rem 1rem;
+  }
+  
+  .gx-plants-stat-number {
+    font-size: 1.5rem;
+  }
+  
+  .gx-plants-stat-label {
+    font-size: 0.75rem;
+  }
+  
+  .gx-plants-body {
+    font-size: 0.9rem;
+  }
+  
+  .gx-plants-image-container {
+    max-width: 280px;
+  }
+}
+
+/* ======================================== */
+/* ANIMATIONS & TRANSITIONS                 */
+/* ======================================== */
+
+/* Smooth transitions for interactive elements */
+.gx-save-globe-stat-card,
+.gx-save-globe-feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gx-save-globe-stat-card:hover,
+.gx-save-globe-feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus states for accessibility */
+.gx-btn-learn-more:focus,
+.gx-save-globe-btn:focus {
+  outline: 2px solid var(--secondary);
+  outline-offset: 2px;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .gx-save-globe-hero *,
+  .gx-save-globe-stat-card,
+  .gx-save-globe-feature-card,
+  .gx-btn-learn-more,
+  .gx-save-globe-btn {
+    transition: none !important;
+  }
+} 
+
+/* ======================================== */
+/* ANIMATIONS & TRANSITIONS                 */
+/* ======================================== */
+
+.gx-plants-stat-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gx-plants-stat-box:hover {
+  transform: translateY(-2px);
+}
+
+.gx-plants-image {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ======================================== */
+/* NATURE EXPLORERS PROGRAM SECTION        */
+/* ======================================== */
+
+/* Override padding direction for reversed layout */
+.gx-nature-explorers-section .gx-plants-content {
+  padding-left: 3rem;
+  padding-right: 0 ;
+  margin-right: 3rem;
+  margin-left: 2rem;
+}
+
+/* Empty selectors for nature explorers classes */
+.gx-nature-explorers-content {
+  padding-left: 0 !important;
+}
+
+.gx-nature-explorers-label {
+}
+
+.gx-nature-explorers-title {
+}
+
+.gx-nature-explorers-body {
+}
+
+.gx-nature-explorers-image-wrapper {
+}
+
+.gx-nature-explorers-image-container {
+}
+
+.gx-nature-explorers-image {
+}
+
+/* ======================================== */
+/* RESPONSIVE DESIGN                       */
+/* ======================================== */
+
+@media (max-width: 991.98px) {
+  .gx-nature-explorers-section .gx-plants-content {
+    padding-left: 0;
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .gx-nature-explorers-section .gx-plants-content {
+    margin-top: 2rem;
+  }
+}

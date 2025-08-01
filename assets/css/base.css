@@ -1,0 +1,482 @@
+/* ======================================== */
+/* GLOBX - BASE STYLES                     */
+/* ======================================== */
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* 1. A Modern CSS Reset & Box-Sizing */
+/* ---------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Define Global Variables */
+/* ---------------------------------------- */
+:root {
+  /* Project Colors */
+  --primary-lightest: hsla(210, 20%, 98%, 1);
+  --primary-light: hsla(206, 100%, 95%, 1);
+  --primary-light-2: hsla(196, 100%, 81%, 1);
+  --primary-light-3: hsla(24, 100%, 99%, 1);
+  --primary: hsla(199, 74%, 39%, 1);
+  --primary-dark: hsla(199, 100%, 15%, 1);
+  --primary-dark-2: hsla(195, 100%, 24%, 1);
+  --secondary: hsla(25, 100%, 68%, 1);
+  --text-dark: hsla(0, 0%, 7%, 1);
+  --text-dark-2: hsla(0, 0%, 60%, 1);
+  --text-dark-3: hsla(0, 0%, 50%, 1);
+  --text-light: hsla(0, 0%, 100%, 1);
+  --text-light-2: hsla(0, 0%, 100%, 0.8);
+  --text-light-3: hsla(0, 0%, 97%, 1);
+  --text-light-4: hsla(0, 0%, 90%, 1);
+
+  /* Fonts */
+  --font-primary: 'Poppins Medium', 'Poppins', 'Helvetica', 'Arial', sans-serif;
+  --font-headings: 'Poppins SemiBold', 'Poppins', 'Helvetica', 'Arial', sans-serif;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+  --fw-black: 900;
+
+  /* Spacing (based on 1rem = 16px) */
+  --spacing-1: 0.25rem; /* 4px */
+  --spacing-2: 0.5rem;  /* 8px */
+  --spacing-3: 1rem;    /* 16px */
+  --spacing-4: 2rem;    /* 32px */
+  --spacing-5: 4rem;    /* 64px */
+  --section-width: 1220px;
+}
+
+/* 3. Utility Classes */
+/* ---------------------------------------- */
+.primary-light {
+  background-color: hsla(206, 100%, 95%, 1) !important;
+}
+
+.primary {
+  background-color: hsla(199, 74%, 39%, 1) !important;
+}
+
+.primary-dark {
+  background-color: hsla(199, 100%, 15%, 1) !important;
+}
+
+.secondary {
+  background-color: hsla(25, 100%, 68%, 1) !important;
+}
+
+.text-dark {
+  color: hsla(0, 0%, 7%, 1) !important;
+}
+
+.text-light {
+  color: hsla(0, 0%, 100%, 1) !important;
+}
+
+.text-primary {
+  color: hsla(199, 74%, 39%, 1) !important;
+}
+
+.section-width {
+  max-width: var(--section-width);
+}
+
+/* 4. Set Base Body & Typography Styles */
+/* ---------------------------------------- */
+body {
+  font-family: var(--font-primary);
+  color: var(--text-dark);
+  /* background-color: var(--primary-light); */
+  line-height: 1.6;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headings);
+  color: var(--text-dark);
+  line-height: 1.2;
+  margin-bottom: var(--spacing-2);
+}
+
+.btn:hover{
+  background-color: inherit;
+  border-color: inherit;
+}
+
+/* 5. Top Bar */
+/* ---------------------------------------- */
+.gx-top-bar {
+  background: var(--primary-dark);
+  color: var(--secondary);
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  padding: .25rem 0;
+  text-align: center;
+}
+
+.gx-top-bar-link {
+  color: var(--primary-light);
+  text-decoration: underline;
+}
+
+.gx-top-bar-link:hover {
+  color: var(--secondary);
+}
+
+/* 6. Navbar/Header */
+/* ---------------------------------------- */
+.gx-navbar {
+  background: transparent !important;
+  box-shadow: none !important;
+  border-bottom: none !important;
+  z-index: 20;
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  width: 100%;
+}
+
+
+
+#navbarNav{
+  padding-left: 3rem;
+}
+
+.gx-logo img {
+  height: 48px;
+  width: auto;
+}
+
+.gx-nav-links .nav-link {
+  color: var(--text-light-2) !important;
+  font-weight: 300;
+  font-size: 1.08rem;
+  margin: 0 0.7rem;
+  position: relative;
+  padding: 0.5rem 0.2rem;
+  width: 100%;
+}
+
+.gx-nav-links .nav-link span {
+  font-size: 0.8em;
+}
+
+.gx-nav-links .nav-link:hover,
+.gx-nav-links .nav-link:focus {
+  color: var(--secondary) !important;
+}
+
+.gx-flag-selector {
+  margin-left: 1.5rem;
+}
+
+.gx-flag-btn {
+  border-radius: 0.5rem;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.gx-flag-btn img {
+  /* border-radius: 0.2rem; */
+}
+
+.gx-flag-chevron {
+  font-size: 0.8em;
+  color: #333;
+  background-color: white;
+  padding: 0rem 0.2rem;
+}
+
+.gx-chevron svg {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 2px;
+}
+
+/* 7. Responsive Design - Global */
+/* ---------------------------------------- */
+@media (max-width: 991.98px) {
+  /* Navbar & Header Styles */
+  .gx-navbar .container,
+  .gx-navbar .container-fluid {
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .gx-logo img {
+    height: 36px;
+  }
+  
+  .gx-nav-links {
+    width: 100%;
+    text-align: left;
+    margin-top: 0.5rem;
+  }
+  
+  .gx-nav-links .nav-link {
+    font-size: 1rem;
+    margin: 0.2rem 0.5rem;
+    padding: 0.5rem 0;
+  }
+  
+  .gx-flag-selector {
+    margin-left: 0;
+    margin-top: 0.5rem;
+    align-self: flex-end;
+  }
+  
+  /* Mobile Navigation Collapse */
+  .navbar-collapse {
+    justify-content: flex-end !important;
+    align-items: flex-start !important;
+    background: rgba(30, 30, 30, 0.98);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    border-radius: 0 0 1rem 1rem;
+    padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+    max-width: 320px;
+    position: absolute;
+    top: 80%;
+    right: 0;
+    left: auto;
+    z-index: 1001;
+  }
+  
+  .gx-nav-links {
+    flex-direction: column !important;
+    width: 100%;
+    text-align: left;
+    margin-top: 0;
+  }
+  
+  .gx-nav-links .nav-link {
+    font-size: 1.1rem;
+    margin: 0.2rem 0;
+    padding: 0.7rem 0;
+    width: 10rem;
+  }
+  
+  .gx-flag-selector {
+    margin-left: 0;
+    margin-top: 1rem;
+    align-self: flex-start;
+  }
+  
+  /* Top Bar Mobile */
+  .gx-top-bar {
+    display: none !important;
+  }
+  
+  .gx-navbar {
+    top: 0rem;
+    padding: 0 !important;
+    min-height: auto;
+  }
+  
+  /* Minimize navbar height when collapsed on mobile */
+  .gx-navbar .navbar-collapse:not(.show) {
+    display: none !important;
+  }
+  
+  /* Ensure navbar doesn't take unnecessary space when collapsed */
+  .gx-navbar .container {
+    min-height: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  #navbarNav{
+    padding-right: 0rem;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Desktop styles */
+}
+
+@media (min-width: 992px) {
+  /* Desktop styles */
+  .gx-why-work-separator {
+    width: clamp(200px, 50%, 600px);
+    justify-self: end;
+  }
+  
+  /* Desktop-only clip-path effects */
+  .gx-reveal-section.gx-revealed .gx-reveal-content {
+    clip-path: polygon(0% 0%, 95% 0%, 100% 10.5%, 100% 100%, 0% 100%);
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Styles for XL screens */
+}
+
+/* 8. Bootstrap Overrides */
+/* ---------------------------------------- */
+.navbar-toggler {
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-size: 100% 100%;
+} 
+
+/* Scroll-triggered reveal animations */
+.gx-reveal-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.gx-reveal-section.gx-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gx-reveal-content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out 0.2s, transform 0.6s ease-out 0.2s;
+}
+
+.gx-reveal-section.gx-revealed .gx-reveal-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gx-reveal-delay-1 {
+  transition-delay: 0.1s;
+}
+
+.gx-reveal-delay-2 {
+  transition-delay: 0.2s;
+}
+
+.gx-reveal-delay-3 {
+  transition-delay: 0.3s;
+}
+
+.gx-reveal-delay-4 {
+  transition-delay: 0.4s;
+}
+
+/* Staggered animations for grid items */
+.gx-reveal-grid-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.gx-reveal-section.gx-revealed .gx-reveal-grid-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gx-reveal-grid-item:nth-child(1) { transition-delay: 0.1s; }
+.gx-reveal-grid-item:nth-child(2) { transition-delay: 0.2s; }
+.gx-reveal-grid-item:nth-child(3) { transition-delay: 0.3s; }
+.gx-reveal-grid-item:nth-child(4) { transition-delay: 0.4s; }
+.gx-reveal-grid-item:nth-child(5) { transition-delay: 0.5s; }
+.gx-reveal-grid-item:nth-child(6) { transition-delay: 0.6s; }
+
+/* Special animations for specific elements */
+.gx-reveal-slide-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.gx-reveal-section.gx-revealed .gx-reveal-slide-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.gx-reveal-slide-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.gx-reveal-section.gx-revealed .gx-reveal-slide-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.gx-reveal-scale {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.gx-reveal-section.gx-revealed .gx-reveal-scale {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@keyframes gx-slide-in-right-fg {
+  0% {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.gx-reveal-slide-right-fg {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1);
+  will-change: transform, opacity;
+}
+
+.gx-reveal-section.gx-revealed .gx-reveal-slide-right-fg {
+  opacity: 1;
+  transform: translateX(0);
+  animation: gx-slide-in-right-fg 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* Disable animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .gx-reveal-section,
+  .gx-reveal-content,
+  .gx-reveal-grid-item,
+  .gx-reveal-slide-left,
+  .gx-reveal-slide-right,
+  .gx-reveal-scale,
+  .gx-reveal-slide-right-fg,
+  .gx-reveal-section.gx-revealed .gx-reveal-slide-right-fg {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+} 
+
+@media (min-width: 992px) {
+  .container {
+    max-width: var(--section-width);
+}
+.navbar .container{
+  max-width: 1450px;
+}
+}

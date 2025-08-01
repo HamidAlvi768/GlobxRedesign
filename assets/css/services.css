@@ -1,0 +1,268 @@
+/* ======================================== */
+/* GLOBX - SERVICES SECTION                 */
+/* ======================================== */
+
+/* Services Navigation (Left Column) */
+.gx-services-section {
+  padding-bottom: 6rem;
+  /* margin-top: -3rem; */
+}
+
+.gx-services-navigation {
+  padding-right: 2rem;
+}
+
+/* Services Menu */
+.gx-services-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.gx-service-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: transparent;
+  border: 2px solid transparent;
+  padding-left: 0;
+}
+
+.gx-service-item:hover .gx-service-name {
+  color: var(--primary);
+  background: var(--primary-light);
+  border-color: var(--primary);
+}
+
+.gx-service-item.gx-service-active {
+
+}
+
+.gx-service-icon {
+  width: 40px;
+  height: 30px;
+  transition: opacity 0.3s ease;
+}
+
+.gx-service-item.gx-service-active .gx-service-icon {
+  opacity: 1;
+}
+
+.gx-service-name {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: hsla(0, 0%, 84%, 1);
+  transition: color 0.3s ease;
+}
+
+.gx-service-item.gx-service-active .gx-service-name {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+/* Services Content (Right Column) */
+.gx-services-content {
+  /* Additional specific styles if needed */
+}
+
+.gx-service-content-container {
+  position: relative;
+  min-height: 550px;
+}
+
+/* Service Panes */
+.gx-service-pane {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  /* Remove fade transitions - individual elements handle their own animations */
+  transition: none;
+}
+
+.gx-service-pane-active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+  /* Remove fade transitions - individual elements handle their own animations */
+  transition: none;
+}
+
+/* Service Illustration - Specific styles only */
+.gx-service-illustration {
+  /* Additional specific styles if needed */
+}
+
+/* Background illustration - should remain static */
+.gx-service-illustration-background {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  max-width: 75%;
+  height: auto;
+  z-index: 1;
+  opacity: 0.8;
+  /* Ensure no animations on background */
+  transition: none !important;
+  animation: none !important;
+}
+
+.gx-service-illustration-foreground {
+  position: relative;
+  height: auto;
+  z-index: 2;
+  border-radius: 0.5rem;
+  transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+  will-change: transform;
+  /* Add slide animation for service switching - override base.css */
+  transform: translateX(60px) !important;
+  opacity: 0 !important;
+  transition: transform 0.6s cubic-bezier(0.4,0,0.2,1), opacity 0.6s cubic-bezier(0.4,0,0.2,1) !important;
+}
+
+/* Slide in animation for active service foreground - override base.css */
+.gx-service-pane-active .gx-service-illustration-foreground {
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+}
+
+.gx-service-illustration-container:hover .gx-service-illustration-foreground {
+  transform: translateY(-12px) !important;
+}
+
+/* Slide out to right animation for outgoing foreground illustration */
+.gx-service-illustration-foreground--slide-out {
+  transition: transform 0.6s cubic-bezier(0.4,0,0.2,1), opacity 0.6s cubic-bezier(0.4,0,0.2,1) !important;
+  transform: translateX(60px) !important;
+  opacity: 0 !important;
+  z-index: 3;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gx-service-illustration-background {
+    transition: none !important;
+    animation: none !important;
+  }
+  
+  .gx-service-illustration-foreground {
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  
+  .gx-service-content-text {
+    transition: none !important;
+    opacity: 1 !important;
+  }
+  
+  .gx-service-pane-active .gx-service-illustration-foreground,
+  .gx-service-pane-active .gx-service-content-text {
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  
+  .gx-service-illustration-container:hover .gx-service-illustration-foreground {
+    transform: none !important;
+  }
+}
+
+/* Service content text fade animation */
+.gx-service-content-text {
+  /* Additional specific styles if needed */
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(0.4,0,0.2,1) 0.1s;
+}
+
+/* Fade in animation for active service content text */
+.gx-service-pane-active .gx-service-content-text {
+  opacity: 1;
+}
+
+/* ======================================== */
+/* SERVICES RESPONSIVE DESIGN               */
+/* ======================================== */
+@media (max-width: 991.98px) {
+  .gx-services-section {
+    padding: 3rem 0;
+  }
+  
+  .gx-services-headline {
+    font-size: 2rem;
+  }
+  
+  .gx-service-content-container {
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .gx-services-navigation {
+    padding-right: 0;
+  }
+  
+  .gx-service-title {
+    font-size: 1.75rem;
+  }
+  
+  .gx-service-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .gx-services-section {
+    padding: 2rem 0;
+  }
+  
+  .gx-services-headline {
+    font-size: 1.75rem;
+  }
+  
+  .gx-service-content-container {
+    padding: 1.5rem;
+  }
+  
+  .gx-service-item {
+    padding: 0.75rem 1rem;
+  }
+  
+  .gx-service-name {
+    font-size: 1rem;
+  }
+  
+  .gx-service-title {
+    font-size: 1.5rem;
+  }
+  
+  .gx-service-description {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .gx-service-content-container {
+    padding: 1rem;
+  }
+  
+  .gx-services-headline {
+    font-size: 1.5rem;
+  }
+  
+  .gx-service-title {
+    font-size: 1.25rem;
+  }
+  
+  .gx-service-item {
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .gx-service-name {
+    font-size: 0.95rem;
+  }
+} 

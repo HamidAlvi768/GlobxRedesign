@@ -1,0 +1,183 @@
+/* ======================================== */
+/* GLOBX - SAVE THE GLOBE SECTION           */
+/* ======================================== */
+
+.gx-save-globe-section {
+  background: var(--primary-light-3);
+}
+
+.gx-save-globe-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 3rem; */
+}
+
+.gx-save-globe-content {
+  flex: 1 1 0;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Logomark/Heading */
+.gx-save-globe-logomark {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1.5rem;
+  /* gap: 2.5rem; */
+}
+
+/* X graphic sizing for desktop */
+.gx-save-globe-x-graphic {
+  width: 190px;
+  height: auto;
+  display: block;
+}
+
+/* Remove old logotext class, not needed for new layout */
+
+.gx-save-globe-globx {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: var(--primary);
+  letter-spacing: 0.01em;
+  line-height: 1;
+  white-space: nowrap;
+  display: block;
+}
+.gx-save-globe-globx .x {
+  color: var(--secondary);
+  font-weight: 500;
+}
+
+/* Save the Globe (three lines, right of X) */
+.gx-save-globe-save-globe {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 1rem;
+  line-height: 1.1;
+}
+.gx-save-globe-save-globe .save {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: var(--secondary);
+}
+.gx-save-globe-save-globe .the {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: var(--secondary);
+}
+.gx-save-globe-save-globe .globe {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: var(--primary);
+}
+/* Responsive: stack logomark vertically on mobile */
+@media (max-width: 991.98px) {
+  .gx-save-globe-logomark {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .gx-save-globe-globx {
+    margin-right: 0;
+    text-align: center;
+  }
+  .gx-save-globe-save-globe {
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Body Text */
+.gx-save-globe-body {
+  font-size: 1.08rem;
+  color: #222831;
+  font-family: 'Poppins', Arial, sans-serif;
+  line-height: 1.7;
+  margin-bottom: 2.2rem;
+  margin-top: 0.5rem;
+  font-weight: 400;
+}
+.gx-save-globe-body b {
+  font-weight: 600;
+  color: #222831;
+}
+
+
+
+/* Right Column (Image) */
+.gx-save-globe-image-col {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gx-save-globe-image {
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 4/5;
+  border-radius: 1rem;
+  object-fit: cover;
+  box-shadow: 0 4px 32px rgba(44, 62, 80, 0.10);
+  background: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 991.98px) {
+  .gx-save-globe-row {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .gx-save-globe-content {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .gx-save-globe-logomark {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .gx-save-globe-body {
+    text-align: center;
+  }
+  .gx-save-globe-image {
+    max-width: 350px;
+  }
+}
+@media (max-width: 575.98px) {
+  .gx-save-globe-section {
+    padding: 2.5rem 0;
+  }
+  .gx-save-globe-logomark {
+    gap: 1rem;
+  }
+  .gx-save-globe-x-graphic {
+    width: 100px;
+  }
+  .gx-save-globe-globx,
+  .gx-save-globe-save-globe .save,
+  .gx-save-globe-save-globe .the,
+  .gx-save-globe-save-globe .globe {
+    font-size: 1.2rem;
+  }
+  .gx-save-globe-image {
+    max-width: 220px;
+    border-radius: 1.2rem;
+  }
+  .gx-save-globe-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.95rem;
+  }
+} 

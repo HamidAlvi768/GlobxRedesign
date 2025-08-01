@@ -1,0 +1,187 @@
+/* ======================================== */
+/* GLOBX - TESTIMONIALS SECTION             */
+/* ======================================== */
+
+/* Testimonials Section Background */
+.gx-testimonials-section {
+  background: var(--primary-light);
+}
+
+/* Testimonials Navigation (Left Column) */
+.gx-testimonials-navigation {
+  padding-right: 2rem;
+  position: relative;
+  min-height: 320px;
+}
+
+/* Testimonial Quote */
+.gx-testimonial-quote {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-dark);
+  font-weight: 400;
+  margin-bottom: 2rem;
+  font-style: normal;
+}
+
+/* Testimonial Attribution */
+.gx-testimonial-author {
+  margin-bottom: 0.5rem;
+}
+
+.gx-testimonial-author-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  line-height: 1.3;
+  margin-bottom: 0.25rem;
+}
+
+.gx-testimonial-author-title {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-dark);
+  line-height: 1.4;
+}
+
+/* Testimonials Content (Right Column) */
+.gx-testimonials-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gx-testimonial-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 3/4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gx-testimonial-image {
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  border: 2px solid white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Pagination Controls */
+.gx-testimonial-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 3rem;
+}
+
+.gx-testimonial-pagination-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #d1d5db;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gx-testimonial-pagination-dot.active {
+  width: 32px;
+  height: 12px;
+  border-radius: 6px;
+  background: var(--primary);
+}
+
+/* Testimonial Panes */
+.gx-testimonial-pane {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s cubic-bezier(0.4,0,0.2,1), visibility 0s linear 0.4s, z-index 0s linear 0.4s;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.gx-testimonial-pane-active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.4s cubic-bezier(0.4,0,0.2,1), visibility 0s linear 0s, z-index 0s linear 0s;
+  z-index: 2;
+}
+
+/* ======================================== */
+/* TESTIMONIALS RESPONSIVE DESIGN           */
+/* ======================================== */
+@media (max-width: 991.98px) {
+  .gx-testimonials-navigation {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .gx-testimonials-content {
+    justify-content: center;
+  }
+  
+  .gx-testimonial-image-container {
+    max-width: 350px;
+  }
+  
+  .gx-testimonial-quote {
+    font-size: 1rem;
+  }
+  
+  .gx-testimonial-author-name {
+    font-size: 1.2rem;
+  }
+  
+  .gx-testimonial-author-title {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .gx-testimonial-image-container {
+    max-width: 300px;
+  }
+  
+  .gx-testimonial-quote {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+  
+  .gx-testimonial-author-name {
+    font-size: 1.1rem;
+  }
+  
+  .gx-testimonial-author-title {
+    font-size: 0.9rem;
+  }
+  
+  .gx-testimonial-pagination {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .gx-testimonial-image-container {
+    max-width: 250px;
+  }
+  
+  .gx-testimonial-quote {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  .gx-testimonial-author-name {
+    font-size: 1rem;
+  }
+  
+  .gx-testimonial-author-title {
+    font-size: 0.85rem;
+  }
+} 
