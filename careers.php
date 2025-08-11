@@ -47,8 +47,8 @@ include_once('./includes/transparent_nav.php');
         <div class="container">
             <!-- Search Section -->
             <div class="gx-search-section text-center mb-5">
-                <h2 class="gx-search-heading mb-4">
-                    Search <span class="gx-search-highlight">Jobs</span> Here
+                <h2 class="gx-search-heading gx-listings-heading mb-4">
+                    Search <span class="gx-search-highlight">Jobs Here</span> 
                 </h2>
                 
                 <div class="gx-search-form">
@@ -164,12 +164,20 @@ include_once('./includes/transparent_nav.php');
 
      <!-- Footer -->
 <?php
+$jsFiles = [
+    './assets/js/js-controller.js',
+    './assets/js/nav-active.js',
+    './assets/js/hero-owl-carousel.js',
+    './assets/js/services.js',
+    './assets/js/testimonials.js',
+    './assets/js/scroll-reveal.js',
+    './assets/js/infinite-scroll.js',
+    './assets/js/about-us.js',
+];
+$jsFiles[] = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js';
+
 include_once('./includes/footer.php');
 ?>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Custom JS -->
-    <script src="./assets/js/scroll-reveal.js"></script>
 </body>
 </html> 

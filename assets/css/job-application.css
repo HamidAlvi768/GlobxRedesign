@@ -151,7 +151,12 @@
   transition: border-color 0.2s, background-color 0.2s;
   cursor: pointer;
   position: relative;
-  max-width: 50%;
+}
+
+@media (min-width: 992px) {
+  .gx-file-upload {
+    max-width: 50%;
+  }
 }
 
 .gx-file-upload:hover {
@@ -173,7 +178,7 @@
 }
 
 .gx-upload-details {
-  font-size: 0.9rem;
+  font-size: clamp(0.625rem, 0.6rem + 0.5vw, 0.75rem);
   color: #666;
   margin-bottom: 0.25rem;
 }
@@ -310,7 +315,7 @@
   }
   
   .gx-upload-text {
-    font-size: 1rem;
+    font-size: clamp(0.75rem, 0.7rem + 0.5vw, 0.875rem);
   }
 }
 

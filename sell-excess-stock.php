@@ -2,6 +2,7 @@
 $cssFiles = [
   './assets/css/base.css',
   './assets/css/shared-utilities.css',
+  './assets/css/js-controller.css',
   './assets/css/hero.css',
   './assets/css/problem-solution.css',
   './assets/css/services.css',
@@ -60,7 +61,7 @@ include_once('./includes/search_nav.php');
     <!-- Five Steps -->
     <div class="row justify-content-center">
       <div class="col-12">
-        <div class="row g-4 row-cols-5">
+        <div class="row g-4">
           <!-- Step 1: Download Example -->
           <div class="col-lg col-md-4 col-sm-6">
             <div class="gx-step-card text-center">
@@ -269,6 +270,8 @@ include_once('./includes/search_nav.php');
 
 <?php
 $jsFiles = [
+  './assets/js/js-controller.js',
+  './assets/js/nav-active.js',
   './assets/js/hero-owl-carousel.js',
   './assets/js/scroll-reveal.js',
   './assets/js/infinite-scroll.js',

@@ -2,6 +2,7 @@
 $cssFiles = [
   './assets/css/base.css',
   './assets/css/shared-utilities.css',
+  './assets/css/js-controller.css',
   './assets/css/hero.css',
   './assets/css/problem-solution.css',
   './assets/css/services.css',
@@ -865,6 +866,8 @@ include_once('./includes/transparent_nav.php');
 
 <?php
 $jsFiles = [
+  './assets/js/js-controller.js',
+  './assets/js/nav-active.js',
   './assets/js/hero-owl-carousel.js',
   './assets/js/services.js',
   './assets/js/testimonials.js',

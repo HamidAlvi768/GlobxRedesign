@@ -137,6 +137,7 @@
 .gx-how-it-works-section {
   background: var(--primary-lightest);
   padding: 4rem 0;
+  margin-top: 0;
 }
 
 .gx-how-it-works-title {
@@ -497,11 +498,11 @@
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
-  min-width: 140px;
+  min-width: max-content;
 }
 
 .gx-download-btn:hover {
-  background: #e55a2b;
+  background: hsla(25, 100%, 60%, 1);
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
 }

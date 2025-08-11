@@ -75,9 +75,18 @@ include_once('./includes/nav.php');
 <section class="gx-plants-section gx-section-common gx-section-common--white py-10 gx-reveal-section">
   <div class="container">
     <div class="row align-items-center">
-      <!-- Left Column: Content -->
-      <div class="col-lg-6 order-2 order-md-1">
-        <div class="gx-plants-content gx-reveal-slide-left">
+      <!-- Left Column: Image -->
+      <div class="col-lg-6 order-1 order-md-1">
+        <div class="gx-plants-image-wrapper gx-reveal-slide-left">
+          <div class="gx-plants-image-container">
+            <img src="./assets/society/plant.jpg" alt="Hands holding a plant - Plant for the Planet" class="gx-plants-image" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Content -->
+      <div class="col-lg-6 order-2 order-md-2">
+        <div class="gx-plants-content gx-reveal-slide-right">
           <!-- Pre-heading -->
           <h2 class="gx-plants-label gx-section-label-common gx-section-label-common--medium mb-2">Save the Globe</h2>
 
@@ -103,15 +112,6 @@ include_once('./includes/nav.php');
 
           <!-- Call-to-Action Button -->
           <a href="#" class="btn gx-save-globe-btn px-4 py-2 rounded">Learn More</a>
-        </div>
-      </div>
-
-      <!-- Right Column: Image -->
-      <div class="col-lg-6 order-1 order-md-2">
-        <div class="gx-plants-image-wrapper gx-reveal-slide-right">
-          <div class="gx-plants-image-container">
-            <img src="./assets/society/plant.jpg" alt="Hands holding a plant - Plant for the Planet" class="gx-plants-image" />
-          </div>
         </div>
       </div>
     </div>

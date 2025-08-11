@@ -31,9 +31,10 @@
   position: relative;
   z-index: 10;
   /* Ensure banner has proper top spacing for navbar */
-  padding-top: calc(7rem + var(--navbar-height-desktop));
+  /* padding-top: calc(7rem + var(--navbar-height-desktop)); */
   /* Additional safety: ensure content is above navbar */
-  margin-top: 0;
+  margin-top: 7rem;
+  padding-top: 0;
 }
 
 /* Force banner content to be above navbar */

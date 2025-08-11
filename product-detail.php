@@ -178,7 +178,7 @@ include_once('./includes/search_nav.php');
           <!-- Packaging Information -->
           <div class="gx-packaging-info">
                 <div class="gx-packaging-item">
-                  <i class="fas fa-box gx-packaging-icon"></i>
+                  <i class="fas fa-tape gx-packaging-icon"></i>
                   <span class="gx-packaging-text">Tape&Reel</span>
                 </div>
                 <p class="gx-packaging-description">Products are delivered in packages of 10,000 piece each.</p>

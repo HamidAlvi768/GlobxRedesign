@@ -10,6 +10,12 @@
            border: none !important;
            box-shadow: unset !important;
        }
+
+       @media (min-width: 992px) {
+           .gx-nav-links .nav-link {
+               color: var(--text-dark) !important;
+           }
+       }
    </style>
    <!-- Top Bar -->
    <div class="gx-top-bar gx-top-bar-search">
@@ -33,7 +39,7 @@
            <nav class="search-navbar navbar navbar-expand-lg gx-navbar gx-navbar--application py-3">
                <div class="container align-items-center">
                    <!-- Logo -->
-                   <a class="navbar-brand d-flex align-items-center gx-logo" href="#">
+                   <a class="navbar-brand d-flex align-items-center gx-logo" href="./index.php">
                        <img src="./assets/navbar/colored-logo.png" alt="GX Logo" height="48" />
                    </a>
                    <!-- Navbar Toggler for Mobile -->
@@ -43,20 +49,20 @@
                    <!-- Nav Links and Flag Selector -->
                    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                        <ul class="navbar-nav gx-nav-links">
-                           <li class="nav-item"><a class="nav-link" href="#">Company <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <li class="nav-item"><a class="nav-link" href="./about-us.php">Company <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                            <polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
                                        </svg></span></a></li>
-                           <li class="nav-item"><a class="nav-link" href="#">Services <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <li class="nav-item"><a class="nav-link" href="./excess-stock.php">Services <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                            <polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
                                        </svg></span></a></li>
                            <li class="nav-item"><a class="nav-link" href="#">Markets & Ind <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                            <polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
                                        </svg></span></a></li>
-                           <li class="nav-item"><a class="nav-link" href="#">Products <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <li class="nav-item"><a class="nav-link" href="./products.php">Products <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                            <polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
                                        </svg></span></a></li>
-                           <li class="nav-item"><a class="nav-link" href="#">Sell Excess Stock</a></li>
-                           <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                           <li class="nav-item"><a class="nav-link" href="./sell-excess-stock.php">Sell Excess Stock</a></li>
+                           <li class="nav-item"><a class="nav-link" href="./contact.php">Contact</a></li>
                        </ul>
                        <!-- Flag Selector -->
                        <div class="gx-flag-selector d-flex align-items-center ms-lg-3 mt-3 mt-lg-0">
@@ -73,7 +79,7 @@
            <nav class="search-navbar navbar navbar-expand-lg gx-navbar gx-navbar--application py-3" id="gxStickyNav">
                <div class="container align-items-center">
                    <!-- Logo -->
-                   <a class="navbar-brand d-flex align-items-center gx-logo" href="#">
+                   <a class="navbar-brand d-flex align-items-center gx-logo" href="./index.php">
                        <img src="./assets/navbar/colored-logo.png" alt="GX Logo" height="48" />
                    </a>
                    <!-- Navbar Toggler for Mobile -->
@@ -83,20 +89,20 @@
                    <!-- Nav Links and Flag Selector -->
                    <div class="collapse navbar-collapse justify-content-between" id="navbarNavSticky">
                        <ul class="navbar-nav gx-nav-links">
-                           <li class="nav-item"><a class="nav-link" href="#">Company <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <li class="nav-item"><a class="nav-link" href="./about-us.php">Company <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                            <polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
                                        </svg></span></a></li>
-                           <li class="nav-item"><a class="nav-link" href="#">Services <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <li class="nav-item"><a class="nav-link" href="./excess-stock.php">Services <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                            <polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
                                        </svg></span></a></li>
                            <li class="nav-item"><a class="nav-link" href="#">Markets & Ind <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                            <polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
                                        </svg></span></a></li>
-                           <li class="nav-item"><a class="nav-link" href="#">Products <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <li class="nav-item"><a class="nav-link" href="./products.php">Products <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                            <polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
                                        </svg></span></a></li>
-                           <li class="nav-item"><a class="nav-link" href="#">Sell Excess Stock</a></li>
-                           <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                           <li class="nav-item"><a class="nav-link" href="./sell-excess-stock.php">Sell Excess Stock</a></li>
+                           <li class="nav-item"><a class="nav-link" href="./contact.php">Contact</a></li>
                        </ul>
                        <!-- Flag Selector -->
                        <div class="gx-flag-selector d-flex align-items-center ms-lg-3 mt-3 mt-lg-0">

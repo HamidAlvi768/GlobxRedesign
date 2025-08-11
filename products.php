@@ -2,6 +2,7 @@
 $cssFiles = [
     './assets/css/base.css',
     './assets/css/shared-utilities.css',
+    './assets/css/js-controller.css',
     './assets/css/hero.css',
     './assets/css/problem-solution.css',
     './assets/css/services.css',
@@ -181,6 +182,8 @@ include_once('./includes/search_nav.php');
 </section>
 <?php
 $jsFiles = [
+  './assets/js/js-controller.js',
+  './assets/js/nav-active.js',
   './assets/js/scroll-reveal.js',
   './assets/js/product-detail.js',
 ];

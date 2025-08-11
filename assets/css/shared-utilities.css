@@ -38,7 +38,7 @@
 }
 
 .gx-save-globe-btn:hover {
-  background: linear-gradient(90deg, var(--secondary) 0%, #ff914d 100%);
+  background: linear-gradient(90deg, var(--secondary) 0%, #ff914d 100%) !important;
 }
 
 /* Primary Button Styles - Common across pages */
@@ -148,7 +148,7 @@
 
 .gx-search-section-search-nav {
   margin: 0 auto;
-  padding-left: 3rem;
+  padding-inline: 3rem;
   width: 100%;
 }
 
@@ -754,12 +754,11 @@
 .gx-search-input-group {
   transition: box-shadow 0.2s, border-color 0.2s;
   display: flex;
-  align-items: center;
   background-color: #f8f9fa;
   border: 1px solid #e9ecef;
-  border-radius: 8px;
+  border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); */
 }
 
 /* .gx-search-input-group:focus-within {
@@ -773,7 +772,7 @@
   padding: 0.875rem 1rem;
   font-size: 1rem;
   color: #333;
-  background: transparent;
+  /* background: transparent; */
   outline: none;
 }
 

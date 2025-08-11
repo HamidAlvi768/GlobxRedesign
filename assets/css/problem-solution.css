@@ -238,6 +238,9 @@
   .gx-section-headline {
     font-size: 2rem;
   }
+  .gx-tab-pane{
+    padding: 0;
+  }
   
   .gx-tab-content {
     padding: 2rem;

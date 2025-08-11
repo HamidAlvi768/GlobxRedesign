@@ -200,6 +200,10 @@
 }
 
 /* Certifications Section */
+.owl-carousel .owl-stage-outer{
+  width: fit-content;
+}
+
 .gx-certifications-section {
   background: #fff;
   padding-top: 4.5rem;

@@ -75,7 +75,7 @@
 .gx-hero-subtext {
   font-size: 1.15rem;
   color: var(--text-light-2);
-  max-width: 600px;
+  /* max-width: 600px; */
   line-height: 1.7;
   font-weight: 300;
 }
@@ -235,8 +235,10 @@
   -ms-user-select: none;
 }
 
-.gx-sidebar-carousel .owl-stage-outer {
-  width: 22rem;
+@media (min-width: 992px) {
+  .gx-sidebar-carousel .owl-stage-outer {
+    width: 22rem;
+  }
 }
 
 .gx-sidebar-carousel .owl-stage {
@@ -403,7 +405,7 @@
   }
   
   .gx-sidebar-pagination {
-    display: none !important;
+    /* display: none !important; */
   }
   
   .gx-hero-carousel {

@@ -1,0 +1,144 @@
+/* ======================================== */
+/* JAVASCRIPT CONTROLLER STYLES            */
+/* ======================================== */
+
+/* JavaScript Control Button Container */
+.gx-js-control-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* JavaScript Control Button */
+.gx-js-control-btn {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    min-width: 60px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.gx-js-control-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.gx-js-control-btn:active {
+    transform: scale(0.95);
+}
+
+/* Button States */
+.gx-js-control-btn.js-stopped {
+    background: linear-gradient(135deg, #95a5a6, #7f8c8d);
+    cursor: pointer;
+}
+
+.gx-js-control-btn.js-stopped:hover {
+    background: linear-gradient(135deg, #7f8c8d, #95a5a6);
+}
+
+/* JavaScript Notification */
+.gx-js-notification {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 10000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    max-width: 300px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.gx-js-notification.js-started {
+    background: #27ae60;
+}
+
+.gx-js-notification.js-stopped {
+    background: #e74c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gx-js-control-container {
+        top: 15px;
+        right: 15px;
+    }
+    
+    .gx-js-control-btn {
+        padding: 6px 12px;
+        font-size: 11px;
+        min-width: 50px;
+    }
+    
+    .gx-js-notification {
+        top: 70px;
+        right: 15px;
+        max-width: 250px;
+        font-size: 13px;
+        padding: 12px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gx-js-control-container {
+        top: 10px;
+        right: 10px;
+    }
+    
+    .gx-js-control-btn {
+        padding: 5px 10px;
+        font-size: 10px;
+        min-width: 45px;
+    }
+    
+    .gx-js-notification {
+        top: 60px;
+        right: 10px;
+        max-width: 200px;
+        font-size: 12px;
+        padding: 10px 14px;
+    }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    .gx-js-control-btn {
+        border: 2px solid #000;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.8);
+    }
+    
+    .gx-js-notification {
+        border: 2px solid #000;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.8);
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    .gx-js-control-btn {
+        transition: none;
+    }
+    
+    .gx-js-notification {
+        transition: none;
+    }
+    
+    .gx-js-control-btn:hover {
+        transform: none;
+    }
+} 

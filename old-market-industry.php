@@ -1,4 +1,15 @@
-  <!-- Markets & Industries Section -->
+<?php
+$cssFiles = [
+  './assets/css/base.css',
+  './assets/css/shared-utilities.css',
+  './assets/css/js-controller.css',
+  './assets/css/markets-industries.css',
+];
+include_once('./includes/header.php');
+include_once('./includes/nav.php');
+?>
+
+<!-- Markets & Industries Section -->
   <section class="gx-markets-industries-section gx-section-common py-10">
     <!-- Decorative Arrow -->
     <div class="gx-sector-arrow">
@@ -97,3 +108,13 @@
       </div>
     </div>
   </section>
+
+<?php
+$jsFiles = [
+  './assets/js/js-controller.js',
+  './assets/js/nav-active.js',
+  './assets/js/scroll-reveal.js',
+];
+
+include_once('./includes/footer.php');
+?>
