@@ -18,8 +18,14 @@ include_once('./includes/nav.php');
 
 <!-- Save the Globe Hero Section -->
 <section class="gx-save-globe-hero position-relative d-flex align-items-center">
-  <!-- Background Image & Overlay -->
-  <div class="gx-save-globe-bg"></div>
+  <!-- Background Video & Overlay -->
+  <div class="gx-save-globe-bg">
+    <video autoplay muted loop playsinline>
+      <source src="./assets/society/earth-loop.mov" type="video/quicktime">
+      <source src="./assets/society/earth-loop.mov" type="video/mp4">
+      <!-- Fallback for browsers that don't support video -->
+    </video>
+  </div>
   <div class="gx-save-globe-overlay"></div>
 
   <!-- Central Hero Content -->

@@ -14,15 +14,21 @@
   width: 100%;
 }
 
-/* Background with Earth Image */
+/* Background with Earth Video */
 .gx-save-globe-bg {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('../../assets/society/earth.jpg') center center/cover no-repeat;
   z-index: 0;
+  overflow: hidden;
+}
+
+.gx-save-globe-bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   filter: brightness(0.8) contrast(1.2);
 }
 

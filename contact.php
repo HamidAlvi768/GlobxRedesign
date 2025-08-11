@@ -105,7 +105,6 @@ include_once('./includes/nav.php');
     </div>
 </section>
 
-
 <?php
 $jsFiles = [
     './assets/js/js-controller.js',
