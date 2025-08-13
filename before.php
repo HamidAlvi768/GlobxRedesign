@@ -41,7 +41,7 @@
         <!-- Flag Selector (move inside collapse for mobile) -->
         <div class="gx-flag-selector d-flex align-items-center ms-lg-3 mt-3 mt-lg-0">
           <button class="btn btn-light gx-flag-btn px-2 py-1 d-flex align-items-center">
-            <img src="./assets/us-flag-small.jpg" alt="US Flag" height="20" />
+            <img src="./assets/us-flag-small.webp" alt="US Flag" height="20" />
             <span class="gx-flag-chevron">&#9662;</span>
           </button>
         </div>

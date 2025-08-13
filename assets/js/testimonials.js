@@ -40,10 +40,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const testimonialImage = document.querySelector('.gx-testimonial-image');
     if (testimonialImage) {
       if (testimonialId === '1' || testimonialId === 1) {
-        testimonialImage.src = './assets/testimonial-man.jpg';
+        testimonialImage.src = './assets/testimonial-man.webp';
         testimonialImage.alt = 'Dr. Bayram Cucu - CEO, Bio-Gram Diagnostics GmbH';
       } else if (testimonialId === '2' || testimonialId === 2) {
-        testimonialImage.src = './assets/testimonial-man-2.jpg';
+        testimonialImage.src = './assets/testimonial-man-2.webp';
         testimonialImage.alt = 'Sarah Johnson - Operations Director, TechFlow Solutions';
       }
     }

@@ -20,8 +20,14 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
 }
+
+.gx-contact-section .gx-contact-form {
+  gap: 1.5rem;
+
+}
+
+
 .gx-form-type-selector {
   display: flex;
   gap: 2rem;
@@ -114,22 +120,30 @@
 .gx-form-half {
   flex: 1 1 0;
 }
+
+/* background
+color
+border-radius
+border
+font-size
+box-shadow
+transition */
 .gx-contact-submit {
-  background: #1a7ebc;
+  /* background: #1a7ebc;
   color: var(--text-light-3);
-  font-size: 1.15rem;
-  font-weight: var(--fw-regular);
   border: none;
   border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(26, 126, 188, 0.08);
+  transition: background 0.2s;
+  font-size: 1.15rem; */
+  font-weight: var(--fw-regular);
   /* padding: 0.85rem 2.5rem; */
   margin-top: 0.5rem;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(26, 126, 188, 0.08);
-  transition: background 0.2s;
   align-self: flex-start;
 }
 .gx-contact-submit:hover {
-  background: #176ba0;
+  background: var(--primary-hover);
 }
 
 .gx-contact-image-col {

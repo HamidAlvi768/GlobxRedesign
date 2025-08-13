@@ -65,7 +65,7 @@ include_once('./includes/search_nav.php');
       <!-- Left Column: Image -->
       <div class="col-lg-6 mb-5 mb-lg-0">
         <div class="gx-join-platform-image-container">
-          <img src="./assets/society/plant.jpg" alt="Hands holding a plant - Growth and Collaboration" class="gx-join-platform-image">
+          <img src="./assets/society/plant.webp" alt="Hands holding a plant - Growth and Collaboration" class="gx-join-platform-image">
         </div>
       </div>
       
@@ -209,7 +209,7 @@ include_once('./includes/search_nav.php');
           </div>
           <div class="gx-benefit-content">
             <h3 class="gx-benefit-title">Pull your stock back anytime</h3>
-            <p class="gx-benefit-description">Own demand or no need of our service anymore? Pull your stock completely or partly back at anytime. We ship it back for free within 24 hours.</p>
+            <p class="gx-benefit-description">Own demand or no longer need our service? Pull back your stock anytime, fully or partly. We’ll ship it back free within 24 hours.</p>
           </div>
         </div>
       </div>

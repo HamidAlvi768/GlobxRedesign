@@ -1,7 +1,54 @@
+<?php
+// Function to determine current page and apply active navigation state
+function getCurrentPage() {
+    $path = $_SERVER['REQUEST_URI'];
+    $filename = basename($path);
+    
+    // Map page files to navigation identifiers
+    $pageMap = [
+        'index.php' => 'home',
+        'about-us.php' => 'company',
+        'excess-stock.php' => 'services',
+        'old-market-industry.php' => 'markets',
+        'products-main.php' => 'products',
+        'pn-listing.php' => 'products',
+        'pn-detail.php' => 'products',
+        'sell-excess-stock.php' => 'sell-excess',
+        'contact.php' => 'contact'
+    ];
+    
+    return $pageMap[$filename] ?? null;
+}
+
+// Get current page identifier
+$currentPage = getCurrentPage();
+
+// Function to check if navigation item should be active
+function isNavActive($pageIdentifier, $currentPage) {
+    return $pageIdentifier === $currentPage;
+}
+?>
+
   <!-- Top Bar -->
   <div class="gx-top-bar text-center py-1 px-2">
       <span class="gx-top-bar-text">2979 trees planted by GlobX this year! Join <a href="#" class="gx-top-bar-link">Our Campaign</a> and help us saving the globe</span>
   </div>
+
+  <style>
+      /* Ensure active states are visible */
+      .gx-nav-links .nav-link.active,
+      .gx-nav-links .nav-link.gx-nav-active,
+      .gx-nav-links .nav-item.active .nav-link {
+          color: var(--primary, #007bff) !important;
+      }
+      
+      /* Active chevron color */
+      .gx-nav-links .nav-link.active .gx-chevron svg,
+      .gx-nav-links .nav-link.gx-nav-active .gx-chevron svg,
+      .gx-nav-links .nav-item.active .nav-link .gx-chevron svg {
+          color: var(--primary, #007bff) !important;
+      }
+  </style>
 
   <!-- Header/Navbar -->
   <nav class="navbar navbar-expand-lg gx-navbar py-3">
@@ -17,25 +64,49 @@
           <!-- Nav Links and Flag Selector -->
           <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
               <ul class="navbar-nav gx-nav-links">
-                  <li class="nav-item"><a class="nav-link" href="./about-us.php">Company <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <li class="nav-item <?php echo isNavActive('company', $currentPage) ? 'active' : ''; ?>">
+                      <a class="nav-link <?php echo isNavActive('company', $currentPage) ? 'active gx-nav-active' : ''; ?>" href="./about-us.php">
+                          Company <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
-                              </svg></span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="./excess-stock.php">Services <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              </svg></span>
+                      </a>
+                  </li>
+                  <li class="nav-item <?php echo isNavActive('services', $currentPage) ? 'active' : ''; ?>">
+                      <a class="nav-link <?php echo isNavActive('services', $currentPage) ? 'active gx-nav-active' : ''; ?>" href="./excess-stock.php">
+                          Services <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
-                              </svg></span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Markets & Ind <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              </svg></span>
+                      </a>
+                  </li>
+                  <li class="nav-item <?php echo isNavActive('markets', $currentPage) ? 'active' : ''; ?>">
+                      <a class="nav-link <?php echo isNavActive('markets', $currentPage) ? 'active gx-nav-active' : ''; ?>" href="#">
+                          Markets & Ind <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
-                              </svg></span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="./products.php">Products <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              </svg></span>
+                      </a>
+                  </li>
+                  <li class="nav-item <?php echo isNavActive('products', $currentPage) ? 'active' : ''; ?>">
+                      <a class="nav-link <?php echo isNavActive('products', $currentPage) ? 'active gx-nav-active' : ''; ?>" href="./products-main.php">
+                          Products <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
-                              </svg></span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="./sell-excess-stock.php">Sell Excess Stock</a></li>
-                  <li class="nav-item"><a class="nav-link" href="./contact.php">Contact</a></li>
+                              </svg></span>
+                      </a>
+                  </li>
+                  <li class="nav-item <?php echo isNavActive('sell-excess', $currentPage) ? 'active' : ''; ?>">
+                      <a class="nav-link <?php echo isNavActive('sell-excess', $currentPage) ? 'active gx-nav-active' : ''; ?>" href="./sell-excess-stock.php">
+                          Sell Excess Stock
+                      </a>
+                  </li>
+                  <li class="nav-item <?php echo isNavActive('contact', $currentPage) ? 'active' : ''; ?>">
+                      <a class="nav-link <?php echo isNavActive('contact', $currentPage) ? 'active gx-nav-active' : ''; ?>" href="./contact.php">
+                          Contact
+                      </a>
+                  </li>
               </ul>
               <!-- Flag Selector (move inside collapse for mobile) -->
               <div class="gx-flag-selector d-flex align-items-center ms-lg-3 mt-3 mt-lg-0">
                   <button class="btn btn-light gx-flag-btn px-2 py-1 d-flex align-items-center">
-                      <img src="./assets/us-flag-small.jpg" alt="US Flag" height="20" />
+                      <img src="./assets/us-flag-small.webp" alt="US Flag" height="20" />
                       <span class="gx-flag-chevron">&#9662;</span>
                   </button>
               </div>
@@ -57,17 +128,41 @@
           <!-- Nav Links and Flag Selector -->
           <div class="collapse navbar-collapse justify-content-between" id="navbarNavSticky">
               <ul class="navbar-nav gx-nav-links">
-                  <li class="nav-item"><a class="nav-link" href="./about-us.php">Company <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="./excess-stock.php">Services <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Markets & Ind <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="./products.php">Products <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="./sell-excess-stock.php">Sell Excess Stock</a></li>
-                  <li class="nav-item"><a class="nav-link" href="./contact.php">Contact</a></li>
+                  <li class="nav-item <?php echo isNavActive('company', $currentPage) ? 'active' : ''; ?>">
+                      <a class="nav-link <?php echo isNavActive('company', $currentPage) ? 'active gx-nav-active' : ''; ?>" href="./about-us.php">
+                          Company <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                      </a>
+                  </li>
+                  <li class="nav-item <?php echo isNavActive('services', $currentPage) ? 'active' : ''; ?>">
+                      <a class="nav-link <?php echo isNavActive('services', $currentPage) ? 'active gx-nav-active' : ''; ?>" href="./excess-stock.php">
+                          Services <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                      </a>
+                  </li>
+                  <li class="nav-item <?php echo isNavActive('markets', $currentPage) ? 'active' : ''; ?>">
+                      <a class="nav-link <?php echo isNavActive('markets', $currentPage) ? 'active gx-nav-active' : ''; ?>" href="#">
+                          Markets & Ind <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                      </a>
+                  </li>
+                  <li class="nav-item <?php echo isNavActive('products', $currentPage) ? 'active' : ''; ?>">
+                      <a class="nav-link <?php echo isNavActive('products', $currentPage) ? 'active gx-nav-active' : ''; ?>" href="./products-main.php">
+                          Products <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                      </a>
+                  </li>
+                  <li class="nav-item <?php echo isNavActive('sell-excess', $currentPage) ? 'active' : ''; ?>">
+                      <a class="nav-link <?php echo isNavActive('sell-excess', $currentPage) ? 'active gx-nav-active' : ''; ?>" href="./sell-excess-stock.php">
+                          Sell Excess Stock
+                      </a>
+                  </li>
+                  <li class="nav-item <?php echo isNavActive('contact', $currentPage) ? 'active' : ''; ?>">
+                      <a class="nav-link <?php echo isNavActive('contact', $currentPage) ? 'active gx-nav-active' : ''; ?>" href="./contact.php">
+                          Contact
+                      </a>
+                  </li>
               </ul>
               <!-- Flag Selector -->
               <div class="gx-flag-selector d-flex align-items-center ms-lg-3 mt-3 mt-lg-0">
                   <button class="btn btn-light gx-flag-btn px-2 py-1 d-flex align-items-center">
-                      <img src="./assets/us-flag-small.jpg" alt="US Flag" height="20" />
+                      <img src="./assets/us-flag-small.webp" alt="US Flag" height="20" />
                       <span class="gx-flag-chevron">&#9662;</span>
                   </button>
               </div>

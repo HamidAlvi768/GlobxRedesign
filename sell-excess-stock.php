@@ -189,7 +189,7 @@ include_once('./includes/search_nav.php');
           </div>
 
           <!-- Submit Button -->
-          <button type="submit" class="gx-submit-btn-custom gx-contact-submit px-4 py-2">Upload Now</button>
+          <button type="submit" class="gx-submit-btn-custom gx-contact-submit gx-btn-primary px-4 py-2">Upload Now</button>
         </form>
       </div>
     </div>

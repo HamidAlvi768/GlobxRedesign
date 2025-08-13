@@ -24,7 +24,7 @@ include_once('./includes/transparent_nav.php');
   <div class="gx-hero-bg"></div>
   <div class="gx-hero-overlay"></div>
   <div class="container gx-hero-content position-relative z-2 d-flex flex-column align-items-center justify-content-center" style="min-height: 70vh;">
-    <h1 class="gx-hero-title fw-medium mb-3 text-center">Strengthening Supply Chains,<br>Securing Futures.</h1>
+    <h1 class="gx-hero-title fw-medium mb-3 text-center">Strengthening Supply Chains,<br>Securing Futures</h1>
     <p class="gx-hero-subtext mb-4 text-center">We enhance the reliability, efficiency, and resilience of your supply chain today.<br>This ensures long-term stability, growth, and success for your business in the future.</p>
     <a href="#" class="btn gx-btn-primary gx-btn-ghost px-4 py-2 mt-2">Inquire Now</a>
   </div>
@@ -88,49 +88,49 @@ include_once('./includes/transparent_nav.php');
     <div class="gx-certifications-scroll owl-carousel gx-reveal-content gx-reveal-delay-1">
       <a href="#" class="gx-cert-card" aria-label="View Certificate">
         <div class="gx-cert-card-logo">
-          <img src="./assets/about-us/certification.jpg" alt="Certification Logo" loading="lazy" />
+          <img src="./assets/about-us/certification.webp" alt="Certification Logo" loading="lazy" />
         </div>
         <div class="gx-cert-card-btn">View Certificate</div>
       </a>
       <a href="#" class="gx-cert-card" aria-label="View Certificate">
         <div class="gx-cert-card-logo">
-          <img src="./assets/about-us/certification.jpg" alt="Certification Logo" loading="lazy" />
+          <img src="./assets/about-us/certification.webp" alt="Certification Logo" loading="lazy" />
         </div>
         <div class="gx-cert-card-btn">View Certificate</div>
       </a>
       <a href="#" class="gx-cert-card" aria-label="View Certificate">
         <div class="gx-cert-card-logo">
-          <img src="./assets/about-us/certification.jpg" alt="Certification Logo" loading="lazy" />
+          <img src="./assets/about-us/certification.webp" alt="Certification Logo" loading="lazy" />
         </div>
         <div class="gx-cert-card-btn">View Certificate</div>
       </a>
       <a href="#" class="gx-cert-card" aria-label="View Certificate">
         <div class="gx-cert-card-logo">
-          <img src="./assets/about-us/certification.jpg" alt="Certification Logo" loading="lazy" />
+          <img src="./assets/about-us/certification.webp" alt="Certification Logo" loading="lazy" />
         </div>
         <div class="gx-cert-card-btn">View Certificate</div>
       </a>
       <a href="#" class="gx-cert-card" aria-label="View Certificate">
         <div class="gx-cert-card-logo">
-          <img src="./assets/about-us/certification.jpg" alt="Certification Logo" loading="lazy" />
+          <img src="./assets/about-us/certification.webp" alt="Certification Logo" loading="lazy" />
         </div>
         <div class="gx-cert-card-btn">View Certificate</div>
       </a>
       <a href="#" class="gx-cert-card" aria-label="View Certificate">
         <div class="gx-cert-card-logo">
-          <img src="./assets/about-us/certification.jpg" alt="Certification Logo" loading="lazy" />
+          <img src="./assets/about-us/certification.webp" alt="Certification Logo" loading="lazy" />
         </div>
         <div class="gx-cert-card-btn">View Certificate</div>
       </a>
       <a href="#" class="gx-cert-card" aria-label="View Certificate">
         <div class="gx-cert-card-logo">
-          <img src="./assets/about-us/certification.jpg" alt="Certification Logo" loading="lazy" />
+          <img src="./assets/about-us/certification.webp" alt="Certification Logo" loading="lazy" />
         </div>
         <div class="gx-cert-card-btn">View Certificate</div>
       </a>
       <a href="#" class="gx-cert-card" aria-label="View Certificate">
         <div class="gx-cert-card-logo">
-          <img src="./assets/about-us/certification.jpg" alt="Certification Logo" loading="lazy" />
+          <img src="./assets/about-us/certification.webp" alt="Certification Logo" loading="lazy" />
         </div>
         <div class="gx-cert-card-btn">View Certificate</div>
       </a>
@@ -192,12 +192,12 @@ include_once('./includes/transparent_nav.php');
         <div class="gx-team-pane gx-team-pane-active" id="team-1">
           <!-- Left: 3x2 Image Grid -->
           <div class="gx-team-image-grid">
-            <img src="./assets/about-us/member-1.jpg" alt="Team Member 1" class="gx-team-member-img" />
-            <img src="./assets/about-us/member-2.jpg" alt="Team Member 2" class="gx-team-member-img" />
-            <img src="./assets/about-us/member-3.jpg" alt="Team Member 3" class="gx-team-member-img" />
-            <img src="./assets/about-us/member-3.jpg" alt="Team Member 6" class="gx-team-member-img" />
-            <img src="./assets/about-us/member-1.jpg" alt="Team Member 4" class="gx-team-member-img" />
-            <img src="./assets/about-us/member-2.jpg" alt="Team Member 5" class="gx-team-member-img" />
+            <img src="./assets/about-us/member-1.webp" alt="Team Member 1" class="gx-team-member-img" />
+            <img src="./assets/about-us/member-2.webp" alt="Team Member 2" class="gx-team-member-img" />
+            <img src="./assets/about-us/member-3.webp" alt="Team Member 3" class="gx-team-member-img" />
+            <img src="./assets/about-us/member-3.webp" alt="Team Member 6" class="gx-team-member-img" />
+            <img src="./assets/about-us/member-1.webp" alt="Team Member 4" class="gx-team-member-img" />
+            <img src="./assets/about-us/member-2.webp" alt="Team Member 5" class="gx-team-member-img" />
           </div>
           <!-- Right: Text Block -->
           <div class="gx-team-text-block">
@@ -212,12 +212,12 @@ include_once('./includes/transparent_nav.php');
         <div class="gx-team-pane" id="team-2">
           <!-- Left: 3x2 Image Grid (Different arrangement) -->
           <div class="gx-team-image-grid">
-            <img src="./assets/about-us/member-2.jpg" alt="Team Member 2" class="gx-team-member-img" />
-            <img src="./assets/about-us/member-3.jpg" alt="Team Member 3" class="gx-team-member-img" />
-            <img src="./assets/about-us/member-1.jpg" alt="Team Member 1" class="gx-team-member-img" />
-            <img src="./assets/about-us/member-1.jpg" alt="Team Member 4" class="gx-team-member-img" />
-            <img src="./assets/about-us/member-2.jpg" alt="Team Member 5" class="gx-team-member-img" />
-            <img src="./assets/about-us/member-3.jpg" alt="Team Member 6" class="gx-team-member-img" />
+            <img src="./assets/about-us/member-2.webp" alt="Team Member 2" class="gx-team-member-img" />
+            <img src="./assets/about-us/member-3.webp" alt="Team Member 3" class="gx-team-member-img" />
+            <img src="./assets/about-us/member-1.webp" alt="Team Member 1" class="gx-team-member-img" />
+            <img src="./assets/about-us/member-1.webp" alt="Team Member 4" class="gx-team-member-img" />
+            <img src="./assets/about-us/member-2.webp" alt="Team Member 5" class="gx-team-member-img" />
+            <img src="./assets/about-us/member-3.webp" alt="Team Member 6" class="gx-team-member-img" />
           </div>
           <!-- Right: Text Block -->
           <div class="gx-team-text-block">

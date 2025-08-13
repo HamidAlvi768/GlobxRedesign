@@ -20,7 +20,7 @@ include_once('./includes/nav.php');
 <section class="gx-save-globe-hero position-relative d-flex align-items-center">
   <!-- Background Video & Overlay -->
   <div class="gx-save-globe-bg">
-    <video autoplay muted loop playsinline>
+    <video autoplay muted loop playsinline id="slowMoVideo">
       <source src="./assets/society/earth-loop.mov" type="video/quicktime">
       <source src="./assets/society/earth-loop.mov" type="video/mp4">
       <!-- Fallback for browsers that don't support video -->
@@ -85,7 +85,7 @@ include_once('./includes/nav.php');
       <div class="col-lg-6 order-1 order-md-1">
         <div class="gx-plants-image-wrapper gx-reveal-slide-left">
           <div class="gx-plants-image-container">
-            <img src="./assets/society/plant.jpg" alt="Hands holding a plant - Plant for the Planet" class="gx-plants-image" />
+            <img src="./assets/society/plant.webp" alt="Hands holding a plant - Plant for the Planet" class="gx-plants-image" />
           </div>
         </div>
       </div>
@@ -132,7 +132,7 @@ include_once('./includes/nav.php');
       <div class="col-lg-6 order-1 order-md-1">
         <div class="gx-nature-explorers-image-wrapper gx-plants-image-wrapper gx-reveal-slide-left">
           <div class="gx-nature-explorers-image-container gx-plants-image-container">
-            <img src="./assets/society/nature-explorers.jpg" alt="Adult and child exploring nature - Nature Explorers Program" class="gx-nature-explorers-image gx-plants-image" />
+            <img src="./assets/society/nature-explorers.webp" alt="Adult and child exploring nature - Nature Explorers Program" class="gx-nature-explorers-image gx-plants-image" />
           </div>
         </div>
       </div>
@@ -162,7 +162,18 @@ include_once('./includes/nav.php');
     </div>
   </div>
 </section>
+<!-- <script>
+  // Select the video element by its ID
+  const video = document.getElementById('slowMoVideo');
+  
+  // Set the playback speed. 0.5 is half speed.
+  // You can change this value to be slower (e.g., 0.25) or faster.
+  video.playbackRate = 0.5; 
+</script> -->
 <?php
+
+
+
 $jsFiles = [
   './assets/js/hero-owl-carousel.js',
   './assets/js/services.js',
@@ -174,3 +185,4 @@ $jsFiles[] = './assets/js/markets-industries.js';
 
 include_once('./includes/footer.php');
 ?>
+

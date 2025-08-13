@@ -60,8 +60,13 @@
 .gx-footer-legal-links {
   display: flex;
   gap: 1.5rem;
-  white-space: nowrap;
   justify-content: center;
+}
+
+@media (min-width: 769px) {
+  .gx-footer-legal-links {
+    white-space: nowrap;
+  }
 }
 
 .gx-footer-link {

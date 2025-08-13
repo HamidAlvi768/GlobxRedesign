@@ -55,7 +55,7 @@
 
 .gx-btn-primary:hover,
 .gx-btn-primary:focus {
-  background: var(--primary-dark-2);
+  background: var(--primary-hover);
   color: var(--text-light);
 }
 
@@ -148,7 +148,7 @@
 
 .gx-search-section-search-nav {
   margin: 0 auto;
-  padding-inline: 3rem;
+  padding-inline: 4rem;
   width: 100%;
 }
 

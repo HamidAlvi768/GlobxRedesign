@@ -16,7 +16,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../excess-stock/stock-bg.jpg");
+  background-image: url("../excess-stock/stock-bg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -654,18 +654,14 @@
   display: flex;
   align-items: flex-start;
   padding: 1.5rem;
-  background: #fff;
+  background: hsl(210, 17%, 98%);
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   height: 100%;
-  border: 1px solid #f0f0f0;
 }
 
 .gx-benefit-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-  border-color: var(--primary);
+  transform: translateY(-5px);
 }
 
 /* Benefit Icon */
@@ -704,6 +700,7 @@
   color: #666;
   line-height: 1.5;
   margin: 0;
+  margin-bottom: 2rem;
 }
 
 /* ======================================== */

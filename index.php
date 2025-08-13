@@ -64,25 +64,25 @@ include_once('./includes/transparent_nav.php');
                   <div class="gx-sidebar-row">
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/diodes.png" alt="Diodes" width="30" height="30" />
+                        <img src="./assets/main/diodes.png" alt="Diodes" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">diodes</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/mpu_mcu.png" alt="MPU/MCU" width="30" height="30" />
+                        <img src="./assets/main/mpu_mcu.png" alt="MPU/MCU" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">mpu/mcu</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/powerics.png" alt="Power" width="30" height="30" />
+                        <img src="./assets/main/powerics.png" alt="Power" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">powerics</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/resistors.png" alt="Resistors" width="30" height="30" />
+                        <img src="./assets/main/resistors.png" alt="Resistors" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">resistors</div>
                     </div>
@@ -90,25 +90,25 @@ include_once('./includes/transparent_nav.php');
                   <div class="gx-sidebar-row">
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/capacitors.png" alt="Capacitors" width="30" height="30" />
+                        <img src="./assets/main/capacitors.png" alt="Capacitors" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">capacitors</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/connectors.png" alt="Connectors" width="30" height="30" />
+                        <img src="./assets/main/connectors.png" alt="Connectors" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">connectors</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/inductors.png" alt="Inductors" width="30" height="30" />
+                        <img src="./assets/main/inductors.png" alt="Inductors" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">inductors</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/switches.png" alt="Switches" width="30" height="30" />
+                        <img src="./assets/main/switches.png" alt="Switches" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">switches</div>
                     </div>
@@ -116,25 +116,25 @@ include_once('./includes/transparent_nav.php');
                   <div class="gx-sidebar-row">
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/fuses.png" alt="Fuses" width="30" height="30" />
+                        <img src="./assets/main/fuses.png" alt="Fuses" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">fuses</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/transistor.png" alt="Transistors" width="30" height="30" />
+                        <img src="./assets/main/transistor.png" alt="Transistors" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">transistors</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/crys_reso.png" alt="Crystal Resonators" width="30" height="30" />
+                        <img src="./assets/main/crys_reso.png" alt="Crystal Resonators" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">crystals</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/optoelectr.png" alt="Optoelectronics" width="30" height="30" />
+                        <img src="./assets/main/optoelectr.png" alt="Optoelectronics" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">optoelectronics</div>
                     </div>
@@ -148,25 +148,25 @@ include_once('./includes/transparent_nav.php');
                   <div class="gx-sidebar-row">
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/sens_trans.png" alt="Sensors & Transducers" width="30" height="30" />
+                        <img src="./assets/main/sens_trans.png" alt="Sensors & Transducers" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">sensors</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/amplifiers.png" alt="Amplifiers" width="30" height="30" />
+                        <img src="./assets/main/amplifiers.png" alt="Amplifiers" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">amplifiers</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/regulators.png" alt="Regulators" width="30" height="30" />
+                        <img src="./assets/main/regulators.png" alt="Regulators" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">regulators</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/pmic.png" alt="PMIC" width="30" height="30" />
+                        <img src="./assets/main/pmic.png" alt="PMIC" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">pmic</div>
                     </div>
@@ -174,25 +174,25 @@ include_once('./includes/transparent_nav.php');
                   <div class="gx-sidebar-row">
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/logic_ics.png" alt="Logic ICs" width="30" height="30" />
+                        <img src="./assets/main/logic_ics.png" alt="Logic ICs" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">logic ics</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/memory_ics.png" alt="Memory ICs" width="30" height="30" />
+                        <img src="./assets/main/memory_ics.png" alt="Memory ICs" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">memory ics</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/interface.png" alt="Interface" width="30" height="30" />
+                        <img src="./assets/main/interface.png" alt="Interface" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">interface</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/converters.png" alt="Converters" width="30" height="30" />
+                        <img src="./assets/main/converters.png" alt="Converters" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">converters</div>
                     </div>
@@ -200,25 +200,25 @@ include_once('./includes/transparent_nav.php');
                   <div class="gx-sidebar-row">
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/psu.png" alt="Power Supply Units" width="30" height="30" />
+                        <img src="./assets/main/psu.png" alt="Power Supply Units" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">psu</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/lcc.png" alt="LCC" width="30" height="30" />
+                        <img src="./assets/main/lcc.png" alt="LCC" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">lcc</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/memory.png" alt="Memory" width="30" height="30" />
+                        <img src="./assets/main/memory.png" alt="Memory" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">memory</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/other_semi.png" alt="Other Semiconductors" width="30" height="30" />
+                        <img src="./assets/main/other_semi.png" alt="Other Semiconductors" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">other semi</div>
                     </div>
@@ -232,25 +232,25 @@ include_once('./includes/transparent_nav.php');
                   <div class="gx-sidebar-row">
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/diodes.png" alt="Diodes" width="30" height="30" />
+                        <img src="./assets/main/diodes.png" alt="Diodes" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">diodes</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/mpu_mcu.png" alt="MPU/MCU" width="30" height="30" />
+                        <img src="./assets/main/mpu_mcu.png" alt="MPU/MCU" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">mpu/mcu</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/powerics.png" alt="Power" width="30" height="30" />
+                        <img src="./assets/main/powerics.png" alt="Power" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">powerics</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/resistors.png" alt="Resistors" width="30" height="30" />
+                        <img src="./assets/main/resistors.png" alt="Resistors" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">resistors</div>
                     </div>
@@ -258,25 +258,25 @@ include_once('./includes/transparent_nav.php');
                   <div class="gx-sidebar-row">
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/capacitors.png" alt="Capacitors" width="30" height="30" />
+                        <img src="./assets/main/capacitors.png" alt="Capacitors" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">capacitors</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/connectors.png" alt="Connectors" width="30" height="30" />
+                        <img src="./assets/main/connectors.png" alt="Connectors" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">connectors</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/inductors.png" alt="Inductors" width="30" height="30" />
+                        <img src="./assets/main/inductors.png" alt="Inductors" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">inductors</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/switches.png" alt="Switches" width="30" height="30" />
+                        <img src="./assets/main/switches.png" alt="Switches" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">switches</div>
                     </div>
@@ -284,25 +284,25 @@ include_once('./includes/transparent_nav.php');
                   <div class="gx-sidebar-row">
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/fuses.png" alt="Fuses" width="30" height="30" />
+                        <img src="./assets/main/fuses.png" alt="Fuses" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">fuses</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/transistor.png" alt="Transistors" width="30" height="30" />
+                        <img src="./assets/main/transistor.png" alt="Transistors" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">transistors</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/crys_reso.png" alt="Crystal Resonators" width="30" height="30" />
+                        <img src="./assets/main/crys_reso.png" alt="Crystal Resonators" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">crystals</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/optoelectr.png" alt="Optoelectronics" width="30" height="30" />
+                        <img src="./assets/main/optoelectr.png" alt="Optoelectronics" width="60" height="60" />
                       </div>
                       <div class="gx-sidebar-label">optoelectronics</div>
                     </div>
@@ -713,7 +713,7 @@ include_once('./includes/transparent_nav.php');
       <div class="col-lg-6 order-1 order-lg-2">
         <div class="gx-testimonials-content gx-reveal-slide-right">
           <div class="gx-testimonial-image-container">
-            <img src="./assets/testimonial-man.jpg" alt="Dr. Bayram Cucu - CEO, Bio-Gram Diagnostics GmbH" class="gx-testimonial-image" />
+            <img src="./assets/testimonial-man.webp" alt="Dr. Bayram Cucu - CEO, Bio-Gram Diagnostics GmbH" class="gx-testimonial-image" />
           </div>
         </div>
       </div>
@@ -799,7 +799,7 @@ include_once('./includes/transparent_nav.php');
       </div>
       <!-- Right Column: Image -->
       <div class="gx-save-globe-image-col gx-reveal-slide-right">
-        <img src="./assets/earth.jpg" alt="Earth - Save the Globe" class="gx-save-globe-image" />
+        <img src="./assets/earth.webp" alt="Earth - Save the Globe" class="gx-save-globe-image" />
       </div>
     </div>
   </div>
@@ -851,7 +851,7 @@ include_once('./includes/transparent_nav.php');
           <label for="message">Message</label>
           <textarea id="message" name="message" placeholder="Message" rows="4"></textarea>
         </div>
-        <button type="submit" class="gx-contact-submit px-4 py-2">Send</button>
+        <button type="submit" class="gx-contact-submit gx-btn-primary px-4 py-2">Send</button>
       </form>
     </div>
     <!-- Right: Image & Chevron -->
@@ -859,7 +859,7 @@ include_once('./includes/transparent_nav.php');
       <div class="gx-contact-chevron-bg">
         <img src="./assets/contact-us-arrow.png" alt="Decorative Chevron" class="gx-contact-chevron" />
       </div>
-      <img src="./assets/contact-us.jpg" alt="Contact Us" class="gx-contact-image" />
+      <img src="./assets/contact-us.webp" alt="Contact Us" class="gx-contact-image" />
     </div>
   </div>
 </section>
@@ -873,6 +873,7 @@ $jsFiles = [
   './assets/js/testimonials.js',
   './assets/js/scroll-reveal.js',
   './assets/js/infinite-scroll.js',
+  './assets/js/tab-animations.js',
 ];
 
 include_once('./includes/footer.php');

@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (query) {
       console.log('Searching for:', query);
       // Navigate to products page with search query
-      window.location.href = `./products.php?search=${encodeURIComponent(query)}`;
+      window.location.href = `./pn-listing.php?search=${encodeURIComponent(query)}`;
     } else {
       // Show error message or focus the input
       searchInput.focus();

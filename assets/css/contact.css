@@ -27,7 +27,7 @@
 }
 
 /* Robust Banner Section Z-Index Management */
-.gx-section-common {
+ .gx-contact-section .gx-section-common {
   position: relative;
   z-index: 10;
   /* Ensure banner has proper top spacing for navbar */
@@ -38,14 +38,14 @@
 }
 
 /* Force banner content to be above navbar */
-.gx-section-common .container {
+.gx-contact-section .gx-section-common .container {
   position: relative;
   z-index: 15;
 }
 
 /* Additional safety margin for mobile navbar */
 @media (max-width: 991.98px) {
-  .gx-section-common {
+  .gx-contact-section .gx-section-common {
     padding-top: calc(4rem + var(--navbar-height-tablet));
     padding-bottom: 0;
   }
@@ -56,7 +56,7 @@
 }
 
 @media (max-width: 767.98px) {
-  .gx-section-common {
+  .gx-contact-section .gx-section-common {
     padding-top: calc(2rem + var(--navbar-height-mobile));
     margin-top: 2rem;
     padding-bottom: 0;
@@ -67,7 +67,7 @@
 }
 
 @media (max-width: 575.98px) {
-  .gx-section-common {
+  .gx-contact-section .gx-section-common {
     padding-top: calc(2rem + var(--navbar-height-small));
 
   }

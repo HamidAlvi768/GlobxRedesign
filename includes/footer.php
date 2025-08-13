@@ -1,7 +1,7 @@
 <!-- Footer -->
 <footer class="gx-footer">
   <div class="container">
-    <div class="row justify-content-around">
+    <div class="row justify-content-between">
       <!-- Left Column: Company Contact Information -->
       <div class="col-lg-3 col-md-4 col-sm-6 gx-footer-col">
         <div class="gx-footer-company">

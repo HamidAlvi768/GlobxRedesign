@@ -740,7 +740,7 @@ include_once('./includes/transparent_nav.php');
       <div class="col-lg-6 order-1 order-lg-2">
         <div class="gx-testimonials-content gx-reveal-slide-right">
           <div class="gx-testimonial-image-container">
-            <img src="./assets/testimonial-man.jpg" alt="Dr. Bayram Cucu - CEO, Bio-Gram Diagnostics GmbH" class="gx-testimonial-image" />
+            <img src="./assets/testimonial-man.webp" alt="Dr. Bayram Cucu - CEO, Bio-Gram Diagnostics GmbH" class="gx-testimonial-image" />
           </div>
         </div>
       </div>
@@ -826,7 +826,7 @@ include_once('./includes/transparent_nav.php');
       </div>
       <!-- Right Column: Image -->
       <div class="gx-save-globe-image-col gx-reveal-slide-right">
-        <img src="./assets/earth.jpg" alt="Earth - Save the Globe" class="gx-save-globe-image" />
+        <img src="./assets/earth.webp" alt="Earth - Save the Globe" class="gx-save-globe-image" />
       </div>
     </div>
   </div>
@@ -886,7 +886,7 @@ include_once('./includes/transparent_nav.php');
       <div class="gx-contact-chevron-bg">
         <img src="./assets/contact-us-arrow.png" alt="Decorative Chevron" class="gx-contact-chevron" />
       </div>
-      <img src="./assets/contact-us.jpg" alt="Contact Us" class="gx-contact-image" />
+      <img src="./assets/contact-us.webp" alt="Contact Us" class="gx-contact-image" />
     </div>
   </div>
 </section>

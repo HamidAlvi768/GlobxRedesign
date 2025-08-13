@@ -1,6 +1,6 @@
-/* ======================================== */
-/* GLOBX - PROBLEM & SOLUTION SECTION      */
-/* ======================================== */
+/****************************************/
+/* GLOBX - PROBLEM & SOLUTION SECTION  */
+/****************************************/
 
 /* Main Content Container - Specific to Problem/Solution */
 .gx-content-container {
@@ -40,11 +40,13 @@
 /* Left tab - curves on right side */
 .gx-tab-btn:first-child {
   clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+  flex: 1;
 }
 
 /* Right tab - curves on left side */
 .gx-tab-btn:last-child {
   clip-path: polygon(0% 50%, 5% 0%, 100% 0%, 100% 100%, 5% 100%);
+  flex: 1;
 }
 
 .gx-tab-btn:hover {
@@ -64,6 +66,7 @@
 /* Active right tab */
 .gx-tab-btn-active:last-child {
   border-radius: 30px 0px 0px 30px;
+  padding-left: 5rem;
 }
 
 
@@ -109,12 +112,86 @@
   z-index: 1;
   padding: 3rem;
 }
+
 .gx-tab-pane-active {
   opacity: 1;
   visibility: visible;
   transition: opacity 0.4s cubic-bezier(0.4,0,0.2,1), visibility 0s linear 0s, z-index 0s linear 0s;
   z-index: 2;
   position: relative;
+  animation: tabContentFadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes tabContentFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Tab Switch Animation for Foreground Illustrations - Enhanced */
+/* Staggered animations for text content */
+.gx-tab-pane-active .gx-problem-title,
+.gx-tab-pane-active .gx-solution-title {
+  animation: tabTextSlideIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.1s forwards;
+}
+
+.gx-tab-pane-active .gx-problem-subtitle,
+.gx-tab-pane-active .gx-solution-subtitle {
+  animation: tabTextSlideIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s forwards;
+}
+
+.gx-tab-pane-active .gx-problem-text,
+.gx-tab-pane-active .gx-solution-text {
+  animation: tabTextSlideIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.3s forwards;
+}
+
+@keyframes tabTextSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* CSS Custom Properties for animation control */
+:root {
+  --tab-animation-duration: 0.8s;
+  --tab-animation-easing: cubic-bezier(0.4, 0, 0.2, 1);
+  --tab-scale-start: 1.2;
+  --tab-scale-end: 1;
+  --tab-translate-start: -8px;
+  --tab-translate-end: 0; /* Changed to 0 for consistency with base state; prevents stuck lift */
+  --tab-opacity-start: 0.3;
+  --tab-opacity-end: 1;
+}
+
+/* Enhanced keyframes with CSS custom properties */
+@keyframes tabSwitchScale {
+  0% {
+    transform: scale(var(--tab-scale-start)) translateY(var(--tab-translate-start));
+    opacity: var(--tab-opacity-start);
+  }
+  100% {
+    transform: scale(var(--tab-scale-end)) translateY(var(--tab-translate-end));
+    opacity: var(--tab-opacity-end);
+  }
+}
+
+/* Animation state classes for JavaScript control */
+.gx-illustration-foreground-common.gx-animating {
+  animation: tabSwitchScale var(--tab-animation-duration) var(--tab-animation-easing) forwards;
+  transition: none;
+}
+
+.gx-illustration-foreground-common.gx-animation-complete {
+  animation: none;
+  transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
 }
 
 /* Ensure the tab content container is relative for absolute positioning */
@@ -122,6 +199,42 @@
   position: relative;
   min-height: 340px;
   height: auto;
+}
+
+/* Enhanced animation system for tab switches */
+.gx-tab-pane {
+  /* Ensure proper stacking context */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.gx-tab-pane-active {
+  /* Force hardware acceleration and proper stacking */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: opacity, transform;
+}
+
+/* Animation container for illustrations */
+.gx-illustration-container {
+  position: relative;
+  overflow: visible;
+  /* Ensure proper stacking context for animations */
+  transform: translateZ(0);
+}
+
+/* Enhanced foreground illustration with better animation support */
+.gx-illustration-foreground-common {
+  position: relative;
+  height: auto;
+  z-index: 2;
+  border-radius: 0.5rem;
+  transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+  will-change: transform;
+  transform: translateY(0); /* Initial state */
+  /* Ensure proper rendering during animations */
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
 }
 
 /* Flexible height adjustment for content */
@@ -142,6 +255,17 @@
 .gx-solution-text {
   line-height: 1.6;
   margin-bottom: 1rem;
+  opacity: 0; /* Start hidden for animation */
+  transform: translateY(15px); /* Start position for animation */
+}
+
+/* Ensure titles and subtitles start hidden for animation */
+.gx-problem-title,
+.gx-solution-title,
+.gx-problem-subtitle,
+.gx-solution-subtitle {
+  opacity: 0;
+  transform: translateY(15px);
 }
 
 /* Ensure illustrations don't cause overflow */
@@ -211,15 +335,22 @@
   border-radius: 0.5rem;
   transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
   will-change: transform;
+  transform: translateY(0); /* Initial state */
 }
 
 .gx-illustration-container:hover .gx-illustration-foreground-common {
   transform: translateY(-12px);
 }
 
+/* Ensure smooth transitions after tab switch animation completes */
+.gx-tab-pane-active .gx-illustration-foreground-common {
+  transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .gx-illustration-foreground-common {
-    transition: none !important;
+    transition: none;
+    animation: none;
   }
 }
 
@@ -348,7 +479,7 @@
   }
   
   .gx-tab-btn-active:last-child {
-    clip-path: polygon(0% 50%, 5% 0%, 100% 0%, 100% 100%, 5% 100%);
+    clip-path: polygon(10% 50%, 5% 0%, 100% 0%, 100% 100%, 5% 100%);
   }
   
   .gx-content-container-wrapper {

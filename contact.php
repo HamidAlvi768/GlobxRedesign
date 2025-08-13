@@ -92,7 +92,7 @@ include_once('./includes/nav.php');
                     <label for="message">Message</label>
                     <textarea id="message" name="message" placeholder="Message" rows="4"></textarea>
                 </div>
-                <button type="submit" class="gx-contact-submit px-4 py-2">Send</button>
+                <button type="submit" class="gx-contact-submit gx-btn-primary px-4 py-2">Send</button>
             </form>
         </div>
         <!-- Right: Image & Chevron -->
@@ -100,7 +100,7 @@ include_once('./includes/nav.php');
             <div class="gx-contact-chevron-bg">
                 <img src="./assets/contact-us-arrow.png" alt="Decorative Chevron" class="gx-contact-chevron" />
             </div>
-            <img src="./assets/contact-us.jpg" alt="Contact Us" class="gx-contact-image" />
+            <img src="./assets/contact-us.webp" alt="Contact Us" class="gx-contact-image" />
         </div>
     </div>
 </section>
