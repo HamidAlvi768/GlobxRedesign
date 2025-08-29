@@ -21,34 +21,30 @@ include_once('./includes/search_nav.php');
 ?>
 
 <!-- Excess Stock Hero Section -->
-<section class="gx-sell-excess-hero position-relative d-flex align-items-center">
-  <!-- Background Image & Overlay -->
-  <div class="gx-sell-excess-bg"></div>
-  <div class="gx-sell-excess-overlay"></div>
+<?php
+$heroTitle = 'Worth Your Excess Stock';
+$heroDescription = [
+    'Welcome to the GREENCHIPS Partner Portal. Europe\'s leading AI',
+    'powered market place for high quality electronic excess stock parts. Our platform supports OEM and EMS companies',
+    'in selling their excess stock globally, while offering best prices and quality to prospective buyers like electronic brokers, EMS or OEMs.'
+];
+$heroCtaButtons = [
+    [
+        'text' => 'Start Now',
+        'link' => './sell-excess-stock.php#gx-form-section',
+        'class' => 'gx-btn-primary',
+        'anchorTarget' => 'gx-form-section'
+    ],
+    [
+        'text' => 'Contact Us',
+        'link' => './contact.php',
+        'class' => 'gx-save-globe-btn',
+        'anchorTarget' => null
+    ]
+];
 
-  <!-- Central Hero Content -->
-  <div class="container gx-sell-excess-content position-relative z-2">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 col-md-10 text-center">
-        <!-- Main Heading -->
-        <h1 class="gx-sell-excess-title mb-4">Worth Your Excess Stock</h1>
-
-        <!-- Descriptive Text -->
-        <div class="gx-sell-excess-subtext mb-5">
-          <p>Welcome to the GREENCHIPS Partner Portal. Europe's leading AI</p>
-          <p>powered market place for high quality electronic excess stock parts. Our platform supports OEM and EMS companies</p>
-          <p>in selling their excess stock globally, while offering best prices and quality to prospective buyers like electronic brokers, EMS or OEMs.</p>
-        </div>
-
-        <!-- Call-to-Action Buttons -->
-        <div class="gx-sell-excess-cta d-flex justify-content-center flex-wrap">
-          <a href="#" class="btn gx-btn-primary px-4 py-2 rounded">Start Now</a>
-          <a href="#" class="btn gx-save-globe-btn px-4 py-2 rounded">Contact Us</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+include_once('./includes/_excess-stock-hero.php');
+?>
 
 <!-- Join Platform Section -->
 <section class="gx-join-platform-section gx-section-common gx-section-common--white py-10">
@@ -65,7 +61,7 @@ include_once('./includes/search_nav.php');
       <!-- Left Column: Image -->
       <div class="col-lg-6 mb-5 mb-lg-0">
         <div class="gx-join-platform-image-container">
-          <img src="./assets/society/plant.webp" alt="Hands holding a plant - Growth and Collaboration" class="gx-join-platform-image">
+          <img src="./assets/img/society/plant.webp" alt="Hands holding a plant - Growth and Collaboration" class="gx-join-platform-image">
         </div>
       </div>
       
@@ -117,7 +113,7 @@ include_once('./includes/search_nav.php');
           <!-- Call to Action -->
           <div class="gx-join-platform-cta">
             <p class="gx-cta-description" style="color: var(--text-dark);">Become a partner, save the planet and save valuable resources.</p>
-            <button class="gx-cta-button gx-btn-primary">Contact Us Now</button>
+            <a href="./contact.php" class="gx-cta-button gx-btn-primary">Contact Us Now</a>
           </div>
         </div>
       </div>
@@ -140,7 +136,7 @@ include_once('./includes/search_nav.php');
       <div class="col-lg-4 col-md-6">
         <div class="gx-benefit-card">
           <div class="gx-benefit-icon">
-            <img src="./assets/excess-stock/benifits/sparkle.png" alt="Stock Cleanup" class="gx-benefit-icon-img">
+            <img src="./assets/img/excess-stock/benifits/sparkle.png" alt="Stock Cleanup" class="gx-benefit-icon-img">
           </div>
           <div class="gx-benefit-content">
             <h3 class="gx-benefit-title">Physical and accounting stock cleanup</h3>
@@ -153,7 +149,7 @@ include_once('./includes/search_nav.php');
       <div class="col-lg-4 col-md-6">
         <div class="gx-benefit-card">
           <div class="gx-benefit-icon">
-            <img src="./assets/excess-stock/benifits/dollar.png" alt="Monthly Payouts" class="gx-benefit-icon-img">
+            <img src="./assets/img/excess-stock/benifits/dollar.png" alt="Monthly Payouts" class="gx-benefit-icon-img">
           </div>
           <div class="gx-benefit-content">
             <h3 class="gx-benefit-title">Monthly Payouts</h3>
@@ -166,7 +162,7 @@ include_once('./includes/search_nav.php');
       <div class="col-lg-4 col-md-6">
         <div class="gx-benefit-card">
           <div class="gx-benefit-icon">
-            <img src="./assets/excess-stock/benifits/folder.png" alt="Stock Savings" class="gx-benefit-icon-img">
+            <img src="./assets/img/excess-stock/benifits/folder.png" alt="Stock Savings" class="gx-benefit-icon-img">
           </div>
           <div class="gx-benefit-content">
             <h3 class="gx-benefit-title">Stock Savings</h3>
@@ -179,7 +175,7 @@ include_once('./includes/search_nav.php');
       <div class="col-lg-4 col-md-6">
         <div class="gx-benefit-card">
           <div class="gx-benefit-icon">
-            <img src="./assets/excess-stock/benifits/tree.png" alt="Sustainability" class="gx-benefit-icon-img">
+            <img src="./assets/img/excess-stock/benifits/tree.png" alt="Sustainability" class="gx-benefit-icon-img">
           </div>
           <div class="gx-benefit-content">
             <h3 class="gx-benefit-title">Sustainability contribution</h3>
@@ -192,7 +188,7 @@ include_once('./includes/search_nav.php');
       <div class="col-lg-4 col-md-6">
         <div class="gx-benefit-card">
           <div class="gx-benefit-icon">
-            <img src="./assets/excess-stock/benifits/shield.png" alt="Insurance & Risk Management" class="gx-benefit-icon-img">
+            <img src="./assets/img/excess-stock/benifits/shield.png" alt="Insurance & Risk Management" class="gx-benefit-icon-img">
           </div>
           <div class="gx-benefit-content">
             <h3 class="gx-benefit-title">Insurance & Risk Management</h3>
@@ -205,7 +201,7 @@ include_once('./includes/search_nav.php');
       <div class="col-lg-4 col-md-6">
         <div class="gx-benefit-card">
           <div class="gx-benefit-icon">
-            <img src="./assets/excess-stock/benifits/return-arrow.png" alt="Return Stock" class="gx-benefit-icon-img">
+            <img src="./assets/img/excess-stock/benifits/return-arrow.png" alt="Return Stock" class="gx-benefit-icon-img">
           </div>
           <div class="gx-benefit-content">
             <h3 class="gx-benefit-title">Pull your stock back anytime</h3>
@@ -250,7 +246,7 @@ include_once('./includes/search_nav.php');
       <div class="col-lg-3 col-md-6">
         <div class="gx-process-card">
           <div class="gx-process-icon">
-            <img src="./assets/excess-stock/features/upload.png" alt="Upload Document" class="gx-process-icon-img">
+            <img src="./assets/img/excess-stock/features/upload.png" alt="Upload Document" class="gx-process-icon-img">
           </div>
           <h3 class="gx-process-title">Upload</h3>
           <p class="gx-process-description">Upload your excess stock list to have all your parts evaluated.</p>
@@ -260,7 +256,7 @@ include_once('./includes/search_nav.php');
       <div class="col-lg-3 col-md-6">
         <div class="gx-process-card">
           <div class="gx-process-icon">
-            <img src="./assets/excess-stock/features/analysis.png" alt="Analytics" class="gx-process-icon-img">
+            <img src="./assets/img/excess-stock/features/analysis.png" alt="Analytics" class="gx-process-icon-img">
           </div>
           <h3 class="gx-process-title">Analysis & Results</h3>
           <p class="gx-process-description">We will analyse the current market value of your parts and send you the results with a suitable offer.</p>
@@ -270,7 +266,7 @@ include_once('./includes/search_nav.php');
       <div class="col-lg-3 col-md-6">
         <div class="gx-process-card">
           <div class="gx-process-icon">
-            <img src="./assets/excess-stock/features/commission.png" alt="Commission" class="gx-process-icon-img">
+            <img src="./assets/img/excess-stock/features/commission.png" alt="Commission" class="gx-process-icon-img">
           </div>
           <h3 class="gx-process-title">Contract</h3>
           <p class="gx-process-description">Choose the Model that suits you the best and we will take care of the rest.</p>
@@ -280,7 +276,7 @@ include_once('./includes/search_nav.php');
       <div class="col-lg-3 col-md-6">
         <div class="gx-process-card">
           <div class="gx-process-icon">
-            <img src="./assets/excess-stock/features/sale.png" alt="Sale" class="gx-process-icon-img">
+            <img src="./assets/img/excess-stock/features/sale.png" alt="Sale" class="gx-process-icon-img">
           </div>
           <h3 class="gx-process-title">Pickup & Visual Examination</h3>
           <p class="gx-process-description">Pick-up and visual examination are covered by our costs, with our ISO 9001 standard quality checks ensuring that only original and intact parts are resold.</p>
@@ -370,36 +366,25 @@ include_once('./includes/search_nav.php');
 </section>
 
 <!-- Call-to-Action Block Section -->
-<section class="gx-cta-section gx-section-common gx-section-common--white py-5">
-  <div class="container">
-    <div class="row">
-      <!-- Left CTA Card -->
-      <div class="col-lg-6 mb-4">
-        <div class="gx-cta-card gx-cta-card--blue">
-          <div class="gx-cta-content">
-            <h3 class="gx-cta-heading">Evaluate your excess stock now</h3>
-            <p class="gx-cta-description">
-              Upload your excess stock list to our platform now and we will determine the potential for you.
-            </p>
-            <button class="gx-cta-btn gx-cta-btn--blue">Upload Excess Stock List</button>
-          </div>
-        </div>
-      </div>
-      <!-- Right CTA Card -->
-      <div class="col-lg-6 mb-4">
-        <div class="gx-cta-card gx-cta-card--orange">
-          <div class="gx-cta-content">
-            <h3 class="gx-cta-heading">Are you already interested?</h3>
-            <p class="gx-cta-description">
-              Got questions or want a demo? Book a call with our Customer Success team and explore our model and sustainability.
-            </p>
-            <button class="gx-cta-btn gx-cta-btn--orange">Call Us Now</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<?php
+$leftCard = [
+    'heading' => 'Evaluate your excess stock now',
+    'description' => 'Upload your excess stock list to our platform now and we will determine the potential for you.',
+    'buttonText' => 'Upload Excess Stock List',
+    'buttonLink' => './sell-excess-stock.php#gx-form-section',
+    'buttonClass' => 'gx-cta-btn--blue'
+];
+
+$rightCard = [
+    'heading' => 'Are you already interested?',
+    'description' => 'Got questions or want a demo? Book a call with our Customer Success team and explore our model and sustainability.',
+    'buttonText' => 'Call Us Now',
+    'buttonLink' => './contact.php',
+    'buttonClass' => 'gx-cta-btn--orange'
+];
+
+include_once('./includes/_cta-section.php');
+?>
 
 <?php
 $jsFiles = [
@@ -409,6 +394,7 @@ $jsFiles = [
   './assets/js/scroll-reveal.js',
   './assets/js/infinite-scroll.js',
   './assets/js/sell-excess-stock.js',
+  './assets/js/anchor-navigation.js',
 ];
 
 include_once('./includes/footer.php');

@@ -22,7 +22,7 @@
     <div class="container align-items-center">
       <!-- Logo -->
       <a class="navbar-brand d-flex align-items-center gx-logo" href="#">
-        <img src="./assets/logo.png" alt="GX Logo" height="48"/>
+        <img src="./assets/img/logo.png" alt="GX Logo" height="48"/>
       </a>
       <!-- Navbar Toggler for Mobile -->
       <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +41,7 @@
         <!-- Flag Selector (move inside collapse for mobile) -->
         <div class="gx-flag-selector d-flex align-items-center ms-lg-3 mt-3 mt-lg-0">
           <button class="btn btn-light gx-flag-btn px-2 py-1 d-flex align-items-center">
-            <img src="./assets/us-flag-small.webp" alt="US Flag" height="20" />
+            <img src="./assets/img/us-flag-small.webp" alt="US Flag" height="20" />
             <span class="gx-flag-chevron">&#9662;</span>
           </button>
         </div>
@@ -60,7 +60,7 @@
         <div class="col-lg-7 col-md-12 gx-hero-left position-relative">
           <!-- Decorative Arrows -->
           <div class="gx-arrows position-absolute">
-            <img src="./assets/hero-arrow.png" alt="Decorative Arrows" width="180" height="120" />
+            <img src="./assets/img/hero-arrow.png" alt="Decorative Arrows" width="180" height="120" />
           </div>
           <!-- Hero Slide Content Wrapper -->
           <div class="gx-hero-slide-content position-relative">
@@ -103,10 +103,10 @@
 
   <!-- Hero Footer: Partners Row -->
   <div class="gx-hero-footer bg-white d-flex justify-content-around align-items-center">
-    <div class="gx-partner-logo mx-4"><img src="./assets/brand-1.png" alt="Brand 1" height="52" /></div>
-    <div class="gx-partner-logo mx-4"><img src="./assets/brand-2.png" alt="Brand 2" height="52" /></div>
-    <div class="gx-partner-logo mx-4"><img src="./assets/brand-3.png" alt="Brand 3" height="52" /></div>
-    <div class="gx-partner-logo mx-4"><img src="./assets/brand-4.png" alt="Brand 4" height="52" /></div>
+    <div class="gx-partner-logo mx-4"><img src="./assets/img/brand-1.png" alt="Brand 1" height="52" /></div>
+    <div class="gx-partner-logo mx-4"><img src="./assets/img/brand-2.png" alt="Brand 2" height="52" /></div>
+    <div class="gx-partner-logo mx-4"><img src="./assets/img/brand-3.png" alt="Brand 3" height="52" /></div>
+    <div class="gx-partner-logo mx-4"><img src="./assets/img/brand-4.png" alt="Brand 4" height="52" /></div>
   </div>
 
   <!-- Bootstrap JS Bundle (with Popper) -->

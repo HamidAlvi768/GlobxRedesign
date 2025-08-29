@@ -73,7 +73,7 @@ include_once('./includes/nav.php');
 
   <!-- Decorative Chevron -->
   <div class="gx-save-globe-arrows gx-arrows position-absolute">
-    <img src="./assets/hero-arrow.png" alt="Decorative Arrows" width="180" height="150" />
+    <img src="./assets/img/hero-arrow.png" alt="Decorative Arrows" width="180" height="150" />
   </div>
 </section>
 
@@ -85,7 +85,7 @@ include_once('./includes/nav.php');
       <div class="col-lg-6 order-1 order-md-1">
         <div class="gx-plants-image-wrapper gx-reveal-slide-left">
           <div class="gx-plants-image-container">
-            <img src="./assets/society/plant.webp" alt="Hands holding a plant - Plant for the Planet" class="gx-plants-image" />
+            <img src="./assets/img/society/plant.webp" alt="Hands holding a plant - Plant for the Planet" class="gx-plants-image" />
           </div>
         </div>
       </div>
@@ -132,7 +132,7 @@ include_once('./includes/nav.php');
       <div class="col-lg-6 order-1 order-md-1">
         <div class="gx-nature-explorers-image-wrapper gx-plants-image-wrapper gx-reveal-slide-left">
           <div class="gx-nature-explorers-image-container gx-plants-image-container">
-            <img src="./assets/society/nature-explorers.webp" alt="Adult and child exploring nature - Nature Explorers Program" class="gx-nature-explorers-image gx-plants-image" />
+            <img src="./assets/img/society/nature-explorers.webp" alt="Adult and child exploring nature - Nature Explorers Program" class="gx-nature-explorers-image gx-plants-image" />
           </div>
         </div>
       </div>

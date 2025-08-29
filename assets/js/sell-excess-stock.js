@@ -94,24 +94,9 @@ function showSearchMessage(message) {
   }, 3000);
 }
 
-/**
- * Button Event Handlers
- */
-function initializeButtonHandlers() {
-  // Learn More button
-  const learnMoreBtn = document.querySelector('.gx-btn-primary');
-  if (learnMoreBtn) {
-    learnMoreBtn.addEventListener('click', function(e) {
-      e.preventDefault();
-      console.log('Learn More clicked');
-      // Add your learn more logic here
-      // For example: scroll to form section or open modal
-      scrollToFormSection();
-    });
-  }
   
   // Download Table Example button
-  const downloadBtn = document.querySelector('.gx-save-globe-btn');
+  const downloadBtn = document.querySelector('.gx-download-cta-btn');
   if (downloadBtn) {
     downloadBtn.addEventListener('click', function(e) {
       e.preventDefault();
@@ -122,6 +107,7 @@ function initializeButtonHandlers() {
   }
   
   // CTA Buttons
+  /*
   const joinNowBtn = document.querySelector('.gx-cta-btn--blue');
   if (joinNowBtn) {
     joinNowBtn.addEventListener('click', function(e) {
@@ -133,6 +119,7 @@ function initializeButtonHandlers() {
       window.location.href = './contact.php';
     });
   }
+  */
   
   const callUsBtn = document.querySelector('.gx-cta-btn--orange');
   if (callUsBtn) {
@@ -140,13 +127,14 @@ function initializeButtonHandlers() {
       e.preventDefault();
       console.log('Call Us Now clicked');
       // Add your call us logic here
-      trackEvent('cta_call_us_clicked');
+      // trackEvent('cta_call_us_clicked');
       // Redirect to contact page or open phone dialer
       window.location.href = './contact.php';
     });
   }
   
   // CTA Buttons for excess-stock.php page
+  /*
   const uploadStockBtn = document.querySelector('.gx-cta-btn--blue');
   if (uploadStockBtn) {
     uploadStockBtn.addEventListener('click', function(e) {
@@ -158,6 +146,7 @@ function initializeButtonHandlers() {
       window.location.href = './sell-excess-stock.php';
     });
   }
+  */
   
   const callUsExcessBtn = document.querySelector('.gx-cta-btn--orange');
   if (callUsExcessBtn) {
@@ -165,12 +154,11 @@ function initializeButtonHandlers() {
       e.preventDefault();
       console.log('Call Us Now clicked (excess-stock page)');
       // Add your call us logic here
-      trackEvent('cta_call_us_excess_clicked');
+      // trackEvent('cta_call_us_excess_clicked');
       // Redirect to contact page
       window.location.href = './contact.php';
     });
   }
-}
 
 function scrollToFormSection() {
   const formSection = document.querySelector('.gx-form-section');
@@ -206,10 +194,12 @@ LM7805CT,5V Voltage Regulator,1200,STMicroelectronics,0.35,USA,New,2024-01-09
   window.URL.revokeObjectURL(url);
   
   // Track download event
+  /*
   trackEvent('table_example_downloaded', {
     file_name: 'excess-stock-example.csv',
     file_size: blob.size
   });
+  */
   
   // Show success message
   showSuccessMessage('Table example downloaded successfully!');
@@ -291,6 +281,7 @@ function throttle(func, limit) {
 /**
  * Analytics and Tracking
  */
+/*
 function trackEvent(eventName, eventData = {}) {
   // Add your analytics tracking here
   console.log('Event tracked:', eventName, eventData);
@@ -305,6 +296,7 @@ function trackEvent(eventName, eventData = {}) {
     window.trackEvent(eventName, eventData);
   }
 }
+*/
 
 /**
  * File Upload Functionality
@@ -396,11 +388,13 @@ function handleFiles(files) {
   updateFileUploadUI(file);
   
   // Track file upload event
+  /*
   trackEvent('file_uploaded', {
     file_name: file.name,
     file_size: file.size,
     file_type: file.type
   });
+  */
 }
 
 function updateFileUploadUI(file) {
@@ -552,10 +546,12 @@ function handleFormSubmit(e) {
     resetFileUpload();
     
     // Track form submission
+    /*
     trackEvent('form_submitted', {
       company: formData.get('company'),
       email: formData.get('email')
     });
+    */
   }, 2000);
 }
 
@@ -588,10 +584,12 @@ function initializeAccordion() {
         
         // Track accordion interaction
         const featureNumber = item.getAttribute('data-feature');
+        /*
         trackEvent('accordion_clicked', {
           feature: featureNumber,
           action: isActive ? 'close' : 'open'
         });
+        */
       });
     }
   });
@@ -626,10 +624,12 @@ function initializeFAQAccordion() {
         
         // Track FAQ interaction
         const faqNumber = item.getAttribute('data-faq');
+        /*
         trackEvent('faq_clicked', {
           faq: faqNumber,
           action: isActive ? 'close' : 'open'
         });
+        */
       });
     }
   });
@@ -659,7 +659,7 @@ function initializeProcessHighlighter() {
       if (index === stepIndex) {
         card.classList.add('gx-process-card--active');
       } else {
-        card.classList.remove('gx-process-card--active');
+        card.classList.remove('g-process-card--active');
       }
     });
 
@@ -706,4 +706,4 @@ function initializeProcessHighlighter() {
   // Initialize the highlighter
   setActiveStep(0);
   startAnimation();
-} 
+}

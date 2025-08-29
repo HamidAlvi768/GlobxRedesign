@@ -36,7 +36,7 @@ I'll revert the structure back to a standard Bootstrap grid. This will make all 
       <div class="col-lg-3 col-md-6">
         <div class="gx-process-card">
           <div class="gx-process-icon">
-            <img src="./assets/excess-stock/features/upload.png" alt="Upload Document" class="gx-process-icon-img">
+            <img src="./assets/img/excess-stock/features/upload.png" alt="Upload Document" class="gx-process-icon-img">
           </div>
           <h3 class="gx-process-title">Upload</h3>
           <p class="gx-process-description">Upload your excess stock list to have all your parts evaluated.</p>
@@ -46,7 +46,7 @@ I'll revert the structure back to a standard Bootstrap grid. This will make all 
       <div class="col-lg-3 col-md-6">
         <div class="gx-process-card">
           <div class="gx-process-icon">
-            <img src="./assets/excess-stock/features/analysis.png" alt="Analytics" class="gx-process-icon-img">
+            <img src="./assets/img/excess-stock/features/analysis.png" alt="Analytics" class="gx-process-icon-img">
           </div>
           <h3 class="gx-process-title">Analysis & Results</h3>
           <p class="gx-process-description">We will analyse the current market value of your parts and send you the results with a suitable offer.</p>
@@ -56,7 +56,7 @@ I'll revert the structure back to a standard Bootstrap grid. This will make all 
       <div class="col-lg-3 col-md-6">
         <div class="gx-process-card">
           <div class="gx-process-icon">
-            <img src="./assets/excess-stock/features/commission.png" alt="Commission" class="gx-process-icon-img">
+            <img src="./assets/img/excess-stock/features/commission.png" alt="Commission" class="gx-process-icon-img">
           </div>
           <h3 class="gx-process-title">Contract</h3>
           <p class="gx-process-description">Choose the Model that suits you the best and we will take care of the rest.</p>
@@ -66,7 +66,7 @@ I'll revert the structure back to a standard Bootstrap grid. This will make all 
       <div class="col-lg-3 col-md-6">
         <div class="gx-process-card">
           <div class="gx-process-icon">
-            <img src="./assets/excess-stock/features/sale.png" alt="Sale" class="gx-process-icon-img">
+            <img src="./assets/img/excess-stock/features/sale.png" alt="Sale" class="gx-process-icon-img">
           </div>
           <h3 class="gx-process-title">Pickup & Visual Examination</h3>
           <p class="gx-process-description">Pick-up and visual examination are covered by our costs, with our ISO 9001 standard quality checks ensuring that only original and intact parts are resold.</p>

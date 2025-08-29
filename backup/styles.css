@@ -189,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
 .gx-hero-bg {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: url('../../assets/hero-bg.webp') center center/cover no-repeat;
+  background: url('../../assets/img/hero-bg.webp') center center/cover no-repeat;
   z-index: 0;
   filter: blur(0.5px) brightness(0.7);
 }
@@ -248,8 +248,17 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-light);
 }
 
-.btn:focus-visible, .btn:active{
-  background-color: inherit !important;
+/* Moved button focus/active styles to shared-utilities.css and split for primary and save-globe buttons */
+.gx-btn-primary:focus-visible,
+.gx-btn-primary:active {
+  background: var(--primary) !important;
+  color: var(--text-light-2) !important;
+}
+
+.gx-save-globe-btn:focus-visible,
+.gx-save-globe-btn:active {
+  background: linear-gradient(90deg, #ff914d 0%, var(--secondary) 100%) !important;
+  color: var(--text-light-3) !important;
 }
 
 /* Sidebar Card */

@@ -40,7 +40,7 @@ include_once('./includes/search_nav.php');
         
         <!-- Decorative Arrows -->
         <div class="gx-careers-arrows gx-arrows position-absolute">
-            <img src="./assets/hero-arrow.png" alt="Decorative Arrows" width="180" height="150" />
+            <img src="./assets/img/hero-arrow.png" alt="Decorative Arrows" width="180" height="150" />
         </div>
     </section>
 

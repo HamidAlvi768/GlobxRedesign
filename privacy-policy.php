@@ -27,9 +27,9 @@ include_once('./includes/nav.php');
                 <div class="gx-illustration-container-common">
                     <div class="gx-wwd-visual gx-reveal-slide-left gx-contact-visual" style="opacity: 1;">
                         <!-- Background Chevron -->
-                        <img src="./assets/about-us/chevron.png" alt="Decorative Chevron" class="gx-wwd-chevron-masked gx-contact-chevron-masked" />
+                        <img src="./assets/img/about-us/chevron.png" alt="Decorative Chevron" class="gx-wwd-chevron-masked gx-contact-chevron-masked" />
                         <!-- Foreground Image -->
-                        <img src="./assets/about-us/chevron-masked.png" alt="Office Environment" class="gx-wwd-chevron-outline gx-contact-chevron-outline" />
+                        <img src="./assets/img/about-us/chevron-masked.png" alt="Office Environment" class="gx-wwd-chevron-outline gx-contact-chevron-outline" />
                     </div>
                 </div>
             </div>

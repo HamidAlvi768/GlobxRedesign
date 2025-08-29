@@ -55,7 +55,7 @@ function isNavActive($pageIdentifier, $currentPage) {
       <div class="container align-items-center">
           <!-- Logo -->
           <a class="navbar-brand d-flex align-items-center gx-logo" href="./index.php">
-              <img src="./assets/logo.png" alt="GX Logo" height="48" />
+              <img src="./assets/img/logo.png" alt="GX Logo" height="48" />
           </a>
           <!-- Navbar Toggler for Mobile -->
           <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,7 +79,7 @@ function isNavActive($pageIdentifier, $currentPage) {
                       </a>
                   </li>
                   <li class="nav-item <?php echo isNavActive('markets', $currentPage) ? 'active' : ''; ?>">
-                      <a class="nav-link <?php echo isNavActive('markets', $currentPage) ? 'active gx-nav-active' : ''; ?>" href="#">
+                      <a class="nav-link <?php echo isNavActive('markets', $currentPage) ? 'active gx-nav-active' : ''; ?>" href="./index.php#gx-markets-industries-section" data-anchor-target="gx-markets-industries-section">
                           Markets & Ind <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
                               </svg></span>
@@ -106,7 +106,7 @@ function isNavActive($pageIdentifier, $currentPage) {
               <!-- Flag Selector (move inside collapse for mobile) -->
               <div class="gx-flag-selector d-flex align-items-center ms-lg-3 mt-3 mt-lg-0">
                   <button class="btn btn-light gx-flag-btn px-2 py-1 d-flex align-items-center">
-                      <img src="./assets/us-flag-small.webp" alt="US Flag" height="20" />
+                      <img src="./assets/img/us-flag-small.webp" alt="US Flag" height="20" />
                       <span class="gx-flag-chevron">&#9662;</span>
                   </button>
               </div>
@@ -119,7 +119,7 @@ function isNavActive($pageIdentifier, $currentPage) {
       <div class="container align-items-center">
           <!-- Logo -->
           <a class="navbar-brand d-flex align-items-center gx-logo" href="./index.php">
-              <img src="./assets/navbar/colored-logo.png" alt="GX Logo" height="48"/>
+              <img src="./assets/img/navbar/colored-logo.png" alt="GX Logo" height="48"/>
           </a>
           <!-- Navbar Toggler for Mobile -->
           <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavSticky" aria-controls="navbarNavSticky" aria-expanded="false" aria-label="Toggle navigation">
@@ -139,7 +139,7 @@ function isNavActive($pageIdentifier, $currentPage) {
                       </a>
                   </li>
                   <li class="nav-item <?php echo isNavActive('markets', $currentPage) ? 'active' : ''; ?>">
-                      <a class="nav-link <?php echo isNavActive('markets', $currentPage) ? 'active gx-nav-active' : ''; ?>" href="#">
+                      <a class="nav-link <?php echo isNavActive('markets', $currentPage) ? 'active gx-nav-active' : ''; ?>" href="./index.php#gx-markets-industries-section" data-anchor-target="gx-markets-industries-section">
                           Markets & Ind <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                       </a>
                   </li>
@@ -162,7 +162,7 @@ function isNavActive($pageIdentifier, $currentPage) {
               <!-- Flag Selector -->
               <div class="gx-flag-selector d-flex align-items-center ms-lg-3 mt-3 mt-lg-0">
                   <button class="btn btn-light gx-flag-btn px-2 py-1 d-flex align-items-center">
-                      <img src="./assets/us-flag-small.webp" alt="US Flag" height="20" />
+                      <img src="./assets/img/us-flag-small.webp" alt="US Flag" height="20" />
                       <span class="gx-flag-chevron">&#9662;</span>
                   </button>
               </div>

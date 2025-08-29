@@ -21,35 +21,29 @@ include_once('./includes/search_nav.php');
 ?>
 
 <!-- Sell Excess Stock Hero Section -->
-<section class="gx-sell-excess-hero position-relative d-flex align-items-center">
-  <!-- Background Image & Overlay -->
-  <div class="gx-sell-excess-bg"></div>
-  <div class="gx-sell-excess-overlay"></div>
+<?php
+$heroTitle = 'Sell your Excess Stock';
+$heroDescription = 'GlobX is Germany\'s leading AI powered market place for high quality electronic excess stock parts. Our platform supports OEM and EMS companies in selling their excess stock globally, while offering best prices and quality to prospective buyers.';
+$heroCtaButtons = [
+    [
+        'text' => 'Learn More',
+        'link' => '#gx-how-it-works',
+        'class' => 'gx-btn-primary',
+        'anchorTarget' => 'gx-how-it-works'
+    ],
+    [
+        'text' => 'Download Table Example',
+        'link' => '#gx-download-banner',
+        'class' => 'gx-save-globe-btn gx-download-cta-btn',
+        'anchorTarget' => 'gx-download-banner'
+    ]
+];
 
-  <!-- Central Hero Content -->
-  <div class="container gx-sell-excess-content position-relative z-2">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 col-md-10 text-center">
-        <!-- Main Heading -->
-        <h1 class="gx-sell-excess-title mb-4">Sell your Excess Stock</h1>
-
-        <!-- Descriptive Text -->
-        <p class="gx-sell-excess-subtext mb-5">
-          GlobX is Germany's leading AI powered market place for high quality electronic excess stock parts. Our platform supports OEM and EMS companies in selling their excess stock globally, while offering best prices and quality to prospective buyers.
-        </p>
-
-        <!-- Call-to-Action Buttons -->
-        <div class="gx-sell-excess-cta d-flex justify-content-center flex-wrap">
-          <a href="#" class="btn gx-btn-primary px-4 py-2 rounded">Learn More</a>
-          <a href="#" class="btn gx-save-globe-btn px-4 py-2 rounded">Download Table Example</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+include_once('./includes/_excess-stock-hero.php');
+?>
 
 <!-- How It Works Section -->
-<section class="gx-how-it-works-section gx-section-common gx-section-common--white py-10">
+<section id="gx-how-it-works" class="gx-how-it-works-section gx-section-common gx-section-common--white py-10">
   <div class="container">
     <!-- Main Heading -->
     <div class="row justify-content-center mb-5">
@@ -66,10 +60,10 @@ include_once('./includes/search_nav.php');
           <div class="col-lg col-md-4 col-sm-6">
             <div class="gx-step-card text-center">
               <div class="gx-step-icon mb-3">
-                <img src="./assets/excess-stock/features/file-download.png" alt="Download Example" class="gx-step-icon-img">
+                <img src="./assets/img/excess-stock/features/file-download.png" alt="Download Example" class="gx-step-icon-img">
               </div>
               <h4 class="gx-step-heading mb-2">Download Example</h4>
-              <p class="gx-step-description">To structure your data correctly, please download our <a href="#" class="gx-text-warning">example file</a></p>
+              <p class="gx-step-description">To structure your data correctly, please download our <a href="#gx-download-banner" class="gx-text-warning" data-anchor-target="gx-download-banner">example file</a></p>
             </div>
           </div>
           
@@ -77,7 +71,7 @@ include_once('./includes/search_nav.php');
           <div class="col-lg col-md-4 col-sm-6">
             <div class="gx-step-card text-center">
               <div class="gx-step-icon mb-3">
-                <img src="./assets/excess-stock/features/upload.png" alt="Upload" class="gx-step-icon-img">
+                <img src="./assets/img/excess-stock/features/upload.png" alt="Upload" class="gx-step-icon-img">
               </div>
               <h4 class="gx-step-heading mb-2">Upload</h4>
               <p class="gx-step-description">Upload your excess stock list to have all your parts evaluated.</p>
@@ -88,7 +82,7 @@ include_once('./includes/search_nav.php');
           <div class="col-lg col-md-4 col-sm-6">
             <div class="gx-step-card text-center">
               <div class="gx-step-icon mb-3">
-                <img src="./assets/excess-stock/features/analysis.png" alt="Analysis And Results" class="gx-step-icon-img">
+                <img src="./assets/img/excess-stock/features/analysis.png" alt="Analysis And Results" class="gx-step-icon-img">
               </div>
               <h4 class="gx-step-heading mb-2">Analysis And Results</h4>
               <p class="gx-step-description">We analyse the current market value of your parts and create a suitable offer for you.</p>
@@ -99,7 +93,7 @@ include_once('./includes/search_nav.php');
           <div class="col-lg col-md-4 col-sm-6">
             <div class="gx-step-card text-center">
               <div class="gx-step-icon mb-3">
-                <img src="./assets/excess-stock/features/commission.png" alt="Pickup And Visual Examination" class="gx-step-icon-img">
+                <img src="./assets/img/excess-stock/features/commission.png" alt="Pickup And Visual Examination" class="gx-step-icon-img">
               </div>
               <h4 class="gx-step-heading mb-2">Pickup And Visual Examination</h4>
               <p class="gx-step-description">The commission is calculated automatically and can be viewed online.</p>
@@ -110,7 +104,7 @@ include_once('./includes/search_nav.php');
           <div class="col-lg col-md-4 col-sm-6">
             <div class="gx-step-card text-center">
               <div class="gx-step-icon mb-3">
-                <img src="./assets/excess-stock/features/sale.png" alt="Sale" class="gx-step-icon-img">
+                <img src="./assets/img/excess-stock/features/sale.png" alt="Sale" class="gx-step-icon-img">
               </div>
               <h4 class="gx-step-heading mb-2">Sale</h4>
               <p class="gx-step-description">You choose the model that suits you and we take care of the rest.</p>
@@ -123,7 +117,7 @@ include_once('./includes/search_nav.php');
 </section>
 
 <!-- Form Section -->
-<section class="gx-form-section gx-section-common gx-section-common--white py-10">
+<section id="gx-form-section" class="gx-form-section gx-section-common gx-section-common--white py-10">
   <div class="container py-5 shadow-sm rounded-3">
     <div class="row justify-content-center">
       <div class="col-lg-10">
@@ -197,7 +191,7 @@ include_once('./includes/search_nav.php');
 </section>
 
 <!-- Download Banner Section -->
-<section class="gx-download-banner-section gx-section-common gx-section-common--white py-5">
+<section id="gx-download-banner" class="gx-download-banner-section gx-section-common gx-section-common--white py-5">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-12">
@@ -206,7 +200,7 @@ include_once('./includes/search_nav.php');
             <!-- File Icon -->
             <div class="col-lg-2 col-md-3 col-sm-4 text-center">
               <div class="gx-download-icon">
-                <img src="./assets/excess-stock/xl.png" alt="Excel File" class="gx-excel-icon-img">
+                <img src="./assets/img/excess-stock/xl.png" alt="Excel File" class="gx-excel-icon-img">
               </div>
             </div>
             
@@ -236,37 +230,25 @@ include_once('./includes/search_nav.php');
 </section>
 
 <!-- Call-to-Action Block Section -->
-<section class="gx-cta-section gx-section-common gx-section-common--white py-5">
-  <div class="container">
-    <div class="row">
-      <!-- Left CTA Card -->
-      <div class="col-lg-6 mb-4">
-        <div class="gx-cta-card gx-cta-card--blue">
-          <div class="gx-cta-content">
-            <h3 class="gx-cta-heading">Join Germany's leading market place</h3>
-            <p class="gx-cta-description">
-              GlobX is Germany's top AI-powered marketplace for excess electronic parts. Turn dead stock into profit.
-            </p>
-            <button class="gx-cta-btn gx-cta-btn--blue">Join Now</button>
-          </div>
-        </div>
-      </div>
+<?php
+$leftCard = [
+    'heading' => 'Join Germany\'s leading market place',
+    'description' => 'GlobX is Germany\'s top AI-powered marketplace for excess electronic parts. Turn dead stock into profit.',
+    'buttonText' => 'Join Now',
+    'buttonLink' => '#',
+    'buttonClass' => 'gx-cta-btn--blue'
+];
 
-      <!-- Right CTA Card -->
-      <div class="col-lg-6 mb-4">
-        <div class="gx-cta-card gx-cta-card--orange">
-          <div class="gx-cta-content">
-            <h3 class="gx-cta-heading">Are you already interested?</h3>
-            <p class="gx-cta-description">
-              Got questions or want a demo? Book a call with our Customer Success team and explore our model and sustainability.
-            </p>
-            <button class="gx-cta-btn gx-cta-btn--orange">Call Us Now</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+$rightCard = [
+    'heading' => 'Are you already interested?',
+    'description' => 'Got questions or want a demo? Book a call with our Customer Success team and explore our model and sustainability.',
+    'buttonText' => 'Call Us Now',
+    'buttonLink' => '#',
+    'buttonClass' => 'gx-cta-btn--orange'
+];
+
+include_once('./includes/_cta-section.php');
+?>
 
 <?php
 $jsFiles = [
@@ -276,6 +258,7 @@ $jsFiles = [
   './assets/js/scroll-reveal.js',
   './assets/js/infinite-scroll.js',
   './assets/js/sell-excess-stock.js',
+  './assets/js/anchor-navigation.js',
 ];
 
 include_once('./includes/footer.php');

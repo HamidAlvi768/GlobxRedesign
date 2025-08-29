@@ -27,9 +27,9 @@ include_once('./includes/nav.php');
                 <div class="gx-illustration-container-common">
                     <div class="gx-wwd-visual gx-reveal-slide-left gx-contact-visual" style="opacity: 1;">
                         <!-- Background Chevron -->
-                        <img src="./assets/about-us/chevron.png" alt="Decorative Chevron" class="gx-wwd-chevron-masked gx-contact-chevron-masked" />
+                        <img src="./assets/img/about-us/chevron.png" alt="Decorative Chevron" class="gx-wwd-chevron-masked gx-contact-chevron-masked" />
                         <!-- Foreground Image -->
-                        <img src="./assets/about-us/chevron-masked.png" alt="Office Environment" class="gx-wwd-chevron-outline gx-contact-chevron-outline" />
+                        <img src="./assets/img/about-us/chevron-masked.png" alt="Office Environment" class="gx-wwd-chevron-outline gx-contact-chevron-outline" />
                     </div>
                 </div>
             </div>
@@ -47,63 +47,7 @@ include_once('./includes/nav.php');
 </section>
 
 <!-- Contact Section -->
-<section class="gx-contact-section gx-reveal-section">
-    <div class="gx-contact-container container">
-        <!-- Left: Form -->
-        <div class="gx-contact-form-col gx-reveal-slide-left">
-            <form class="gx-contact-form">
-                <div class="gx-form-type-selector">
-                    <label class="gx-radio-label">
-                        <input type="radio" name="formType" value="contact" checked>
-                        <span class="gx-custom-radio"></span>
-                        Contact Us
-                    </label>
-                    <label class="gx-radio-label">
-                        <input type="radio" name="formType" value="offer">
-                        <span class="gx-custom-radio"></span>
-                        Offer
-                    </label>
-                </div>
-                <h1 class="gx-contact-heading gx-section-headline-common">Contact Us</h1>
-                <div class="gx-contact-subheading">How can we help you?</div>
-                <div class="gx-form-group">
-                    <label for="company">Company</label>
-                    <input type="text" id="company" name="company" placeholder="Company" autocomplete="organization">
-                </div>
-                <div class="gx-form-row">
-                    <div class="gx-form-group gx-form-half">
-                        <label for="firstName">First Name</label>
-                        <input type="text" id="firstName" name="firstName" placeholder="First Name" autocomplete="given-name">
-                    </div>
-                    <div class="gx-form-group gx-form-half">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName" name="lastName" placeholder="Last Name" autocomplete="family-name">
-                    </div>
-                </div>
-                <div class="gx-form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Email" autocomplete="email">
-                </div>
-                <div class="gx-form-group">
-                    <label for="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Phone" autocomplete="tel">
-                </div>
-                <div class="gx-form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Message" rows="4"></textarea>
-                </div>
-                <button type="submit" class="gx-contact-submit gx-btn-primary px-4 py-2">Send</button>
-            </form>
-        </div>
-        <!-- Right: Image & Chevron -->
-        <div class="gx-contact-image-col gx-reveal-slide-right">
-            <div class="gx-contact-chevron-bg">
-                <img src="./assets/contact-us-arrow.png" alt="Decorative Chevron" class="gx-contact-chevron" />
-            </div>
-            <img src="./assets/contact-us.webp" alt="Contact Us" class="gx-contact-image" />
-        </div>
-    </div>
-</section>
+<?php include_once('./includes/_contact-form.php'); ?>
 
 <?php
 $jsFiles = [
@@ -114,6 +58,7 @@ $jsFiles = [
     './assets/js/testimonials.js',
     './assets/js/scroll-reveal.js',
     './assets/js/infinite-scroll.js',
+    './assets/js/contact-offer-form.js',
 ];
 $jsFiles[] = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js';
 

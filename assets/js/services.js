@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!icon) {
           const newIcon = document.createElement('img');
           newIcon.className = 'gx-service-icon';
-          newIcon.src = './assets/service-arrow.png';
+          newIcon.src = './assets/img/service-arrow.png';
           newIcon.alt = 'Service Arrow';
           item.insertBefore(newIcon, item.firstChild);
         }

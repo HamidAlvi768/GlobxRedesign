@@ -21,7 +21,7 @@ include_once('./includes/transparent_nav.php');
 <!-- Hero Section -->
 <section class="gx-hero position-relative d-flex align-items-center justify-content-center">
   <!-- Background Image & Overlay -->
-  <div class="gx-hero-bg"></div>
+  <div class="gx-hero-bg gx-about-bg"></div>
   <div class="gx-hero-overlay"></div>
   <div class="container gx-hero-content position-relative z-2 d-flex flex-column align-items-center justify-content-center" style="min-height: 70vh;">
     <h1 class="gx-hero-title fw-medium mb-3 text-center">Strengthening Supply Chains,<br>Securing Futures</h1>
@@ -30,7 +30,7 @@ include_once('./includes/transparent_nav.php');
   </div>
   <!-- Decorative Chevron (bottom left) -->
   <div class="gx-arrows position-absolute" style="left: 2.5vw; bottom: 2.5vw;">
-    <img src="./assets/hero-arrow.png" alt="Decorative Arrows" width="180" height="150" />
+    <img src="./assets/img/hero-arrow.png" alt="Decorative Arrows" width="180" height="150" />
   </div>
 </section>
 
@@ -39,19 +39,19 @@ include_once('./includes/transparent_nav.php');
   <div class="container gx-values-row gx-reveal-content">
     <!-- Mission -->
     <div class="gx-value-col d-flex flex-column align-items-center text-center gx-reveal-grid-item">
-      <img src="./assets/about-us/value-2.png" alt="Mission Icon" class="gx-value-icon mb-4" width="140" height="140" loading="lazy" />
+      <img src="./assets/img/about-us/value-2.png" alt="Mission Icon" class="gx-value-icon mb-4" width="140" height="140" loading="lazy" />
       <h3 class="gx-value-title">Our Mission</h3>
       <p class="gx-value-desc">Ensure production for our customers<br>at all times.</p>
     </div>
     <!-- Vision -->
     <div class="gx-value-col d-flex flex-column align-items-center text-center gx-reveal-grid-item">
-      <img src="./assets/about-us/value-1.png" alt="Vision Icon" class="gx-value-icon mb-4" width="140" height="140" loading="lazy" />
+      <img src="./assets/img/about-us/value-1.png" alt="Vision Icon" class="gx-value-icon mb-4" width="140" height="140" loading="lazy" />
       <h3 class="gx-value-title">Our Vision</h3>
       <p class="gx-value-desc">We build and secure a long-term<br>resilient supply chain.</p>
     </div>
     <!-- Goal -->
     <div class="gx-value-col d-flex flex-column align-items-center text-center gx-reveal-grid-item">
-      <img src="./assets/about-us/value-3.png" alt="Goal Icon" class="gx-value-icon mb-4" width="140" height="140" loading="lazy" />
+      <img src="./assets/img/about-us/value-3.png" alt="Goal Icon" class="gx-value-icon mb-4" width="140" height="140" loading="lazy" />
       <h3 class="gx-value-title">Our Goal</h3>
       <p class="gx-value-desc">A resilient economy that runs safely<br>regardless of crises.</p>
     </div>
@@ -63,8 +63,8 @@ include_once('./includes/transparent_nav.php');
   <div class="container gx-wwd-row">
     <!-- Left: Chevron Visual -->
     <div class="gx-wwd-visual gx-reveal-slide-left">
-      <img src="./assets/about-us/chevron.png" alt="Chevron Outline" class="gx-wwd-chevron-outline" loading="lazy" />
-      <img src="./assets/about-us/chevron-masked.png" alt="Chevron Masked Photo" class="gx-wwd-chevron-masked" loading="lazy" />
+      <img src="./assets/img/about-us/chevron.png" alt="Chevron Outline" class="gx-wwd-chevron-outline" loading="lazy" />
+      <img src="./assets/img/about-us/chevron-masked.png" alt="Chevron Masked Photo" class="gx-wwd-chevron-masked" loading="lazy" />
     </div>
     <!-- Right: Text Content -->
     <div class="gx-wwd-content gx-reveal-slide-right">
@@ -88,49 +88,49 @@ include_once('./includes/transparent_nav.php');
     <div class="gx-certifications-scroll owl-carousel gx-reveal-content gx-reveal-delay-1">
       <a href="#" class="gx-cert-card" aria-label="View Certificate">
         <div class="gx-cert-card-logo">
-          <img src="./assets/about-us/certification.webp" alt="Certification Logo" loading="lazy" />
+          <img src="./assets/img/about-us/certification.webp" alt="Certification Logo" loading="lazy" />
         </div>
         <div class="gx-cert-card-btn">View Certificate</div>
       </a>
       <a href="#" class="gx-cert-card" aria-label="View Certificate">
         <div class="gx-cert-card-logo">
-          <img src="./assets/about-us/certification.webp" alt="Certification Logo" loading="lazy" />
+          <img src="./assets/img/about-us/certification.webp" alt="Certification Logo" loading="lazy" />
         </div>
         <div class="gx-cert-card-btn">View Certificate</div>
       </a>
       <a href="#" class="gx-cert-card" aria-label="View Certificate">
         <div class="gx-cert-card-logo">
-          <img src="./assets/about-us/certification.webp" alt="Certification Logo" loading="lazy" />
+          <img src="./assets/img/about-us/certification.webp" alt="Certification Logo" loading="lazy" />
         </div>
         <div class="gx-cert-card-btn">View Certificate</div>
       </a>
       <a href="#" class="gx-cert-card" aria-label="View Certificate">
         <div class="gx-cert-card-logo">
-          <img src="./assets/about-us/certification.webp" alt="Certification Logo" loading="lazy" />
+          <img src="./assets/img/about-us/certification.webp" alt="Certification Logo" loading="lazy" />
         </div>
         <div class="gx-cert-card-btn">View Certificate</div>
       </a>
       <a href="#" class="gx-cert-card" aria-label="View Certificate">
         <div class="gx-cert-card-logo">
-          <img src="./assets/about-us/certification.webp" alt="Certification Logo" loading="lazy" />
+          <img src="./assets/img/about-us/certification.webp" alt="Certification Logo" loading="lazy" />
         </div>
         <div class="gx-cert-card-btn">View Certificate</div>
       </a>
       <a href="#" class="gx-cert-card" aria-label="View Certificate">
         <div class="gx-cert-card-logo">
-          <img src="./assets/about-us/certification.webp" alt="Certification Logo" loading="lazy" />
+          <img src="./assets/img/about-us/certification.webp" alt="Certification Logo" loading="lazy" />
         </div>
         <div class="gx-cert-card-btn">View Certificate</div>
       </a>
       <a href="#" class="gx-cert-card" aria-label="View Certificate">
         <div class="gx-cert-card-logo">
-          <img src="./assets/about-us/certification.webp" alt="Certification Logo" loading="lazy" />
+          <img src="./assets/img/about-us/certification.webp" alt="Certification Logo" loading="lazy" />
         </div>
         <div class="gx-cert-card-btn">View Certificate</div>
       </a>
       <a href="#" class="gx-cert-card" aria-label="View Certificate">
         <div class="gx-cert-card-logo">
-          <img src="./assets/about-us/certification.webp" alt="Certification Logo" loading="lazy" />
+          <img src="./assets/img/about-us/certification.webp" alt="Certification Logo" loading="lazy" />
         </div>
         <div class="gx-cert-card-btn">View Certificate</div>
       </a>
@@ -192,12 +192,12 @@ include_once('./includes/transparent_nav.php');
         <div class="gx-team-pane gx-team-pane-active" id="team-1">
           <!-- Left: 3x2 Image Grid -->
           <div class="gx-team-image-grid">
-            <img src="./assets/about-us/member-1.webp" alt="Team Member 1" class="gx-team-member-img" />
-            <img src="./assets/about-us/member-2.webp" alt="Team Member 2" class="gx-team-member-img" />
-            <img src="./assets/about-us/member-3.webp" alt="Team Member 3" class="gx-team-member-img" />
-            <img src="./assets/about-us/member-3.webp" alt="Team Member 6" class="gx-team-member-img" />
-            <img src="./assets/about-us/member-1.webp" alt="Team Member 4" class="gx-team-member-img" />
-            <img src="./assets/about-us/member-2.webp" alt="Team Member 5" class="gx-team-member-img" />
+            <img src="./assets/img/about-us/member-1.webp" alt="Team Member 1" class="gx-team-member-img" />
+            <img src="./assets/img/about-us/member-2.webp" alt="Team Member 2" class="gx-team-member-img" />
+            <img src="./assets/img/about-us/member-3.webp" alt="Team Member 3" class="gx-team-member-img" />
+            <img src="./assets/img/about-us/member-3.webp" alt="Team Member 6" class="gx-team-member-img" />
+            <img src="./assets/img/about-us/member-1.webp" alt="Team Member 4" class="gx-team-member-img" />
+            <img src="./assets/img/about-us/member-2.webp" alt="Team Member 5" class="gx-team-member-img" />
           </div>
           <!-- Right: Text Block -->
           <div class="gx-team-text-block">
@@ -212,12 +212,12 @@ include_once('./includes/transparent_nav.php');
         <div class="gx-team-pane" id="team-2">
           <!-- Left: 3x2 Image Grid (Different arrangement) -->
           <div class="gx-team-image-grid">
-            <img src="./assets/about-us/member-2.webp" alt="Team Member 2" class="gx-team-member-img" />
-            <img src="./assets/about-us/member-3.webp" alt="Team Member 3" class="gx-team-member-img" />
-            <img src="./assets/about-us/member-1.webp" alt="Team Member 1" class="gx-team-member-img" />
-            <img src="./assets/about-us/member-1.webp" alt="Team Member 4" class="gx-team-member-img" />
-            <img src="./assets/about-us/member-2.webp" alt="Team Member 5" class="gx-team-member-img" />
-            <img src="./assets/about-us/member-3.webp" alt="Team Member 6" class="gx-team-member-img" />
+            <img src="./assets/img/about-us/member-2.webp" alt="Team Member 2" class="gx-team-member-img" />
+            <img src="./assets/img/about-us/member-3.webp" alt="Team Member 3" class="gx-team-member-img" />
+            <img src="./assets/img/about-us/member-1.webp" alt="Team Member 1" class="gx-team-member-img" />
+            <img src="./assets/img/about-us/member-1.webp" alt="Team Member 4" class="gx-team-member-img" />
+            <img src="./assets/img/about-us/member-2.webp" alt="Team Member 5" class="gx-team-member-img" />
+            <img src="./assets/img/about-us/member-3.webp" alt="Team Member 6" class="gx-team-member-img" />
           </div>
           <!-- Right: Text Block -->
           <div class="gx-team-text-block">

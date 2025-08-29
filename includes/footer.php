@@ -32,7 +32,7 @@
           </div>
           <div class="gx-footer-social">
             <a href="#" class="gx-footer-linkedin" aria-label="LinkedIn">
-              <img src="./assets/linkedin-icon.png" alt="LinkedIn" width="32" height="32" />
+              <img src="./assets/img/linkedin-icon.png" alt="LinkedIn" width="32" height="32" />
             </a>
           </div>
         </div>

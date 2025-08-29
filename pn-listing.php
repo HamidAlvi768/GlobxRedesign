@@ -34,150 +34,66 @@ include_once('./includes/search_nav.php');
         </div>
 
         <!-- Results Table Section -->
-        <div class="gx-results-section">
-            <div class="gx-results-container">
-                <!-- Table Header -->
-                <div class="gx-table-header">
-                    <div class="gx-table-row">
-                        <div class="gx-table-cell gx-table-cell-thumbnail"></div>
-                        <div class="gx-table-cell gx-table-cell-mpn">MPN</div>
-                        <div class="gx-table-cell gx-table-cell-brand">Brand</div>
-                        <div class="gx-table-cell gx-table-cell-quantity">Quantity Available</div>
-                        <div class="gx-table-cell gx-table-cell-price">Price</div>
-                        <div class="gx-table-cell gx-table-cell-action">Action</div>
-                    </div>
-                </div>
+        <?php
+        $products = [
+            [
+                'mpn' => 'RC0402FR-0788K7L',
+                'brand' => 'Yageo',
+                'quantity' => '1000000',
+                'price' => '0.00008'
+            ],
+            [
+                'mpn' => 'RC0402FR-0788K7L',
+                'brand' => 'Yageo',
+                'quantity' => '1000000',
+                'price' => '0.00008'
+            ],
+            [
+                'mpn' => 'RC0402FR-0788K7L',
+                'brand' => 'Yageo',
+                'quantity' => '1000000',
+                'price' => '0.00008'
+            ],
+            [
+                'mpn' => 'RC0402FR-0788K7L',
+                'brand' => 'Yageo',
+                'quantity' => '1000000',
+                'price' => '0.00008'
+            ],
+            [
+                'mpn' => 'RC0402FR-0788K7L',
+                'brand' => 'Yageo',
+                'quantity' => '1000000',
+                'price' => '0.00008'
+            ],
+            [
+                'mpn' => 'RC0402FR-0788K7L',
+                'brand' => 'Yageo',
+                'quantity' => '1000000',
+                'price' => '0.00008'
+            ],
+            [
+                'mpn' => 'RC0402FR-0788K7L',
+                'brand' => 'Yageo',
+                'quantity' => '1000000',
+                'price' => '0.00008'
+            ],
+            [
+                'mpn' => 'RC0402FR-0788K7L',
+                'brand' => 'Yageo',
+                'quantity' => '1000000',
+                'price' => '0.00008'
+            ]
+        ];
 
-                <!-- Table Body -->
-                <div class="gx-table-body">
-                    <!-- Product Row 1 -->
-                    <div class="gx-table-row">
-                        <div class="gx-table-cell gx-table-cell-thumbnail">
-                            <img src="./assets/pn-listing/pn.png" alt="Product" class="gx-product-thumbnail">
-                        </div>
-                        <div class="gx-table-cell gx-table-cell-mpn">RC0402FR-0788K7L</div>
-                        <div class="gx-table-cell gx-table-cell-brand">Yageo</div>
-                        <div class="gx-table-cell gx-table-cell-quantity">1000000</div>
-                        <div class="gx-table-cell gx-table-cell-price">0.00008</div>
-                        <div class="gx-table-cell gx-table-cell-action">
-                            <a href="./pn-detail.php" class="gx-view-button">View</a>
-                        </div>
-                    </div>
+        $pagination = [
+            'currentPage' => 1,
+            'totalPages' => 181,
+            'showEllipsis' => true
+        ];
 
-                    <!-- Product Row 2 -->
-                    <div class="gx-table-row">
-                        <div class="gx-table-cell gx-table-cell-thumbnail">
-                            <img src="./assets/pn-listing/pn.png" alt="Product" class="gx-product-thumbnail">
-                        </div>
-                        <div class="gx-table-cell gx-table-cell-mpn">RC0402FR-0788K7L</div>
-                        <div class="gx-table-cell gx-table-cell-brand">Yageo</div>
-                        <div class="gx-table-cell gx-table-cell-quantity">1000000</div>
-                        <div class="gx-table-cell gx-table-cell-price">0.00008</div>
-                        <div class="gx-table-cell gx-table-cell-action">
-                            <a href="./pn-detail.php" class="gx-view-button">View</a>
-                        </div>
-                    </div>
-
-                    <!-- Product Row 3 -->
-                    <div class="gx-table-row">
-                        <div class="gx-table-cell gx-table-cell-thumbnail">
-                            <img src="./assets/pn-listing/pn.png" alt="Product" class="gx-product-thumbnail">
-                        </div>
-                        <div class="gx-table-cell gx-table-cell-mpn">RC0402FR-0788K7L</div>
-                        <div class="gx-table-cell gx-table-cell-brand">Yageo</div>
-                        <div class="gx-table-cell gx-table-cell-quantity">1000000</div>
-                        <div class="gx-table-cell gx-table-cell-price">0.00008</div>
-                        <div class="gx-table-cell gx-table-cell-action">
-                            <a href="./pn-detail.php" class="gx-view-button">View</a>
-                        </div>
-                    </div>
-
-                    <!-- Product Row 4 -->
-                    <div class="gx-table-row">
-                        <div class="gx-table-cell gx-table-cell-thumbnail">
-                            <img src="./assets/pn-listing/pn.png" alt="Product" class="gx-product-thumbnail">
-                        </div>
-                        <div class="gx-table-cell gx-table-cell-mpn">RC0402FR-0788K7L</div>
-                        <div class="gx-table-cell gx-table-cell-brand">Yageo</div>
-                        <div class="gx-table-cell gx-table-cell-quantity">1000000</div>
-                        <div class="gx-table-cell gx-table-cell-price">0.00008</div>
-                        <div class="gx-table-cell gx-table-cell-action">
-                            <a href="./pn-detail.php" class="gx-view-button">View</a>
-                        </div>
-                    </div>
-
-                    <!-- Product Row 5 -->
-                    <div class="gx-table-row">
-                        <div class="gx-table-cell gx-table-cell-thumbnail">
-                            <img src="./assets/pn-listing/pn.png" alt="Product" class="gx-product-thumbnail">
-                        </div>
-                        <div class="gx-table-cell gx-table-cell-mpn">RC0402FR-0788K7L</div>
-                        <div class="gx-table-cell gx-table-cell-brand">Yageo</div>
-                        <div class="gx-table-cell gx-table-cell-quantity">1000000</div>
-                        <div class="gx-table-cell gx-table-cell-price">0.00008</div>
-                        <div class="gx-table-cell gx-table-cell-action">
-                            <a href="./pn-detail.php" class="gx-view-button">View</a>
-                        </div>
-                    </div>
-
-                    <!-- Product Row 6 -->
-                    <div class="gx-table-row">
-                        <div class="gx-table-cell gx-table-cell-thumbnail">
-                            <img src="./assets/pn-listing/pn.png" alt="Product" class="gx-product-thumbnail">
-                        </div>
-                        <div class="gx-table-cell gx-table-cell-mpn">RC0402FR-0788K7L</div>
-                        <div class="gx-table-cell gx-table-cell-brand">Yageo</div>
-                        <div class="gx-table-cell gx-table-cell-quantity">1000000</div>
-                        <div class="gx-table-cell gx-table-cell-price">0.00008</div>
-                        <div class="gx-table-cell gx-table-cell-action">
-                            <a href="./pn-detail.php" class="gx-view-button">View</a>
-                        </div>
-                    </div>
-
-                    <!-- Product Row 7 -->
-                    <div class="gx-table-row">
-                        <div class="gx-table-cell gx-table-cell-thumbnail">
-                            <img src="./assets/pn-listing/pn.png" alt="Product" class="gx-product-thumbnail">
-                        </div>
-                        <div class="gx-table-cell gx-table-cell-mpn">RC0402FR-0788K7L</div>
-                        <div class="gx-table-cell gx-table-cell-brand">Yageo</div>
-                        <div class="gx-table-cell gx-table-cell-quantity">1000000</div>
-                        <div class="gx-table-cell gx-table-cell-price">0.00008</div>
-                        <div class="gx-table-cell gx-table-cell-action">
-                            <a href="./pn-detail.php" class="gx-view-button">View</a>
-                        </div>
-                    </div>
-
-                    <!-- Product Row 8 -->
-                    <div class="gx-table-row">
-                        <div class="gx-table-cell gx-table-cell-thumbnail">
-                            <img src="./assets/pn-listing/pn.png" alt="Product" class="gx-product-thumbnail">
-                        </div>
-                        <div class="gx-table-cell gx-table-cell-mpn">RC0402FR-0788K7L</div>
-                        <div class="gx-table-cell gx-table-cell-brand">Yageo</div>
-                        <div class="gx-table-cell gx-table-cell-quantity">1000000</div>
-                        <div class="gx-table-cell gx-table-cell-price">0.00008</div>
-                        <div class="gx-table-cell gx-table-cell-action">
-                            <a href="./pn-detail.php" class="gx-view-button">View</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Pagination Section -->
-        <div class="gx-pagination-section">
-            <div class="gx-pagination-container">
-                <div class="gx-pagination">
-                    <span class="gx-pagination-item gx-pagination-item-active">1</span>
-                    <span class="gx-pagination-item">2</span>
-                    <span class="gx-pagination-item">3</span>
-                    <span class="gx-pagination-item">4</span>
-                    <span class="gx-pagination-ellipsis">...</span>
-                    <span class="gx-pagination-item">181</span>
-                </div>
-            </div>
-        </div>
+        include_once('./includes/_results-section.php');
+        ?>
     </div>
 </section>
 <?php

@@ -8,7 +8,9 @@
   max-width: 70ch;
 }
 
-
+.gx-about-bg {
+  background: url('../../assets/img/about-us/about-bg.webp') center center/cover no-repeat;
+}
 
 /* Mission, Vision, Goal Section */
 .gx-values-section {
@@ -152,11 +154,6 @@
 }
 .gx-wwd-btn {
   padding: 0.7rem 2.2rem;
-}
-.gx-wwd-btn:hover,
-.gx-wwd-btn:focus {
-  background: var(--primary-dark);
-  color: #fff;
 }
 
 @media (max-width: 991.98px) {

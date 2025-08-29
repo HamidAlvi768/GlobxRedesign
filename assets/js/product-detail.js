@@ -220,13 +220,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // ========================================
   // ANALYTICS (if needed)
   // ========================================
-  
-  // Track page views and interactions
-  function trackEvent(eventName, data = {}) {
-    console.log('Analytics Event:', eventName, data);
-    // Here you would typically send data to your analytics service
-    // Example: gtag('event', eventName, data);
-  }
+
   
   // Track page load
   trackEvent('category_page_view', {

@@ -74,7 +74,7 @@
 
 /* Special Gradient Cell (Who are we?) */
 .gx-why-work-who-are-we {
-  background: url('../../assets/gradient-bg.png') center center/cover no-repeat;
+  background: url('../../assets/img/gradient-bg.png') center center/cover no-repeat;
   border-radius: 1rem;
   padding: 2.5rem 2rem;
   display: flex;

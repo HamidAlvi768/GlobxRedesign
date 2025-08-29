@@ -243,4 +243,127 @@ transition */
   .gx-contact-submit {
     align-self: end;
   }
+}
+
+/* ======================================== */
+/* FORM CONTENT SWITCHING                   */
+/* ======================================== */
+
+.gx-form-content {
+  transition: opacity 0.3s ease;
+}
+
+/* ======================================== */
+/* PARTS SECTION STYLES                     */
+/* ======================================== */
+
+.gx-parts-section-label {
+  font-size: 1.1rem;
+  color: #1a3e5c;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.gx-parts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.gx-part-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+.gx-part-number-field {
+  flex: 2;
+}
+
+.gx-part-quantity-field {
+  flex: 1;
+}
+
+.gx-part-input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #e0e6ed;
+  font-size: 1rem;
+  padding: 0.5rem 0 0.4rem 0;
+  background: transparent;
+  transition: border-color 0.3s ease;
+}
+
+.gx-part-input:focus {
+  outline: none;
+  border-bottom-color: #1a7ebc;
+}
+
+.gx-part-input::placeholder {
+  color: #adb5bd;
+}
+
+.gx-part-controls {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.gx-part-add-btn,
+.gx-part-remove-btn {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: none;
+  background: #f8f9fa;
+  color: #6c757d;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.gx-part-add-btn:hover {
+  background: #1a7ebc;
+  color: white;
+  transform: scale(1.1);
+}
+
+.gx-part-remove-btn:hover {
+  background: #dc3545;
+  color: white;
+  transform: scale(1.1);
+}
+
+.gx-part-add-btn:active,
+.gx-part-remove-btn:active {
+  transform: scale(0.95);
+}
+
+/* Required field indicator */
+.gx-required {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+/* Responsive adjustments for parts section */
+@media (max-width: 575.98px) {
+  .gx-part-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+  
+  .gx-part-number-field,
+  .gx-part-quantity-field {
+    flex: none;
+  }
+  
+  .gx-part-controls {
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
 } 

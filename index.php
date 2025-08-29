@@ -27,7 +27,7 @@ include_once('./includes/transparent_nav.php');
       <div class="col-lg-7 col-md-12 gx-hero-left position-relative">
         <!-- Decorative Arrows -->
         <div class="gx-arrows position-absolute">
-          <img src="./assets/hero-arrow.png" alt="Decorative Arrows" width="180" height="150" />
+          <img src="./assets/img/hero-arrow.png" alt="Decorative Arrows" width="180" height="150" />
         </div>
         <!-- Hero Slide Content Wrapper -->
         <div class="gx-hero-carousel owl-carousel owl-theme">
@@ -45,7 +45,7 @@ include_once('./includes/transparent_nav.php');
           </div>
         </div>
         <!-- Learn More Button -->
-        <a href="#" class="btn gx-btn-primary px-4 py-2">Learn More</a>
+        <a href="./about-us.php" class="btn gx-btn-primary px-4 py-2">Learn More</a>
         <!-- Hero Pagination Dots -->
         <div class="gx-hero-pagination d-flex justify-content-start align-items-center mt-4 opacity-75">
           <span class="gx-dot" data-slide="0"></span>
@@ -55,267 +55,7 @@ include_once('./includes/transparent_nav.php');
       </div>
       <!-- Right: Sidebar Card -->
       <div class="col-lg-5 col-md-12 col-sm-4 gx-hero-right d-flex align-items-center justify-content-center">
-      <div class="gx-sidebar-card shadow">
-            <div class="gx-sidebar-title text-center mb-4">Search by Categories</div>
-            <div class="gx-sidebar-carousel owl-carousel owl-theme">
-              <!-- Slide 1 -->
-              <div class="gx-sidebar-slide">
-                <div class="gx-sidebar-grid mb-4">
-                  <div class="gx-sidebar-row">
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/diodes.png" alt="Diodes" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">diodes</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/mpu_mcu.png" alt="MPU/MCU" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">mpu/mcu</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/powerics.png" alt="Power" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">powerics</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/resistors.png" alt="Resistors" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">resistors</div>
-                    </div>
-                  </div>
-                  <div class="gx-sidebar-row">
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/capacitors.png" alt="Capacitors" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">capacitors</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/connectors.png" alt="Connectors" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">connectors</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/inductors.png" alt="Inductors" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">inductors</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/switches.png" alt="Switches" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">switches</div>
-                    </div>
-                  </div>
-                  <div class="gx-sidebar-row">
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/fuses.png" alt="Fuses" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">fuses</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/transistor.png" alt="Transistors" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">transistors</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/crys_reso.png" alt="Crystal Resonators" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">crystals</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/optoelectr.png" alt="Optoelectronics" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">optoelectronics</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Slide 2 -->
-              <div class="gx-sidebar-slide">
-                <div class="gx-sidebar-grid mb-4">
-                  <div class="gx-sidebar-row">
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/sens_trans.png" alt="Sensors & Transducers" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">sensors</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/amplifiers.png" alt="Amplifiers" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">amplifiers</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/regulators.png" alt="Regulators" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">regulators</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/pmic.png" alt="PMIC" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">pmic</div>
-                    </div>
-                  </div>
-                  <div class="gx-sidebar-row">
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/logic_ics.png" alt="Logic ICs" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">logic ics</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/memory_ics.png" alt="Memory ICs" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">memory ics</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/interface.png" alt="Interface" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">interface</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/converters.png" alt="Converters" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">converters</div>
-                    </div>
-                  </div>
-                  <div class="gx-sidebar-row">
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/psu.png" alt="Power Supply Units" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">psu</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/lcc.png" alt="LCC" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">lcc</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/memory.png" alt="Memory" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">memory</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/other_semi.png" alt="Other Semiconductors" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">other semi</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Slide 3 -->
-              <div class="gx-sidebar-slide">
-                <div class="gx-sidebar-grid mb-4">
-                  <div class="gx-sidebar-row">
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/diodes.png" alt="Diodes" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">diodes</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/mpu_mcu.png" alt="MPU/MCU" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">mpu/mcu</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/powerics.png" alt="Power" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">powerics</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/resistors.png" alt="Resistors" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">resistors</div>
-                    </div>
-                  </div>
-                  <div class="gx-sidebar-row">
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/capacitors.png" alt="Capacitors" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">capacitors</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/connectors.png" alt="Connectors" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">connectors</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/inductors.png" alt="Inductors" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">inductors</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/switches.png" alt="Switches" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">switches</div>
-                    </div>
-                  </div>
-                  <div class="gx-sidebar-row">
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/fuses.png" alt="Fuses" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">fuses</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/transistor.png" alt="Transistors" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">transistors</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/crys_reso.png" alt="Crystal Resonators" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">crystals</div>
-                    </div>
-                    <div class="gx-sidebar-cell">
-                      <div class="gx-sidebar-icon">
-                        <img src="./assets/main/optoelectr.png" alt="Optoelectronics" width="60" height="60" />
-                      </div>
-                      <div class="gx-sidebar-label">optoelectronics</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Sidebar Pagination Dots -->
-            <div class="gx-sidebar-pagination d-flex justify-content-center align-items-center">
-              <span class="gx-dot" data-slide="0"></span>
-              <span class="gx-dot" data-slide="1"></span>
-              <span class="gx-dot" data-slide="2"></span>
-            </div>
+        <?php include_once('./includes/_categories-section.php'); ?>
           </div>
       </div>
     </div>
@@ -327,19 +67,19 @@ include_once('./includes/transparent_nav.php');
   <div class="gx-partners-scroll-container">
     <div class="gx-partners-scroll-track">
       <!-- First set of logos -->
-      <div class="gx-partner-logo mx-4"><img src="./assets/brand-1.png" alt="Brand 1" height="52" /></div>
-      <div class="gx-partner-logo mx-4"><img src="./assets/brand-2.png" alt="Brand 2" height="52" /></div>
-      <div class="gx-partner-logo mx-4"><img src="./assets/brand-3.png" alt="Brand 3" height="52" /></div>
-      <div class="gx-partner-logo mx-4"><img src="./assets/brand-4.png" alt="Brand 4" height="52" /></div>
-      <div class="gx-partner-logo mx-4"><img src="./assets/brand-5.png" alt="Brand 5" height="52" /></div>
-      <div class="gx-partner-logo mx-4"><img src="./assets/brand-6.png" alt="Brand 6" height="52" /></div>
+      <div class="gx-partner-logo mx-4"><img src="./assets/img/brand-1.png" alt="Brand 1" height="52" /></div>
+      <div class="gx-partner-logo mx-4"><img src="./assets/img/brand-2.png" alt="Brand 2" height="52" /></div>
+      <div class="gx-partner-logo mx-4"><img src="./assets/img/brand-3.png" alt="Brand 3" height="52" /></div>
+      <div class="gx-partner-logo mx-4"><img src="./assets/img/brand-4.png" alt="Brand 4" height="52" /></div>
+      <div class="gx-partner-logo mx-4"><img src="./assets/img/brand-5.png" alt="Brand 5" height="52" /></div>
+      <div class="gx-partner-logo mx-4"><img src="./assets/img/brand-6.png" alt="Brand 6" height="52" /></div>
       <!-- Duplicate set for seamless loop -->
-      <div class="gx-partner-logo mx-4"><img src="./assets/brand-1.png" alt="Brand 1" height="52" /></div>
-      <div class="gx-partner-logo mx-4"><img src="./assets/brand-2.png" alt="Brand 2" height="52" /></div>
-      <div class="gx-partner-logo mx-4"><img src="./assets/brand-3.png" alt="Brand 3" height="52" /></div>
-      <div class="gx-partner-logo mx-4"><img src="./assets/brand-4.png" alt="Brand 4" height="52" /></div>
-      <div class="gx-partner-logo mx-4"><img src="./assets/brand-5.png" alt="Brand 5" height="52" /></div>
-      <div class="gx-partner-logo mx-4"><img src="./assets/brand-6.png" alt="Brand 6" height="52" /></div>
+      <div class="gx-partner-logo mx-4"><img src="./assets/img/brand-1.png" alt="Brand 1" height="52" /></div>
+      <div class="gx-partner-logo mx-4"><img src="./assets/img/brand-2.png" alt="Brand 2" height="52" /></div>
+      <div class="gx-partner-logo mx-4"><img src="./assets/img/brand-3.png" alt="Brand 3" height="52" /></div>
+      <div class="gx-partner-logo mx-4"><img src="./assets/img/brand-4.png" alt="Brand 4" height="52" /></div>
+      <div class="gx-partner-logo mx-4"><img src="./assets/img/brand-5.png" alt="Brand 5" height="52" /></div>
+      <div class="gx-partner-logo mx-4"><img src="./assets/img/brand-6.png" alt="Brand 6" height="52" /></div>
     </div>
   </div>
 </div>
@@ -386,8 +126,8 @@ include_once('./includes/transparent_nav.php');
               <div class="col-lg-6">
                 <div class="gx-problem-illustration gx-illustration-wrapper-common gx-illustration-wrapper-common">
                   <div class="gx-illustration-container gx-illustration-container-common">
-                    <img src="./assets/problem-back.png" alt="Background Shape" class="gx-illustration-background gx-illustration-background-common" />
-                    <img src="./assets/problem.png" alt="Supply Chain Bottleneck Illustration" class="gx-illustration-foreground gx-illustration-foreground-common gx-illustration-foreground-common--full gx-reveal-slide-right-fg" />
+                    <img src="./assets/img/problem-back.png" alt="Background Shape" class="gx-illustration-background gx-illustration-background-common" />
+                    <img src="./assets/img/problem.png" alt="Supply Chain Bottleneck Illustration" class="gx-illustration-foreground gx-illustration-foreground-common gx-illustration-foreground-common--full gx-reveal-slide-right-fg" />
                   </div>
                 </div>
               </div>
@@ -412,8 +152,8 @@ include_once('./includes/transparent_nav.php');
               <div class="col-lg-6">
                 <div class="gx-solution-illustration gx-illustration-wrapper-common gx-illustration-wrapper-common">
                   <div class="gx-illustration-container gx-illustration-container-common">
-                    <img src="./assets/problem-back.png" alt="Background Shape" class="gx-illustration-background gx-illustration-background-common" />
-                    <img src="./assets/solution.png" alt="Supply Chain Solution Illustration" class="gx-illustration-foreground gx-illustration-foreground-common gx-illustration-foreground-common--full gx-reveal-slide-right-fg" />
+                    <img src="./assets/img/problem-back.png" alt="Background Shape" class="gx-illustration-background gx-illustration-background-common" />
+                    <img src="./assets/img/solution.png" alt="Supply Chain Solution Illustration" class="gx-illustration-foreground gx-illustration-foreground-common gx-illustration-foreground-common--full gx-reveal-slide-right-fg" />
                   </div>
                 </div>
               </div>
@@ -428,7 +168,7 @@ include_once('./includes/transparent_nav.php');
 <!-- End of Problem & Solution Section -->
 <!-- Transition Chevron: Double Right Arrow -->
 <div class="gx-transition-chevron gx-reveal-content gx-reveal-delay-2">
-  <img src="./assets/problem-arrow.png" alt="Scroll to next section" />
+  <img src="./assets/img/problem-arrow.png" alt="Scroll to next section" />
 </div>
 <!-- Services Section -->
 <section class="gx-services-section gx-section-common gx-section-common--light py-10 gx-reveal-section">
@@ -447,7 +187,7 @@ include_once('./includes/transparent_nav.php');
           <!-- Vertical Menu -->
           <div class="gx-services-menu">
             <div class="gx-service-item gx-service-active" data-service="procurement">
-              <img src="./assets/service-arrow.png" alt="Service Arrow" class="gx-service-icon" />
+              <img src="./assets/img/service-arrow.png" alt="Service Arrow" class="gx-service-icon" />
               <span class="gx-service-name">Procurement Service</span>
             </div>
             <div class="gx-service-item" data-service="fulfillment">
@@ -478,8 +218,8 @@ include_once('./includes/transparent_nav.php');
             <div class="gx-service-pane gx-service-pane-active" id="procurement-service">
               <div class="gx-service-illustration gx-illustration-wrapper-common mb-4">
                 <div class="gx-service-illustration-container gx-illustration-container-common">
-                  <img src="./assets/service-back.png" alt="Service Background" class="gx-service-illustration-background gx-illustration-background-common" />
-                  <img src="./assets/service-1.png" alt="Service Illustration" class="gx-service-illustration-foreground gx-illustration-foreground-common gx-illustration-foreground-common--reduced gx-reveal-slide-right-fg" />
+                  <img src="./assets/img/service-back.png" alt="Service Background" class="gx-service-illustration-background gx-illustration-background-common" />
+                  <img src="./assets/img/service-1.png" alt="Service Illustration" class="gx-service-illustration-foreground gx-illustration-foreground-common gx-illustration-foreground-common--reduced gx-reveal-slide-right-fg" />
                 </div>
               </div>
               <div class="gx-service-content-text gx-content-area-common gx-content-area-common--centered text-center">
@@ -493,8 +233,8 @@ include_once('./includes/transparent_nav.php');
             <div class="gx-service-pane" id="fulfillment-service">
               <div class="gx-service-illustration gx-illustration-wrapper-common mb-4">
                 <div class="gx-service-illustration-container gx-illustration-container-common">
-                  <img src="./assets/service-back.png" alt="Service Background" class="gx-service-illustration-background gx-illustration-background-common" />
-                  <img src="./assets/Fulfiment Solutions.png" alt="Service Illustration" class="gx-service-illustration-foreground gx-illustration-foreground-common gx-illustration-foreground-common--reduced gx-reveal-slide-right-fg" />
+                  <img src="./assets/img/service-back.png" alt="Service Background" class="gx-service-illustration-background gx-illustration-background-common" />
+                  <img src="./assets/img/Fulfiment Solutions.png" alt="Service Illustration" class="gx-service-illustration-foreground gx-illustration-foreground-common gx-illustration-foreground-common--reduced gx-reveal-slide-right-fg" />
                 </div>
               </div>
               <div class="gx-service-content-text gx-content-area-common gx-content-area-common--centered text-center">
@@ -510,8 +250,8 @@ include_once('./includes/transparent_nav.php');
             <div class="gx-service-pane" id="bom-service">
               <div class="gx-service-illustration gx-illustration-wrapper-common mb-4">
                 <div class="gx-service-illustration-container gx-illustration-container-common">
-                  <img src="./assets/service-back.png" alt="Service Background" class="gx-service-illustration-background gx-illustration-background-common" />
-                  <img src="./assets/BOM Evaluationn.png" alt="Service Illustration" class="gx-service-illustration-foreground gx-illustration-foreground-common gx-illustration-foreground-common--reduced gx-reveal-slide-right-fg" />
+                  <img src="./assets/img/service-back.png" alt="Service Background" class="gx-service-illustration-background gx-illustration-background-common" />
+                  <img src="./assets/img/BOM Evaluationn.png" alt="Service Illustration" class="gx-service-illustration-foreground gx-illustration-foreground-common gx-illustration-foreground-common--reduced gx-reveal-slide-right-fg" />
                 </div>
               </div>
               <div class="gx-service-content-text gx-content-area-common gx-content-area-common--centered text-center">
@@ -525,8 +265,8 @@ include_once('./includes/transparent_nav.php');
             <div class="gx-service-pane" id="excess-service">
               <div class="gx-service-illustration gx-illustration-wrapper-common mb-4">
                 <div class="gx-service-illustration-container gx-illustration-container-common">
-                  <img src="./assets/service-back.png" alt="Service Background" class="gx-service-illustration-background gx-illustration-background-common" />
-                  <img src="./assets/Excess Solutions.png" alt="Service Illustration" class="gx-service-illustration-foreground gx-illustration-foreground-common gx-illustration-foreground-common--reduced gx-reveal-slide-right-fg" />
+                  <img src="./assets/img/service-back.png" alt="Service Background" class="gx-service-illustration-background gx-illustration-background-common" />
+                  <img src="./assets/img/Excess Solutions.png" alt="Service Illustration" class="gx-service-illustration-foreground gx-illustration-foreground-common gx-illustration-foreground-common--reduced gx-reveal-slide-right-fg" />
                 </div>
               </div>
               <div class="gx-service-content-text gx-content-area-common gx-content-area-common--centered text-center">
@@ -540,8 +280,8 @@ include_once('./includes/transparent_nav.php');
             <div class="gx-service-pane" id="obsolescence-service">
               <div class="gx-service-illustration gx-illustration-wrapper-common mb-4">
                 <div class="gx-service-illustration-container gx-illustration-container-common">
-                  <img src="./assets/service-back.png" alt="Service Background" class="gx-service-illustration-background gx-illustration-background-common" />
-                  <img src="./assets/Obsoloscence Management.png" alt="Service Illustration" class="gx-service-illustration-foreground gx-illustration-foreground-common gx-illustration-foreground-common--reduced gx-reveal-slide-right-fg" />
+                  <img src="./assets/img/service-back.png" alt="Service Background" class="gx-service-illustration-background gx-illustration-background-common" />
+                  <img src="./assets/img/Obsoloscence Management.png" alt="Service Illustration" class="gx-service-illustration-foreground gx-illustration-foreground-common gx-illustration-foreground-common--reduced gx-reveal-slide-right-fg" />
                 </div>
               </div>
               <div class="gx-service-content-text gx-content-area-common gx-content-area-common--centered text-center">
@@ -555,8 +295,8 @@ include_once('./includes/transparent_nav.php');
             <div class="gx-service-pane" id="bottleneck-service">
               <div class="gx-service-illustration gx-illustration-wrapper-common mb-4">
                 <div class="gx-service-illustration-container gx-illustration-container-common">
-                  <img src="./assets/service-back.png" alt="Service Background" class="gx-service-illustration-background gx-illustration-background-common" />
-                  <img src="./assets/Bottleneck Management.png" alt="Service Illustration" class="gx-service-illustration-foreground gx-illustration-foreground-common gx-illustration-foreground-common--reduced gx-reveal-slide-right-fg" />
+                  <img src="./assets/img/service-back.png" alt="Service Background" class="gx-service-illustration-background gx-illustration-background-common" />
+                  <img src="./assets/img/Bottleneck Management.png" alt="Service Illustration" class="gx-service-illustration-foreground gx-illustration-foreground-common gx-illustration-foreground-common--reduced gx-reveal-slide-right-fg" />
                 </div>
               </div>
               <div class="gx-service-content-text gx-content-area-common gx-content-area-common--centered text-center">
@@ -573,10 +313,10 @@ include_once('./includes/transparent_nav.php');
 </section>
 
 <!-- Markets & Industries Section -->
-<section class="gx-markets-industries-section gx-section-common py-10 gx-reveal-section">
+<section id="gx-markets-industries-section" class="gx-markets-industries-section gx-section-common py-10 gx-reveal-section">
   <!-- Decorative Arrow -->
   <div class="gx-sector-arrow gx-reveal-content gx-reveal-delay-1">
-    <img src="./assets/sector-arrow.png" alt="Decorative Arrow" />
+    <img src="./assets/img/sector-arrow.png" alt="Decorative Arrow" />
   </div>
   <div class="container">
     <div class="row align-items-center justify-content-end">
@@ -592,7 +332,7 @@ include_once('./includes/transparent_nav.php');
           <!-- Mobile Illustration (hidden on desktop) -->
           <div class="gx-markets-mobile-illustration d-lg-none mb-4">
             <div class="gx-markets-illustration-container">
-              <img src="./assets/orbit.png" alt="Markets & Industries Orbital Design" class="gx-markets-illustration" />
+              <img src="./assets/img/orbit.png" alt="Markets & Industries Orbital Design" class="gx-markets-illustration" />
             </div>
           </div>
 
@@ -604,39 +344,39 @@ include_once('./includes/transparent_nav.php');
           <!-- Markets List -->
           <ul class="gx-markets-list">
             <li class="gx-markets-list-item">
-              <img src="./assets/sector-arrow-list.png" alt="Arrow" class="gx-markets-list-icon" />
+              <img src="./assets/img/sector-arrow-list.png" alt="Arrow" class="gx-markets-list-icon" />
               <span>Aeronautics and space</span>
             </li>
             <li class="gx-markets-list-item">
-              <img src="./assets/sector-arrow-list.png" alt="Arrow" class="gx-markets-list-icon" />
+              <img src="./assets/img/sector-arrow-list.png" alt="Arrow" class="gx-markets-list-icon" />
               <span>Industrial & automation</span>
             </li>
             <li class="gx-markets-list-item">
-              <img src="./assets/sector-arrow-list.png" alt="Arrow" class="gx-markets-list-icon" />
+              <img src="./assets/img/sector-arrow-list.png" alt="Arrow" class="gx-markets-list-icon" />
               <span>Medicine & agriculture</span>
             </li>
             <li class="gx-markets-list-item">
-              <img src="./assets/sector-arrow-list.png" alt="Arrow" class="gx-markets-list-icon" />
+              <img src="./assets/img/sector-arrow-list.png" alt="Arrow" class="gx-markets-list-icon" />
               <span>Energy</span>
             </li>
             <li class="gx-markets-list-item">
-              <img src="./assets/sector-arrow-list.png" alt="Arrow" class="gx-markets-list-icon" />
+              <img src="./assets/img/sector-arrow-list.png" alt="Arrow" class="gx-markets-list-icon" />
               <span>Telecommunications</span>
             </li>
             <li class="gx-markets-list-item">
-              <img src="./assets/sector-arrow-list.png" alt="Arrow" class="gx-markets-list-icon" />
+              <img src="./assets/img/sector-arrow-list.png" alt="Arrow" class="gx-markets-list-icon" />
               <span>Automotive & transportation</span>
             </li>
             <li class="gx-markets-list-item">
-              <img src="./assets/sector-arrow-list.png" alt="Arrow" class="gx-markets-list-icon" />
+              <img src="./assets/img/sector-arrow-list.png" alt="Arrow" class="gx-markets-list-icon" />
               <span>Electronics</span>
             </li>
             <li class="gx-markets-list-item">
-              <img src="./assets/sector-arrow-list.png" alt="Arrow" class="gx-markets-list-icon" />
+              <img src="./assets/img/sector-arrow-list.png" alt="Arrow" class="gx-markets-list-icon" />
               <span>Raw materials</span>
             </li>
             <li class="gx-markets-list-item">
-              <img src="./assets/sector-arrow-list.png" alt="Arrow" class="gx-markets-list-icon" />
+              <img src="./assets/img/sector-arrow-list.png" alt="Arrow" class="gx-markets-list-icon" />
               <span>Logistics</span>
             </li>
           </ul>
@@ -650,21 +390,21 @@ include_once('./includes/transparent_nav.php');
             <!-- Begin dynamic orbit -->
             <div class="gx-orbit">
               <div class="gx-orbit-center-container">
-                <img src="./assets/orbit-center.png" alt="Center" class="gx-orbit-center" />
+                <img src="./assets/img/orbit-center.png" alt="Center" class="gx-orbit-center" />
               </div>
               <div class="gx-orbit-ring gx-orbit-ring-1"></div>
               <div class="gx-orbit-ring gx-orbit-ring-2"></div>
               <div class="gx-orbit-ring gx-orbit-ring-3"></div>
               <!-- 9 orbiting icons, each in its own container with orbit class and tooltip -->
-              <div class="gx-orbit-icon-container gx-orbit-icon-1" data-tooltip="Aeronautics and space"><img src="./assets/orbit-icon-1.svg" class="gx-orbit-icon" alt="Orbit Icon 1" /></div>
-              <div class="gx-orbit-icon-container gx-orbit-icon-2" data-tooltip="Industrial & automation"><img src="./assets/orbit-icon-2.svg" class="gx-orbit-icon" alt="Orbit Icon 2" /></div>
-              <div class="gx-orbit-icon-container gx-orbit-icon-3" data-tooltip="Medicine & agriculture"><img src="./assets/orbit-icon-3.svg" class="gx-orbit-icon" alt="Orbit Icon 3" /></div>
-              <div class="gx-orbit-icon-container gx-orbit-icon-4" data-tooltip="Energy"><img src="./assets/orbit-icon-4.svg" class="gx-orbit-icon" alt="Orbit Icon 4" /></div>
-              <div class="gx-orbit-icon-container gx-orbit-icon-5" data-tooltip="Telecommunications"><img src="./assets/orbit-icon-5.svg" class="gx-orbit-icon" alt="Orbit Icon 5" /></div>
-              <div class="gx-orbit-icon-container gx-orbit-icon-6" data-tooltip="Automotive & transportation"><img src="./assets/orbit-icon-6.svg" class="gx-orbit-icon" alt="Orbit Icon 6" /></div>
-              <div class="gx-orbit-icon-container gx-orbit-icon-7" data-tooltip="Electronics"><img src="./assets/orbit-icon-7.svg" class="gx-orbit-icon" alt="Orbit Icon 7" /></div>
-              <div class="gx-orbit-icon-container gx-orbit-icon-8" data-tooltip="Raw materials"><img src="./assets/orbit-icon-8.svg" class="gx-orbit-icon" alt="Orbit Icon 8" /></div>
-              <div class="gx-orbit-icon-container gx-orbit-icon-9" data-tooltip="Logistics"><img src="./assets/orbit-icon-9.svg" class="gx-orbit-icon" alt="Orbit Icon 9" /></div>
+              <div class="gx-orbit-icon-container gx-orbit-icon-1" data-tooltip="Aeronautics and space"><img src="./assets/img/orbit-icon-1.svg" class="gx-orbit-icon" alt="Orbit Icon 1" /></div>
+              <div class="gx-orbit-icon-container gx-orbit-icon-2" data-tooltip="Industrial & automation"><img src="./assets/img/orbit-icon-2.svg" class="gx-orbit-icon" alt="Orbit Icon 2" /></div>
+              <div class="gx-orbit-icon-container gx-orbit-icon-3" data-tooltip="Medicine & agriculture"><img src="./assets/img/orbit-icon-3.svg" class="gx-orbit-icon" alt="Orbit Icon 3" /></div>
+              <div class="gx-orbit-icon-container gx-orbit-icon-4" data-tooltip="Energy"><img src="./assets/img/orbit-icon-4.svg" class="gx-orbit-icon" alt="Orbit Icon 4" /></div>
+              <div class="gx-orbit-icon-container gx-orbit-icon-5" data-tooltip="Telecommunications"><img src="./assets/img/orbit-icon-5.svg" class="gx-orbit-icon" alt="Orbit Icon 5" /></div>
+              <div class="gx-orbit-icon-container gx-orbit-icon-6" data-tooltip="Automotive & transportation"><img src="./assets/img/orbit-icon-6.svg" class="gx-orbit-icon" alt="Orbit Icon 6" /></div>
+              <div class="gx-orbit-icon-container gx-orbit-icon-7" data-tooltip="Electronics"><img src="./assets/img/orbit-icon-7.svg" class="gx-orbit-icon" alt="Orbit Icon 7" /></div>
+              <div class="gx-orbit-icon-container gx-orbit-icon-8" data-tooltip="Raw materials"><img src="./assets/img/orbit-icon-8.svg" class="gx-orbit-icon" alt="Orbit Icon 8" /></div>
+              <div class="gx-orbit-icon-container gx-orbit-icon-9" data-tooltip="Logistics"><img src="./assets/img/orbit-icon-9.svg" class="gx-orbit-icon" alt="Orbit Icon 9" /></div>
             </div>
             <!-- End dynamic orbit -->
           </div>
@@ -713,7 +453,7 @@ include_once('./includes/transparent_nav.php');
       <div class="col-lg-6 order-1 order-lg-2">
         <div class="gx-testimonials-content gx-reveal-slide-right">
           <div class="gx-testimonial-image-container">
-            <img src="./assets/testimonial-man.webp" alt="Dr. Bayram Cucu - CEO, Bio-Gram Diagnostics GmbH" class="gx-testimonial-image" />
+            <img src="./assets/img/testimonial-man.webp" alt="Dr. Bayram Cucu - CEO, Bio-Gram Diagnostics GmbH" class="gx-testimonial-image" />
           </div>
         </div>
       </div>
@@ -785,7 +525,7 @@ include_once('./includes/transparent_nav.php');
       <div class="gx-save-globe-content gx-reveal-slide-left">
         <div class="gx-save-globe-logomark">
           <span class="gx-save-globe-globx">Glob<span class="x">X</span></span>
-          <img src="./assets/X.png" alt="GlobX Save the Globe Logomark" class="gx-save-globe-x-graphic" />
+          <img src="./assets/img/X.png" alt="GlobX Save the Globe Logomark" class="gx-save-globe-x-graphic" />
           <span class="gx-save-globe-save-globe">
             <span class="save">Save</span>
             <span class="the">the</span>
@@ -799,70 +539,15 @@ include_once('./includes/transparent_nav.php');
       </div>
       <!-- Right Column: Image -->
       <div class="gx-save-globe-image-col gx-reveal-slide-right">
-        <img src="./assets/earth.webp" alt="Earth - Save the Globe" class="gx-save-globe-image" />
+        <img src="./assets/img/earth.webp" alt="Earth - Save the Globe" class="gx-save-globe-image" />
       </div>
     </div>
   </div>
 </section>
 
 <!-- Contact Section -->
-<section class="gx-contact-section gx-reveal-section">
-  <div class="gx-contact-container container">
-    <!-- Left: Form -->
-    <div class="gx-contact-form-col gx-reveal-slide-left">
-      <form class="gx-contact-form">
-        <div class="gx-form-type-selector">
-          <label class="gx-radio-label">
-            <input type="radio" name="formType" value="contact" checked>
-            <span class="gx-custom-radio"></span>
-            Contact Us
-          </label>
-          <label class="gx-radio-label">
-            <input type="radio" name="formType" value="offer">
-            <span class="gx-custom-radio"></span>
-            Offer
-          </label>
-        </div>
-        <h1 class="gx-contact-heading gx-section-headline-common">Contact Us</h1>
-        <div class="gx-contact-subheading">How can we help you?</div>
-        <div class="gx-form-group">
-          <label for="company">Company</label>
-          <input type="text" id="company" name="company" placeholder="Company" autocomplete="organization">
-        </div>
-        <div class="gx-form-row">
-          <div class="gx-form-group gx-form-half">
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="firstName" placeholder="First Name" autocomplete="given-name">
-          </div>
-          <div class="gx-form-group gx-form-half">
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="lastName" placeholder="Last Name" autocomplete="family-name">
-          </div>
-        </div>
-        <div class="gx-form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Email" autocomplete="email">
-        </div>
-        <div class="gx-form-group">
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="phone" placeholder="Phone" autocomplete="tel">
-        </div>
-        <div class="gx-form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Message" rows="4"></textarea>
-        </div>
-        <button type="submit" class="gx-contact-submit gx-btn-primary px-4 py-2">Send</button>
-      </form>
-    </div>
-    <!-- Right: Image & Chevron -->
-    <div class="gx-contact-image-col gx-reveal-slide-right">
-      <div class="gx-contact-chevron-bg">
-        <img src="./assets/contact-us-arrow.png" alt="Decorative Chevron" class="gx-contact-chevron" />
-      </div>
-      <img src="./assets/contact-us.webp" alt="Contact Us" class="gx-contact-image" />
-    </div>
-  </div>
-</section>
+<?php include_once('./includes/_contact-form.php'); ?>
+
 
 <?php
 $jsFiles = [
@@ -874,6 +559,8 @@ $jsFiles = [
   './assets/js/scroll-reveal.js',
   './assets/js/infinite-scroll.js',
   './assets/js/tab-animations.js',
+  './assets/js/anchor-navigation.js',
+  './assets/js/contact-offer-form.js',
 ];
 
 include_once('./includes/footer.php');

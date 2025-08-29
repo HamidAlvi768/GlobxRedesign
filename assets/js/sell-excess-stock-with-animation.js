@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Download Table Example button
-    const downloadBtn = document.querySelector('.gx-save-globe-btn');
+    const downloadBtn = document.querySelector('.gx-download-cta-btn');
     if (downloadBtn) {
       downloadBtn.addEventListener('click', function(e) {
         e.preventDefault();

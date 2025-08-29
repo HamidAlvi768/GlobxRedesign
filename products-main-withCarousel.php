@@ -47,25 +47,25 @@ include_once('./includes/search_nav.php');
                   <div class="gx-sidebar-row">
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/diodes.png" alt="Diodes" width="30" height="30" />
+                        <img src="./assets/img/main/diodes.png" alt="Diodes" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">diodes</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/mpu_mcu.png" alt="MPU/MCU" width="30" height="30" />
+                        <img src="./assets/img/main/mpu_mcu.png" alt="MPU/MCU" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">mpu/mcu</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/powerics.png" alt="Power" width="30" height="30" />
+                        <img src="./assets/img/main/powerics.png" alt="Power" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">powerics</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/resistors.png" alt="Resistors" width="30" height="30" />
+                        <img src="./assets/img/main/resistors.png" alt="Resistors" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">resistors</div>
                     </div>
@@ -73,25 +73,25 @@ include_once('./includes/search_nav.php');
                   <div class="gx-sidebar-row">
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/capacitors.png" alt="Capacitors" width="30" height="30" />
+                        <img src="./assets/img/main/capacitors.png" alt="Capacitors" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">capacitors</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/connectors.png" alt="Connectors" width="30" height="30" />
+                        <img src="./assets/img/main/connectors.png" alt="Connectors" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">connectors</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/inductors.png" alt="Inductors" width="30" height="30" />
+                        <img src="./assets/img/main/inductors.png" alt="Inductors" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">inductors</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/switches.png" alt="Switches" width="30" height="30" />
+                        <img src="./assets/img/main/switches.png" alt="Switches" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">switches</div>
                     </div>
@@ -99,25 +99,25 @@ include_once('./includes/search_nav.php');
                   <div class="gx-sidebar-row">
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/fuses.png" alt="Fuses" width="30" height="30" />
+                        <img src="./assets/img/main/fuses.png" alt="Fuses" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">fuses</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/transistor.png" alt="Transistors" width="30" height="30" />
+                        <img src="./assets/img/main/transistor.png" alt="Transistors" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">transistors</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/crys_reso.png" alt="Crystal Resonators" width="30" height="30" />
+                        <img src="./assets/img/main/crys_reso.png" alt="Crystal Resonators" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">crystals</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/optoelectr.png" alt="Optoelectronics" width="30" height="30" />
+                        <img src="./assets/img/main/optoelectr.png" alt="Optoelectronics" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">optoelectronics</div>
                     </div>
@@ -131,25 +131,25 @@ include_once('./includes/search_nav.php');
                   <div class="gx-sidebar-row">
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/sens_trans.png" alt="Sensors & Transducers" width="30" height="30" />
+                        <img src="./assets/img/main/sens_trans.png" alt="Sensors & Transducers" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">sensors</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/amplifiers.png" alt="Amplifiers" width="30" height="30" />
+                        <img src="./assets/img/main/amplifiers.png" alt="Amplifiers" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">amplifiers</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/regulators.png" alt="Regulators" width="30" height="30" />
+                        <img src="./assets/img/main/regulators.png" alt="Regulators" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">regulators</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/pmic.png" alt="PMIC" width="30" height="30" />
+                        <img src="./assets/img/main/pmic.png" alt="PMIC" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">pmic</div>
                     </div>
@@ -157,25 +157,25 @@ include_once('./includes/search_nav.php');
                   <div class="gx-sidebar-row">
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/logic_ics.png" alt="Logic ICs" width="30" height="30" />
+                        <img src="./assets/img/main/logic_ics.png" alt="Logic ICs" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">logic ics</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/memory_ics.png" alt="Memory ICs" width="30" height="30" />
+                        <img src="./assets/img/main/memory_ics.png" alt="Memory ICs" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">memory ics</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/interface.png" alt="Interface" width="30" height="30" />
+                        <img src="./assets/img/main/interface.png" alt="Interface" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">interface</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/converters.png" alt="Converters" width="30" height="30" />
+                        <img src="./assets/img/main/converters.png" alt="Converters" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">converters</div>
                     </div>
@@ -183,25 +183,25 @@ include_once('./includes/search_nav.php');
                   <div class="gx-sidebar-row">
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/psu.png" alt="Power Supply Units" width="30" height="30" />
+                        <img src="./assets/img/main/psu.png" alt="Power Supply Units" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">psu</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/lcc.png" alt="LCC" width="30" height="30" />
+                        <img src="./assets/img/main/lcc.png" alt="LCC" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">lcc</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/memory.png" alt="Memory" width="30" height="30" />
+                        <img src="./assets/img/main/memory.png" alt="Memory" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">memory</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/other_semi.png" alt="Other Semiconductors" width="30" height="30" />
+                        <img src="./assets/img/main/other_semi.png" alt="Other Semiconductors" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">other semi</div>
                     </div>
@@ -215,25 +215,25 @@ include_once('./includes/search_nav.php');
                   <div class="gx-sidebar-row">
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/diodes.png" alt="Diodes" width="30" height="30" />
+                        <img src="./assets/img/main/diodes.png" alt="Diodes" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">diodes</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/mpu_mcu.png" alt="MPU/MCU" width="30" height="30" />
+                        <img src="./assets/img/main/mpu_mcu.png" alt="MPU/MCU" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">mpu/mcu</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/powerics.png" alt="Power" width="30" height="30" />
+                        <img src="./assets/img/main/powerics.png" alt="Power" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">powerics</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/resistors.png" alt="Resistors" width="30" height="30" />
+                        <img src="./assets/img/main/resistors.png" alt="Resistors" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">resistors</div>
                     </div>
@@ -241,25 +241,25 @@ include_once('./includes/search_nav.php');
                   <div class="gx-sidebar-row">
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/capacitors.png" alt="Capacitors" width="30" height="30" />
+                        <img src="./assets/img/main/capacitors.png" alt="Capacitors" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">capacitors</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/connectors.png" alt="Connectors" width="30" height="30" />
+                        <img src="./assets/img/main/connectors.png" alt="Connectors" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">connectors</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/inductors.png" alt="Inductors" width="30" height="30" />
+                        <img src="./assets/img/main/inductors.png" alt="Inductors" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">inductors</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/switches.png" alt="Switches" width="30" height="30" />
+                        <img src="./assets/img/main/switches.png" alt="Switches" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">switches</div>
                     </div>
@@ -267,25 +267,25 @@ include_once('./includes/search_nav.php');
                   <div class="gx-sidebar-row">
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/fuses.png" alt="Fuses" width="30" height="30" />
+                        <img src="./assets/img/main/fuses.png" alt="Fuses" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">fuses</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/transistor.png" alt="Transistors" width="30" height="30" />
+                        <img src="./assets/img/main/transistor.png" alt="Transistors" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">transistors</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/crys_reso.png" alt="Crystal Resonators" width="30" height="30" />
+                        <img src="./assets/img/main/crys_reso.png" alt="Crystal Resonators" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">crystals</div>
                     </div>
                     <div class="gx-sidebar-cell">
                       <div class="gx-sidebar-icon">
-                        <img src="./assets/main/optoelectr.png" alt="Optoelectronics" width="30" height="30" />
+                        <img src="./assets/img/main/optoelectr.png" alt="Optoelectronics" width="30" height="30" />
                       </div>
                       <div class="gx-sidebar-label">optoelectronics</div>
                     </div>
@@ -309,7 +309,7 @@ include_once('./includes/search_nav.php');
               <!-- Marketing Slide 1 -->
               <div class="gx-marketing-slide">
                 <div class="gx-marketing-image-container">
-                  <img src="./assets/pn-listing/products-bg.webp" alt="Products Background" class="gx-marketing-image">
+                  <img src="./assets/img/pn-listing/products-bg.webp" alt="Products Background" class="gx-marketing-image">
                   <div class="gx-marketing-overlay">
                     <h2 class="gx-marketing-headline">World's largest selection of electronic components in stock for immediate shipment.</h2>
                   </div>
@@ -319,7 +319,7 @@ include_once('./includes/search_nav.php');
               <!-- Marketing Slide 2 -->
               <div class="gx-marketing-slide">
                 <div class="gx-marketing-image-container">
-                  <img src="./assets/hero-bg.webp" alt="Global Supply Chain" class="gx-marketing-image">
+                  <img src="./assets/img/hero-bg.webp" alt="Global Supply Chain" class="gx-marketing-image">
                   <div class="gx-marketing-overlay">
                     <h2 class="gx-marketing-headline">Global supply chain solutions for your business, driving sustainable growth and operational excellence.</h2>
                   </div>
@@ -329,7 +329,7 @@ include_once('./includes/search_nav.php');
               <!-- Marketing Slide 3 -->
               <div class="gx-marketing-slide">
                 <div class="gx-marketing-image-container">
-                  <img src="./assets/contact-us.webp" alt="Expert Support" class="gx-marketing-image">
+                  <img src="./assets/img/contact-us.webp" alt="Expert Support" class="gx-marketing-image">
                   <div class="gx-marketing-overlay">
                     <h2 class="gx-marketing-headline">Expert support and fast delivery guaranteed, ensuring customer satisfaction every single time.</h2>
                   </div>
@@ -355,17 +355,17 @@ include_once('./includes/search_nav.php');
         <div class="gx-manufacturers-scroll-container">
           <div class="gx-manufacturers-scroll-track">
             <!-- First set of logos -->
-            <div class="gx-manufacturer-logo"><img src="./assets/pn-listing/brand-1.webp" alt="Brand 1" height="100" /></div>
-            <div class="gx-manufacturer-logo"><img src="./assets/pn-listing/brand-2.webp" alt="Brand 2" height="100" /></div>
-            <div class="gx-manufacturer-logo"><img src="./assets/pn-listing/brand-3.webp" alt="Brand 3" height="100" /></div>
-            <div class="gx-manufacturer-logo"><img src="./assets/pn-listing/brand-4.webp" alt="Brand 4" height="100" /></div>
-            <div class="gx-manufacturer-logo"><img src="./assets/pn-listing/brand-5.webp" alt="Brand 5" height="100" /></div>
+            <div class="gx-manufacturer-logo"><img src="./assets/img/pn-listing/brand-1.webp" alt="Brand 1" height="100" /></div>
+            <div class="gx-manufacturer-logo"><img src="./assets/img/pn-listing/brand-2.webp" alt="Brand 2" height="100" /></div>
+            <div class="gx-manufacturer-logo"><img src="./assets/img/pn-listing/brand-3.webp" alt="Brand 3" height="100" /></div>
+            <div class="gx-manufacturer-logo"><img src="./assets/img/pn-listing/brand-4.webp" alt="Brand 4" height="100" /></div>
+            <div class="gx-manufacturer-logo"><img src="./assets/img/pn-listing/brand-5.webp" alt="Brand 5" height="100" /></div>
             <!-- Duplicate set for seamless loop -->
-            <div class="gx-manufacturer-logo"><img src="./assets/pn-listing/brand-1.webp" alt="Brand 1" height="100" /></div>
-            <div class="gx-manufacturer-logo"><img src="./assets/pn-listing/brand-2.webp" alt="Brand 2" height="100" /></div>
-            <div class="gx-manufacturer-logo"><img src="./assets/pn-listing/brand-3.webp" alt="Brand 3" height="100" /></div>
-            <div class="gx-manufacturer-logo"><img src="./assets/pn-listing/brand-4.webp" alt="Brand 4" height="100" /></div>
-            <div class="gx-manufacturer-logo"><img src="./assets/pn-listing/brand-5.webp" alt="Brand 5" height="100" /></div>
+            <div class="gx-manufacturer-logo"><img src="./assets/img/pn-listing/brand-1.webp" alt="Brand 1" height="100" /></div>
+            <div class="gx-manufacturer-logo"><img src="./assets/img/pn-listing/brand-2.webp" alt="Brand 2" height="100" /></div>
+            <div class="gx-manufacturer-logo"><img src="./assets/img/pn-listing/brand-3.webp" alt="Brand 3" height="100" /></div>
+            <div class="gx-manufacturer-logo"><img src="./assets/img/pn-listing/brand-4.webp" alt="Brand 4" height="100" /></div>
+            <div class="gx-manufacturer-logo"><img src="./assets/img/pn-listing/brand-5.webp" alt="Brand 5" height="100" /></div>
           </div>
         </div>
       </div>
@@ -382,12 +382,12 @@ include_once('./includes/search_nav.php');
             <div class="gx-featured-card">
               <div class="gx-featured-card-header">
                 <div class="gx-featured-card-brand-logo">
-                  <img src="./assets/pn-listing/ecs.png" alt="ECS INC INTERNATIONAL" width="40" height="20" />
+                  <img src="./assets/img/pn-listing/ecs.png" alt="ECS INC INTERNATIONAL" width="40" height="20" />
                 </div>
                 <h4 class="gx-featured-card-title">ECS-3225MV MultiVolt™ Oscillators</h4>
               </div>
               <div class="gx-featured-card-image">
-                <img src="./assets/pn-listing/ecs-chip.png" alt="ECS Crystal Oscillator Component" width="80" height="80" />
+                <img src="./assets/img/pn-listing/ecs-chip.png" alt="ECS Crystal Oscillator Component" width="80" height="80" />
               </div>
               <div class="gx-featured-card-content">
                 <p class="gx-featured-card-desc">The ECS-3225MV series from ECS are low-power, fixed frequency, low jitter, MultiVolt surface-mount crystal oscillators. They are available in a 3.2 mm x 2.5 mm x 1.2 mm LWH package size to save board space.</p>
@@ -402,12 +402,12 @@ include_once('./includes/search_nav.php');
             <div class="gx-featured-card">
               <div class="gx-featured-card-header">
                 <div class="gx-featured-card-brand-logo">
-                  <img src="./assets/pn-listing/ecs.png" alt="ECS INC INTERNATIONAL" width="80" height="40" />
+                  <img src="./assets/img/pn-listing/ecs.png" alt="ECS INC INTERNATIONAL" width="80" height="40" />
                 </div>
                 <h4 class="gx-featured-card-title">ECS-3225MV MultiVolt™ Oscillators</h4>
               </div>
               <div class="gx-featured-card-image">
-                <img src="./assets/pn-listing/ecs-chip.png" alt="ECS Crystal Oscillator Component" width="80" height="80" />
+                <img src="./assets/img/pn-listing/ecs-chip.png" alt="ECS Crystal Oscillator Component" width="80" height="80" />
               </div>
               <div class="gx-featured-card-content">
                 <p class="gx-featured-card-desc">The ECS-3225MV series from ECS are low-power, fixed frequency, low jitter, MultiVolt surface-mount crystal oscillators. They are available in a 3.2 mm x 2.5 mm x 1.2 mm LWH package size to save board space.</p>
@@ -422,12 +422,12 @@ include_once('./includes/search_nav.php');
             <div class="gx-featured-card">
               <div class="gx-featured-card-header">
                 <div class="gx-featured-card-brand-logo">
-                  <img src="./assets/pn-listing/ecs.png" alt="ECS INC INTERNATIONAL" width="80" height="40" />
+                  <img src="./assets/img/pn-listing/ecs.png" alt="ECS INC INTERNATIONAL" width="80" height="40" />
                 </div>
                 <h4 class="gx-featured-card-title">ECS-3225MV MultiVolt™ Oscillators</h4>
               </div>
               <div class="gx-featured-card-image">
-                <img src="./assets/pn-listing/ecs-chip.png" alt="ECS Crystal Oscillator Component" width="80" height="80" />
+                <img src="./assets/img/pn-listing/ecs-chip.png" alt="ECS Crystal Oscillator Component" width="80" height="80" />
               </div>
               <div class="gx-featured-card-content">
                 <p class="gx-featured-card-desc">The ECS-3225MV series from ECS are low-power, fixed frequency, low jitter, MultiVolt surface-mount crystal oscillators. They are available in a 3.2 mm x 2.5 mm x 1.2 mm LWH package size to save board space.</p>

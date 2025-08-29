@@ -27,7 +27,7 @@ include_once('./includes/nav.php');
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="gx-form-chevron">
-                        <img src="./assets/problem-arrow.png" alt="Decorative Chevron" width="180" height="180" />
+                        <img src="./assets/img/problem-arrow.png" alt="Decorative Chevron" width="180" height="180" />
                     </div>
                 </div>
             </div>
@@ -177,37 +177,25 @@ include_once('./includes/nav.php');
     </section>
 
     <!-- Dual CTA Section -->
-    <section class="gx-cta-section gx-section-common gx-section-common--white py-5">
-        <div class="container">
-            <div class="row">
-                <!-- Left CTA Card -->
-                <div class="col-lg-6 mb-4">
-                    <div class="gx-cta-card gx-cta-card--blue">
-                        <div class="gx-cta-content">
-                            <h3 class="gx-cta-heading">Any Questions?</h3>
-                            <p class="gx-cta-description">
-                                Our recruiting team will be happy to answer any questions or provide further information.
-                            </p>
-                            <button class="gx-cta-btn gx-cta-btn--blue">Call Us Now</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right CTA Card -->
-                <div class="col-lg-6 mb-4">
-                    <div class="gx-cta-card gx-cta-card--orange">
-                        <div class="gx-cta-content">
-                            <h3 class="gx-cta-heading">Join Us</h3>
-                            <p class="gx-cta-description">
-                                Join GlobX and be part of a team that's making a real impact in the supply chain and logistics industry.
-                            </p>
-                            <button class="gx-cta-btn gx-cta-btn--orange">View Jobs</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php
+    $leftCard = [
+        'heading' => 'Any Questions?',
+        'description' => 'Our recruiting team will be happy to answer any questions or provide further information.',
+        'buttonText' => 'Call Us Now',
+        'buttonLink' => '#',
+        'buttonClass' => 'gx-cta-btn--blue'
+    ];
+    
+    $rightCard = [
+        'heading' => 'Join Us',
+        'description' => 'Join GlobX and be part of a team that\'s making a real impact in the supply chain and logistics industry.',
+        'buttonLink' => '#',
+        'buttonText' => 'View Jobs',
+        'buttonClass' => 'gx-cta-btn--orange'
+    ];
+    
+    include_once('./includes/_cta-section.php');
+    ?>
 
 <?php
 $jsFiles = [

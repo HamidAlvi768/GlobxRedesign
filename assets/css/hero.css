@@ -20,7 +20,7 @@
 .gx-hero-bg {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: url('../../assets/hero-bg.webp') center center/cover no-repeat;
+  background: url('../../assets/img/hero-bg.webp') center center/cover no-repeat;
   z-index: 0;
   filter: blur(0.5px) brightness(0.7);
 }

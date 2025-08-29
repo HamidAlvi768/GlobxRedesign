@@ -61,6 +61,16 @@ function isNavActive($pageIdentifier, $currentPage) {
        .gx-nav-links .nav-item.active .nav-link .gx-chevron svg {
            color: var(--primary, #007bff) !important;
        }
+       
+       /* Search button link styling */
+       .gx-search-button {
+           text-decoration: none !important;
+
+       }
+       
+       .gx-search-button:hover {
+           text-decoration: none !important;
+       }
    </style>
    <!-- Top Bar -->
    <div class="gx-top-bar gx-top-bar-search">
@@ -77,44 +87,44 @@ function isNavActive($pageIdentifier, $currentPage) {
        </div>
    </div>
 
-   <!-- Header/Navbar with Search -->
-   <div class="gx-navbar-container">
-       <div class="gx-navbar-sub-container relative">
-           <!-- Header/Navbar -->
-           <nav class="search-navbar navbar navbar-expand-lg gx-navbar gx-navbar--application py-3">
-               <div class="container align-items-center">
-                   <!-- Logo -->
-                   <a class="navbar-brand d-flex align-items-center gx-logo" href="./index.php">
-                       <img src="./assets/navbar/colored-logo.png" alt="GX Logo" height="48" />
-                   </a>
-                   <!-- Navbar Toggler for Mobile -->
-                   <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                       <span class="navbar-toggler-icon"></span>
-                   </button>
-                   <!-- Nav Links and Flag Selector -->
-                   <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                       <ul class="navbar-nav gx-nav-links">
-                           <li class="nav-item <?php echo isNavActive('company', $currentPage) ? 'active' : ''; ?>">
-                               <a class="nav-link <?php echo isNavActive('company', $currentPage) ? 'active gx-nav-active' : ''; ?>" href="./about-us.php">
-                                   Company <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                           <polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
-                                       </svg></span>
-                               </a>
-                           </li>
-                           <li class="nav-item <?php echo isNavActive('services', $currentPage) ? 'active' : ''; ?>">
-                               <a class="nav-link <?php echo isNavActive('services', $currentPage) ? 'active gx-nav-active' : ''; ?>" href="./excess-stock.php">
-                                   Services <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                           <polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
-                                       </svg></span>
-                               </a>
-                           </li>
-                           <li class="nav-item <?php echo isNavActive('markets', $currentPage) ? 'active' : ''; ?>">
-                               <a class="nav-link <?php echo isNavActive('markets', $currentPage) ? 'active gx-nav-active' : ''; ?>" href="#">
-                                   Markets & Ind <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                           <polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
-                                       </svg></span>
-                               </a>
-                           </li>
+                      <!-- Header/Navbar with Search -->
+                   <div class="gx-navbar-container">
+                       <div class="gx-navbar-sub-container relative">
+                           <!-- Header/Navbar -->
+                           <nav class="search-navbar navbar navbar-expand-lg gx-navbar gx-navbar--application py-3">
+                               <div class="container align-items-center">
+                                   <!-- Logo -->
+                                   <a class="navbar-brand d-flex align-items-center gx-logo" href="./index.php">
+                                       <img src="./assets/img/navbar/colored-logo.png" alt="GX Logo" height="48" />
+                                   </a>
+                                   <!-- Navbar Toggler for Mobile -->
+                                   <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                       <span class="navbar-toggler-icon"></span>
+                                   </button>
+                                   <!-- Nav Links and Flag Selector -->
+                                   <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                                       <ul class="navbar-nav gx-nav-links">
+                                           <li class="nav-item <?php echo isNavActive('company', $currentPage) ? 'active' : ''; ?>">
+                                               <a class="nav-link <?php echo isNavActive('company', $currentPage) ? 'active gx-nav-active' : ''; ?>" href="./about-us.php">
+                                                   Company <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                           <polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                                       </svg></span>
+                                               </a>
+                                           </li>
+                                           <li class="nav-item <?php echo isNavActive('services', $currentPage) ? 'active' : ''; ?>">
+                                               <a class="nav-link <?php echo isNavActive('services', $currentPage) ? 'active gx-nav-active' : ''; ?>" href="./excess-stock.php">
+                                                   Services <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                           <polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                                       </svg></span>
+                                               </a>
+                                           </li>
+                                           <li class="nav-item <?php echo isNavActive('markets', $currentPage) ? 'active' : ''; ?>">
+                                               <a class="nav-link <?php echo isNavActive('markets', $currentPage) ? 'active gx-nav-active' : ''; ?>" href="./index.php#gx-markets-industries-section">
+                                                   Markets & Ind <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                           <polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                                       </svg></span>
+                                               </a>
+                                           </li>
                            <li class="nav-item <?php echo isNavActive('products', $currentPage) ? 'active' : ''; ?>">
                                <a class="nav-link <?php echo isNavActive('products', $currentPage) ? 'active gx-nav-active' : ''; ?>" href="./products-main.php">
                                    Products <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -136,7 +146,7 @@ function isNavActive($pageIdentifier, $currentPage) {
                        <!-- Flag Selector -->
                        <div class="gx-flag-selector d-flex align-items-center ms-lg-3 mt-3 mt-lg-0">
                            <button class="btn btn-light gx-flag-btn px-2 py-1 d-flex align-items-center">
-                               <img src="./assets/us-flag-small.webp" alt="US Flag" height="20" />
+                               <img src="./assets/img/us-flag-small.webp" alt="US Flag" height="20" />
                                <span class="gx-flag-chevron">&#9662;</span>
                            </button>
                        </div>
@@ -149,7 +159,7 @@ function isNavActive($pageIdentifier, $currentPage) {
                <div class="container align-items-center">
                    <!-- Logo -->
                    <a class="navbar-brand d-flex align-items-center gx-logo" href="./index.php">
-                       <img src="./assets/navbar/colored-logo.png" alt="GX Logo" height="48" />
+                       <img src="./assets/img/navbar/colored-logo.png" alt="GX Logo" height="48" />
                    </a>
                    <!-- Navbar Toggler for Mobile -->
                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavSticky" aria-controls="navbarNavSticky" aria-expanded="false" aria-label="Toggle navigation">
@@ -173,7 +183,7 @@ function isNavActive($pageIdentifier, $currentPage) {
                                </a>
                            </li>
                            <li class="nav-item <?php echo isNavActive('markets', $currentPage) ? 'active' : ''; ?>">
-                               <a class="nav-link <?php echo isNavActive('markets', $currentPage) ? 'active gx-nav-active' : ''; ?>" href="#">
+                               <a class="nav-link <?php echo isNavActive('markets', $currentPage) ? 'active gx-nav-active' : ''; ?>" href="./index.php#gx-markets-industries-section" data-anchor-target="gx-markets-industries-section">
                                    Markets & Ind <span class="ms-1 align-middle gx-chevron"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                            <polyline points="2,2 6,6 10,2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
                                        </svg></span>
@@ -200,7 +210,7 @@ function isNavActive($pageIdentifier, $currentPage) {
                        <!-- Flag Selector -->
                        <div class="gx-flag-selector d-flex align-items-center ms-lg-3 mt-3 mt-lg-0">
                            <button class="btn btn-light gx-flag-btn px-2 py-1 d-flex align-items-center">
-                               <img src="./assets/us-flag-small.webp" alt="US Flag" height="20" />
+                               <img src="./assets/img/us-flag-small.webp" alt="US Flag" height="20" />
                                <span class="gx-flag-chevron">&#9662;</span>
                            </button>
                        </div>
@@ -212,12 +222,41 @@ function isNavActive($pageIdentifier, $currentPage) {
            <div class="gx-search-section gx-search-section-search-nav">
                <div class="gx-search-container">
                    <div class="gx-search-input-group">
-                       <input type="text" class="gx-search-input" placeholder="Search MPN here">
-                       <button class="gx-search-button">
+                       <input type="text" class="gx-search-input" placeholder="Search MPN here" id="searchInput">
+                       <a href="./pn-detail.php" class="gx-search-button" id="searchButton">
                            <i class="fas fa-search"></i>
-                       </button>
+                       </a>
                    </div>
                </div>
            </div>
+
+           <script>
+           document.addEventListener('DOMContentLoaded', function() {
+               const searchInput = document.getElementById('searchInput');
+               const searchButton = document.getElementById('searchButton');
+               
+               // Handle search button click
+               searchButton.addEventListener('click', function(e) {
+                   e.preventDefault();
+                   const searchQuery = searchInput.value.trim();
+                   
+                   if (searchQuery) {
+                       // Navigate to pn-detail.php with search query as URL parameter
+                       window.location.href = './pn-detail.php?search=' + encodeURIComponent(searchQuery);
+                   } else {
+                       // If no search query, just navigate to pn-detail.php
+                       window.location.href = './pn-detail.php';
+                   }
+               });
+               
+               // Handle Enter key press on search input
+               searchInput.addEventListener('keypress', function(e) {
+                   if (e.key === 'Enter') {
+                       e.preventDefault();
+                       searchButton.click();
+                   }
+               });
+           });
+           </script>
        </div>
    </div>

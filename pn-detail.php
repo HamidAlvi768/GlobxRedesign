@@ -42,7 +42,7 @@ include_once('./includes/search_nav.php');
         <div class="gx-product-image-attributes-container">
           <div class="gx-product-image-container">
             <div class="gx-product-icon">
-              <img src="./assets/pn-listing/pn.png" alt="Electronic Component" width="120" height="120" />
+              <img src="./assets/img/pn-listing/pn.png" alt="Electronic Component" width="120" height="120" />
             </div>
           </div>
           <div class="gx-product-attributes">

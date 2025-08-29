@@ -38,7 +38,7 @@ include_once('./includes/transparent_nav.php');
         
         <!-- Decorative Arrows -->
         <div class="gx-careers-arrows gx-arrows position-absolute">
-            <img src="./assets/hero-arrow.png" alt="Decorative Arrows" width="180" height="150" />
+            <img src="./assets/img/hero-arrow.png" alt="Decorative Arrows" width="180" height="150" />
         </div>
     </section>
 
@@ -130,37 +130,25 @@ include_once('./includes/transparent_nav.php');
     </section>
 
     <!-- Dual CTA Section -->
-    <section class="gx-cta-section gx-section-common gx-section-common--white py-5">
-        <div class="container">
-            <div class="row">
-                <!-- Left CTA Card -->
-                <div class="col-lg-6 mb-4">
-                    <div class="gx-cta-card gx-cta-card--blue">
-                        <div class="gx-cta-content">
-                            <h3 class="gx-cta-heading">Any Questions?</h3>
-                            <p class="gx-cta-description">
-                                Our recruiting team will be happy to answer any questions or provide further information.
-                            </p>
-                            <button class="gx-cta-btn gx-cta-btn--blue">Call Us Now</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right CTA Card -->
-                <div class="col-lg-6 mb-4">
-                    <div class="gx-cta-card gx-cta-card--orange">
-                        <div class="gx-cta-content">
-                            <h3 class="gx-cta-heading">Apply proactively</h3>
-                            <p class="gx-cta-description">
-                                Send us an unsolicited application! Show us your talent and motivation. We look forward to hearing from you!
-                            </p>
-                            <button class="gx-cta-btn gx-cta-btn--orange">Send an unsolicited application now</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php
+    $leftCard = [
+        'heading' => 'Any Questions?',
+        'description' => 'Our recruiting team will be happy to answer any questions or provide further information.',
+        'buttonText' => 'Call Us Now',
+        'buttonLink' => '#',
+        'buttonClass' => 'gx-cta-btn--blue'
+    ];
+    
+    $rightCard = [
+        'heading' => 'Apply proactively',
+        'description' => 'Send us an unsolicited application! Show us your talent and motivation. We look forward to hearing from you!',
+        'buttonText' => 'Send an unsolicited application now',
+        'buttonLink' => '#',
+        'buttonClass' => 'gx-cta-btn--orange'
+    ];
+    
+    include_once('./includes/_cta-section.php');
+    ?>
 
      <!-- Footer -->
 <?php

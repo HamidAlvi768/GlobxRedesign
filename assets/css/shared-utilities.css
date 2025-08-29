@@ -59,8 +59,18 @@
   color: var(--text-light);
 }
 
-.btn:focus-visible, .btn:active{
-  background-color: inherit !important;
+/* Primary Button Focus Styles */
+.gx-btn-primary:focus-visible,
+.gx-btn-primary:active {
+  background: var(--primary) !important;
+  color: var(--text-light-2) !important;
+}
+
+/* Save the Globe Button Focus Styles */
+.gx-save-globe-btn:focus-visible,
+.gx-save-globe-btn:active {
+  background: linear-gradient(90deg, #ff914d 0%, var(--secondary) 100%) !important;
+  color: var(--text-light-3) !important;
 }
 
 /* Arrow Rotation Styles - Common across pages */
@@ -825,3 +835,47 @@
   .gx-search-button {
   }
 }
+
+/* ======================================== */
+/* ANCHOR NAVIGATION STYLES                */
+/* ======================================== */
+
+/* Anchor highlight effect for navigation feedback */
+.gx-anchor-highlight {
+    animation: anchorHighlight 2s ease-out;
+}
+
+@keyframes anchorHighlight {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: 0 0 0 20px rgba(0, 123, 255, 0.3);
+        transform: scale(1.02);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+        transform: scale(1);
+    }
+}
+
+/* Ensure smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Scroll offset for fixed headers */
+section[id] {
+    scroll-margin-top: 100px; /* Adjust based on your header height */
+}
+
+/* Enhanced focus styles for accessibility */
+section[id]:focus {
+    outline: 2px solid var(--primary, #007bff);
+    outline-offset: 2px;
+}
+
+/* ======================================== */
+/* END ANCHOR NAVIGATION STYLES            */
+/* ======================================== */

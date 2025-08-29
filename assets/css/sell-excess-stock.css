@@ -16,7 +16,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../excess-stock/stock-bg.webp");
+  background-image: url("../img/excess-stock/stock-bg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -96,6 +96,130 @@
 .gx-sell-excess-cta {
   margin-top: 2rem;
   gap: 1rem;
+}
+
+/* ======================================== */
+/* HOW IT WORKS SECTION - ANCHOR TARGET    */
+/* ======================================== */
+
+/* Ensure proper scroll offset for fixed header */
+#gx-how-it-works {
+  scroll-margin-top: 120px; /* Adjust based on your header height */
+}
+
+/* Enhanced focus styles for accessibility */
+#gx-how-it-works:focus {
+  outline: 2px solid var(--primary, #007bff);
+  outline-offset: 2px;
+}
+
+/* Smooth transition when scrolling to this section */
+#gx-how-it-works {
+  transition: all 0.3s ease;
+}
+
+/* Visual feedback when section is scrolled to */
+#gx-how-it-works.gx-anchor-highlight {
+  animation: anchorHighlight 2s ease-out;
+}
+
+/* Ensure the section is properly positioned for scrolling */
+.gx-how-it-works-section {
+  position: relative;
+  z-index: 1;
+}
+
+/* ======================================== */
+/* DOWNLOAD BANNER SECTION - ANCHOR TARGET */
+/* ======================================== */
+
+/* Ensure proper scroll offset for fixed header */
+#gx-download-banner {
+  scroll-margin-top: 120px; /* Adjust based on your header height */
+}
+
+/* Enhanced focus styles for accessibility */
+#gx-download-banner:focus {
+  outline: 2px solid var(--primary, #007bff);
+  outline-offset: 2px;
+}
+
+/* Smooth transition when scrolling to this section */
+#gx-download-banner {
+  transition: all 0.3s ease;
+}
+
+/* Visual feedback when section is scrolled to */
+#gx-download-banner.gx-anchor-highlight {
+  animation: anchorHighlight 2s ease-out;
+}
+
+/* Ensure the section is properly positioned for scrolling */
+.gx-download-banner-section {
+  position: relative;
+  z-index: 1;
+}
+
+/* ======================================== */
+/* FORM SECTION - ANCHOR TARGET             */
+/* ======================================== */
+
+/* Ensure proper scroll offset for fixed header */
+#gx-form-section {
+  scroll-margin-top: 120px; /* Adjust based on your header height */
+}
+
+/* Enhanced focus styles for accessibility */
+#gx-form-section:focus {
+  outline: 2px solid var(--primary, #007bff);
+  outline-offset: 2px;
+}
+
+/* Smooth transition when scrolling to this section */
+#gx-form-section {
+  transition: all 0.3s ease;
+}
+
+/* Visual feedback when section is scrolled to */
+#gx-form-section.gx-anchor-highlight {
+  animation: anchorHighlight 2s ease-out;
+}
+
+/* Ensure the section is properly positioned for scrolling */
+.gx-form-section {
+  position: relative;
+  z-index: 1;
+}
+
+/* ======================================== */
+/* CTA BUTTON STYLES FOR LINKS              */
+/* ======================================== */
+
+/* Ensure CTA buttons maintain their appearance when converted to links */
+.gx-cta-button.gx-btn-primary,
+.gx-cta-btn.gx-cta-btn--blue,
+.gx-cta-btn.gx-cta-btn--orange {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+/* Hover effects for CTA buttons */
+.gx-cta-button.gx-btn-primary:hover,
+.gx-cta-btn.gx-cta-btn--blue:hover,
+.gx-cta-btn.gx-cta-btn--orange:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Active state for CTA buttons */
+.gx-cta-button.gx-btn-primary:active,
+.gx-cta-btn.gx-cta-btn--blue:active,
+.gx-cta-btn.gx-cta-btn--orange:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .gx-sell-excess-btn {
